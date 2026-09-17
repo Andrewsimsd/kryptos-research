@@ -1,0 +1,102 @@
+{
+  "run_id": "results/STATS-0001/run-001",
+  "status": "completed",
+  "exit_status": 0,
+  "stages": [
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 3.0207341839995934
+    },
+    {
+      "name": "upstream-build",
+      "command": [
+        "cc",
+        "-std=gnu99",
+        "-O2",
+        "third_party/bean-statistics-harness.c",
+        "-o",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001/bean-statistics"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.11568953999812948
+    },
+    {
+      "name": "statistics",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "statistics",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001/request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.01588687700132141
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_statistics.py",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001/statistics.json",
+        "--request",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001/request.json",
+        "--upstream-binary",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001/bean-statistics",
+        "--output",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/STATS-0001/run-001"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.41508774099929724
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.004288809999707155
+    }
+  ],
+  "binary_sha256": "29fff0d7b568fb890a6de80559ced1a693fb153423bc34467d1f7b68f9d8b231",
+  "counters": {
+    "samples": 10000,
+    "statistics": 5,
+    "upstream_texts_checked": 10001
+  },
+  "conclusion": "Fixed historical five-test reproduction; no global selection correction or cipher identification.",
+  "upstream_binary_sha256": "05da7f4e0e94d69b4ddb3aeae0081c603b2c31d85cd822ad583353bf338c0c67",
+  "finished_at": "2026-09-17T19:26:42.560954+00:00",
+  "elapsed_seconds": 3.5784670099965297,
+  "peak_child_memory": {
+    "value": 277616,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "baseline.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.stderr": "c008547a0e295173609045f5e5ed6fd0f3f63e1d61724468dd446d2e3751e72b",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "14372b9d0ef3894f905565c0819fa84c3abe8529bc1d5a4ab37d40b37b3fda41",
+    "request.json": "3591d530c99699b2d0513a387d83533d11591196415ba983d30096e8e743c87a",
+    "statistics.json": "152679e319729dd8366cf0716e01038ac65720913d22926c71e77c9ce8184dfc",
+    "statistics.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-input.txt": "ddae68b7ecc0eee4de264abc40d985ff2f17b17394573b7f5e9a2f07bb821258",
+    "upstream-output.txt": "273a8def4fd2e603f8f93b91242514f88a9937adb90ff1119f217e4f448a7ef0",
+    "verification.json": "27b22e0b2ff3ee6c79d957fb6f15de2465b5bb0d873ff935875d037d52c5fac7",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

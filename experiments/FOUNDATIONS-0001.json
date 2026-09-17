@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FOUNDATIONS-0001",
+  "status": "planned",
+  "parent_experiment": "K4-D-0001",
+  "question": "Do declared cipher primitives reproduce published known answers and separate reference outputs on deterministic synthetic cases?",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "fixtures/known-answers.json": "89acd3d2690dcd9aac49f86758ac6ed28d539befec0cb5419eaefee273245613",
+    "fixtures/sources.jsonl": "874a245b81409cd39628e7051d7b50e58d70c0a30e765122cb5dc61f89df1f9a",
+    "fixtures/statements.jsonl": "bae0e0e0767c8f6af2a03dc4b4229b7fafea97fb4034cf0bc4cd776c358ced65",
+    "fixtures/example-request.json": "bf8bd90fb6eb4e3f876e19e3e3933ec33b825089b5aa0da6533055c3f2fa1d0d",
+    "docs/cipher-conventions.md": "69abe83cc5527eecf95d9236eb7f54d2df7441dfad1a2c12e865574fd73ccfc0"
+  },
+  "models": [
+    "repeating_vigenere",
+    "repeating_beaufort",
+    "repeating_variant_beaufort",
+    "aca_gromark",
+    "ragged_columnar",
+    "ordered_substitution_and_transposition_pipelines"
+  ],
+  "fixtures": [
+    "K1",
+    "K2-inscribed",
+    "K2-corrected",
+    "K3",
+    "ACA-Gromark"
+  ],
+  "seed": 1261723442,
+  "rng": "xorshift32; shifts 13,17,5; u32 mask; Fisher-Yates with modulo selection",
+  "cases_per_family": 100,
+  "synthetic_families": 6,
+  "synthetic_message_lengths": [
+    0,
+    1,
+    2,
+    7,
+    25,
+    26,
+    27,
+    96,
+    97,
+    98,
+    127
+  ],
+  "evaluation_cap": 1210,
+  "evaluation_unit": "transform direction; 10 known-answer transforms plus 1200 synthetic transforms",
+  "wall_time_cap_seconds": 180,
+  "external_spend_cap": 0,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock; --locked --offline build; Python standard library",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "falsification_criterion": "Any published answer, numeric alphabet/key vector, position trace, canonical ID or Python/Rust output disagreement fails the run.",
+  "limitations": [
+    "Implementation verification, not key-recovery benchmarking.",
+    "No K4 keys or full plaintext candidates searched.",
+    "Python reference is separately implemented by the same coordinator, not a fresh-context A7 review."
+  ],
+  "outputs": [
+    "manifest.json",
+    "fixture-traces.json",
+    "verification.json",
+    "baseline.json",
+    "baseline-verification.json",
+    "completion.json"
+  ]
+}

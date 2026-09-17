@@ -1,0 +1,68 @@
+{
+  "run_id": "results/K4-D-0001/run-001",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.11539469099989219
+    },
+    {
+      "stage": "diagnose",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/debug/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.01696246599976803
+    },
+    {
+      "stage": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_baseline.py",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/K4-D-0001/run-001/diagnosis.json",
+        "--ledger",
+        "evidence/sources.jsonl"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.06473017100006473
+    }
+  ],
+  "exit_status": 0,
+  "binary_sha256": "2f52183dd8e67c347474c80b865b7c8af97ca4c7c3eaa7d7c25500ff63826ff2",
+  "counters": {
+    "family_checks": 4,
+    "periods_evaluated": 97,
+    "periods_rejected": 49,
+    "periods_surviving_necessary_test": 48,
+    "plaintext_candidates_searched": 0
+  },
+  "conclusion": "Exact scoped contradictions only; no plaintext or historical mechanism recovered.",
+  "finished_at": "2026-09-17T02:39:11.503312+00:00",
+  "elapsed_seconds": 0.21226920799972504,
+  "peak_child_memory": {
+    "value": 35716,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "build.stderr": "8c233a54790c4800d3dd585436af679aa838da259bfdb129412e2d51cdb75cdc",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnose.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnosis.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "manifest.json": "530f2a7005e24ed4ff7cca7ec37ea3d1cb9179bac708a7b6bf43778d979d5605",
+    "verification.json": "47ab6d6052cf80cf01bde35c0817eed6ef0e7c7d6f224581a1f3b57ea34f83a2",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

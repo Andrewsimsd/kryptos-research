@@ -1,0 +1,94 @@
+{
+  "run_id": "results/WIDTHS-0002/run-001",
+  "status": "completed",
+  "exit_status": 0,
+  "stages": [
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.3662884840000515
+    },
+    {
+      "name": "scan",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "width-scan",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/WIDTHS-0002/run-001/request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.36506008399999246
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_width_scan.py",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/WIDTHS-0002/run-001/scan.json",
+        "--request",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/WIDTHS-0002/run-001/request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 26.55669871300006
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.01706967799998438
+    },
+    {
+      "name": "fixed-regression",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "statistics",
+        "fixtures/statistics-example.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.032872257000008176
+    }
+  ],
+  "binary_sha256": "c27bf674352f55034da4c6a49e04d2573982545b2c36953998c6c5cc48965b73",
+  "counters": {
+    "calibration_samples": 10000,
+    "evaluation_samples": 100000,
+    "widths": 48,
+    "global_exceedances": 441
+  },
+  "selected_width": 21,
+  "conclusion": "Upper maximum of separately calibrated repeated-type counts over widths 1-48 only; no historical alphabet/statistic selection correction.",
+  "finished_at": "2026-09-17T19:43:12.135313+00:00",
+  "elapsed_seconds": 28.34698572100001,
+  "peak_child_memory": {
+    "value": 263028,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "baseline.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.stderr": "e45cc22a86c2cbb8d67bf47f31e101567b275d5029a675640cc883c3538b219d",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixed-regression.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixed-statistics.json": "152679e319729dd8366cf0716e01038ac65720913d22926c71e77c9ce8184dfc",
+    "manifest.json": "ee89f35da0c1c189ccfe08171aca846b8edae7643aa63c16abe4d999343fca5b",
+    "request.json": "eed13bf428ecdf57a2a568e313206a36eb78d20949ff8d169410f9a003268399",
+    "scan.json": "b0898237fd2167cda9bce7cdf1316a1f9fdf2c85a00d063b918480ff7d1de1bd",
+    "scan.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification.json": "01826371f665cad1a7a394c4a0f33895be43e2c1628c71013eca144439a51621",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

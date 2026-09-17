@@ -1,0 +1,20 @@
+{
+  "run_id": "results/STATS-0002/run-001",
+  "status": "interrupted",
+  "exit_status": null,
+  "recorded_at": "2026-09-17T19:30:10.759332+00:00",
+  "error": "Execution session unavailable after resume; no completion or verification output was recorded. Actual termination time, exit status and resource usage are unknown. Repeat same specification and seed in run-002.",
+  "artifact_sha256": {
+    "bean-statistics": "05da7f4e0e94d69b4ddb3aeae0081c603b2c31d85cd822ad583353bf338c0c67",
+    "build.stderr": "dbc613b7b9380b6651bb7eb9f5e8489f4e000aff7d776ade2a6f44d6b6b20c0d",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "7e5f9e92b913f9b46ac5d0adda608f2200e226f0572de57e7a951cccf8603922",
+    "request.json": "ce3ed8ebf04a40a340cc94ce338b7c012103e03dbbea7000daf1440ffde03f1a",
+    "statistics.json": "6d4203ace9951a98192aaf65ae4a5bac3b907c5f7e663989f15944f43a7de04a",
+    "statistics.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

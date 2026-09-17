@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "calibration_samples": 10000,
+  "samples": 10000,
+  "calibration_seed": 1261726001,
+  "seed": 1261726002
+}

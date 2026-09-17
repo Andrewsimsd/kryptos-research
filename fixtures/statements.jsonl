@@ -1,0 +1,1 @@
+{"claim_id": "C300", "classification": "reproduced_finding", "source_ids": ["S300", "S203"], "text": "The declared two-stage route reproduces all 336 letters of the independently transcribed published K3 plaintext; exact position permutation is in known-answers.json.", "status": "verified"}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PRIMERS-0001",
+  "status": "planned",
+  "parent_experiment": "FOUNDATIONS-0001",
+  "question": "Do generic crib graph constraints and pinned Bean code reproduce the decimal five-digit primer survivors?",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "third_party/bean-k4testing/gt.c": "11f22a1c010b13e3e18fd7dcccf149f76f0c12c7fca07d9fb5fd8513c57210d5",
+    "third_party/bean-k4testing/README.md": "7e9396ce4efef01a2c7e9c41eac5be8caf40f9c2e78653d9840a29757ddc97a9",
+    "third_party/bean-k4testing/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "docs/primer-conventions.md": "2ae246896ccfcc74b87115081a1db427f02a95e9604002e1475d5a4998ccbfdd"
+  },
+  "model": "c(C_i)-p(P_i)=k[i] modulo 26; independently unknown bijective alphabets; aligned 24 cribs",
+  "domain": {
+    "base": 10,
+    "primer_length": 5,
+    "first": "00001",
+    "last": "99999",
+    "zero_primer": "excluded to match upstream",
+    "key_offset": 0,
+    "recurrence": "k[i]=(k[i-5]+k[i-4]) modulo 10",
+    "expanded_length": 98,
+    "message_length": 97
+  },
+  "evaluation_cap": 99999,
+  "evaluation_unit": "unique primers; exhaustively repeated by Rust, Python and upstream C",
+  "wall_time_cap_seconds": 180,
+  "external_spend_cap": 0,
+  "seed": null,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "cc": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "dependencies": "Cargo.lock offline; Python standard library; system C compiler; unmodified separately executed GPL-3.0 comparison source",
+  "upstream_commit": "6a5e3cb200d5ab72a62bb7f5124b4fdf163faf8c",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "published_targets": {
+    "examined": 99999,
+    "simple_survivors": 1040,
+    "survivors": 39
+  },
+  "sources": [
+    "https://ecp.ep.liu.se/index.php/histocrypt/article/download/153/109",
+    "https://github.com/RichardBean/k4testing/tree/6a5e3cb200d5ab72a62bb7f5124b4fdf163faf8c"
+  ],
+  "falsification_criterion": "Any Rust/Python coverage, expansion or certificate disagreement fails verification. A discrepancy with upstream is retained explicitly; do not adjust constraints to force 39.",
+  "limitations": [
+    "Necessary within-component constraints only; global alphabet feasibility not solved.",
+    "No plaintext recovery or statistical significance claim.",
+    "Python reference by same coordinator; not fresh-context A7 review."
+  ],
+  "outputs": [
+    "manifest.json",
+    "upstream.txt",
+    "primers.json",
+    "verification.json",
+    "baseline.json",
+    "completion.json"
+  ]
+}

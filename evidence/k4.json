@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "evidence_id": "K4-v1",
+  "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "indexing": "zero_based_half_open",
+  "normalization": "uppercase_ascii_no_whitespace_no_question_mark",
+  "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR",
+  "physical_lines": [
+    "OBKR",
+    "UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO",
+    "TWTQSJQSSEKZZWATJKLUDIAWINFBNYP",
+    "VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+  ],
+  "known_plaintext_count": 24,
+  "anchors": [
+    {
+      "id": "EAST",
+      "start": 21,
+      "end": 25,
+      "ciphertext": "FLRV",
+      "plaintext": "EAST",
+      "source_ids": [
+        "S003"
+      ]
+    },
+    {
+      "id": "NORTHEAST",
+      "start": 25,
+      "end": 34,
+      "ciphertext": "QQPRNGKSS",
+      "plaintext": "NORTHEAST",
+      "source_ids": [
+        "S003"
+      ]
+    },
+    {
+      "id": "BERLIN",
+      "start": 63,
+      "end": 69,
+      "ciphertext": "NYPVTT",
+      "plaintext": "BERLIN",
+      "source_ids": [
+        "S003"
+      ]
+    },
+    {
+      "id": "CLOCK",
+      "start": 69,
+      "end": 74,
+      "ciphertext": "MZFPK",
+      "plaintext": "CLOCK",
+      "source_ids": [
+        "S003"
+      ]
+    }
+  ],
+  "source_ids": [
+    "S001",
+    "S002",
+    "S003"
+  ],
+  "transcriptions": [
+    {
+      "source_id": "S001",
+      "physical_lines": [
+        "OBKR",
+        "UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO",
+        "TWTQSJQSSEKZZWATJKLUDIAWINFBNYP",
+        "VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+      ],
+      "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+    },
+    {
+      "source_id": "S002",
+      "physical_lines": [
+        "OBKR",
+        "UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO",
+        "TWTQSJQSSEKZZWATJKLUDIAWINFBNYP",
+        "VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+      ],
+      "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+    }
+  ],
+  "unresolved_issues": [
+    "The two separately reviewed published transcripts agree, but complete independence of their historical transcription lineage is not established; Gillogly credits Doug Gwyn.",
+    "This audit used published transcripts, not a fresh character-by-character photographic inspection of the copper.",
+    "Anchor placements follow Dunin's published clue grid. Original private EAST correspondence is not publicly preserved here; attribution and announcement dates remain distinct.",
+    "The preceding question mark is excluded. A model including it must use a separate evidence manifest.",
+    "Live steward verification access and unpublished archival material remain unresolved; see reports/current-status.md."
+  ]
+}

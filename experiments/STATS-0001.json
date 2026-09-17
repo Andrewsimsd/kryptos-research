@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_id": "STATS-0001",
+  "status": "planned",
+  "parent_experiment": "PRIMERS-0001",
+  "question": "Reproduce the five fixed Bean statistics under permutations of the K4 multiset, with raw counts and uncertainty.",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "third_party/bean-k4testing/k4-testy.c": "d8420b5b95449639c74e693f20b85c6537fff0120753540364082f9333f9d38c",
+    "third_party/bean-k4testing/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "third_party/bean-statistics-harness.c": "eb564e4d5bba071b9f0f14ea052388b2dce05bdf1708edad6e66273c33b84939",
+    "docs/statistics-conventions.md": "b536a2523a68ebf720d60d69e24a910725fd13b284104a7df2a970a19fb2f6e0",
+    "fixtures/statistics-example.json": "3591d530c99699b2d0513a387d83533d11591196415ba983d30096e8e743c87a"
+  },
+  "request": {
+    "schema_version": 1,
+    "samples": 10000,
+    "seed": 1261724721
+  },
+  "evaluation_cap": 10000,
+  "evaluation_unit": "shared multiset permutations measured on five fixed statistics, regenerated independently in Python",
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "null": "uniform permutations of the original 97-letter multiset, with replacement; cribs remain fixed",
+  "rng": "SplitMix64 and rejection-based bounded Fisher-Yates, as frozen in docs/statistics-conventions.md",
+  "statistics": [
+    "width21 repeated ordered types >= observed",
+    "KRYPTOS crib circular distance sum <= observed",
+    "repeated-plaintext pair distance sum <= observed",
+    "repeated-plaintext distances strictly below five >= observed",
+    "overlapping adjacent equal pairs >= observed"
+  ],
+  "inference": "(r+1)/(N+1), marginal approximate Wilson 95% intervals, Bonferroni correction over five only",
+  "precision_rule": "If any tail count < 100, register independent 1000000-sample precision run with a different seed; no pooling or within-run stopping.",
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "cc": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "upstream_commit": "6a5e3cb200d5ab72a62bb7f5124b4fdf163faf8c",
+  "sources": [
+    "https://ecp.ep.liu.se/index.php/histocrypt/article/download/153/109",
+    "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+  ],
+  "falsification_criterion": "Any Rust/Python histogram, observed statistic, prefix or RNG-state mismatch or C fixture mismatch fails. Published reciprocal rates are approximate comparisons, not forced targets.",
+  "limitations": [
+    "Fixed historically selected statistics only; no global width/alphabet selection correction.",
+    "Permutation null does not identify cipher families.",
+    "New implementations by same coordinator, not fresh-context A7 review."
+  ]
+}

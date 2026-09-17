@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "K1-decrypt",
+      "input": "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJYQTQUXQBQVYUVLLTREVJYQTMKYRDMFD",
+      "direction": "decrypt",
+      "stages": [
+        {
+          "family": "repeating",
+          "plaintext_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+          "ciphertext_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+          "key_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+          "keyword": "PALIMPSEST",
+          "equation": "vigenere",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1318 @@
+{
+  "status": "verified",
+  "calibration_samples_regenerated": 10000,
+  "evaluation_samples_regenerated": 10000,
+  "widths_per_sample": 48,
+  "report_sha256": "11035460a9fd559ed19f1686d4516a161f5b7206cff75f82fc2e4e8334182034",
+  "selected_width": 21,
+  "global_tail": {
+    "exceedances": 39,
+    "samples": 10000,
+    "estimate_plus_one": 0.003999600039996,
+    "wilson_95": [
+      0.002854360868773877,
+      0.005326642314611441
+    ]
+  },
+  "widths": [
+    {
+      "width": 1,
+      "available_pairs": 96,
+      "observed": 10,
+      "calibration_mean": 5.5124,
+      "calibration_sd": 2.0519371920212373,
+      "standardized_score": 2.1870065114320294,
+      "local_tail": {
+        "exceedances": 321,
+        "samples": 10000,
+        "estimate_plus_one": 0.0321967803219678,
+        "wilson_95": [
+          0.028820922446793868,
+          0.03573842322848528
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 6566,
+        "samples": 10000,
+        "estimate_plus_one": 0.6566343365663434,
+        "wilson_95": [
+          0.6472346951580967,
+          0.6658450365522073
+        ]
+      },
+      "null_selected_count": 187
+    },
+    {
+      "width": 2,
+      "available_pairs": 95,
+      "observed": 3,
+      "calibration_mean": 5.3629,
+      "calibration_sd": 1.997198936010131,
+      "standardized_score": -1.1831069791777689,
+      "local_tail": {
+        "exceedances": 9341,
+        "samples": 10000,
+        "estimate_plus_one": 0.9341065893410659,
+        "wilson_95": [
+          0.929068571221941,
+          0.9387980413926377
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 212
+    },
+    {
+      "width": 3,
+      "available_pairs": 94,
+      "observed": 8,
+      "calibration_mean": 5.2708,
+      "calibration_sd": 1.9883831019197482,
+      "standardized_score": 1.3725725175219032,
+      "local_tail": {
+        "exceedances": 1277,
+        "samples": 10000,
+        "estimate_plus_one": 0.1277872212778722,
+        "wilson_95": [
+          0.12130116945632166,
+          0.1343847557304841
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9887,
+        "samples": 10000,
+        "estimate_plus_one": 0.9887011298870113,
+        "wilson_95": [
+          0.9864325887818737,
+          0.990592091210627
+        ]
+      },
+      "null_selected_count": 208
+    },
+    {
+      "width": 4,
+      "available_pairs": 93,
+      "observed": 3,
+      "calibration_mean": 5.196,
+      "calibration_sd": 2.0184112564093573,
+      "standardized_score": -1.087984419937572,
+      "local_tail": {
+        "exceedances": 9205,
+        "samples": 10000,
+        "estimate_plus_one": 0.9205079492050795,
+        "wilson_95": [
+          0.9150350413652582,
+          0.9256420160050027
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 203
+    },
+    {
+      "width": 5,
+      "available_pairs": 92,
+      "observed": 6,
+      "calibration_mean": 5.0405,
+      "calibration_sd": 1.9480913094616483,
+      "standardized_score": 0.49253338143844816,
+      "local_tail": {
+        "exceedances": 3974,
+        "samples": 10000,
+        "estimate_plus_one": 0.39746025397460255,
+        "wilson_95": [
+          0.3878498786306096,
+          0.40702891783505313
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 194
+    },
+    {
+      "width": 6,
+      "available_pairs": 91,
+      "observed": 2,
+      "calibration_mean": 4.9677,
+      "calibration_sd": 1.9419208814985227,
+      "standardized_score": -1.5282290994831436,
+      "local_tail": {
+        "exceedances": 9737,
+        "samples": 10000,
+        "estimate_plus_one": 0.9737026297370263,
+        "wilson_95": [
+          0.9703769796404579,
+          0.9766592203031631
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 182
+    },
+    {
+      "width": 7,
+      "available_pairs": 90,
+      "observed": 9,
+      "calibration_mean": 4.8775,
+      "calibration_sd": 1.9095794694120483,
+      "standardized_score": 2.1588522845133546,
+      "local_tail": {
+        "exceedances": 395,
+        "samples": 10000,
+        "estimate_plus_one": 0.0395960403959604,
+        "wilson_95": [
+          0.03585582726190139,
+          0.04349783523749174
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 6826,
+        "samples": 10000,
+        "estimate_plus_one": 0.6826317368263174,
+        "wilson_95": [
+          0.6734084267666932,
+          0.6916513370283356
+        ]
+      },
+      "null_selected_count": 216
+    },
+    {
+      "width": 8,
+      "available_pairs": 89,
+      "observed": 6,
+      "calibration_mean": 4.7529,
+      "calibration_sd": 1.9154742467597938,
+      "standardized_score": 0.6510659185888757,
+      "local_tail": {
+        "exceedances": 3315,
+        "samples": 10000,
+        "estimate_plus_one": 0.33156684331566844,
+        "wilson_95": [
+          0.32233967247882384,
+          0.34078973497209414
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 199
+    },
+    {
+      "width": 9,
+      "available_pairs": 88,
+      "observed": 4,
+      "calibration_mean": 4.6545,
+      "calibration_sd": 1.887678402164945,
+      "standardized_score": -0.34672219550182143,
+      "local_tail": {
+        "exceedances": 7064,
+        "samples": 10000,
+        "estimate_plus_one": 0.7064293570642936,
+        "wilson_95": [
+          0.6973962161295899,
+          0.7152452693429949
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 189
+    },
+    {
+      "width": 10,
+      "available_pairs": 87,
+      "observed": 9,
+      "calibration_mean": 4.5233,
+      "calibration_sd": 1.885008517222137,
+      "standardized_score": 2.374896431023631,
+      "local_tail": {
+        "exceedances": 227,
+        "samples": 10000,
+        "estimate_plus_one": 0.022797720227977204,
+        "wilson_95": [
+          0.019958819233930947,
+          0.025807745610716935
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 5269,
+        "samples": 10000,
+        "estimate_plus_one": 0.5269473052694731,
+        "wilson_95": [
+          0.5171059168539291,
+          0.5366734240337285
+        ]
+      },
+      "null_selected_count": 188
+    },
+    {
+      "width": 11,
+      "available_pairs": 86,
+      "observed": 5,
+      "calibration_mean": 4.4394,
+      "calibration_sd": 1.8469779749634265,
+      "standardized_score": 0.3035228397951529,
+      "local_tail": {
+        "exceedances": 4732,
+        "samples": 10000,
+        "estimate_plus_one": 0.47325267473252675,
+        "wilson_95": [
+          0.46342643222504865,
+          0.4829941500876195
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 201
+    },
+    {
+      "width": 12,
+      "available_pairs": 85,
+      "observed": 5,
+      "calibration_mean": 4.342,
+      "calibration_sd": 1.8366915908774666,
+      "standardized_score": 0.35825285163180015,
+      "local_tail": {
+        "exceedances": 4446,
+        "samples": 10000,
+        "estimate_plus_one": 0.44465553444655537,
+        "wilson_95": [
+          0.434883640697187,
+          0.4543589063222838
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 195
+    },
+    {
+      "width": 13,
+      "available_pairs": 84,
+      "observed": 4,
+      "calibration_mean": 4.2259,
+      "calibration_sd": 1.8419742642067505,
+      "standardized_score": -0.12264014996826476,
+      "local_tail": {
+        "exceedances": 6392,
+        "samples": 10000,
+        "estimate_plus_one": 0.6392360763923608,
+        "wilson_95": [
+          0.6297358167613569,
+          0.6485572780922466
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 202
+    },
+    {
+      "width": 14,
+      "available_pairs": 83,
+      "observed": 7,
+      "calibration_mean": 4.1469,
+      "calibration_sd": 1.8016993062106674,
+      "standardized_score": 1.583560580927701,
+      "local_tail": {
+        "exceedances": 1013,
+        "samples": 10000,
+        "estimate_plus_one": 0.10138986101389862,
+        "wilson_95": [
+          0.09553854164064352,
+          0.10736765866013401
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9576,
+        "samples": 10000,
+        "estimate_plus_one": 0.9576042395760423,
+        "wilson_95": [
+          0.9534718058181471,
+          0.9613767588730098
+        ]
+      },
+      "null_selected_count": 191
+    },
+    {
+      "width": 15,
+      "available_pairs": 82,
+      "observed": 3,
+      "calibration_mean": 4.0659,
+      "calibration_sd": 1.7792574827719567,
+      "standardized_score": -0.5990701235323196,
+      "local_tail": {
+        "exceedances": 8062,
+        "samples": 10000,
+        "estimate_plus_one": 0.8062193780621938,
+        "wilson_95": [
+          0.7983357862624196,
+          0.813829053135378
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 198
+    },
+    {
+      "width": 16,
+      "available_pairs": 81,
+      "observed": 2,
+      "calibration_mean": 3.9766,
+      "calibration_sd": 1.7571717161393192,
+      "standardized_score": -1.124875834185851,
+      "local_tail": {
+        "exceedances": 9296,
+        "samples": 10000,
+        "estimate_plus_one": 0.9296070392960704,
+        "wilson_95": [
+          0.9244193048801211,
+          0.9344507637197935
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 189
+    },
+    {
+      "width": 17,
+      "available_pairs": 80,
+      "observed": 6,
+      "calibration_mean": 3.8638,
+      "calibration_sd": 1.7617745485731142,
+      "standardized_score": 1.212527449513979,
+      "local_tail": {
+        "exceedances": 1684,
+        "samples": 10000,
+        "estimate_plus_one": 0.16848315168483152,
+        "wilson_95": [
+          0.16119303779949118,
+          0.17586162991994153
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9958,
+        "samples": 10000,
+        "estimate_plus_one": 0.9958004199580042,
+        "wilson_95": [
+          0.9943281041837756,
+          0.9968911230318614
+        ]
+      },
+      "null_selected_count": 198
+    },
+    {
+      "width": 18,
+      "available_pairs": 79,
+      "observed": 4,
+      "calibration_mean": 3.7263,
+      "calibration_sd": 1.7334902105290355,
+      "standardized_score": 0.15788955618991976,
+      "local_tail": {
+        "exceedances": 5271,
+        "samples": 10000,
+        "estimate_plus_one": 0.5271472852714728,
+        "wilson_95": [
+          0.5173060519174596,
+          0.5368731353708497
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 198
+    },
+    {
+      "width": 19,
+      "available_pairs": 78,
+      "observed": 3,
+      "calibration_mean": 3.6363,
+      "calibration_sd": 1.7073436414500742,
+      "standardized_score": -0.3726842005043462,
+      "local_tail": {
+        "exceedances": 7439,
+        "samples": 10000,
+        "estimate_plus_one": 0.7439256074392561,
+        "wilson_95": [
+          0.7352526668259366,
+          0.7523600187688474
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 237
+    },
+    {
+      "width": 20,
+      "available_pairs": 77,
+      "observed": 3,
+      "calibration_mean": 3.6128,
+      "calibration_sd": 1.6873281127273378,
+      "standardized_score": -0.3631777337067487,
+      "local_tail": {
+        "exceedances": 7332,
+        "samples": 10000,
+        "estimate_plus_one": 0.7332266773322668,
+        "wilson_95": [
+          0.724442988281222,
+          0.7417779148786943
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 217
+    },
+    {
+      "width": 21,
+      "available_pairs": 76,
+      "observed": 11,
+      "calibration_mean": 3.4915,
+      "calibration_sd": 1.667371509292395,
+      "standardized_score": 4.50319557348469,
+      "local_tail": {
+        "exceedances": 1,
+        "samples": 10000,
+        "estimate_plus_one": 0.00019998000199980003,
+        "wilson_95": [
+          1.765267360112231e-05,
+          0.0005662688974013381
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 39,
+        "samples": 10000,
+        "estimate_plus_one": 0.003999600039996,
+        "wilson_95": [
+          0.002854360868773877,
+          0.005326642314611441
+        ]
+      },
+      "null_selected_count": 196
+    },
+    {
+      "width": 22,
+      "available_pairs": 75,
+      "observed": 3,
+      "calibration_mean": 3.4133,
+      "calibration_sd": 1.651024866560162,
+      "standardized_score": -0.2503293610962338,
+      "local_tail": {
+        "exceedances": 6929,
+        "samples": 10000,
+        "estimate_plus_one": 0.692930706929307,
+        "wilson_95": [
+          0.683786217498365,
+          0.7018656359302279
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 223
+    },
+    {
+      "width": 23,
+      "available_pairs": 74,
+      "observed": 2,
+      "calibration_mean": 3.2961,
+      "calibration_sd": 1.6384824655759973,
+      "standardized_score": -0.7910368449041442,
+      "local_tail": {
+        "exceedances": 8753,
+        "samples": 10000,
+        "estimate_plus_one": 0.8753124687531247,
+        "wilson_95": [
+          0.8686802266330965,
+          0.8816315441898736
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 205
+    },
+    {
+      "width": 24,
+      "available_pairs": 73,
+      "observed": 3,
+      "calibration_mean": 3.2395,
+      "calibration_sd": 1.6303802470589492,
+      "standardized_score": -0.1468982468550114,
+      "local_tail": {
+        "exceedances": 6538,
+        "samples": 10000,
+        "estimate_plus_one": 0.6538346165383462,
+        "wilson_95": [
+          0.6444178613979544,
+          0.6630640207032256
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 177
+    },
+    {
+      "width": 25,
+      "available_pairs": 72,
+      "observed": 4,
+      "calibration_mean": 3.1453,
+      "calibration_sd": 1.597118627403738,
+      "standardized_score": 0.5351512313079666,
+      "local_tail": {
+        "exceedances": 3834,
+        "samples": 10000,
+        "estimate_plus_one": 0.38346165383461656,
+        "wilson_95": [
+          0.373916871790779,
+          0.3929726766292628
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 203
+    },
+    {
+      "width": 26,
+      "available_pairs": 71,
+      "observed": 0,
+      "calibration_mean": 3.0886,
+      "calibration_sd": 1.5652955120359862,
+      "standardized_score": -1.9731737401985172,
+      "local_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 199
+    },
+    {
+      "width": 27,
+      "available_pairs": 70,
+      "observed": 1,
+      "calibration_mean": 2.9902,
+      "calibration_sd": 1.5470306913568328,
+      "standardized_score": -1.28646445808679,
+      "local_tail": {
+        "exceedances": 9641,
+        "samples": 10000,
+        "estimate_plus_one": 0.9641035896410359,
+        "wilson_95": [
+          0.96027179996304,
+          0.9675717727492977
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 216
+    },
+    {
+      "width": 28,
+      "available_pairs": 69,
+      "observed": 5,
+      "calibration_mean": 2.8743,
+      "calibration_sd": 1.5432755781129954,
+      "standardized_score": 1.3773949579369036,
+      "local_tail": {
+        "exceedances": 1453,
+        "samples": 10000,
+        "estimate_plus_one": 0.14538546145385461,
+        "wilson_95": [
+          0.13852921452411043,
+          0.15234319392004758
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9876,
+        "samples": 10000,
+        "estimate_plus_one": 0.9876012398760124,
+        "wilson_95": [
+          0.9852361608857194,
+          0.9895893639031967
+        ]
+      },
+      "null_selected_count": 188
+    },
+    {
+      "width": 29,
+      "available_pairs": 68,
+      "observed": 4,
+      "calibration_mean": 2.7967,
+      "calibration_sd": 1.5279296809735716,
+      "standardized_score": 0.7875362426582859,
+      "local_tail": {
+        "exceedances": 2988,
+        "samples": 10000,
+        "estimate_plus_one": 0.29887011298870114,
+        "wilson_95": [
+          0.2899072685632056,
+          0.3078472523811546
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 184
+    },
+    {
+      "width": 30,
+      "available_pairs": 67,
+      "observed": 4,
+      "calibration_mean": 2.7449,
+      "calibration_sd": 1.4907125779304338,
+      "standardized_score": 0.8419463406839054,
+      "local_tail": {
+        "exceedances": 2835,
+        "samples": 10000,
+        "estimate_plus_one": 0.28357164283571645,
+        "wilson_95": [
+          0.27475094245557774,
+          0.29241532883892507
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 207
+    },
+    {
+      "width": 31,
+      "available_pairs": 66,
+      "observed": 3,
+      "calibration_mean": 2.6552,
+      "calibration_sd": 1.4826034398988828,
+      "standardized_score": 0.23256387427747788,
+      "local_tail": {
+        "exceedances": 5051,
+        "samples": 10000,
+        "estimate_plus_one": 0.5051494850514948,
+        "wilson_95": [
+          0.4953006129299865,
+          0.5148954702866325
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 203
+    },
+    {
+      "width": 32,
+      "available_pairs": 65,
+      "observed": 2,
+      "calibration_mean": 2.5742,
+      "calibration_sd": 1.4559170168660027,
+      "standardized_score": -0.3943906097313287,
+      "local_tail": {
+        "exceedances": 7598,
+        "samples": 10000,
+        "estimate_plus_one": 0.7598240175982401,
+        "wilson_95": [
+          0.7513281899292583,
+          0.7680722845173382
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 207
+    },
+    {
+      "width": 33,
+      "available_pairs": 64,
+      "observed": 3,
+      "calibration_mean": 2.4808,
+      "calibration_sd": 1.4420233562602238,
+      "standardized_score": 0.36004964673145456,
+      "local_tail": {
+        "exceedances": 4651,
+        "samples": 10000,
+        "estimate_plus_one": 0.46515348465153483,
+        "wilson_95": [
+          0.45533935128671577,
+          0.4748874517995574
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 201
+    },
+    {
+      "width": 34,
+      "available_pairs": 63,
+      "observed": 1,
+      "calibration_mean": 2.451,
+      "calibration_sd": 1.4168976674410896,
+      "standardized_score": -1.0240683101839663,
+      "local_tail": {
+        "exceedances": 9348,
+        "samples": 10000,
+        "estimate_plus_one": 0.9348065193480652,
+        "wilson_95": [
+          0.9297923580305026,
+          0.9394737169863568
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 210
+    },
+    {
+      "width": 35,
+      "available_pairs": 62,
+      "observed": 4,
+      "calibration_mean": 2.3689,
+      "calibration_sd": 1.414500897843476,
+      "standardized_score": 1.1531275819525795,
+      "local_tail": {
+        "exceedances": 2005,
+        "samples": 10000,
+        "estimate_plus_one": 0.20057994200579943,
+        "wilson_95": [
+          0.19276847518571666,
+          0.2084615398383186
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9978,
+        "samples": 10000,
+        "estimate_plus_one": 0.9978002199780022,
+        "wilson_95": [
+          0.9966710407999471,
+          0.9985466504222074
+        ]
+      },
+      "null_selected_count": 206
+    },
+    {
+      "width": 36,
+      "available_pairs": 61,
+      "observed": 2,
+      "calibration_mean": 2.2718,
+      "calibration_sd": 1.382289680204551,
+      "standardized_score": -0.19663027503741407,
+      "local_tail": {
+        "exceedances": 6877,
+        "samples": 10000,
+        "estimate_plus_one": 0.6877312268773123,
+        "wilson_95": [
+          0.6785462920591441,
+          0.696709554952504
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 206
+    },
+    {
+      "width": 37,
+      "available_pairs": 60,
+      "observed": 2,
+      "calibration_mean": 2.1872,
+      "calibration_sd": 1.3692903855647276,
+      "standardized_score": -0.13671314863048156,
+      "local_tail": {
+        "exceedances": 6675,
+        "samples": 10000,
+        "estimate_plus_one": 0.6675332466753324,
+        "wilson_95": [
+          0.6582036612408068,
+          0.6766676993050166
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 209
+    },
+    {
+      "width": 38,
+      "available_pairs": 59,
+      "observed": 3,
+      "calibration_mean": 2.1411,
+      "calibration_sd": 1.3445411075902438,
+      "standardized_score": 0.6388053107125635,
+      "local_tail": {
+        "exceedances": 3612,
+        "samples": 10000,
+        "estimate_plus_one": 0.36126387361263873,
+        "wilson_95": [
+          0.3518403007331513,
+          0.37066629721454847
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 197
+    },
+    {
+      "width": 39,
+      "available_pairs": 58,
+      "observed": 1,
+      "calibration_mean": 2.0567,
+      "calibration_sd": 1.313881695587544,
+      "standardized_score": -0.8042581029545912,
+      "local_tail": {
+        "exceedances": 8951,
+        "samples": 10000,
+        "estimate_plus_one": 0.8951104889511049,
+        "wilson_95": [
+          0.8889417087237903,
+          0.900954855763701
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 233
+    },
+    {
+      "width": 40,
+      "available_pairs": 57,
+      "observed": 0,
+      "calibration_mean": 1.9619,
+      "calibration_sd": 1.284619939904406,
+      "standardized_score": -1.5272221293295456,
+      "local_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 225
+    },
+    {
+      "width": 41,
+      "available_pairs": 56,
+      "observed": 1,
+      "calibration_mean": 1.9152,
+      "calibration_sd": 1.2705939398564752,
+      "standardized_score": -0.7202930623951976,
+      "local_tail": {
+        "exceedances": 8788,
+        "samples": 10000,
+        "estimate_plus_one": 0.8788121187881212,
+        "wilson_95": [
+          0.8722575859148284,
+          0.885051496919547
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 224
+    },
+    {
+      "width": 42,
+      "available_pairs": 55,
+      "observed": 3,
+      "calibration_mean": 1.8291,
+      "calibration_sd": 1.2660541813050499,
+      "standardized_score": 0.9248419359059619,
+      "local_tail": {
+        "exceedances": 2831,
+        "samples": 10000,
+        "estimate_plus_one": 0.28317168283171684,
+        "wilson_95": [
+          0.2743548640087523,
+          0.2920117144844472
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 9996,
+        "samples": 10000,
+        "estimate_plus_one": 0.9996000399960004,
+        "wilson_95": [
+          0.9989718716646431,
+          0.9998444371633769
+        ]
+      },
+      "null_selected_count": 221
+    },
+    {
+      "width": 43,
+      "available_pairs": 54,
+      "observed": 1,
+      "calibration_mean": 1.8034,
+      "calibration_sd": 1.239979209503127,
+      "standardized_score": -0.6479140890772926,
+      "local_tail": {
+        "exceedances": 8602,
+        "samples": 10000,
+        "estimate_plus_one": 0.8602139786021398,
+        "wilson_95": [
+          0.8532648298029452,
+          0.8668585377708192
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 199
+    },
+    {
+      "width": 44,
+      "available_pairs": 53,
+      "observed": 2,
+      "calibration_mean": 1.7068,
+      "calibration_sd": 1.2079874833788635,
+      "standardized_score": 0.24271774669377355,
+      "local_tail": {
+        "exceedances": 5319,
+        "samples": 10000,
+        "estimate_plus_one": 0.531946805319468,
+        "wilson_95": [
+          0.5221097658877316,
+          0.5416657350162193
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 255
+    },
+    {
+      "width": 45,
+      "available_pairs": 52,
+      "observed": 1,
+      "calibration_mean": 1.6632,
+      "calibration_sd": 1.2054732514659958,
+      "standardized_score": -0.5501573752826714,
+      "local_tail": {
+        "exceedances": 8306,
+        "samples": 10000,
+        "estimate_plus_one": 0.8306169383061693,
+        "wilson_95": [
+          0.8231214459072256,
+          0.8378246543700831
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 251
+    },
+    {
+      "width": 46,
+      "available_pairs": 51,
+      "observed": 1,
+      "calibration_mean": 1.5985,
+      "calibration_sd": 1.192685100938215,
+      "standardized_score": -0.501808901217258,
+      "local_tail": {
+        "exceedances": 8200,
+        "samples": 10000,
+        "estimate_plus_one": 0.82001799820018,
+        "wilson_95": [
+          0.8123476279170886,
+          0.8274066131256782
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 224
+    },
+    {
+      "width": 47,
+      "available_pairs": 50,
+      "observed": 0,
+      "calibration_mean": 1.5374,
+      "calibration_sd": 1.1511738530734617,
+      "standardized_score": -1.335506358049544,
+      "local_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 275
+    },
+    {
+      "width": 48,
+      "available_pairs": 49,
+      "observed": 2,
+      "calibration_mean": 1.4645,
+      "calibration_sd": 1.1364593041547948,
+      "standardized_score": 0.4712003307485445,
+      "local_tail": {
+        "exceedances": 4491,
+        "samples": 10000,
+        "estimate_plus_one": 0.44915508449155084,
+        "wilson_95": [
+          0.4393724891471856,
+          0.4588666018869492
+        ]
+      },
+      "maximum_adjusted_tail": {
+        "exceedances": 10000,
+        "samples": 10000,
+        "estimate_plus_one": 1.0,
+        "wilson_95": [
+          0.9996160016293234,
+          1.0
+        ]
+      },
+      "null_selected_count": 252
+    }
+  ],
+  "scope": "Upper maximum of separately calibrated repeated-type counts over widths 1-48 only; no historical alphabet/statistic selection correction.",
+  "calibration_uncertainty": "Inference conditional on the fixed independent calibration; Wilson intervals cover evaluation Monte Carlo uncertainty only.",
+  "implementation_review": "Python counts/rank selection separate from Rust; shared previously tested Python RNG; same coordinator, not fresh-context A7."
+}

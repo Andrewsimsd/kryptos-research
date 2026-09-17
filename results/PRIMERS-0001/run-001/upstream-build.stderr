@@ -1,0 +1,7 @@
+third_party/bean-k4testing/gt.c: In function ‘main’:
+third_party/bean-k4testing/gt.c:110:75: warning: format ‘%c’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+  110 |                                         for (c = 0; c < 98; c++) printf("%c",primer[c]+'0');
+      |                                                                          ~^  ~~~~~~~~~~~~~
+      |                                                                           |           |
+      |                                                                           int         long int
+      |                                                                          %ld

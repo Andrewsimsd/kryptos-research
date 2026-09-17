@@ -1,0 +1,109 @@
+{
+  "run_id": "results/PRIMERS-0001/run-002",
+  "status": "completed",
+  "exit_status": 0,
+  "stages": [
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.1140643690014258
+    },
+    {
+      "name": "upstream-build",
+      "command": [
+        "cc",
+        "-std=gnu89",
+        "-O2",
+        "third_party/bean-k4testing/gt.c",
+        "-o",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/PRIMERS-0001/run-002/bean-gt"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.1164878729978227
+    },
+    {
+      "name": "upstream",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/results/PRIMERS-0001/run-002/bean-gt",
+        "10",
+        "5"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.06422518299950752
+    },
+    {
+      "name": "primers",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/debug/kryptos-research",
+        "primers",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.2654238739996799
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_primers.py",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/PRIMERS-0001/run-002/primers.json",
+        "--upstream",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/PRIMERS-0001/run-002/upstream.txt"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.6156355830025859
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/debug/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.007857726996007841
+    }
+  ],
+  "counters": {
+    "examined": 99999,
+    "simple_survivors": 1040,
+    "graph_survivors": 39,
+    "upstream_survivors": 39,
+    "rejections_verified": 99960
+  },
+  "exact_upstream_match": true,
+  "binary_sha256": "fd440a2a3cd7a78700ee0a8a60a06f98f884ab7e4f9c30ef827febd95edc9a9e",
+  "upstream_binary_sha256": "69bd1745bde13d3fa86ed074b905150362d500741db26649210e1456b57e0c4e",
+  "conclusion": "Necessary primer constraints only; no alphabet pair or plaintext recovered.",
+  "finished_at": "2026-09-17T13:31:46.895222+00:00",
+  "elapsed_seconds": 1.194309186997998,
+  "peak_child_memory": {
+    "value": 43372,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "baseline.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.stderr": "ee1d3fffa2022e962e63e0dbe4d35c9c198450a20c29fc09030f635dbb38bfcd",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "c63871574f68ad743c3640c31442e8e997114c7617416d137a82d84eedc0250f",
+    "primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "primers.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream-build.stderr": "f2c95f4ff15a37f143fdbedc651d607d5071cbb7646c6b1773810df1645deea2",
+    "upstream-build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "upstream.txt": "0d23a875aae0530786a4bb5dd235b12171588e34601cccce52468f7e45d44b16",
+    "verification.json": "b4ed6686cb0b8056f079fdb1534dca2149141c0a367288c2a48042490f8b384b",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

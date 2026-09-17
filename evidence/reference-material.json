@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-17T02:12:26Z",
+  "status": "reference_collection_not_complete_phase_1_fixtures",
+  "normalization": "Retain ASCII A-Z only for normalized ciphertext; preserve all question marks in inscription rows. No spelling corrections. Section ranges are zero-based half-open in the 865-letter normalized inscription.",
+  "inscription": {
+    "source_ids": [
+      "S210"
+    ],
+    "source_url": "https://www.elonka.com/kryptos/transcript.html",
+    "rows": [
+      "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJ",
+      "YQTQUXQBQVYUVLLTREVJYQTMKYRDMFD",
+      "VFPJUDEEHZWETZYVGWHKKQETGFQJNCE",
+      "GGWHKK?DQMCPFQZDQMMIAGPFXHQRLG",
+      "TIMVMZJANQLVKQEDAGDVFRPJUNGEUNA",
+      "QZGZLECGYUXUEENJTBJLBQCRTBJDFHRR",
+      "YIZETKZEMVDUFKSJHKFWHKUWQLSZFTI",
+      "HHDDDUVH?DWKBFUFPWNTDFIYCUQZERE",
+      "EVLDKFEZMOQQJLTTUGSYQPFEUNLAVIDX",
+      "FLGGTEZ?FKZBSFDQVGOGIPUFXHHDRKF",
+      "FHQNTGPUAECNUVPDJMQCLQUMUNEDFQ",
+      "ELZZVRRGKFFVOEEXBDMVPNFQXEZLGRE",
+      "DNQFMPNZGLFLPMRJQYALMGNUVPDXVKP",
+      "DQUMEBEDMHDAFMJGZNUPLGEWJLLAETG",
+      "ENDYAHROHNLSRHEOCPTEOIBIDYSHNAIA",
+      "CHTNREYULDSLLSLLNOHSNOSMRWXMNE",
+      "TPRNGATIHNRARPESLNNELEBLPIIACAE",
+      "WMTWNDITEENRAHCTENEUDRETNHAEOE",
+      "TFOLSEDTIWENHAEIOYTEYQHEENCTAYCR",
+      "EIFTBRSPAMHHEWENATAMATEGYEERLB",
+      "TEEFOASFIOTUETUAEOTOARMAEERTNRTI",
+      "BSEDDNIAAHTTMSTEWPIEROAGRIEWFEB",
+      "AECTDDHILCEIHSITEGOEAOSDDRYDLORIT",
+      "RKLMLEHAGTDHARDPNEOHMGFMFEUHE",
+      "ECDMRIPFEIMEHNLSSTTRTVDOHW?OBKR",
+      "UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO",
+      "TWTQSJQSSEKZZWATJKLUDIAWINFBNYP",
+      "VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+    ],
+    "row_numbering": "one-based top-to-bottom as printed in transcript; no metric coordinates inferred",
+    "letters": 865,
+    "question_marks": 4,
+    "visual_inspection_performed": false
+  },
+  "sections": [
+    {
+      "id": "K1",
+      "range": [
+        0,
+        63
+      ],
+      "ciphertext_as_inscribed_normalized": "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJYQTQUXQBQVYUVLLTREVJYQTMKYRDMFD",
+      "length": 63,
+      "keyword_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+      "indicator_key": "PALIMPSEST",
+      "key_source_id": "S203",
+      "irregular_plaintext_tokens": [
+        "IQLUSION"
+      ],
+      "plaintext_reference_url": "https://www.elonka.com/kryptos/mirrors/cypherpunks/1999/0930.html",
+      "complete_plaintext_fixture_status": "deferred_until_independent_phase_1_reconstruction"
+    },
+    {
+      "id": "K2",
+      "range": [
+        63,
+        432
+      ],
+      "ciphertext_as_inscribed_normalized": "VFPJUDEEHZWETZYVGWHKKQETGFQJNCEGGWHKKDQMCPFQZDQMMIAGPFXHQRLGTIMVMZJANQLVKQEDAGDVFRPJUNGEUNAQZGZLECGYUXUEENJTBJLBQCRTBJDFHRRYIZETKZEMVDUFKSJHKFWHKUWQLSZFTIHHDDDUVHDWKBFUFPWNTDFIYCUQZEREEVLDKFEZMOQQJLTTUGSYQPFEUNLAVIDXFLGGTEZFKZBSFDQVGOGIPUFXHHDRKFFHQNTGPUAECNUVPDJMQCLQUMUNEDFQELZZVRRGKFFVOEEXBDMVPNFQXEZLGREDNQFMPNZGLFLPMRJQYALMGNUVPDXVKPDQUMEBEDMHDAFMJGZNUPLGEWJLLAETG",
+      "length": 369,
+      "keyword_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+      "indicator_key": "ABSCISSA",
+      "key_source_id": "S203",
+      "irregular_plaintext_tokens": [
+        "UNDERGRUUND"
+      ],
+      "historical_decryption_ending": "IDBYROWS",
+      "historical_decryption_status": "superseded_as_intended_plaintext_but_valid_for_inscribed_ciphertext",
+      "corrected_reconstruction": {
+        "ciphertext_normalized": "VFPJUDEEHZWETZYVGWHKKQETGFQJNCEGGWHKKDQMCPFQZDQMMIAGPFXHQRLGTIMVMZJANQLVKQEDAGDVFRPJUNGEUNAQZGZLECGYUXUEENJTBJLBQCRTBJDFHRRYIZETKZEMVDUFKSJHKFWHKUWQLSZFTIHHDDDUVHDWKBFUFPWNTDFIYCUQZEREEVLDKFEZMOQQJLTTUGSYQPFEUNLAVIDXFLGGTEZFKZBSFDQVGOGIPUFXHHDRKFFHQNTGPUAECNUVPDJMQCLQUMUNEDFQELZZVRRGKFFVOEEXBDMVPNFQXEZLGREDNQFMPNZGLFLPMRJQYALMGNUVPDXVKPDQUMEBEDMHDAFMJGZNUPLGESWJLLAETG",
+        "length": 370,
+        "edit": {
+          "operation": "insert",
+          "index": 361,
+          "coordinate_system": "zero-based K2 letters-only ciphertext, before original final eight letters",
+          "letter": "S"
+        },
+        "expected_ending": "XLAYERTWO",
+        "source_id": "S211",
+        "status": "attributed_creator_confirmed_reconstruction_not_inscribed_text"
+      }
+    },
+    {
+      "id": "K3",
+      "range": [
+        432,
+        768
+      ],
+      "ciphertext_as_inscribed_normalized": "ENDYAHROHNLSRHEOCPTEOIBIDYSHNAIACHTNREYULDSLLSLLNOHSNOSMRWXMNETPRNGATIHNRARPESLNNELEBLPIIACAEWMTWNDITEENRAHCTENEUDRETNHAEOETFOLSEDTIWENHAEIOYTEYQHEENCTAYCREIFTBRSPAMHHEWENATAMATEGYEERLBTEEFOASFIOTUETUAEOTOARMAEERTNRTIBSEDDNIAAHTTMSTEWPIEROAGRIEWFEBAECTDDHILCEIHSITEGOEAOSDDRYDLORITRKLMLEHAGTDHARDPNEOHMGFMFEUHEECDMRIPFEIMEHNLSSTTRTVDOHW",
+      "length": 336,
+      "irregular_plaintext_tokens": [
+        "DESPARATLY"
+      ],
+      "expected_terminal_letter": "Q",
+      "plaintext_reference_url": "https://www.elonka.com/kryptos/mirrors/cypherpunks/1999/0930.html",
+      "source_ids": [
+        "S203",
+        "S204"
+      ],
+      "permutation": null,
+      "complete_plaintext_fixture_status": "deferred_until_explicit_permutation_and_independent_reconstruction",
+      "trailing_inscribed_question_mark_preserved_in_rows": true
+    }
+  ],
+  "k4_independent_transcription": {
+    "source_id": "S203",
+    "source_url": "https://www.elonka.com/kryptos/mirrors/cypherpunks/1999/0930.html",
+    "locator": "Jim Gillogly message dated 1999-06-16, final 97-character block",
+    "physical_fragments": [
+      "OBKR",
+      "UOXOGHULBSOLIFBBWFLRVQQPRNGKSSO",
+      "TWTQSJQSSEKZZWATJKLUDIAWINFBNYP",
+      "VTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR"
+    ],
+    "fragment_lengths": [
+      4,
+      31,
+      31,
+      31
+    ],
+    "normalized": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR",
+    "comparison_to_dunin_transcript": "exact_match",
+    "comparison_to_plan": "exact_match",
+    "transcriber": "prior_work_agent",
+    "method": "Read source block and independently enter four fragments; compare concatenation to separately entered full Dunin transcript and plan",
+    "independence_limit": "Two published transcript sources, not two independent direct examinations of copper; Gillogly attributes his original to Doug Gwyn."
+  },
+  "tableau": {
+    "source_ids": [
+      "S210"
+    ],
+    "rows_as_printed": [
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZABCD",
+      "AKRYPTOSABCDEFGHIJLMNQUVWXZKRYP",
+      "BRYPTOSABCDEFGHIJLMNQUVWXZKRYPT",
+      "CYPTOSABCDEFGHIJLMNQUVWXZKRYPTO",
+      "DPTOSABCDEFGHIJLMNQUVWXZKRYPTOS",
+      "ETOSABCDEFGHIJLMNQUVWXZKRYPTOSA",
+      "FOSABCDEFGHIJLMNQUVWXZKRYPTOSAB",
+      "GSABCDEFGHIJLMNQUVWXZKRYPTOSABC",
+      "HABCDEFGHIJLMNQUVWXZKRYPTOSABCD",
+      "IBCDEFGHIJLMNQUVWXZKRYPTOSABCDE",
+      "JCDEFGHIJLMNQUVWXZKRYPTOSABCDEF",
+      "KDEFGHIJLMNQUVWXZKRYPTOSABCDEFG",
+      "LEFGHIJLMNQUVWXZKRYPTOSABCDEFGH",
+      "MFGHIJLMNQUVWXZKRYPTOSABCDEFGHI",
+      "NGHIJLMNQUVWXZKRYPTOSABCDEFGHIJL",
+      "OHIJLMNQUVWXZKRYPTOSABCDEFGHIJL",
+      "PIJLMNQUVWXZKRYPTOSABCDEFGHIJLM",
+      "QJLMNQUVWXZKRYPTOSABCDEFGHIJLMN",
+      "RLMNQUVWXZKRYPTOSABCDEFGHIJLMNQ",
+      "SMNQUVWXZKRYPTOSABCDEFGHIJLMNQU",
+      "TNQUVWXZKRYPTOSABCDEFGHIJLMNQUV",
+      "UQUVWXZKRYPTOSABCDEFGHIJLMNQUVW",
+      "VUVWXZKRYPTOSABCDEFGHIJLMNQUVWX",
+      "WVWXZKRYPTOSABCDEFGHIJLMNQUVWXZ",
+      "XWXZKRYPTOSABCDEFGHIJLMNQUVWXZK",
+      "YXZKRYPTOSABCDEFGHIJLMNQUVWXZKR",
+      "ZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY",
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZABCD"
+    ],
+    "header_leading_blank_omitted": true,
+    "keyword_alphabet": "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+    "irregular_row": "The N-prefixed row has one extra final L relative to adjacent row lengths; preserved exactly, not corrected.",
+    "physical_orientation": "Gillogly describes tableau cut through from the other side of the copper from the ciphertext; no transform inferred.",
+    "orientation_source_id": "S213"
+  },
+  "aca_gromark_known_answer": {
+    "source_id": "S205",
+    "source_url": "https://www.cryptogram.org/downloads/aca.info/ciphers/Gromark.pdf",
+    "keyword": "ENIGMA",
+    "column_ranks": [
+      2,
+      6,
+      4,
+      3,
+      5,
+      1
+    ],
+    "primer": [
+      2,
+      3,
+      4,
+      5,
+      2
+    ],
+    "plaintext_alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "ciphertext_alphabet": "AJRXEBKSYGFPVIDOUMHQWNCLTZ",
+    "numeric_key": "23452579772664982037023072537978066",
+    "plaintext": "THEREAREUPTOTENSUBSTITUTESPERLETTER",
+    "ciphertext": "NFYCKBTIJCNWZYCACJNAYNLQPWWSTWPJQFL",
+    "last_check_digit": 6,
+    "status": "transcribed_not_yet_validated_against_project_implementation"
+  },
+  "physical_context": {
+    "source_ids": [
+      "S212",
+      "S213",
+      "S215"
+    ],
+    "site_sections": [
+      "Courtyard Plaza",
+      "Courtyard Lawn",
+      "Entrance"
+    ],
+    "metric_coordinates": null,
+    "bearings": null,
+    "uncertainty": "No survey-quality measurements or geometrical key justified by this collection. Aerial source explicitly qualifies slab locations and compass bearing.",
+    "photographs": [
+      {
+        "url": "https://www.voynich.net/Kryptos/",
+        "author": "Jim Gillogly",
+        "reported_capture_date": "1999-10-27",
+        "date_source_id": "S218",
+        "access": "gallery_text_only_images_not_inspected",
+        "license": "Copyright Jim Gillogly 1999; not copied"
+      },
+      {
+        "url": "https://www.elonka.com/kryptos/rubbings/images1.html",
+        "author": "Elonka Dunin / CIA photographer (specific attribution varies)",
+        "reported_capture_date": "2002-10-18",
+        "date_source_id": "S218",
+        "access": "index_only_images_not_inspected"
+      }
+    ]
+  },
+  "entrance_morse": {
+    "source_ids": [
+      "S212",
+      "S214"
+    ],
+    "reported_readings": [
+      "SOS",
+      "LUCID MEMORY",
+      "T IS YOUR POSITION",
+      "SHADOW FORCES",
+      "VIRTUALLY INVISIBLE",
+      "DIGETAL INTERPRETATU"
+    ],
+    "direction_dependent_readings": [
+      "RQ",
+      "YR"
+    ],
+    "raw_dots_dashes": null,
+    "orientation": null,
+    "status": "attributed_context_not_validated_character_fixture",
+    "uncertainties": [
+      "Aerial source explicitly gives RQ versus YR depending on reading direction.",
+      "Additional dots have uncertain status.",
+      "Wilson text has apparent Morse/letter inconsistencies (for example SOS beginning with two dots); do not repair these silently.",
+      "Raw physical Morse transcription and exact spatial coordinates require photograph inspection."
+    ]
+  },
+  "prior_repository": {
+    "url": "https://github.com/RichardBean/k4testing",
+    "commit": "6a5e3cb200d5ab72a62bb7f5124b4fdf163faf8c",
+    "commit_verification": "git ls-remote HEAD and cloned git rev-parse HEAD agree",
+    "local_inspection_checkout": "/tmp/k4-prior-work (ephemeral, not a committed evidence snapshot)",
+    "execution_status": "not_executed",
+    "file_sha256": {
+      "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "README.md": "7e9396ce4efef01a2c7e9c41eac5be8caf40f9c2e78653d9840a29757ddc97a9",
+      "grom-ic-list.c": "744ce3393ab0703d7f15f3cff59f3822545eff380b16dc83910830a40b44538d",
+      "gt.c": "11f22a1c010b13e3e18fd7dcccf149f76f0c12c7fca07d9fb5fd8513c57210d5",
+      "hannon-test.c": "9fa915a2ee7b3a03f682e5d472a849e617b573d83f250f1cd3f41e9a11de3f08",
+      "k4-bean3.c": "3890308d5acb1b72af86d574598f97048c89e7519aafd6774c7da4121a829ab7",
+      "k4-five.c": "9d7bf1c59547b6f3719c4a63b1dc8954db5639035faa9bedfed37bd2b49ab6f0",
+      "k4-perm-test.c": "e31c2834d0b9c63f7ce77bf94ce5cb4cfd26874579dd819a77530ebc7e1d40d5",
+      "k4-testy.c": "d8420b5b95449639c74e693f20b85c6537fff0120753540364082f9333f9d38c",
+      "k4testing.py": "bcbbe89ebd8f08fd858033f3f2b5415fe5e5e88aae60d3538e0423884b7491b2",
+      "kperm.cpp": "f91fc2a6fc8045ded0d60aae027b5c9e62daf86deb584025aefc91e6cac9d145",
+      "kryptos-k4-sage.txt": "e7bbdaa699367ee792c7357e90ef9e17d923350172a93e99fe0f34ad8cb89da4"
+    }
+  },
+  "unresolved": [
+    "Phase 1 requires complete independently verified K1-K3 plaintext fixtures and an explicit K3 position permutation.",
+    "Photos and rubbings are identified but not visually audited.",
+    "Exact Morse transcription, coordinates and orientation remain unverified.",
+    "Historical plaintext misspellings are preserved as tokens; no corrected spelling silently introduced."
+  ]
+}

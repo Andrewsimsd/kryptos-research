@@ -1,0 +1,90 @@
+{
+  "status": "verified",
+  "samples_regenerated": 10000,
+  "upstream_texts_checked": 10001,
+  "report_sha256": "152679e319729dd8366cf0716e01038ac65720913d22926c71e77c9ce8184dfc",
+  "statistics": [
+    {
+      "statistic": "width21_repeated_types",
+      "tail": ">=",
+      "observed": 11,
+      "samples": 10000,
+      "exceedances": 1,
+      "estimate_plus_one": 0.00019998000199980003,
+      "wilson_95": [
+        1.765267360112231e-05,
+        0.0005662688974013381
+      ],
+      "bonferroni_five": 0.000999900009999,
+      "null_mean": 3.4885,
+      "null_sd": 1.674236467766725,
+      "observed_minus_null_mean": 7.5115
+    },
+    {
+      "statistic": "kryptos_minor_sum",
+      "tail": "<=",
+      "observed": 21,
+      "samples": 10000,
+      "exceedances": 1,
+      "estimate_plus_one": 0.00019998000199980003,
+      "wilson_95": [
+        1.765267360112231e-05,
+        0.0005662688974013381
+      ],
+      "bonferroni_five": 0.000999900009999,
+      "null_mean": 60.9469,
+      "null_sd": 11.883731753536008,
+      "observed_minus_null_mean": -39.9469
+    },
+    {
+      "statistic": "repeated_plain_minor_sum",
+      "tail": "<=",
+      "observed": 47,
+      "samples": 10000,
+      "exceedances": 49,
+      "estimate_plus_one": 0.004999500049995001,
+      "wilson_95": [
+        0.0037086267628327185,
+        0.006471608423811247
+      ],
+      "bonferroni_five": 0.024997500249975005,
+      "null_mean": 84.4528,
+      "null_sd": 13.484990625135785,
+      "observed_minus_null_mean": -37.452799999999996
+    },
+    {
+      "statistic": "repeated_plain_below_five",
+      "tail": ">=",
+      "observed": 10,
+      "samples": 10000,
+      "exceedances": 34,
+      "estimate_plus_one": 0.0034996500349965005,
+      "wilson_95": [
+        0.002434181816300086,
+        0.004747205365455908
+      ],
+      "bonferroni_five": 0.0174982501749825,
+      "null_mean": 4.4876,
+      "null_sd": 1.7129057884191998,
+      "observed_minus_null_mean": 5.5124
+    },
+    {
+      "statistic": "adjacent_equal_pairs",
+      "tail": ">=",
+      "observed": 6,
+      "samples": 10000,
+      "exceedances": 1383,
+      "estimate_plus_one": 0.13838616138386162,
+      "wilson_95": [
+        0.1316726841799782,
+        0.14520510024136926
+      ],
+      "bonferroni_five": 0.6919308069193081,
+      "null_mean": 3.4952,
+      "null_sd": 1.8369477292508896,
+      "observed_minus_null_mean": 2.5048
+    }
+  ],
+  "interpretation": "Fixed historical five-test reproduction; no global selection correction or cipher identification.",
+  "implementation_review": "separate implementations by same coordinator; not fresh-context A7"
+}

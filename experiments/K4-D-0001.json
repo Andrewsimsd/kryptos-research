@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "experiment_id": "K4-D-0001",
+  "owner": "A0/A3",
+  "parent_experiment": null,
+  "evidence_version": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64"
+  },
+  "question": "Which precisely scoped aligned baseline models contradict the 24 published anchors?",
+  "model": {
+    "families": [
+      "pure_transposition",
+      "fixed_monoalphabetic_encryption",
+      "fixed_monoalphabetic_decryption",
+      "no_self_encryption",
+      "repeating_additive"
+    ],
+    "plaintext_alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "ciphertext_alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "equation": "c_i = p_i + k_(i mod t) (mod 26)",
+    "period_range_inclusive": [
+      1,
+      97
+    ],
+    "preprocessing": "none; preceding question mark excluded",
+    "key_phase": "canonical_zero",
+    "exceptions": []
+  },
+  "constraints": {
+    "training_cribs": [
+      "EAST",
+      "NORTHEAST",
+      "BERLIN",
+      "CLOCK"
+    ],
+    "holdout_cribs": []
+  },
+  "search": {
+    "method": "exact_crib_consistency_and_letter_multiplicities",
+    "random_seed": null,
+    "domain_size": 97,
+    "evaluation_cap": 97,
+    "additional_family_checks": 4,
+    "wall_time_cap_seconds": 180,
+    "budget_scope": "build, diagnosis and independent verification combined",
+    "external_spend_cap": 0
+  },
+  "toolchain": {
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "dependencies": "Cargo.lock with exact serde and serde_json versions; build --locked --offline",
+    "python": "standard library only; actual interpreter version recorded per run"
+  },
+  "validation": {
+    "reference_implementation": "verification/verify_baseline.py; pairwise independent derivation",
+    "planted_cases": "deterministic synthetic consistency tests, including all periods and key phases; no recovery claim",
+    "null_pipeline": "not applicable: exact contradictions and descriptive IC only; no statistical significance claim"
+  },
+  "falsification_criterion": "A purported contradiction with compatible equations, missed surviving period, or mismatch with independent pairwise verification invalidates the run.",
+  "outputs": [
+    "manifest.json",
+    "diagnosis.json",
+    "verification.json",
+    "completion.json",
+    "build.stdout",
+    "build.stderr",
+    "diagnose.stderr",
+    "verify.stderr"
+  ],
+  "status": "planned"
+}
