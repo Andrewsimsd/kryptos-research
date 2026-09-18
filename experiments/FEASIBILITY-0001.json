@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FEASIBILITY-0001",
+  "status": "planned",
+  "parent_experiment": "PRIMERS-0001",
+  "question": "Does each of the 39 registered decimal-primer survivors admit globally consistent, independent bijective plaintext and ciphertext alphabets for all 24 aligned crib equations?",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "docs/feasibility-conventions.md": "92ea698ff9418d3e4f8393b858a4ffb3dd789800a3c12a7c01aef9fd1a2b6f58",
+    "fixtures/feasibility-request.json": "bbac4033351996cb72afb2868976dfbaf8eb565011a07f9520756bdd96c5afe6",
+    "results/PRIMERS-0001/run-002/primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1"
+  },
+  "model": "c(C_i)-p(P_i)=k[i] modulo 26 with independently unknown bijective alphabets, a recurrence-expanded decimal primer, and all 24 aligned cribs",
+  "domain": {
+    "primers": "the exact 39 sorted survivors in PRIMERS-0001 run-002",
+    "key_offset": 0,
+    "recurrence": "k[i]=(k[i-5]+k[i-4]) modulo 10",
+    "message_length": 97,
+    "crib_equations": 24,
+    "alphabet_size": 26,
+    "component_root": "alphabetically lowest plaintext symbol at relative coordinate zero",
+    "global_symmetry": "first sorted component fixed at offset zero",
+    "unconstrained_letters": "placed alphabetically in unused alphabet slots"
+  },
+  "search": "derive exact bipartite graph coordinates, reject local contradictions, sort components by decreasing constrained size, then exhaustively backtrack over component offsets with plaintext and ciphertext bit masks",
+  "attempt_limit_per_primer": 10000000,
+  "evaluation_cap": 390000000,
+  "evaluation_unit": "candidate component offsets across all 39 primers; Python verifier has an independent 1000000-state cap per primer",
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "seed": null,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock offline; Python standard library; no network or stochastic input",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "primer_report_sha256": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+  "falsification_criterion": "Any malformed component, alphabet, key, equation or primer fails verification; any Rust/Python decision disagreement fails; any budget-exhausted decision leaves the milestone unresolved.",
+  "limitations": [
+    "A feasible witness proves compatibility with arbitrary independent alphabets, not the historical alphabets or intended plaintext.",
+    "The model uses only the registered 24 aligned crib letters and the declared primer recurrence.",
+    "The Python implementation is an independent algorithm written by the same project coordinator, not a fresh-context external review."
+  ],
+  "outputs": [
+    "manifest.json",
+    "feasibility.json",
+    "verification.json",
+    "baseline.json",
+    "primers.json",
+    "completion.json"
+  ]
+}

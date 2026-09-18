@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "candidate_count": 146016,
+  "equations_checked": 3504384,
+  "survivors": 0,
+  "best_match_count": 7,
+  "best_model_count": 7,
+  "signature_census": {
+    "physical_candidates": 146016,
+    "distinct_signatures": 123552,
+    "singleton_buckets": 101088,
+    "doubleton_buckets": 22464,
+    "unique_physical_candidates": 101088,
+    "maximum_bucket_size": 2
+  },
+  "calibration_cases": 144,
+  "retained_cases": 144,
+  "reencryption_cases": 144,
+  "unique_recovery_cases": 98,
+  "limitations": "Exact registered keyword family only; indicators are repurposed hypotheses; same-coordinator independent implementation, not external A7.",
+  "calibration_sha256": "2e5206a8f8aa2099ab4e8a6184814c67ad890d7208b8966933c92cb814019cd3",
+  "report_sha256": "e21406486640bd88a039c27d8aea76eb71bbc0fba2526ff06cd7d54f56b8ba87"
+}

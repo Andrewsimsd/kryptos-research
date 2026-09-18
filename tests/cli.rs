@@ -149,3 +149,100 @@ fn width_scan_requires_valid_explicit_request() {
         assert!(!output.status.success() && output.stdout.is_empty());
     }
 }
+
+#[test]
+fn feasibility_emits_complete_witnesses_for_registered_primers() {
+    let output = run(&["feasibility", "fixtures/feasibility-request.json"]);
+    assert!(output.status.success());
+    let report: serde_json::Value = serde_json::from_slice(&output.stdout).unwrap();
+    let results = report["results"].as_array().unwrap();
+    assert_eq!(results.len(), 39);
+    assert!(results.iter().all(|result| {
+        result["report"]["decision"]["status"] == "feasible"
+            && result["crib_equations"].as_array().unwrap().len() == 24
+    }));
+}
+
+#[test]
+fn feasibility_requires_a_valid_explicit_request() {
+    for args in [&["feasibility"][..], &["feasibility", "Cargo.toml"][..]] {
+        let output = run(args);
+        assert!(!output.status.success() && output.stdout.is_empty());
+    }
+}
+
+#[test]
+fn structured_alphabets_emits_complete_canonical_coverage() {
+    let output = run(&[
+        "structured-alphabets",
+        "fixtures/structured-alphabets-request.json",
+    ]);
+    assert!(output.status.success());
+    let report: serde_json::Value = serde_json::from_slice(&output.stdout).unwrap();
+    assert_eq!(report["models_evaluated"], 16_224);
+    assert_eq!(report["equation_evaluations"], 389_376);
+    assert_eq!(
+        report["rejections"].as_array().unwrap().len()
+            + report["survivors"].as_array().unwrap().len(),
+        16_224
+    );
+}
+
+#[test]
+fn structured_alphabets_requires_a_valid_explicit_request() {
+    for args in [
+        &["structured-alphabets"][..],
+        &["structured-alphabets", "Cargo.toml"][..],
+    ] {
+        let output = run(args);
+        assert!(!output.status.success() && output.stdout.is_empty());
+    }
+}
+
+#[test]
+fn keyword_calibration_gates_complete_k4_evaluation() {
+    let directory = std::env::temp_dir();
+    let calibration_path = directory.join(format!(
+        "kryptos-keyword-calibration-{}.json",
+        std::process::id()
+    ));
+    let calibration = run(&[
+        "keyword-calibrate",
+        "fixtures/keyword-alphabets-request.json",
+    ]);
+    assert!(calibration.status.success());
+    std::fs::write(&calibration_path, &calibration.stdout).unwrap();
+    let report = Command::new(env!("CARGO_BIN_EXE_kryptos-research"))
+        .args([
+            "keyword-alphabets",
+            "fixtures/keyword-alphabets-request.json",
+        ])
+        .arg(&calibration_path)
+        .current_dir(env!("CARGO_MANIFEST_DIR"))
+        .output()
+        .unwrap();
+    std::fs::remove_file(calibration_path).unwrap();
+    assert!(report.status.success());
+    let value: serde_json::Value = serde_json::from_slice(&report.stdout).unwrap();
+    assert_eq!(value["candidate_count"], 146_016);
+    assert_eq!(value["equation_evaluations"], 3_504_384);
+}
+
+#[test]
+fn keyword_commands_require_complete_inputs_and_passing_gate() {
+    for args in [
+        &["keyword-calibrate"][..],
+        &[
+            "keyword-alphabets",
+            "fixtures/keyword-alphabets-request.json",
+        ][..],
+        &[
+            "keyword-alphabets",
+            "fixtures/keyword-alphabets-request.json",
+            "Cargo.toml",
+        ][..],
+    ] {
+        let output = run(args);
+        assert!(!output.status.success() && output.stdout.is_empty());
+    }
+}

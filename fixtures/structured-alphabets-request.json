@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "primers": [
+    "10319", "12042", "16795", "16953", "20173", "20707", "22856",
+    "26717", "30016", "30640", "30690", "30987", "36650", "38175",
+    "38254", "38888", "40909", "44157", "52654", "54258", "56852",
+    "58456", "60101", "60319", "62389", "66953", "70094", "70173",
+    "70410", "70460", "72856", "80303", "84393", "84501", "84551",
+    "88254", "94157", "98800", "98850"
+  ],
+  "constructions": [
+    {"id": "az-forward", "order": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"},
+    {"id": "az-reversed", "order": "ZYXWVUTSRQPONMLKJIHGFEDCBA"},
+    {"id": "kryptos-forward", "order": "KRYPTOSABCDEFGHIJLMNQUVWXZ"},
+    {"id": "kryptos-reversed", "order": "ZXWVUQNMLJIHGFEDCBASOTPYRK"}
+  ],
+  "alphabet_pairs": [
+    {"plaintext": "az-forward", "ciphertext": "az-forward"},
+    {"plaintext": "az-forward", "ciphertext": "az-reversed"},
+    {"plaintext": "az-forward", "ciphertext": "kryptos-forward"},
+    {"plaintext": "az-forward", "ciphertext": "kryptos-reversed"},
+    {"plaintext": "az-reversed", "ciphertext": "az-forward"},
+    {"plaintext": "az-reversed", "ciphertext": "az-reversed"},
+    {"plaintext": "az-reversed", "ciphertext": "kryptos-forward"},
+    {"plaintext": "az-reversed", "ciphertext": "kryptos-reversed"},
+    {"plaintext": "kryptos-forward", "ciphertext": "az-forward"},
+    {"plaintext": "kryptos-forward", "ciphertext": "az-reversed"},
+    {"plaintext": "kryptos-forward", "ciphertext": "kryptos-forward"},
+    {"plaintext": "kryptos-forward", "ciphertext": "kryptos-reversed"},
+    {"plaintext": "kryptos-reversed", "ciphertext": "az-forward"},
+    {"plaintext": "kryptos-reversed", "ciphertext": "az-reversed"},
+    {"plaintext": "kryptos-reversed", "ciphertext": "kryptos-forward"},
+    {"plaintext": "kryptos-reversed", "ciphertext": "kryptos-reversed"}
+  ],
+  "ciphertext_rotations": [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+    13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+  ],
+  "key_offset": 0
+}

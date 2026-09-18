@@ -1,0 +1,136 @@
+{
+  "run_id": "results/KEYWORD-ALPHABETS-0001/run-001",
+  "status": "completed",
+  "exit_status": 0,
+  "stages": [
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 2.01940693299548
+    },
+    {
+      "name": "calibrate",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "keyword-calibrate",
+        "fixtures/keyword-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.06471261899423553
+    },
+    {
+      "name": "evaluate",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "keyword-alphabets",
+        "fixtures/keyword-alphabets-request.json",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0001/run-001/calibration.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.16529276100482093
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_keyword_alphabets.py",
+        "--calibration",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0001/run-001/calibration.json",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0001/run-001/keyword-alphabets.json",
+        "--request",
+        "fixtures/keyword-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.1660179960017558
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.003707203002704773
+    },
+    {
+      "name": "primers",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "primers",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.06410437399608782
+    },
+    {
+      "name": "feasibility",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "feasibility",
+        "fixtures/feasibility-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.016333273000782356
+    },
+    {
+      "name": "structured",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "structured-alphabets",
+        "fixtures/structured-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.11529777399846353
+    }
+  ],
+  "binary_sha256": "f89bc821a72236eed53207a3c5f31b28a5fef008f07ae7ed22fb287fe86367cb",
+  "counters": {
+    "candidate_count": 146016,
+    "equations_checked": 3504384,
+    "survivors": 0,
+    "best_match_count": 7,
+    "best_model_count": 7,
+    "calibration_cases": 144,
+    "retained_cases": 144,
+    "reencryption_cases": 144,
+    "unique_recovery_cases": 98
+  },
+  "conclusion": "Exact decision for the registered three-keyword/two-constructor family only; no plaintext or historical mechanism recovered.",
+  "finished_at": "2026-09-18T13:25:02.928953+00:00",
+  "elapsed_seconds": 3.6280310680012917,
+  "peak_child_memory": {
+    "value": 321324,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "baseline.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.stderr": "9b915d45513b75b3614a88406d7469bafb041c6c3a90c80093a99e0f76544ca9",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "calibrate.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "calibration.json": "2e5206a8f8aa2099ab4e8a6184814c67ad890d7208b8966933c92cb814019cd3",
+    "evaluate.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+    "feasibility.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "keyword-alphabets.json": "e21406486640bd88a039c27d8aea76eb71bbc0fba2526ff06cd7d54f56b8ba87",
+    "manifest.json": "b631e036633acef4ed30915749da0bd9032f1376f20c6a68ea85c96f3e90a6a4",
+    "primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "primers.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "structured-alphabets.json": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+    "structured.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification.json": "7eaf29307cadcc1670bedc333cf4f54a9f3a23bf31f25b36e397d64466e9bebe",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "experiment_id": "KEYWORD-ALPHABETS-0002",
+  "status": "planned_amendment_unblinded",
+  "parent_experiment": "KEYWORD-ALPHABETS-0001",
+  "question": "Does the already-observed zero-survivor result for the unchanged keyword-alphabet domain survive decoded-candidate inverse recovery, exact accounting, independent regeneration and a current-code foundations regression?",
+  "amendment_disclosure": "KEYWORD-ALPHABETS-0001/run-001 observed the K4 result before this amendment. Its forward-only reencryption gate was tautological and its operation cap omitted planted decryption and final reencryption. It remains immutable and superseded; this run is unblinded.",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "docs/keyword-alphabet-conventions-v2.md": "e3ea9ccafec0b6d6d92f4cb647dd4dd22426c5e9fceca4fa7a0185f2532cc313",
+    "fixtures/keyword-alphabets-request.json": "1856156d5ac26e981c1911496b30366a0eefcc1e09f5e38161809a5a9a0142d6",
+    "fixtures/known-answers.json": "89acd3d2690dcd9aac49f86758ac6ed28d539befec0cb5419eaefee273245613",
+    "results/PRIMERS-0001/run-002/primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "results/FEASIBILITY-0001/run-001/feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+    "results/STRUCTURED-ALPHABETS-0001/run-002/structured-alphabets.json": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+    "experiments/KEYWORD-ALPHABETS-0001.json": "7bc68e602756e6b4726e4aee369abbaef4574658497b6e10bb4d70ee605c27e3",
+    "results/KEYWORD-ALPHABETS-0001/run-001/completion.json": "abf477ace8fe302c02717a0ce4596f0664d196708c27acaa93b51be197676cf8",
+    "results/KEYWORD-ALPHABETS-0001/run-001/keyword-alphabets.json": "e21406486640bd88a039c27d8aea76eb71bbc0fba2526ff06cd7d54f56b8ba87",
+    "results/FOUNDATIONS-0001/run-002/fixture-traces.json": "5b2c8343d49c50dfc25059fbaf18dbab07904fba13da5b95d387b3f6fe9be800",
+    "results/FOUNDATIONS-0001/run-002/verification.json": "05fae48ff395b80ff4b44f3110932de5fe4e6ff31f0b0f37eec5a79ab29b53b2"
+  },
+  "model": "Unchanged 39-primer by 12 plaintext orders by 12 ciphertext orders by 26 relative rotations; corrected calibration reconstructs recovered physical candidates from canonical IDs and exercises separate inverse and forward paths.",
+  "candidate_model_count": 146016,
+  "k4_equation_count": 3504384,
+  "operation_cap": 7050672,
+  "operation_accounting": {
+    "signature_equation_evaluations": 3504384,
+    "planted_encryption_positions": 13968,
+    "planted_decryption_positions": 13968,
+    "planted_reencryption_positions": 13968,
+    "k4_equation_evaluations": 3504384,
+    "total": 7050672
+  },
+  "calibration_gate": {
+    "signature_census": "all physical candidate IDs retained in exact signature buckets",
+    "planted_cases": 144,
+    "message_length": 97,
+    "required_true_candidate_retention": 144,
+    "required_plaintext_recovery": 144,
+    "required_recovered_plaintext_reencryption": 144,
+    "candidate_reconstruction": "locate retained true ID, decode canonical coordinates, and reconstruct key and alphabets without retaining construction model object",
+    "unique_recovery": "reported separately, not a gate",
+    "seed": 1263222081,
+    "rng": "xorshift32 shifts 13,17,5; next_u32 modulo 26"
+  },
+  "foundations_regression": {
+    "seed": 1261723442,
+    "cases_per_family": 100,
+    "published_fixture_pairs": 5,
+    "synthetic_message_pairs": 600,
+    "fixture_traces_sha256": "5b2c8343d49c50dfc25059fbaf18dbab07904fba13da5b95d387b3f6fe9be800",
+    "verification_sha256": "05fae48ff395b80ff4b44f3110932de5fe4e6ff31f0b0f37eec5a79ab29b53b2",
+    "generated_request_sha256": {
+      "vigenere": "e32c323bd6eee59b5c035a1f6258bf98e94866a97bec2d411cca20d8d68930c0",
+      "beaufort": "2852bc0ea05635c2f0bf1ebcd3c7bf0ed64e26641c65000afb71bceba89f007c",
+      "variant_beaufort": "51fcdc3b9873cf510c9f853b7289027406ed4e29441b62a8422a89b70cacf898",
+      "gromark": "844589a5d112fe5cb6a73c23a66db0f389721cd6711a621861b2018ba0f80979",
+      "columnar": "d3f63b250578f719356385580ce73a08d6403b193fc7a33102cdb16816df9ed1",
+      "compound": "9fd8714f5a20cebf472f6b97cc16cbc553072c3f7ea0f3a932d46c00a93981f9"
+    },
+    "generated_output_sha256": {
+      "vigenere": "cd4cb2ca48989a0a8f0cb45223e5b1e5bdf9da0a8777bea803110445c1b45124",
+      "beaufort": "0f8278d753c10feb5ba74a03d608cb91a82b3512591c495565fea07a461206ea",
+      "variant_beaufort": "ba007c34f5fe8c93665093d4f9ff3996edbecafd54e341ace356cb7b52322ace",
+      "gromark": "f5564e5b2b57fc9023476536d5e2a9329049348a97aa44d775f6955c9cb9f7c2",
+      "columnar": "42fcd7ad8e4c9ddc353164d2d41d513140a34ae491b61c79c164d55eada8aedd",
+      "compound": "140558d4459a11858ba2f924adb2dbd8ecb20e7489284d9e11b5dbe1b9a2aee4"
+    }
+  },
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock offline; Python standard library; no network, corpus, dictionary or stochastic K4 search",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "primer_report_sha256": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+  "feasibility_report_sha256": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+  "structured_report_sha256": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+  "falsification_criterion": "Any missed planted true ID, wrong recovered plaintext, failed recovered-plaintext reencryption, operation mismatch, Rust/Python disagreement, foundations drift, malformed compact certificate, changed upstream regression or K4 survivor falsifies the applicable amended gate or scoped exclusion.",
+  "limitations": [
+    "The K4 result was observed in superseded run 0001 before this amendment; 0002 is unblinded.",
+    "PALIMPSEST and ABSCISSA remain repurposed hypotheses rather than K4 evidence.",
+    "Only the same finite keyword-fill and ACA-transposed family is tested.",
+    "A zero-survivor result excludes only this exact family.",
+    "The Python verifier is independently implemented within the same coordinated project, not external A7 review."
+  ],
+  "outputs": [
+    "manifest.json", "foundation-fixture-traces.json", "foundation-verification.json",
+    "calibration.json", "keyword-alphabets.json", "verification.json", "baseline.json",
+    "primers.json", "feasibility.json", "structured-alphabets.json", "completion.json"
+  ]
+}

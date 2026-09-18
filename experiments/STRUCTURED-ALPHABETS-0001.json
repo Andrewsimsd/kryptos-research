@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "experiment_id": "STRUCTURED-ALPHABETS-0001",
+  "status": "planned",
+  "parent_experiment": "FEASIBILITY-0001",
+  "question": "Does any ordered pair of the registered A-Z or KRYPTOS-deduplicated alphabet orders, forward or reversed and at any relative rotation, satisfy all 24 aligned crib equations for any of the 39 registered decimal-primer survivors?",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "docs/structured-alphabet-conventions.md": "6782be92592eda2299327a2ac00628ddbbf9e41c56ca8a5292be63b9da5fc1df",
+    "fixtures/structured-alphabets-request.json": "c55148d710673bd9fa60d6c0313486d48d7a3de1a742c8119159c7cc9cdf1bfb",
+    "results/PRIMERS-0001/run-002/primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "results/FEASIBILITY-0001/run-001/feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5"
+  },
+  "model": "c(C_i)-p(P_i)=k[i] modulo 26 at all 24 aligned cribs, with an ordered plaintext/ciphertext pair drawn from four registered alphabet orders and every relative rotation",
+  "domain": {
+    "primers": "the exact 39 sorted survivors in PRIMERS-0001 run-002",
+    "alphabet_orders": [
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "ZYXWVUTSRQPONMLKJIHGFEDCBA",
+      "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+      "ZXWVUQNMLJIHGFEDCBASOTPYRK"
+    ],
+    "ordered_pairs": 16,
+    "plaintext_rotation": 0,
+    "ciphertext_left_rotations": "every integer 0 through 25",
+    "key_offset": 0,
+    "recurrence": "k[i]=(k[i-5]+k[i-4]) modulo 10",
+    "message_length": 97,
+    "crib_equations": 24,
+    "global_symmetry": "common rotation of both alphabets preserves index differences, so plaintext rotation zero and all relative ciphertext rotations are complete"
+  },
+  "candidate_model_count": 16224,
+  "evaluation_cap": 389376,
+  "evaluation_unit": "individual crib equations; exactly 24 are evaluated for every candidate model",
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "seed": null,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock offline; Python standard library; no network or stochastic input",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "primer_report_sha256": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+  "feasibility_report_sha256": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+  "prior_observation": "Before registration, an exploratory read-only Python probe evaluated only ciphertext rotation zero. It found no full match, a best score of 6/24, and histogram 0:264, 1:225, 2:87, 3:38, 4:6, 5:3, 6:1. It did not inspect rotations 1-25 and did not alter this complete domain.",
+  "falsification_criterion": "Any survivor falsifies the scoped exclusion; any missing or duplicate canonical model, incorrect first-mismatch certificate, recurrence, trace, histogram, aggregate, regression hash, or Rust/Python disagreement fails the experiment.",
+  "limitations": [
+    "A zero-survivor result excludes only the four registered explicit alphabet orders, their ordered pairs and relative rotations under this exact recurrence model.",
+    "No dictionary, other keyword alphabet, tableau convention, key offset, transposition, language score or inferred plaintext is tested.",
+    "A survivor would establish crib compatibility only, not plaintext recovery or historical attribution.",
+    "The Python implementation is an independently derived algorithm written by the same project coordinator, not a fresh-context external A7 review."
+  ],
+  "outputs": [
+    "manifest.json",
+    "structured-alphabets.json",
+    "verification.json",
+    "baseline.json",
+    "primers.json",
+    "feasibility.json",
+    "completion.json"
+  ]
+}

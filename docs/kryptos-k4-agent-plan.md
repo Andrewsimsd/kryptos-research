@@ -29,6 +29,29 @@ and complete Rust/Python agreement. Width 21 is selected; the precision run
 records 441 global exceedances among 100,000 permutations. Broader historical
 selection and cipher-family calibration remain outside this correction.
 
+[Milestone 6](../reports/milestone-6.md) completes global two-alphabet
+feasibility for the 39 decimal-primer survivors. Exact component-offset packing
+and an independent Python search find checked complete alphabet witnesses for
+all 39, with no infeasible or unresolved instances. This closes the prior
+necessary-versus-sufficient gap, but arbitrary compatible alphabets do not
+recover plaintext, keyword constructions, or historical attribution.
+
+[Milestone 7](../reports/milestone-7.md) completes the first registered
+structured-alphabet restriction. Across all 39 primers, all ordered pairs of
+forward/reversed A-Z and KRYPTOS-deduplicated orders, and all relative
+rotations, all 16,224 models are exactly rejected. This excludes only that
+finite family and leaves broader keyword and compound constructions open.
+
+[Milestone 8](../reports/milestone-8.md) completes the next registered
+keyword-alphabet restriction. After a 144-case planted calibration gate, all
+146,016 combinations derived from KRYPTOS, PALIMPSEST and ABSCISSA under two
+frozen constructors, reversal and relative rotation are exactly rejected. This
+closes only that finite family; other tableau rules and key schedules remain.
+The final record is the unblinded `KEYWORD-ALPHABETS-0002` amendment: it
+supersedes a tautological forward-only calibration check in `0001`, recovers
+all planted plaintext through reconstructed candidate IDs, and preserves the
+same zero-survivor K4 decision.
+
 ## 1. Objective and definition of success
 
 Recover the intended 97-letter K4 plaintext and a defensible explanation of the encryption procedure. Treat these as separate achievements:
@@ -248,6 +271,17 @@ KRYPTOSABCDEFGHIJLMNQUVWXZ
 ```
 
 Add reversed versions and documented tableau conventions as explicit branches. Explore separately keyed plaintext and ciphertext alphabets only after the fixed-alphabet branches.
+
+Implementation status: [Milestone 7](../reports/milestone-7.md) exactly exhausts
+the four explicit forward/reversed orders, all ordered plaintext/ciphertext
+pairs and all relative rotations for the 39 registered decimal primers. Its
+zero survivors close that fixed-order branch under the stated recurrence.
+[Milestone 8](../reports/milestone-8.md) adds three provenance-bound keywords,
+ordinary keyword fill and ACA transposed construction, reversal, all ordered
+pairs and relative rotations. Its 146,016 calibrated models also have zero
+survivors. Its amended final run discloses that K4 was already observed before
+the inverse-recovery gate was corrected. Dictionary searches and additional
+documented tableau conventions remain untested.
 
 For a general additive model, let `a` and `b` map letters to positions in plaintext and ciphertext alphabets:
 

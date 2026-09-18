@@ -592,3 +592,49 @@ Work is done only when:
 - The README is updated if needed.
 - Clippy pedantic compliance is preserved.
 - Formatting, tests, docs, and validation commands pass.
+
+# Agent workflow
+
+These orchestration instructions apply to the primary agent. Subagents must not
+spawn additional agents unless explicitly instructed by the primary agent.
+
+## Implementation tasks
+
+For every non-trivial code change:
+
+1. Spawn the `planner` agent first.
+   - Give it the complete request and relevant constraints.
+   - Ask it to inspect the repository and produce an implementation plan.
+   - Wait for it to finish before implementation begins.
+
+2. Spawn the `implementer` agent.
+   - Provide the original request and the planner's conclusions.
+   - Ask it to implement the change, add or update tests, and run the appropriate
+     formatting, linting, and test commands.
+   - Only the implementer should edit source files during this phase.
+
+3. After implementation, spawn the `reviewer` agent.
+   - Provide the original requirements and ask it to review the resulting diff.
+   - The reviewer must check correctness, regressions, security, test coverage,
+     documentation, and repository conventions.
+   - The reviewer must not edit files.
+
+4. If the reviewer finds actionable problems:
+   - Send the findings back to the `implementer`.
+   - Have the implementer correct them.
+   - Run the `reviewer` again on the corrected diff.
+
+5. The primary agent performs final verification and reports:
+   - What changed
+   - Tests and checks executed
+   - Any unresolved risks or reviewer findings
+
+## Exceptions
+
+The primary agent may skip this workflow for:
+
+- Read-only questions
+- Trivial documentation or spelling corrections
+- Tasks where the user explicitly requests a different workflow
+
+Do not run multiple write-capable agents concurrently on the same working tree.

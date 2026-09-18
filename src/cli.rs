@@ -3,9 +3,11 @@
 use std::{error::Error, ffi::OsString, fs, io::Write, path::PathBuf};
 
 use kryptos_research::feasibility::batch;
+use kryptos_research::keyword_alphabets::{self, CalibrationReport};
 use kryptos_research::primers::filter_decimal_primers;
 use kryptos_research::statistics::width_scan::{ScanRequest, scan};
 use kryptos_research::statistics::{SimulationRequest, StatisticModel, simulate};
+use kryptos_research::structured_alphabets::batch as structured_batch;
 use kryptos_research::{diagnosis::diagnose, evidence::Evidence, transforms::execute_batch};
 
 const HELP: &str = "Usage: kryptos-research <validate|diagnose> [EVIDENCE.json]\n\
@@ -14,6 +16,9 @@ const HELP: &str = "Usage: kryptos-research <validate|diagnose> [EVIDENCE.json]\
     \x20      kryptos-research statistics REQUEST.json\n\
     \x20      kryptos-research width-scan REQUEST.json\n\
     \x20      kryptos-research feasibility REQUEST.json\n\
+    \x20      kryptos-research structured-alphabets REQUEST.json\n\
+    \x20      kryptos-research keyword-calibrate REQUEST.json\n\
+    \x20      kryptos-research keyword-alphabets REQUEST.json CALIBRATION.json\n\
     \n\
     validate  Check the 97-letter manifest, line layout, sources, and anchors.\n\
     diagnose  Emit JSON necessary-condition checks and contradiction witnesses.\n\
@@ -22,6 +27,9 @@ const HELP: &str = "Usage: kryptos-research <validate|diagnose> [EVIDENCE.json]\
     statistics Simulate five fixed statistics using evidence/k4.json and an explicit seed.\n\
     width-scan Calibrate and evaluate a maximum-statistic scan over widths 1-48.\n\
     feasibility Find complete alphabet witnesses for explicitly supplied primers.\n\
+    structured-alphabets Exhaust a finite family of named alphabet orders and rotations.\n\
+    keyword-calibrate Census keyword signatures and run planted recovery cases.\n\
+    keyword-alphabets Evaluate K4 only after an exact passing calibration report.\n\
     \n\
     EVIDENCE.json defaults to evidence/k4.json relative to the current directory.\n\
     Inputs are strict uppercase ASCII; no implicit normalization is performed.\n\
@@ -37,6 +45,9 @@ enum Command {
     Statistics(PathBuf),
     WidthScan(PathBuf),
     Feasibility(PathBuf),
+    StructuredAlphabets(PathBuf),
+    KeywordCalibrate(PathBuf),
+    KeywordAlphabets(PathBuf, PathBuf),
 }
 
 fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'static str> {
@@ -51,9 +62,12 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
         Some("statistics") => "statistics",
         Some("width-scan") => "width-scan",
         Some("feasibility") => "feasibility",
+        Some("structured-alphabets") => "structured-alphabets",
+        Some("keyword-calibrate") => "keyword-calibrate",
+        Some("keyword-alphabets") => "keyword-alphabets",
         _ => {
             return Err(
-                "expected validate, diagnose, transform, primers, statistics, width-scan or feasibility; use --help for usage",
+                "expected validate, diagnose, transform, primers, statistics, width-scan, feasibility, structured-alphabets, keyword-calibrate or keyword-alphabets; use --help for usage",
             );
         }
     };
@@ -65,9 +79,30 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
         };
     }
     let supplied_path = arguments.next();
+    if command == "keyword-alphabets" {
+        let Some(request) = supplied_path else {
+            return Err("keyword-alphabets requires request and calibration JSON files");
+        };
+        let Some(calibration) = arguments.next() else {
+            return Err("keyword-alphabets requires request and calibration JSON files");
+        };
+        return if arguments.next().is_none() {
+            Ok(Command::KeywordAlphabets(
+                request.into(),
+                calibration.into(),
+            ))
+        } else {
+            Err("keyword-alphabets accepts exactly two JSON files")
+        };
+    }
     if matches!(
         command,
-        "transform" | "statistics" | "width-scan" | "feasibility"
+        "transform"
+            | "statistics"
+            | "width-scan"
+            | "feasibility"
+            | "structured-alphabets"
+            | "keyword-calibrate"
     ) && supplied_path.is_none()
     {
         return Err("command requires a JSON request file; use --help for usage");
@@ -88,6 +123,10 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
         Command::WidthScan(path)
     } else if command == "feasibility" {
         Command::Feasibility(path)
+    } else if command == "structured-alphabets" {
+        Command::StructuredAlphabets(path)
+    } else if command == "keyword-calibrate" {
+        Command::KeywordCalibrate(path)
     } else {
         Command::Transform(path)
     })
@@ -98,6 +137,9 @@ pub(crate) fn run(
     output: &mut impl Write,
 ) -> Result<(), Box<dyn Error>> {
     let command = parse(arguments)?;
+    if run_keyword_command(&command, output)? {
+        return Ok(());
+    }
     let path = match &command {
         Command::Help => return Ok(output.write_all(HELP.as_bytes())?),
         Command::Validate(path)
@@ -106,7 +148,10 @@ pub(crate) fn run(
         | Command::Statistics(path)
         | Command::WidthScan(path)
         | Command::Feasibility(path)
+        | Command::StructuredAlphabets(path)
+        | Command::KeywordCalibrate(path)
         | Command::Primers(path) => path,
+        Command::KeywordAlphabets(_, _) => unreachable!("handled above"),
     };
     let text = fs::read_to_string(path).map_err(|error| {
         std::io::Error::new(
@@ -143,6 +188,16 @@ pub(crate) fn run(
         writeln!(output)?;
         return Ok(());
     }
+    if matches!(command, Command::StructuredAlphabets(_)) {
+        let request: structured_batch::Request = serde_json::from_str(&text)?;
+        let evidence = Evidence::from_json(&fs::read_to_string("evidence/k4.json")?)?;
+        serde_json::to_writer_pretty(
+            &mut *output,
+            &structured_batch::evaluate_request(&evidence, &request)?,
+        )?;
+        writeln!(output)?;
+        return Ok(());
+    }
     let evidence = Evidence::from_json(&text)?;
     match command {
         Command::Validate(_) => writeln!(
@@ -164,9 +219,46 @@ pub(crate) fn run(
         | Command::Transform(_)
         | Command::Statistics(_)
         | Command::WidthScan(_)
-        | Command::Feasibility(_) => {}
+        | Command::Feasibility(_)
+        | Command::StructuredAlphabets(_)
+        | Command::KeywordCalibrate(_)
+        | Command::KeywordAlphabets(_, _) => {}
     }
     Ok(())
+}
+
+fn run_keyword_command(command: &Command, output: &mut impl Write) -> Result<bool, Box<dyn Error>> {
+    match command {
+        Command::KeywordCalibrate(request_path) => {
+            let request: keyword_alphabets::Request =
+                serde_json::from_str(&fs::read_to_string(request_path)?)?;
+            serde_json::to_writer_pretty(
+                &mut *output,
+                &keyword_alphabets::calibrate(&load_default_evidence()?, &request)?,
+            )?;
+            writeln!(output)?;
+            Ok(true)
+        }
+        Command::KeywordAlphabets(request_path, calibration_path) => {
+            let request: keyword_alphabets::Request =
+                serde_json::from_str(&fs::read_to_string(request_path)?)?;
+            let calibration: CalibrationReport =
+                serde_json::from_str(&fs::read_to_string(calibration_path)?)?;
+            serde_json::to_writer_pretty(
+                &mut *output,
+                &keyword_alphabets::evaluate_k4(&load_default_evidence()?, &request, &calibration)?,
+            )?;
+            writeln!(output)?;
+            Ok(true)
+        }
+        _ => Ok(false),
+    }
+}
+
+fn load_default_evidence() -> Result<Evidence, Box<dyn Error>> {
+    Ok(Evidence::from_json(&fs::read_to_string(
+        "evidence/k4.json",
+    )?)?)
 }
 
 #[cfg(test)]

@@ -158,13 +158,12 @@ totals, adjusted-versus-local ordering, CLI failures and corrupted reports. The
 CLI must reproduce the complete preserved pilot byte-for-byte. No dependencies,
 unsafe code or warning suppressions were added.
 
-The next bounded work package is **global alphabet feasibility for the 39
-Gromark primer survivors** from milestone 3: register the same model, solve the
-component offsets subject to both alphabets' all-different constraints, and
-produce checked alphabet witnesses or exact unsatisfiability results for each
-primer. This closes an existing necessary-versus-sufficient gap before any
-heuristic language search. Compatible alphabets alone would still not establish
-intended plaintext or historical use.
+The next bounded work package, **global alphabet feasibility for the 39 Gromark
+primer survivors**, was subsequently completed in
+[milestone 6](milestone-6.md). All 39 admit checked complete alphabet witnesses
+under the arbitrary independent-alphabet model; none was infeasible or
+unresolved. The result closes the necessary-versus-sufficient gap but does not
+establish intended plaintext or historical use.
 
 The broader Phase 3 battery, uniform-string null, held-out synthetic cipher
 calibration, source-access gaps and fresh-context review remain open. The fixed

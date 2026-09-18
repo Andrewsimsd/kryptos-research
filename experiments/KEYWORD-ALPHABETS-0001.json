@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "KEYWORD-ALPHABETS-0001",
+  "status": "planned",
+  "parent_experiment": "STRUCTURED-ALPHABETS-0001",
+  "question": "Does any registered KRYPTOS, PALIMPSEST or ABSCISSA keyword-derived alphabet pair satisfy all 24 K4 crib equations for a registered decimal primer after passing complete planted calibration?",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "docs/keyword-alphabet-conventions.md": "8dffac3290750305ccf426de5ba1c31c58b0f46e1b07054186302afdc5114e4d",
+    "fixtures/keyword-alphabets-request.json": "1856156d5ac26e981c1911496b30366a0eefcc1e09f5e38161809a5a9a0142d6",
+    "results/PRIMERS-0001/run-002/primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "results/FEASIBILITY-0001/run-001/feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+    "results/STRUCTURED-ALPHABETS-0001/run-002/structured-alphabets.json": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0"
+  },
+  "model": "39 decimal primers, 12 runtime-derived base orders from three sourced keywords, two constructors, forward/reversed orientations, all ordered alphabet pairs, and 26 relative rotations under c(C_i)-p(P_i)=k[i] mod 26",
+  "candidate_model_count": 146016,
+  "k4_equation_count": 3504384,
+  "operation_cap": 7022736,
+  "operation_accounting": "3504384 signature equations + 13968 planted full-message encryption positions + 3504384 K4 crib equations",
+  "calibration_gate": {
+    "signature_census": "all physical candidates retained in exact signature buckets",
+    "planted_cases": 144,
+    "message_length": 97,
+    "required_true_candidate_retention": 144,
+    "required_full_reencryption": 144,
+    "unique_recovery": "reported separately, not a gate",
+    "seed": 1263222081,
+    "rng": "xorshift32 shifts 13,17,5; next_u32 modulo 26"
+  },
+  "prior_design_analysis": "Before implementation the planner inspected domain structure only, not expanded-domain K4 compatibility: 123552 signatures, 101088 singleton buckets, 22464 doubleton buckets, 69.2308% physical candidates unique; disclosed collision 54258/KRYPTOS keyword-fill reversed pair rotation16 versus 56852/KRYPTOS keyword-fill forward pair rotation0.",
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock offline; Python standard library; no network, corpus, dictionary or stochastic K4 search",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "primer_report_sha256": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+  "feasibility_report_sha256": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+  "structured_report_sha256": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+  "falsification_criterion": "Any missed planted true candidate, failed full reencryption, Rust/Python disagreement, malformed compact certificate, missing physical identity, changed regression hash or K4 survivor falsifies the corresponding calibration, implementation, or scoped exclusion claim.",
+  "limitations": [
+    "PALIMPSEST and ABSCISSA are historically K1/K2 indicator words repurposed as explicit K4 hypotheses; their reuse is not evidence.",
+    "Only keyword-fill and ACA Gromark transposed construction, complete reversal and relative rotation are tested.",
+    "There is no dictionary, language scoring, plaintext inference, alternate recurrence, offset, tableau convention or transposition.",
+    "A zero-survivor result excludes only this exact finite family; a survivor would show compatibility only.",
+    "The Python verifier is independently derived by the same project coordinator, not a fresh external A7 review."
+  ],
+  "outputs": ["manifest.json", "calibration.json", "keyword-alphabets.json", "verification.json", "baseline.json", "primers.json", "feasibility.json", "structured-alphabets.json", "completion.json"]
+}

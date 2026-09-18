@@ -1,0 +1,20 @@
+{
+  "status": "verified",
+  "models_checked": 16224,
+  "equations_checked": 389376,
+  "rejections": 16224,
+  "survivors": 0,
+  "best_match_count": 6,
+  "best_model_count": 12,
+  "match_histogram": {
+    "0": 6683,
+    "1": 5694,
+    "2": 2627,
+    "3": 935,
+    "4": 214,
+    "5": 59,
+    "6": 12
+  },
+  "limitations": "Exact exclusion only for four registered orders, all ordered pairs, and relative rotations; no plaintext recovery or historical attribution. Same coordinator, not fresh-context A7.",
+  "report_sha256": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0"
+}

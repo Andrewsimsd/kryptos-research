@@ -1,0 +1,2233 @@
+{
+  "schema_version": 2,
+  "evidence_id": "K4-v1",
+  "candidate_count": 146016,
+  "signature_census": {
+    "physical_candidates": 146016,
+    "distinct_signatures": 123552,
+    "singleton_buckets": 101088,
+    "doubleton_buckets": 22464,
+    "unique_physical_candidates": 101088,
+    "maximum_bucket_size": 2
+  },
+  "operation_counts": {
+    "signature_equation_evaluations": 3504384,
+    "planted_encryption_positions": 13968,
+    "planted_decryption_positions": 13968,
+    "planted_reencryption_positions": 13968
+  },
+  "cases": [
+    {
+      "case_index": 0,
+      "true_candidate_index": 0,
+      "recovered_candidate_indices": [
+        0
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XYGJYQMSXWQMQLUFKAFZSJIIEKBBDMEACTVFIZNURAFBQVOGMSFEIIFOITWCWCIILBKVVFWECSSEQXMYKIWSHSIMDHTFYKFBF"
+    },
+    {
+      "case_index": 1,
+      "true_candidate_index": 3771,
+      "recovered_candidate_indices": [
+        3771
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "MCQGSMMNLCNDISBDHVFHYSIJFRDNQBDHHMMZOFCQUUGDFYEZICRQKOTJQTAFGLQEGNPOKEZESICRKSFXFBNUFELCHJHNSWERH"
+    },
+    {
+      "case_index": 2,
+      "true_candidate_index": 7542,
+      "recovered_candidate_indices": [
+        7542
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "JHTEDQDSXYFXBARTGIXESTIQSJGNVTSRLNVFTWPXUKIHZTGBLTTLVHOJXEDTRMVRZNYJOBWPQHXYXXDXXUZYSHJEKNUFCKTVG"
+    },
+    {
+      "case_index": 3,
+      "true_candidate_index": 11313,
+      "recovered_candidate_indices": [
+        11313
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "CCQSDZHPAKXWOHUIWJOSLXSIIKGTXKPRSBFFURPPLDAQAIFNEPHOSSGEBKTPPMSIUTYOMBUSRYSKNGLSHVVTZYXLOCYKEZIVE"
+    },
+    {
+      "case_index": 4,
+      "true_candidate_index": 15084,
+      "recovered_candidate_indices": [
+        15084
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "MXVJHVBIRABOXDDKHZCPWKOHOEKJDPUNFBLVUDGUUYCQBLPGZIRYYKVIBFBGKXLNOJYLIJXFQFWLGIVXVPBURSMOTPOCYPLHS"
+    },
+    {
+      "case_index": 5,
+      "true_candidate_index": 18855,
+      "recovered_candidate_indices": [
+        18855,
+        116491
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "LUJKMRTFIWDCTKOULXSTRACCJQHDCSBGBBRUZRLFOCVHXEIBVNLHZTLFOXAJZDNBTDXYVDYGBHBVKBLWOBFALEQOPQPTUZMSO"
+    },
+    {
+      "case_index": 6,
+      "true_candidate_index": 22626,
+      "recovered_candidate_indices": [
+        22626
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "GYLJLPJANRDPSNVMALVHTYMNUJMMDHXHYQGTPDGGALRFSMHUYOLHFQRVOMTXTGBPTMACIBWSYWJQDWPQALGYGDYCEOKIUZFGC"
+    },
+    {
+      "case_index": 7,
+      "true_candidate_index": 26397,
+      "recovered_candidate_indices": [
+        26397,
+        120285
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "WEKFBTAOZWXWSYBTVAJVLCZJISRQLOKOZFBIIYYHMTJWKSVKNXAKWJOLKKDPHVEOZQKKTAYJOBBBROBZJHINCNGJXAGSFVIIL"
+    },
+    {
+      "case_index": 8,
+      "true_candidate_index": 30168,
+      "recovered_candidate_indices": [
+        30168,
+        97898
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "ZSBWUWVVLCOOLWCDWKYHFWQRVFROOBUPXURBTCKYHPDOSJGVFCVKWSFCKSHQKDWQBOIBJVAWUKMOLYGZECYYZRNCONBUIQVMF"
+    },
+    {
+      "case_index": 9,
+      "true_candidate_index": 33939,
+      "recovered_candidate_indices": [
+        33939
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "GZYKNUSPKZJWPYXICTGEUIHIJQJHIUYSEERLPQYWXDTNVWHDKTKRCFXELBIPEOGFXHQZNCVKEMPPDPUKEEIVEPSZEHNPNUBDR"
+    },
+    {
+      "case_index": 10,
+      "true_candidate_index": 37710,
+      "recovered_candidate_indices": [
+        37710
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "RPIHGLQRGRMCRRNISRBNZFHFSPIHHDJQWYKMAHUQRNBNCIEOCJGRPYEZKCXMLSRTOHUDGLVYYMDDKZOKVOXFBOHFPPPQBZBQU"
+    },
+    {
+      "case_index": 11,
+      "true_candidate_index": 41481,
+      "recovered_candidate_indices": [
+        41481
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZDMODNOCPHTCJIYJMYZOCQODUYAGETOEUVMIRVYGAHOMQITHAKUFZYZNWDUPKPUZSGSQGFYBZBZROODIHAHFRSRROPEPBDLLK"
+    },
+    {
+      "case_index": 12,
+      "true_candidate_index": 45252,
+      "recovered_candidate_indices": [
+        45252
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "NMMWGQKDKUEYVPDNRAHYUCBGHQCFFSOCFEFVKOZZOKRFCFJMHSDMPZIOWIJAMNZBKFZVWTREAMHTUABLPJLVMRPLHXUXQQEDA"
+    },
+    {
+      "case_index": 13,
+      "true_candidate_index": 49023,
+      "recovered_candidate_indices": [
+        49023
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZMCQDXIOZFBGKZWDJGSNANMFDWEOGUMHJLTCHXPYAFWUWRLSQOWZBWVUMHQPCHUMQOURZNVMHGBNYYOCXFPUNONIKCABIPXYA"
+    },
+    {
+      "case_index": 14,
+      "true_candidate_index": 52794,
+      "recovered_candidate_indices": [
+        52794
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XKOLWRHXSZMLGRXQBBNFXFNRVJRGTDLIXQIPIISCYLPYSSYGYBZHDSUPNSJVUBKDNGUHABCLFTFDTRIXZLYYKPSXZMKQJMBJT"
+    },
+    {
+      "case_index": 15,
+      "true_candidate_index": 56565,
+      "recovered_candidate_indices": [
+        56565
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VETQYNAKLTTIREGKKVWTVZXRPKPDRCESLLESLRSBJIRILUEOJJSIBBDXVWLNTWCGTDHJCBJVRNWTLSZEWUHCCMKUMTSXXSNYE"
+    },
+    {
+      "case_index": 16,
+      "true_candidate_index": 60336,
+      "recovered_candidate_indices": [
+        60336,
+        82498
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EWNSHTFAUGIOEFXISAYOYDNJKZJOUBFKFOGXGJGDFJFSMANCUDYPIOGFJLOOZMMKBOPCYHIFTYIBNAONTYREPTSNWTNSRLCSA"
+    },
+    {
+      "case_index": 17,
+      "true_candidate_index": 64107,
+      "recovered_candidate_indices": [
+        64107
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "DIGPAIFXIJHFZWUCCQXYDNNBBVDIFVRKECKMDDBJMATZBMBSAVBKEUEJKFFZANYHQIZOWCQEKMDKWCIARIJTNNSBNXGTAIGHT"
+    },
+    {
+      "case_index": 18,
+      "true_candidate_index": 67878,
+      "recovered_candidate_indices": [
+        67878,
+        78830
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "ZMDJPCNTJCODXUXVEBUDXUPBPABNVFMBQBFZFEJLZJFAJILUXXRYJDTLNYUMGFWQLNIWJGRMRSOWVDFMLJPKIGGWONXLLCRHM"
+    },
+    {
+      "case_index": 19,
+      "true_candidate_index": 71649,
+      "recovered_candidate_indices": [
+        71649,
+        75059
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "ZNLHJARHJJAOMIRKVXASKUQDLVIEFPRJWZEWGZRHTSNQZPSMTVVJEEYDBXRRBJFGLEUGBGHJRWYOGETMKNNOFLYKSIQNJFTON"
+    },
+    {
+      "case_index": 20,
+      "true_candidate_index": 75420,
+      "recovered_candidate_indices": [
+        71392,
+        75420
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "YEGZEHVOQXCLWWPVTIWUAOUVYETYWJHMPQQNJFZVTWNPIVWZFWCHTVFGDFBIYHFUJYCEBRHQMSGDEHGUPUUEEGIEFKEZWPNIY"
+    },
+    {
+      "case_index": 21,
+      "true_candidate_index": 79191,
+      "recovered_candidate_indices": [
+        67621,
+        79191
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "QBPISQIATODRQRPPGTZZFOGFSPDYGNMHSCYJFUZEBRPCHIFUWJPVSAWIHGVZMDXEJYTNVJVBDYNCCQIPSAZXXGBEKPOUOTZCY"
+    },
+    {
+      "case_index": 22,
+      "true_candidate_index": 82962,
+      "recovered_candidate_indices": [
+        60210,
+        82962
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "PQXPXWCAQRQBETJMWKZXCRIYLPFDNVMHLSHSWVELGOHVVGYEVAPBQLYVYNERPORXIDGEVXPWSFCOWMZIDNVDDXELLMJOYYZHV"
+    },
+    {
+      "case_index": 23,
+      "true_candidate_index": 86733,
+      "recovered_candidate_indices": [
+        86733
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZVBFACXPLHHHPSVTIOFAGRJAAXALDMPZBERIYKYEVBEPTAIIUSVEULKPISCHESVPKLCCRPRJEJYBPGOPFZYXGCTZMVZEOLKPP"
+    },
+    {
+      "case_index": 24,
+      "true_candidate_index": 90504,
+      "recovered_candidate_indices": [
+        90504
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "QXDUPIREZCGVFIQFSSVPSWOJMGTMURMKLVJFBPCIVZZZJPLHMXZJNOITHRBQXUDDLMIHTTHPXASJCEUDDSHGCGZCRFDPUYEBS"
+    },
+    {
+      "case_index": 25,
+      "true_candidate_index": 94275,
+      "recovered_candidate_indices": [
+        94275
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KDXGGQLTHRFUPFARZEBUTRZBPLJFKJXJDYGYGPBIKOEYVXWUMQDQVGKRPRQMTNQBZFBDJYIQVUHHXVEWIYFOAXSKRMHTTHXGY"
+    },
+    {
+      "case_index": 26,
+      "true_candidate_index": 98020,
+      "recovered_candidate_indices": [
+        30982,
+        98020
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "NBTAUBDNELOMEEEOCFHBJKLZEXLSWPHXGMJRCGRLRXWKYNYIMPUMQJBVWCHECRTZZSVEPUTFOPCOVXPTBRBCWPGJUUFJQJDIS"
+    },
+    {
+      "case_index": 27,
+      "true_candidate_index": 101791,
+      "recovered_candidate_indices": [
+        101791
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "WDBPCAHHDDNCUGZOVLIZJKQNCLEOOVFCDNLFSPOFAFVCKSCTJBFEPMVKIJIRJYCUUOBHQKITAYXHGZUHFENQDHKUGNYCSPYYT"
+    },
+    {
+      "case_index": 28,
+      "true_candidate_index": 105562,
+      "recovered_candidate_indices": [
+        105562
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZKLWMJURFUFQAFLAIJZHXMIVXGKOAFYEQYMOFGAFKKFQKPHNNVCJQZWZHPUAHLOXXOQXCSGFBCMVAYAIXLXYKKPJQAGXJUNQM"
+    },
+    {
+      "case_index": 29,
+      "true_candidate_index": 109333,
+      "recovered_candidate_indices": [
+        109333
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "TKAVFKLGXKLSPPXAUUAAAUVIWGCTLQPQAPUUPLLZPIGCXQTAWJYVVCFERHYJOYKAATFAKRTQNKLFHQUHONGOTIOGJWVXGUEOP"
+    },
+    {
+      "case_index": 30,
+      "true_candidate_index": 113104,
+      "recovered_candidate_indices": [
+        113104
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "QYCIXSEIFAMAYCLYDNCWMEJXCPUHTIAFAKEQLKUUDTZUSAZMBOPKWPLPMHZUTNXTZHPTMZVBLRHNEETDAUKNNGAGNXWVOEEOW"
+    },
+    {
+      "case_index": 31,
+      "true_candidate_index": 116875,
+      "recovered_candidate_indices": [
+        19823,
+        116875
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "BXNEFVYWZNBQCSAGDMWTJXMASMFFXRNLCAGMIRUSNVTXHQEEFEJKZSXTLJMFBOHOYFIELGWRPBTKSEIJQVJQRSTUEBWSWSYEN"
+    },
+    {
+      "case_index": 32,
+      "true_candidate_index": 120646,
+      "recovered_candidate_indices": [
+        27388,
+        120646
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EBWLSWKHIJPNUHXMVOTUSCHYBQPWIPAGWSFKMVQXXHGSSWXFHPPFCASYKGOFQLTUDWWYUIQLEOKFTBOWCWLUGRNSDUTPKZOOC"
+    },
+    {
+      "case_index": 33,
+      "true_candidate_index": 124417,
+      "recovered_candidate_indices": [
+        124417
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PTVALMEGWEIMTKDTQVVXSZHWWFESZFWNXAVCTATRPJKPJOSQITZUSIIOHDKABHZITSBIIUEDLHACCICONOGLKGAQUSMCCVVLK"
+    },
+    {
+      "case_index": 34,
+      "true_candidate_index": 128188,
+      "recovered_candidate_indices": [
+        128188
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "UFTNOWZINKWCWFOJRXHAVDHUPTYQBRUGQAWBMDRMOSDSRKOAMSPOHZSABYJEYNVFEQYFFBWIRHDNNXMZNPTHMGBIUKIYRSRET"
+    },
+    {
+      "case_index": 35,
+      "true_candidate_index": 131959,
+      "recovered_candidate_indices": [
+        131959
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "TKXJVJGERWYQGAYTBNYQKXXLTBUDXZSMQIMEZDEIBFNFEJUGVNFXIVIEXKIRNTQFTDAWKCBCMIWZZQZDVXJPYAJRNMEMTIMBT"
+    },
+    {
+      "case_index": 36,
+      "true_candidate_index": 135730,
+      "recovered_candidate_indices": [
+        135730
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XFGVJRLCFORZCDAFBGEQMZBRVDHONCVHPUIUPSVOTFQFHSWIVQVNFFNNYEXMUKQSMORPTUBGQCYACJPONUWAKWMJUMHRFVIRZ"
+    },
+    {
+      "case_index": 37,
+      "true_candidate_index": 139501,
+      "recovered_candidate_indices": [
+        139501
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "OOAUGXAEASTKBXWPFNZMZRHKRIDQAIPEXOGOPHXJIAIMXPVOJFXQGWMUCKDTZIXVBQXYJSMNAHLCMZMJUUZBJQACOUHGMAIEH"
+    },
+    {
+      "case_index": 38,
+      "true_candidate_index": 143272,
+      "recovered_candidate_indices": [
+        143272
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "SMDTPBZOOTQNHHFABUOZXWBKMRGNJGCSCZBPLAKUAOLXVBDMWGHFDZUSTYALMMVOTNPJXMUBEBYVMVGWNPZDHMTCODTQFKDQY"
+    },
+    {
+      "case_index": 39,
+      "true_candidate_index": 1027,
+      "recovered_candidate_indices": [
+        1027
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "AVCMOJOOAMNRJJWJACDOPANEJBVQWRNVWFNBEGPNXWZWSQKVOMKQNBKSHGVPFMITKQIEGPGRXPJIGJAABAJUBRSQFDRUOHKOS"
+    },
+    {
+      "case_index": 40,
+      "true_candidate_index": 4798,
+      "recovered_candidate_indices": [
+        4798
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KAKLUHWLTNVYRAIWKEVRTAJPIFQEVHXKLXDTFYLRPVWTSXEKMERZCZSBHQVIXKREUEBMGUGOZWGKITSLMCWFFZFIJORZANJNL"
+    },
+    {
+      "case_index": 41,
+      "true_candidate_index": 8569,
+      "recovered_candidate_indices": [
+        8569
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "TXWNMEFSJHTQIZFPZOPTLZBOUJERVFLDZIPCVZQIUWNHXBZDWGXMIGBJDAFVIGDWWROOBTJKLFWIJFYUBKPMQGOIKXAHGRFQP"
+    },
+    {
+      "case_index": 42,
+      "true_candidate_index": 12340,
+      "recovered_candidate_indices": [
+        12340
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KAIHXMCJIQZLICOYCUUMYTGZOQQIJHANCZGELWEWULXEZLWLUKEWYUFHZHZPLOLEEIUJNYFMSUYGUVVJFQSBOWCUEKTQPZXML"
+    },
+    {
+      "case_index": 43,
+      "true_candidate_index": 16111,
+      "recovered_candidate_indices": [
+        16111
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PTGGBKOKETRFKTUXRRFIYOEHNWIDXZTJTCRNJYWQWQFJBILZFHUWUFFJBDNMLWYBADUMRJPDCOGZTAWPHSRKRBNUZWVLNYYZM"
+    },
+    {
+      "case_index": 44,
+      "true_candidate_index": 19882,
+      "recovered_candidate_indices": [
+        19882,
+        116946
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "PWGCEBJVUNHYUFQANNBNLEUFBUOOEPZQGFLGUFHGJFTYSIZRSSRPMQPJONFWBJBHAONKQVMPXYEJLZMIQNRSMROUAQMQPMKAH"
+    },
+    {
+      "case_index": 45,
+      "true_candidate_index": 23653,
+      "recovered_candidate_indices": [
+        23653
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "IYUYAJODOUXOKJLSWCDWHYGPUFHLYGRAOXVUSYUURNWNQUXLAOIAABMEMVXTBKTQULMNDSFSAFLLLKRCIDGNUQTNNVKCQJNTG"
+    },
+    {
+      "case_index": 46,
+      "true_candidate_index": 27424,
+      "recovered_candidate_indices": [
+        27424,
+        120740
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "PBXKVRVVTRLPJQNACKXQKBACKNTMZTPDMEBVUWCOYYLGYYGTKBNNCUIOZHVMGLDXUMMCXZNLOYSUWHOFJKJPKXSCIDTAJABJV"
+    },
+    {
+      "case_index": 47,
+      "true_candidate_index": 31195,
+      "recovered_candidate_indices": [
+        31195,
+        98249
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "AVVXBOREXVGMFAZNKNQJOSUIRZUVYJLZCXTTWFHILUTRBFIBKQGVJNFDWKOXXJNIIVPRJQMAWJRWWMULPFIPRXJNNPUTBRJWD"
+    },
+    {
+      "case_index": 48,
+      "true_candidate_index": 34966,
+      "recovered_candidate_indices": [
+        34966
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "LGZYIFCQWMJSLXWLJRKHSPWAOMHUELCTOCHYVDERPNFCJZZRDOJUVDQEBDUYAHLODUSRUCYGSHBSUBVAFQCSVNYNKRJVPRVOI"
+    },
+    {
+      "case_index": 49,
+      "true_candidate_index": 38737,
+      "recovered_candidate_indices": [
+        38737
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ODVLOFHORQQOXXPQHPFDZURLHSDPMFIQHIODJIFXPCREGGQROTTLLPDSGMJAFQPNHPWWPILSMDKTKITDVDQPBZEIJQPJYWRDI"
+    },
+    {
+      "case_index": 50,
+      "true_candidate_index": 42508,
+      "recovered_candidate_indices": [
+        42508
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "TTKWQGRIRTNUTGQLYCFZGLUXRSJTDTOWPFYXNZSBUXHLDFZJAITFKTEUKRPAUGGPBTHHCGUTPZHUJUOKPOUDJIPEFPQTAZOXD"
+    },
+    {
+      "case_index": 51,
+      "true_candidate_index": 46279,
+      "recovered_candidate_indices": [
+        46279
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XKZXPEJSXXIBZTMBLJHOKRZIBDNFVOSMVSBAGMHBIHOMKOXNMCQNCOGEICUJGHWIMFECFSQOBOZCOXUMIBTMRKVPZUYAHKSER"
+    },
+    {
+      "case_index": 52,
+      "true_candidate_index": 50024,
+      "recovered_candidate_indices": [
+        50024
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "LIOQWVJKHMPEUUQOEGMMIFIGJZYLFRGTBTAEROHDXYZTNSYEZQPHDGCWWFDCEZRFDLFMXGDOOKFEQEBYREBCSLQOSNHCNANIH"
+    },
+    {
+      "case_index": 53,
+      "true_candidate_index": 53795,
+      "recovered_candidate_indices": [
+        53795
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZIHBCETXTSOUMKSKOCZZEKXKGMMABLFNNCJPZLFHFIHYKGXMGBKAMLVDXTOKYXCHJAKOATVEJMIANMPRISDPDDGXDIVDIDLWP"
+    },
+    {
+      "case_index": 54,
+      "true_candidate_index": 57566,
+      "recovered_candidate_indices": [
+        57566
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "RUAKAKBJDHBUFSCYVLKAXRDMBVOXMBDWUUMGYNNRWTBXLZTXQWLGRRUOZZJOJGWMQXEIXYFHSVCTJSARFPHCUFBWZHHHMALZU"
+    },
+    {
+      "case_index": 55,
+      "true_candidate_index": 61337,
+      "recovered_candidate_indices": [
+        61337,
+        84097
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "QOJEXQLNJIXTHDSYBOXKCLMQDZCAWORGURWBQXNKCIOTGCRPAIGYKYALZHYJAXPWQANLEWUEQKOFBJJMDGISMRKQVNXAZBHIL"
+    },
+    {
+      "case_index": 56,
+      "true_candidate_index": 65108,
+      "recovered_candidate_indices": [
+        65108
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ULIDLFHUBAMPPXDLVMPQINDPPBZIMTKERORALOJVRJPYDKZXIFDJLQXPZHPJNKNPLIFNAWNCPYVEBQLHKQEFDTMEMCTYYKFWI"
+    },
+    {
+      "case_index": 57,
+      "true_candidate_index": 68879,
+      "recovered_candidate_indices": [
+        68879,
+        80403
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "VGUIFJFFUKPGKGROJMFGXDMHJSYZISFLNHPFFIQOJOPPPHASHCSXUYQAYCXVSYSHJZKMXDHSJSZOABXUXBODMQPLYNNUXNDNF"
+    },
+    {
+      "case_index": 58,
+      "true_candidate_index": 72650,
+      "recovered_candidate_indices": [
+        72650,
+        76736
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "LHIXIDNMKAFLAGNOXBQTEXPMRAJOIQSINSAWVCDFPJNGSRDBVSQBGZXQPHQHKTYXYOHHZHCUFFBKJAKIJVFKRVDJHFTXADCVB"
+    },
+    {
+      "case_index": 59,
+      "true_candidate_index": 76421,
+      "recovered_candidate_indices": [
+        72965,
+        76421
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "NFZVVBBPPZXEVBSTYKCJRZPZJFFTUACIVPLYLGZLXGYOWMQOMVTLQUNGOKUGWTODVTXMDDPQBYKFNZAEJFBXHODWSUFIGIDXL"
+    },
+    {
+      "case_index": 60,
+      "true_candidate_index": 80192,
+      "recovered_candidate_indices": [
+        68674,
+        80192
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EXVWIYPRUPZQTINKJDJQQYDSAZUVRZTCESKUSNUZVQFHDMGFPTSZFKLRRNJHYHSSAVBDQYSZAZWDVVXODRBUFILITOWBFKVMH"
+    },
+    {
+      "case_index": 61,
+      "true_candidate_index": 83963,
+      "recovered_candidate_indices": [
+        61159,
+        83963
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EWQVTCRQEGFCZRKHHANLQNJLMKYPWRQIHQQDIERQUSTAYAJBSVQKHYESKJLLTCKWLPENZWHZLOOUHVPYTQPRRXHRRKMHSMUUN"
+    },
+    {
+      "case_index": 62,
+      "true_candidate_index": 87734,
+      "recovered_candidate_indices": [
+        87734
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VHLRVPXVXYXLMFFQYAEKWUGILKKCDKDIPHSOBMXVPKTMSZPBORIJPLCSRVFCFNQULCGIAUIJFZIPPDTQQZLBQPMYQAGPQLEYZ"
+    },
+    {
+      "case_index": 63,
+      "true_candidate_index": 91505,
+      "recovered_candidate_indices": [
+        91505
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "FHCLPSQAPSQQMOBECXCIJSXQMYOWQAMSGGMBBJAMMPEGXVXQZAPWXEFPPOLLZCCCZWLSFSXFZZUOGAQGJGZEHGVBUYYXDMHOG"
+    },
+    {
+      "case_index": 64,
+      "true_candidate_index": 95276,
+      "recovered_candidate_indices": [
+        95276
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "EHFOHAVGDPIWWCOMGRIDLFDCCYPVGEJRTDVHXXWACTUJGPQBAWBEMOULGTUJDUDCHVQFZIFWCAKNXDTHXLABBJSBYSIWYUVCV"
+    },
+    {
+      "case_index": 65,
+      "true_candidate_index": 99047,
+      "recovered_candidate_indices": [
+        31307,
+        99047
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "QEYSTPVFZSWSSFDLWISDQGEGRZZLHVDSOQUVKTERPEZOZJQGQYHOJKSVWRDSHXIGOLDDLNEIKVOJPBLANNQKWCKXQIDTZAXIC"
+    },
+    {
+      "case_index": 66,
+      "true_candidate_index": 102818,
+      "recovered_candidate_indices": [
+        102818
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "UKLSLEFDSDPAUXXKSGCOCQNDUWTZFFIQRWMTHYTPPKMAJKAWOQWHSNRFHWSHQJGGRZGYKJMKEAUEYXIOPXFOKNBOZOKIYDSEJ"
+    },
+    {
+      "case_index": 67,
+      "true_candidate_index": 106589,
+      "recovered_candidate_indices": [
+        106589
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "WYSCQAKQABFWHTUDNFVZZFQQUTYADBGRUGSGYHYVTPEZSAZXYIEQOWVAMKJLAADLUAWWAGQTDYBYRYLJYXDYJQQTDBHCGCVCH"
+    },
+    {
+      "case_index": 68,
+      "true_candidate_index": 110360,
+      "recovered_candidate_indices": [
+        110360
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "WQGYUCTRHISYSCQVPIGCLRNNPCFAJILQPLJKDTFXSRVKUYQDHXBVAGPFPQAIRPSPKAOUALTYOFIDPUWXZIQGRQLGWLAUSWSIM"
+    },
+    {
+      "case_index": 69,
+      "true_candidate_index": 114131,
+      "recovered_candidate_indices": [
+        114131
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XMYSPKLREKKUIYMTXYMBVGJGKTTWOVLFFNDZYCOYZBOAZUHGUTSHRCKYIKKMMJBJHWGEWPSQHTDEMDFGDOHRMUVGIHJEVOWSL"
+    },
+    {
+      "case_index": 70,
+      "true_candidate_index": 117902,
+      "recovered_candidate_indices": [
+        20278,
+        117902
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "HPCLMFMGFFLLSRDCIFNSBMFHNJKWMMYWIGAWGRMQUEROILUPDPBXULAEIKMKBFVXTWTHZHYEXZDFYJWFGQYQMONSIJEGQSXCK"
+    },
+    {
+      "case_index": 71,
+      "true_candidate_index": 121673,
+      "recovered_candidate_indices": [
+        27739,
+        121673
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "GGANJLSUGTVWJRDOCPWKSPBPCNNSKGGECVCBITTKHAJZRMMWDEFCVKSWFHVSPANMESJZXXEFMMCBKYIYSWLFKBSFXJMDSUXMY"
+    },
+    {
+      "case_index": 72,
+      "true_candidate_index": 125444,
+      "recovered_candidate_indices": [
+        125444
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KUEJPOBPIBEZRXWNFTHRFXYUULTBMXRWQLHKMZKYJINOQIFZHQXWVMKFQFMDOVFGTBFYQVAOTRSSQUOQPVEPFCLFKNTRSIPTK"
+    },
+    {
+      "case_index": 73,
+      "true_candidate_index": 129215,
+      "recovered_candidate_indices": [
+        129215
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "WXMWUYMFCULGYSYDRFSIHKVPXAQJROWRCACWMNBYRQDYQOATLXHLIGGJWHWIDUVEQJLVTYFXQWQFMQRFMLBYTZTUUIMZEYZSM"
+    },
+    {
+      "case_index": 74,
+      "true_candidate_index": 132986,
+      "recovered_candidate_indices": [
+        132986
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "QRLMDUQMAULRLPPATHKSNDYMJTNLHKHJEAHLHBMRNJKRDUQPAUEOBZGUTNTLMIRZOLIPGFPWUMIOIOFWSJNCRIGPUENMJWYHU"
+    },
+    {
+      "case_index": 75,
+      "true_candidate_index": 136757,
+      "recovered_candidate_indices": [
+        136757
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "JZFRQWVEFGEOPNGNZSJNJSHAKUQBUFTYWAQJNBOAWDPDSXHILPGLPRPABHSRJLQHYBQVLTXTEOVQIMDEMHNXLQKGDWJUORIBX"
+    },
+    {
+      "case_index": 76,
+      "true_candidate_index": 140528,
+      "recovered_candidate_indices": [
+        140528
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "YYUYAKLALCEKSAVRDBCTZCPWAWCHVVTIYXQCTFZNJTURKLRYPPUJBEDIACTLDKEULHBSVSJPMXNDJNBVSKVNOIYYODUHSYZFV"
+    },
+    {
+      "case_index": 77,
+      "true_candidate_index": 144299,
+      "recovered_candidate_indices": [
+        144299
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "HNPBRIAKLYFPRZWRABUVTKYLLLKFYYOVSAKZADJHSSSQJSHQRLFHHGBUHBPDZOQMWFFRIRKRUAKQXNYWCHJTDXSEFLTNBXYTN"
+    },
+    {
+      "case_index": 78,
+      "true_candidate_index": 2028,
+      "recovered_candidate_indices": [
+        2028
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "UCGDNYIKLJNJACLBOGALXRFZEXJPZXEATTBUPARDOJCXEIVIWAINBJTIXTCUGHNKLPYGHEPFCEIJPTOZXTJLWLYPQJUCVOPAT"
+    },
+    {
+      "case_index": 79,
+      "true_candidate_index": 5799,
+      "recovered_candidate_indices": [
+        5799
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VLTOJVOYXDEESIXXHPHWTMVOYOMDCCBHAXMQZFXHNUGKCRKMMNBGCTFTSEABPXMOSDLMCYWGGBMVMAGZOMSERFUJQEKTXUFDY"
+    },
+    {
+      "case_index": 80,
+      "true_candidate_index": 9570,
+      "recovered_candidate_indices": [
+        9570
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PXAWBMHQMSLFRBXCUDOCDKEDGXMNFZGIXZXQYGGFFYUNBIJPVAHGMPEPJDSSAGYUNNOPCIRIHADMQESTBXUKCRMBFDWHNWXIE"
+    },
+    {
+      "case_index": 81,
+      "true_candidate_index": 13341,
+      "recovered_candidate_indices": [
+        13341
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "RDOADMGTKVZEHUNLPHWHIQWZUBTJQTNRBTMWGFEAQUSZOCIJXZZYECRZQUZAEBUIJJCLVUJRTYBHXBETKPVUUUYEPCUMDDVTR"
+    },
+    {
+      "case_index": 82,
+      "true_candidate_index": 17112,
+      "recovered_candidate_indices": [
+        17112
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "GWRNKVHNWJMGOUBTPVBRRKVDVZGFOEMPWDVCQSEHBRHGAXBTIRUTUXYTXKZYKFAWVFHYJBIKVPPKQCUWATVWCFCNQHDORZHJB"
+    },
+    {
+      "case_index": 83,
+      "true_candidate_index": 20883,
+      "recovered_candidate_indices": [
+        20883,
+        118519
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "RKJMVSIBPFUUBVTKWSXMCKISSTIJIQXTYXCZUUVBMIFSDVRMOFWOZJARFMEFONRWRJUBFNZXIXEECCEXMZRTHSKSOVWTQQRUG"
+    },
+    {
+      "case_index": 84,
+      "true_candidate_index": 24654,
+      "recovered_candidate_indices": [
+        24654
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "EVDVRXTFKUICIBMSVDJLFPOLGNOYCECGMDETEPFENHVAKWZSPXAYFBPTJEWHGQEJAYXTUSTFBAAWPSEFXFIIZDBLRBIGHGSHV"
+    },
+    {
+      "case_index": 85,
+      "true_candidate_index": 28425,
+      "recovered_candidate_indices": [
+        28425,
+        121689
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "RTVWUQIOEJCHGWKNVNYFBLESCSLWFFHDTDNLSIVRWTMAMVTSAAEQKSPUMEFVCWUYNWKUCEUGGJPRKEQVXOOJBETGUTZERIPZT"
+    },
+    {
+      "case_index": 86,
+      "true_candidate_index": 32196,
+      "recovered_candidate_indices": [
+        32196,
+        99302
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "VGMBSGZDJYDPITLREDHPQNLQEZXOIQODYTVZNPVALIRSFZAIOWTVEYZDFMCDRTXQROHOJXJVLBGZQAZYULKQJQISPFODCUBAE"
+    },
+    {
+      "case_index": 87,
+      "true_candidate_index": 35967,
+      "recovered_candidate_indices": [
+        35967
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "UDTOZCBOJNWISEXAPHTYFMQFBUTMNOVXPDGINCEEJIYAMRZMHYESMSCLYUCWCOKPIMEYKVCEQBGYQTOLKKMELISNSPJWMPHDQ"
+    },
+    {
+      "case_index": 88,
+      "true_candidate_index": 39738,
+      "recovered_candidate_indices": [
+        39738
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "HINKYGYKKKRFXVYYOTCLOECVRXBEKOGNYQWSQJHQLFEBWNIQKBLIQFWBXRQKFPURHELMPGBGCJHLGNYVVLMMXDOUIHGNZBQAY"
+    },
+    {
+      "case_index": 89,
+      "true_candidate_index": 43509,
+      "recovered_candidate_indices": [
+        43509
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "WUBCTYRJKREPZHZCPPTTRJFLEEBXCIRKSGGQJVVNLTVHQDZLQEKYJDJEBOJIVRJSFXXVYTWJNSIJFTNGASCTKKVZVTJQCRFRL"
+    },
+    {
+      "case_index": 90,
+      "true_candidate_index": 47280,
+      "recovered_candidate_indices": [
+        47280
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "BVRDYVDPIDDZSHICJENAPPUXHHQEYXQPKNBEABCEPIZNLVDMYUXLQHGUDYBSHJVXIEWEKQFGUSUOHJBMWXTEVWXEADBJBRSWS"
+    },
+    {
+      "case_index": 91,
+      "true_candidate_index": 51051,
+      "recovered_candidate_indices": [
+        51051
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XRPUFJOFGYIPTDLSEVEFRQDAZVFMWODIELFLEJQUICTXBFLWMUVXADSBJBXVWNACMMGYKDUUWDCCIQOZIMLAVAQRQBHJGACVM"
+    },
+    {
+      "case_index": 92,
+      "true_candidate_index": 54822,
+      "recovered_candidate_indices": [
+        54822
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "GAEFCKVNNTZOCJBYDVIBNLMXVZNGZBPUWYLOCJPSSJDNOJXEVIMBWMTBGPXTXIWZMGJJSUILMUOASPDSOJPQRPTMOPTTGHXSG"
+    },
+    {
+      "case_index": 93,
+      "true_candidate_index": 58593,
+      "recovered_candidate_indices": [
+        58593
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KYOQXGPPTQXWPKOYQSELYNCZAZIPIILGXSXBLDHCRRONCUAJEUOSWWEYXSBMFTAZKPVPWIQKCIBZEJPPZXIUGCXMXZQSMDUWV"
+    },
+    {
+      "case_index": 94,
+      "true_candidate_index": 62364,
+      "recovered_candidate_indices": [
+        62364,
+        84526
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "SNTNRGOVAMSZHXSJXYCVSHLAFAHPDDNFLQRWSZFNKCHXIJMAQFZCZOSWWRTITLQBXPEHWSVRXAVNGTQVSUAWFSYJADGVSVOCT"
+    },
+    {
+      "case_index": 95,
+      "true_candidate_index": 66135,
+      "recovered_candidate_indices": [
+        66135
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "OCZGEOXAOAJCJZAKYHCTWPPFDYECUJGKYJKTISXKTIJQGPZLKAHOOVDEIKQLODFFCCNPSDCOEJXMUQGIFUHETXTVQAZBOTRWT"
+    },
+    {
+      "case_index": 96,
+      "true_candidate_index": 69906,
+      "recovered_candidate_indices": [
+        69906,
+        81482
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "LPALWMKTOBGHUMMBNOBPXAXKHBFFQSOZUIGZSFIRTWZSXAXBFUKWIPDXGBVKALJVYFEKGRGBVSXXEGJXQWXHLCJZPMVSBBXYC"
+    },
+    {
+      "case_index": 97,
+      "true_candidate_index": 73677,
+      "recovered_candidate_indices": [
+        73677,
+        77711
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "ZPUNCADNAYRJUIDMKIFWHWTYFHFDDMLWWOWJQICPJZFCMPGAFJGDXJJJGNMVHSMTMDEQCRLDVQCKXYDNEKRVOETNORFMRFDFV"
+    },
+    {
+      "case_index": 98,
+      "true_candidate_index": 77448,
+      "recovered_candidate_indices": [
+        74044,
+        77448
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "TBHERXQOIGAYORRKGYLGUPHOYVVTMDAZWSFKOSAVQORVWMEJSUVIAZJCNKTLDTNOHTPKLFIBKVPNZNRBPSJRWGUUCRZQEFFXO"
+    },
+    {
+      "case_index": 99,
+      "true_candidate_index": 81219,
+      "recovered_candidate_indices": [
+        70273,
+        81219
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "UVPQVZGZYAWNIARIAYZVOCKJODXOXGZAEFEVDCMOPVGIZGTLTQDFJIJPEMERXUHYTOSMICQNTBMBYULQSCEYXDUELUHVWDHBO"
+    },
+    {
+      "case_index": 100,
+      "true_candidate_index": 84990,
+      "recovered_candidate_indices": [
+        62862,
+        84990
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "JHBPPXEPGXUJUGJZAVUIVEYIVOOVNBSZERJXGZSEPULSXELCKMIICZTYPGUSJURZBVNAQLHUBBDTRUTEHCBGQBLSJUEQLGEWO"
+    },
+    {
+      "case_index": 101,
+      "true_candidate_index": 88761,
+      "recovered_candidate_indices": [
+        88761
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "LHYLEZWDDPQBMVTWGREKOWUOLTSIIKOXXCXIELRLASWYMOXUYFHNXGUTBBGSRUBZNITOEWDTUNGXSYGKVZKNKPGHRWIMBHYSU"
+    },
+    {
+      "case_index": 102,
+      "true_candidate_index": 92532,
+      "recovered_candidate_indices": [
+        92532
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "SPQZLBUJYHBMAIXZVODNWLEZYHUXVFJXETZLQWDDKDKRMVSKQELVZORQDCOAPPYXEXNJQLBGENFHYTCYVWUYQKBEHZLRVLCTE"
+    },
+    {
+      "case_index": 103,
+      "true_candidate_index": 96303,
+      "recovered_candidate_indices": [
+        96303
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "LFAFFOGNXVIULYMWTNFEWGAHORJJXRDBTCSSXYCGIXJRUAZQBPFROYGXXMYFSNRYQJJYFVQRPLCBRQBGIXFCFDNBANCOOHKRE"
+    },
+    {
+      "case_index": 104,
+      "true_candidate_index": 100048,
+      "recovered_candidate_indices": [
+        33010,
+        100048
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "WMXANDRPSWLTIWMSVDNLNMGGURUWANOHCVUOXNRVJMUZUPUIIMFPMWCCXERXVYXJGWQJOHVPJRZZRZCETVWELOPFDYEVOTEKL"
+    },
+    {
+      "case_index": 105,
+      "true_candidate_index": 103819,
+      "recovered_candidate_indices": [
+        103819
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "HMFNCWSBMFOIBDIOOPWZUMRTWBGXCFRYVDUBLWEDGCTCMRVLXIEKTHMTXYKNMMMNPXHKHUJFVKIHGORKSUZKJEEEQXUBMEMXQ"
+    },
+    {
+      "case_index": 106,
+      "true_candidate_index": 107590,
+      "recovered_candidate_indices": [
+        107590
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "HQCNKDVKXKFQLOBSIPQXPHJKQYAQJNCZZWCMBQOKBHYQRAQBNCETOLPPXKURLJYGVQSRHCXFRYXZVLFIXOEDMTGMEEJWKOWVJ"
+    },
+    {
+      "case_index": 107,
+      "true_candidate_index": 111361,
+      "recovered_candidate_indices": [
+        111361
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "BQGPGYBGWWHRDBXZXEWLJEFISUQADCMTRWMQZXOHGGMEERJCFPTEUCZVLXKXWWKGRAKVEMUEVUWGQCBZNFKNOJYEKUBCWRKDZ"
+    },
+    {
+      "case_index": 108,
+      "true_candidate_index": 115132,
+      "recovered_candidate_indices": [
+        115132
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VOATSXFTOTSNOXALJLCHGTPAIUULEUKSBFPJMNVQNJRYZWEJKVQXWENHXRCUIRMCPLQOMYKWCWVGWZOZLKXVWFBEVVJIYNLDY"
+    },
+    {
+      "case_index": 109,
+      "true_candidate_index": 118903,
+      "recovered_candidate_indices": [
+        21227,
+        118903
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "USQOMFZTCDAKQRPPBSIYEZIMSBYFEUMFNFELAJAKFXFBTWTQOVPTKJKSYFVJIWAJNFPVOIYPLPUMZCDVYIFLOFDIEMGYOPWCJ"
+    },
+    {
+      "case_index": 110,
+      "true_candidate_index": 122674,
+      "recovered_candidate_indices": [
+        28792,
+        122674
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EKSNBPKTLYIUXPIFMJJJJUPNSYYTTOKNOGPLHLQLPEHUXAUWWUEEIFHEEITPXMDNFTKNWUZTFUYVWAFJXUBPDONSXBQJIFCBZ"
+    },
+    {
+      "case_index": 111,
+      "true_candidate_index": 126445,
+      "recovered_candidate_indices": [
+        126445
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "MQLOYGHIDGFQCUEHDXQYYWRVDHKNREYGSBXQXPGJHXJLFEFZXJMKAUPQZKBDEBOTENCYWZHWIZLWZJZWQODLWBZHOXFMZMZQL"
+    },
+    {
+      "case_index": 112,
+      "true_candidate_index": 130216,
+      "recovered_candidate_indices": [
+        130216
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VJKOQXBNPPKOYOYGLKPZGAKGXYPUULMDEJGJQDSFJVBAOSUETXQQBTDUNWEUKWVBTUYMASIWHSVHSNFPULFHSTQMEJOVKEIWU"
+    },
+    {
+      "case_index": 113,
+      "true_candidate_index": 133987,
+      "recovered_candidate_indices": [
+        133987
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VTNJSKOCGAVZOFEEQBSMNKOKSAYSAOVKNLRHSHPBSHIESTWIUHJUWRKJXOMTOHLDRSWOIGLSJLTMRWIPGDGCRFDABVLGUONBT"
+    },
+    {
+      "case_index": 114,
+      "true_candidate_index": 137758,
+      "recovered_candidate_indices": [
+        137758
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "LHQZEWCRZXKFMJJPVPQSUQRGHOZKNORUPSNZFPWMXSFRPNMEQGBLWTKJKTVBWWYBJKKQVUJOGKVFYOGDWXPEOSQQZZEGJQDBX"
+    },
+    {
+      "case_index": 115,
+      "true_candidate_index": 141529,
+      "recovered_candidate_indices": [
+        141529
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ZWCYXYDDNKARSUGQAGJFSGMMOTHCFVPLDWXNBARPRVWMDMMIFPTGCHXINNHXDMWDHCCYKQHEMXOMYYWTLQVWFTMUUAWEMAIXG"
+    },
+    {
+      "case_index": 116,
+      "true_candidate_index": 145300,
+      "recovered_candidate_indices": [
+        145300
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PMXBHLFSQTNQWNIPGBJVALMMTCDZXHJPJUPRLZGXUGUUNJPJGGJOQHCMMTSZXTXODZIFSNABMBAKBUXLFIHYWUEYXCGGKYSKD"
+    },
+    {
+      "case_index": 117,
+      "true_candidate_index": 3055,
+      "recovered_candidate_indices": [
+        3055
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "HNXNYCVYWDYKUYMHCYIXANDEZUZYARTMLECXWUTOCLSMXKXPDYYJYWPLDITTZPEFMYPJYMTWPRXBJVHFJPRHEFJJRNCXHTMVQ"
+    },
+    {
+      "case_index": 118,
+      "true_candidate_index": 6826,
+      "recovered_candidate_indices": [
+        6826
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "KDUCRWBOTDKZKCKSGXAHFRXMJOEWYBVIXFBSYTOXPMSEQNWPKWUVDEUVXKAROMWHEWZMURPBTCVRMFMMTOOOTUPOAFLEALWAA"
+    },
+    {
+      "case_index": 119,
+      "true_candidate_index": 10597,
+      "recovered_candidate_indices": [
+        10597
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PZUTHAHVYINWHIAZXQGFKGEUSFHAFNXPGUQARBIHAVSAGVWZORPQIOGKVQAHFHJCPAYKIMHAKFLXHWMLXBSPLGVTMSTKVSDDN"
+    },
+    {
+      "case_index": 120,
+      "true_candidate_index": 14368,
+      "recovered_candidate_indices": [
+        14368
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "IBRPEBNUKZBKRTJFZJWPJXJHHEQALIRQFIDOKBVJEBBOQWSYGVRWIOONFHOEIZZWOAVCLYIUPXZEFEZVKSOLQBLHWLWAIXJDL"
+    },
+    {
+      "case_index": 121,
+      "true_candidate_index": 18139,
+      "recovered_candidate_indices": [
+        18139
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "NWFMWHFCLWWLOFYTXQFWWRYDSAZEGCVPFIPKZBGIFCIXNRPOLPGXQIMTFUAFXEJXZEBCDVCPMNXJRYLFCBGIDPWBAXSJLNWWR"
+    },
+    {
+      "case_index": 122,
+      "true_candidate_index": 21910,
+      "recovered_candidate_indices": [
+        21910,
+        119598
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "LGTWUNHJDSBETZORAXYRYPYTIECSTXKEEEKCYLXMDSVWWVGHCKLTWBEXPJCRQBAHASZSGOMJNPXMOLUCSKNDVMWWKKSSFGYKR"
+    },
+    {
+      "case_index": 123,
+      "true_candidate_index": 25681,
+      "recovered_candidate_indices": [
+        25681
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "SJRJEPWPOZTRIPJVOXNLTCNFDDABBVQJORNEMKDVZMSEOUMOLYBPGRMWERMIOHFJEBNXNEKMQJSRLYGPWIPFDZDACKATSVLGW"
+    },
+    {
+      "case_index": 124,
+      "true_candidate_index": 29452,
+      "recovered_candidate_indices": [
+        29452,
+        123392
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "QLYWHNNDBYSKYTFZXCKMNTLWUOAHOHDIYROVCNFZZROQFXQDVZRIGPBGQNQSENJBSHUKJJZSGIAKSVYMHESJTXWYMNBXVFDAB"
+    },
+    {
+      "case_index": 125,
+      "true_candidate_index": 33223,
+      "recovered_candidate_indices": [
+        33223,
+        100901
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "PYGZBXMSEMDLCMRNYRKCGULSLEWDBBWIPIVHVZCOWFLZENPGNKRUIKFPAXDEDIDXKDLDIKEQNRFYODMJQKCYDPBNMPPYMBNLV"
+    },
+    {
+      "case_index": 126,
+      "true_candidate_index": 36994,
+      "recovered_candidate_indices": [
+        36994
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "GMSEXYXDIDKXBFFTBZXIPEVTBSAPTHLZHHSBCUJHDYCRELCXVVTMEBRXOQNNXJJZDPCGTDTXFIXEVATUYTAFFDTOGVSPINKGZ"
+    },
+    {
+      "case_index": 127,
+      "true_candidate_index": 40765,
+      "recovered_candidate_indices": [
+        40765
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "UNRHLJLLIJDXENQYCGGNGSOCOEKFWFGHKZVKANRVBAXGPFXYVBLVXAVWBPRLILRHMFOLCMVSPBMEHAYVTZKWDJTROQVXXAZWI"
+    },
+    {
+      "case_index": 128,
+      "true_candidate_index": 44536,
+      "recovered_candidate_indices": [
+        44536
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "ANQPGPVFWCVQEEOVQTMLDJSAXQJMUWDYXQKQOMDJIDASFJVRGMXNDYHVCJQAVQXDMMXOZRYIHNHRYLEMQECFTHVIRBPPSBUFN"
+    },
+    {
+      "case_index": 129,
+      "true_candidate_index": 48307,
+      "recovered_candidate_indices": [
+        48307
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "RJGAKPMSKLUQRRPPRAGOTJWXAEUJSANVYCTCBPQZPODZLHRDTZENTNGZFBHOMSEOTJYJCMWRJKJYUTAQUNRLINFOXGDGIDTTA"
+    },
+    {
+      "case_index": 130,
+      "true_candidate_index": 52052,
+      "recovered_candidate_indices": [
+        52052
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "SSTAWIZRCOQATYJMJMUCCGJJADVLLLMBQTXQUTQTTYPWPJYXBISDSLTDBWRFIOJPCLBHWRZOTKKIVUIPYZRKIODANWBNAHKFH"
+    },
+    {
+      "case_index": 131,
+      "true_candidate_index": 55823,
+      "recovered_candidate_indices": [
+        55823
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "VILQBMPRXFOTMZPUSUTHDRQWAJNBFQVHALZFDFHIHXAYZWPGRAHDQSFSJQWJQMXXMBYUWZAYGCTYLIGVAAAKQVUAKBVWAYSZY"
+    },
+    {
+      "case_index": 132,
+      "true_candidate_index": 59594,
+      "recovered_candidate_indices": [
+        59594
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "XKTZFGQOXKTONLMDNLEEOUCFJGALFFWTHHDFLPNLMXCSVCMHNQXHFMTOZFFUFTLXXLTGJXBKZXKIJVKNGUXGIPRGDJKKCIEKK"
+    },
+    {
+      "case_index": 133,
+      "true_candidate_index": 63365,
+      "recovered_candidate_indices": [
+        63365,
+        85501
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "FRMSNEGIALUENCVJTWXTLXIGFFVBAAWJJDWITLICIRIBWUGEXYLIQAVVPFURPQLUKBMTGRIZAVXMABQHFHJLJIFSUXFZDALRZ"
+    },
+    {
+      "case_index": 134,
+      "true_candidate_index": 67136,
+      "recovered_candidate_indices": [
+        67136
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "PWJWHBYXSVPDNFJHULFTRKUSSTOYBVCOQVJVUHKPAKICAOJRIXWIGESXHDCMZQSAJYPMQAVDZKAYTGNVFLUHMLKPHIUDRBUSQ"
+    },
+    {
+      "case_index": 135,
+      "true_candidate_index": 70907,
+      "recovered_candidate_indices": [
+        70907,
+        81807
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "TBMMRMYUQBLZWRMNBXAQAESXRREPFPZVSXTAVTSRDTSNKESCMUGGNUOLYNAFIEKJJPRPNKLCFKLYDVBCYXQRZJRAEZDNTNSWU"
+    },
+    {
+      "case_index": 136,
+      "true_candidate_index": 74678,
+      "recovered_candidate_indices": [
+        74678,
+        78140
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "VSOLNMEEYRYABQJMECHKNATGHOTVKRTJOUAOHEXMSIHTZGXKOKQGAPKTIELKKPQPEVOXWWFCAYSKDVLRLQALFWZQMVUGJRKRX"
+    },
+    {
+      "case_index": 137,
+      "true_candidate_index": 78449,
+      "recovered_candidate_indices": [
+        74369,
+        78449
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "JLLWCGMJZWFMQOFIBFUUGRFEISOASSZQFDJVPFBHPLYCKAQFLDUOXIWJSXQGCTMNYAKTDWCRAQYBHTJUGAOJYTRIDKGBQHCGY"
+    },
+    {
+      "case_index": 138,
+      "true_candidate_index": 82220,
+      "recovered_candidate_indices": [
+        70702,
+        82220
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "HVFZURIKAPBPXDEKAQWRZCDPHTRCUHZLHSCAMKBUDZEQPWJQDTRBLCIVGCPLEMBFWCMTNADMJWKFYNIWULAVXXWIPMXKKKOXT"
+    },
+    {
+      "case_index": 139,
+      "true_candidate_index": 85991,
+      "recovered_candidate_indices": [
+        63187,
+        85991
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "EVSSWIJRNOCQLARDJLHCKSUIEOGKRJHGEWQJRECFGZUMNXWYFYHYABIPRNLLBUQHNKWWCXRDYKSXDCPXPLISKVFEVEWIDRHNM"
+    },
+    {
+      "case_index": 140,
+      "true_candidate_index": 89762,
+      "recovered_candidate_indices": [
+        89762
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "TQFPNRTHSXXGJQAXYKPWZSQXXYNSWWFNQPXUOJFRMDVLMFIFDTXDIPXSHOELDJMDGSVAZBRLCSZEBILGYHIWQUGNWIRFGOPSE"
+    },
+    {
+      "case_index": 141,
+      "true_candidate_index": 93533,
+      "recovered_candidate_indices": [
+        93533
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "YRZOITVKSWQVTAWUOUGVLPHFEYPUCDVNESCCNNXVSPLRJXWMSLILICJMUEVOZTNVWUISFQDQXNWWEPKKXSNAVDWWYULZTXHHI"
+    },
+    {
+      "case_index": 142,
+      "true_candidate_index": 97304,
+      "recovered_candidate_indices": [
+        97304
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": true,
+      "ciphertext": "MWVLEJRPIHNIKBMHYLGVUVCTLFRAAJMYHQYSPRPZAAGMBSZVHNFBEACKGMSJVVCCGALQLDIVEKRCLKDEEMYZYNIQTBUSCOGRU"
+    },
+    {
+      "case_index": 143,
+      "true_candidate_index": 101075,
+      "recovered_candidate_indices": [
+        33335,
+        101075
+      ],
+      "true_candidate_retained": true,
+      "full_message": {
+        "plaintext_recovery_matches": true,
+        "recovered_plaintext_reencrypts": true,
+        "passed": true
+      },
+      "unique_recovery": false,
+      "ciphertext": "ACYXWSMZVIOREKTLIREYHMZJZDCLWWCUEUVJKSVTEHFAJXODTSYXZCKEEZWSZUOVNLZLUNDXHRBNXFOOJVLQCCBOKAXRVHGVQ"
+    }
+  ],
+  "retained_cases": 144,
+  "plaintext_recovery_cases": 144,
+  "reencryption_cases": 144,
+  "full_message_recovery_cases": 144,
+  "unique_recovery_cases": 98,
+  "passed": true
+}

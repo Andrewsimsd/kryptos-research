@@ -1,0 +1,401 @@
+{
+  "status": "verified",
+  "primers_checked": 39,
+  "feasible": 39,
+  "infeasible": 0,
+  "unresolved": 0,
+  "results": [
+    {
+      "primer": "10319",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 35,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "12042",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 43,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "16795",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 43,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "16953",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 49,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "20173",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 35,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "20707",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 37,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "22856",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 24,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "26717",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 43,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "30016",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 38,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "30640",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 48,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "30690",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 22,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "30987",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 39,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "36650",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 34,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "38175",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 51,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "38254",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 46,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "38888",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 32,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "40909",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 40,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "44157",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 39,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "52654",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 41,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "54258",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 41,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "56852",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 52,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "58456",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 46,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "60101",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 44,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "60319",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 33,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "62389",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 32,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "66953",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 50,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "70094",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 46,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "70173",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 33,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "70410",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 26,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "70460",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 36,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "72856",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 49,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "80303",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 32,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "84393",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 40,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "84501",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 32,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "84551",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 41,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "88254",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 34,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "94157",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 47,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "98800",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 18,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    },
+    {
+      "primer": "98850",
+      "rust_status": "feasible",
+      "reference_status": "feasible",
+      "resolved": true,
+      "components": 5,
+      "rust_offset_attempts": 33,
+      "reference_states": 6,
+      "crib_equations_checked": 24
+    }
+  ],
+  "limitations": "Compatibility witnesses only; arbitrary unconstrained alphabet completion, no intended plaintext recovery. Same coordinator, not fresh-context A7.",
+  "report_sha256": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5"
+}

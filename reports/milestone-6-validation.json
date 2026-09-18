@@ -1,0 +1,38 @@
+[
+  {
+    "command": ["cargo", "fmt", "--all", "--", "--check"],
+    "exit_status": 0,
+    "summary": "all Rust sources formatted"
+  },
+  {
+    "command": ["cargo", "clippy", "--all-targets", "--all-features", "--", "-D", "warnings", "-W", "clippy::pedantic"],
+    "exit_status": 0,
+    "summary": "no warnings"
+  },
+  {
+    "command": ["cargo", "test", "--all-features"],
+    "exit_status": 0,
+    "summary": "117 unit and integration tests plus 9 doctests passed"
+  },
+  {
+    "command": ["cargo", "test", "--doc"],
+    "exit_status": 0,
+    "summary": "9 doctests passed"
+  },
+  {
+    "command": ["cargo", "doc", "--all-features", "--no-deps"],
+    "environment": {"RUSTDOCFLAGS": "-D warnings"},
+    "exit_status": 0,
+    "summary": "documentation generated without warnings"
+  },
+  {
+    "command": ["cargo", "+1.85.0", "check", "--locked", "--offline"],
+    "exit_status": 0,
+    "summary": "declared minimum Rust toolchain compatibility check passed"
+  },
+  {
+    "command": ["python3", "-m", "unittest", "discover", "-s", "verification", "-v"],
+    "exit_status": 0,
+    "summary": "81 Python tests passed"
+  }
+]

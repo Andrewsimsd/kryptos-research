@@ -15,6 +15,28 @@ evaluation permutation, checking all 48 histograms and the joint distribution
 of selected maxima. Python uses precomputed exact score ranks; Rust compares
 signed integer scores directly. The same-coordinator limitation still applies.
 
+[Milestone 6](milestone-6.md) independently reconstructs every primer key and
+crib graph, searches global component placements with a different ordering, and
+checks both complete alphabet permutations plus all 936 reported equations.
+Rust and Python resolve all 39 primers as feasible. This is still a
+same-coordinator cross-check rather than the plan's fresh-context A7 review.
+
+[Milestone 7](milestone-7.md) independently re-enumerates the exact 39 × 4 × 4
+× 26 structured-alphabet domain in Python, reconstructing all recurrence keys,
+index maps, rotations and 389,376 equations. It validates every first-mismatch
+certificate and aggregate histogram. Rust and Python agree that all 16,224
+models are rejected. The same-coordinator limitation continues to apply.
+
+[Milestone 8](milestone-8.md) independently reconstructs both keyword-alphabet
+constructors, all 12 rotation classes, every signature bucket, the xorshift32
+planted corpus, all 144 recovery sets and all 3,504,384 K4 equations. In the
+amended `KEYWORD-ALPHABETS-0002` run, both implementations decode recovered
+candidate IDs, independently decrypt all 97 positions, compare plaintext, and
+reencrypt it. The current Rust binary also reproduces the preserved five
+known-answer traces and 600 synthetic foundations cases byte-for-byte. Rust and
+Python agree that all 146,016 models are rejected after all amended gates pass.
+This remains a same-coordinator cross-check rather than external A7.
+
 The saved [Rust diagnosis](../results/K4-D-0001/run-001/diagnosis.json) passes the
 [Python reference verifier](../verification/verify_baseline.py), including all
 97 periods, complete anchor traces, aggregate counts, IC and every rejection

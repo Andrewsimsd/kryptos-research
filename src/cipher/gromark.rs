@@ -74,20 +74,8 @@ impl Gromark {
     /// # Errors
     /// Rejects empty/non-A–Z keywords and primer digits above nine.
     pub fn new(keyword: &str, primer: [u8; 5]) -> Result<Self, CipherError> {
-        let keyed = Alphabet::keyed(keyword)?;
-        let mut unique = Vec::new();
-        for letter in keyword.bytes() {
-            if !unique.contains(&letter) {
-                unique.push(letter);
-            }
-        }
-        let mut columns: Vec<_> = (0..unique.len()).collect();
-        columns.sort_by_key(|&index| unique[index]);
-        let order = Permutation::columnar(26, &columns, false)?
-            .apply(&keyed.order())?
-            .text;
         Ok(Self {
-            alphabet: Alphabet::from_order(&order)?,
+            alphabet: aca_transposed_alphabet(keyword)?,
             recurrence: Recurrence::new(10, primer.to_vec())?,
         })
     }
@@ -145,6 +133,31 @@ impl Gromark {
     }
 }
 
+/// Construct the ACA Gromark transposed keyed alphabet.
+///
+/// The keyword is deduplicated in first-occurrence order. Its keyword-fill
+/// alphabet is written rowwise at the deduplicated keyword width, then ragged
+/// columns are read in alphabetical order of the deduplicated keyword letters.
+///
+/// # Errors
+///
+/// Rejects empty or non-uppercase-ASCII keywords.
+pub fn aca_transposed_alphabet(keyword: &str) -> Result<Alphabet, CipherError> {
+    let keyed = Alphabet::keyed(keyword)?;
+    let mut unique = Vec::new();
+    for letter in keyword.bytes() {
+        if !unique.contains(&letter) {
+            unique.push(letter);
+        }
+    }
+    let mut columns: Vec<_> = (0..unique.len()).collect();
+    columns.sort_by_key(|&index| unique[index]);
+    let order = Permutation::columnar(26, &columns, false)?
+        .apply(&keyed.order())?
+        .text;
+    Alphabet::from_order(&order)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -152,10 +165,7 @@ mod tests {
     #[test]
     fn aca_alphabet_construction_matches_worked_example() {
         assert_eq!(
-            Gromark::new("ENIGMA", [2, 3, 4, 5, 2])
-                .unwrap()
-                .alphabet()
-                .order(),
+            aca_transposed_alphabet("ENIGMA").unwrap().order(),
             "AJRXEBKSYGFPVIDOUMHQWNCLTZ"
         );
     }
