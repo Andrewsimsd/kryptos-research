@@ -30,12 +30,19 @@ models are rejected. The same-coordinator limitation continues to apply.
 [Milestone 8](milestone-8.md) independently reconstructs both keyword-alphabet
 constructors, all 12 rotation classes, every signature bucket, the xorshift32
 planted corpus, all 144 recovery sets and all 3,504,384 K4 equations. In the
-amended `KEYWORD-ALPHABETS-0002` run, both implementations decode recovered
-candidate IDs, independently decrypt all 97 positions, compare plaintext, and
-reencrypt it. The current Rust binary also reproduces the preserved five
+final `KEYWORD-ALPHABETS-0003` run, the Python verifier regenerates calibration
+before K4 evaluation. Both implementations locate the known true ID within each
+returned set, decode it, decrypt all 97 positions, compare plaintext, and
+reencrypt it. This proves 144 true-model retention/round trips; the 98 singleton
+sets are the blind model identifications. The current Rust binary also reproduces the preserved five
 known-answer traces and 600 synthetic foundations cases byte-for-byte. Rust and
 Python agree that all 146,016 models are rejected after all amended gates pass.
 This remains a same-coordinator cross-check rather than external A7.
+
+The [workload clarification](milestone-8-workload-clarification.md) distinguishes
+the 10,596,960 primary Rust operations from another 10,596,960 performed by the
+independent Python stages. The combined equation/position workload is
+21,193,920; this is separate from build and regression work.
 
 The saved [Rust diagnosis](../results/K4-D-0001/run-001/diagnosis.json) passes the
 [Python reference verifier](../verification/verify_baseline.py), including all

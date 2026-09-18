@@ -1,0 +1,1869 @@
+{
+  "schema_version": 1,
+  "evidence_id": "K4-v1",
+  "ciphertext_length": 97,
+  "known_plaintext_count": 24,
+  "letter_counts": {
+    "A": 4,
+    "B": 5,
+    "C": 2,
+    "D": 3,
+    "E": 2,
+    "F": 4,
+    "G": 4,
+    "H": 2,
+    "I": 4,
+    "J": 3,
+    "K": 8,
+    "L": 4,
+    "M": 1,
+    "N": 3,
+    "O": 5,
+    "P": 3,
+    "Q": 4,
+    "R": 4,
+    "S": 6,
+    "T": 6,
+    "U": 6,
+    "V": 2,
+    "W": 5,
+    "X": 2,
+    "Y": 1,
+    "Z": 4
+  },
+  "ic": {
+    "numerator": 336,
+    "denominator": 9312,
+    "value": 0.03608247422680412
+  },
+  "positions": [
+    {
+      "index_zero_based": 21,
+      "position_one_based": 22,
+      "plaintext": "E",
+      "ciphertext": "F",
+      "vigenere_key_value": 1
+    },
+    {
+      "index_zero_based": 22,
+      "position_one_based": 23,
+      "plaintext": "A",
+      "ciphertext": "L",
+      "vigenere_key_value": 11
+    },
+    {
+      "index_zero_based": 23,
+      "position_one_based": 24,
+      "plaintext": "S",
+      "ciphertext": "R",
+      "vigenere_key_value": 25
+    },
+    {
+      "index_zero_based": 24,
+      "position_one_based": 25,
+      "plaintext": "T",
+      "ciphertext": "V",
+      "vigenere_key_value": 2
+    },
+    {
+      "index_zero_based": 25,
+      "position_one_based": 26,
+      "plaintext": "N",
+      "ciphertext": "Q",
+      "vigenere_key_value": 3
+    },
+    {
+      "index_zero_based": 26,
+      "position_one_based": 27,
+      "plaintext": "O",
+      "ciphertext": "Q",
+      "vigenere_key_value": 2
+    },
+    {
+      "index_zero_based": 27,
+      "position_one_based": 28,
+      "plaintext": "R",
+      "ciphertext": "P",
+      "vigenere_key_value": 24
+    },
+    {
+      "index_zero_based": 28,
+      "position_one_based": 29,
+      "plaintext": "T",
+      "ciphertext": "R",
+      "vigenere_key_value": 24
+    },
+    {
+      "index_zero_based": 29,
+      "position_one_based": 30,
+      "plaintext": "H",
+      "ciphertext": "N",
+      "vigenere_key_value": 6
+    },
+    {
+      "index_zero_based": 30,
+      "position_one_based": 31,
+      "plaintext": "E",
+      "ciphertext": "G",
+      "vigenere_key_value": 2
+    },
+    {
+      "index_zero_based": 31,
+      "position_one_based": 32,
+      "plaintext": "A",
+      "ciphertext": "K",
+      "vigenere_key_value": 10
+    },
+    {
+      "index_zero_based": 32,
+      "position_one_based": 33,
+      "plaintext": "S",
+      "ciphertext": "S",
+      "vigenere_key_value": 0
+    },
+    {
+      "index_zero_based": 33,
+      "position_one_based": 34,
+      "plaintext": "T",
+      "ciphertext": "S",
+      "vigenere_key_value": 25
+    },
+    {
+      "index_zero_based": 63,
+      "position_one_based": 64,
+      "plaintext": "B",
+      "ciphertext": "N",
+      "vigenere_key_value": 12
+    },
+    {
+      "index_zero_based": 64,
+      "position_one_based": 65,
+      "plaintext": "E",
+      "ciphertext": "Y",
+      "vigenere_key_value": 20
+    },
+    {
+      "index_zero_based": 65,
+      "position_one_based": 66,
+      "plaintext": "R",
+      "ciphertext": "P",
+      "vigenere_key_value": 24
+    },
+    {
+      "index_zero_based": 66,
+      "position_one_based": 67,
+      "plaintext": "L",
+      "ciphertext": "V",
+      "vigenere_key_value": 10
+    },
+    {
+      "index_zero_based": 67,
+      "position_one_based": 68,
+      "plaintext": "I",
+      "ciphertext": "T",
+      "vigenere_key_value": 11
+    },
+    {
+      "index_zero_based": 68,
+      "position_one_based": 69,
+      "plaintext": "N",
+      "ciphertext": "T",
+      "vigenere_key_value": 6
+    },
+    {
+      "index_zero_based": 69,
+      "position_one_based": 70,
+      "plaintext": "C",
+      "ciphertext": "M",
+      "vigenere_key_value": 10
+    },
+    {
+      "index_zero_based": 70,
+      "position_one_based": 71,
+      "plaintext": "L",
+      "ciphertext": "Z",
+      "vigenere_key_value": 14
+    },
+    {
+      "index_zero_based": 71,
+      "position_one_based": 72,
+      "plaintext": "O",
+      "ciphertext": "F",
+      "vigenere_key_value": 17
+    },
+    {
+      "index_zero_based": 72,
+      "position_one_based": 73,
+      "plaintext": "C",
+      "ciphertext": "P",
+      "vigenere_key_value": 13
+    },
+    {
+      "index_zero_based": 73,
+      "position_one_based": 74,
+      "plaintext": "K",
+      "ciphertext": "K",
+      "vigenere_key_value": 0
+    }
+  ],
+  "checks": [
+    {
+      "family": "pure_transposition",
+      "assumptions": [
+        "A permutation of exactly the 97 baseline letters",
+        "No substitution, addition, omission, or padding",
+        "Anchors are in final normalized plaintext positions"
+      ],
+      "status": "rejected",
+      "witness": {
+        "kind": "letter_deficit",
+        "letter": "E",
+        "available": 2,
+        "required": 3,
+        "positions_zero_based": [
+          21,
+          30,
+          64
+        ]
+      }
+    },
+    {
+      "family": "fixed_monoalphabetic_encryption",
+      "assumptions": [
+        "One deterministic plaintext-to-ciphertext letter map at all aligned positions",
+        "No transposition, changing alphabets, or context-dependent mapping"
+      ],
+      "status": "rejected",
+      "witness": {
+        "kind": "mapping_conflict",
+        "direction": "encryption",
+        "first": {
+          "index_zero_based": 21,
+          "position_one_based": 22,
+          "plaintext": "E",
+          "ciphertext": "F",
+          "vigenere_key_value": 1
+        },
+        "second": {
+          "index_zero_based": 30,
+          "position_one_based": 31,
+          "plaintext": "E",
+          "ciphertext": "G",
+          "vigenere_key_value": 2
+        }
+      }
+    },
+    {
+      "family": "fixed_monoalphabetic_decryption",
+      "assumptions": [
+        "One deterministic ciphertext-to-plaintext letter map at all aligned positions",
+        "No transposition, changing alphabets, or context-dependent mapping"
+      ],
+      "status": "rejected",
+      "witness": {
+        "kind": "mapping_conflict",
+        "direction": "decryption",
+        "first": {
+          "index_zero_based": 21,
+          "position_one_based": 22,
+          "plaintext": "E",
+          "ciphertext": "F",
+          "vigenere_key_value": 1
+        },
+        "second": {
+          "index_zero_based": 71,
+          "position_one_based": 72,
+          "plaintext": "O",
+          "ciphertext": "F",
+          "vigenere_key_value": 17
+        }
+      }
+    },
+    {
+      "family": "no_self_encryption",
+      "assumptions": [
+        "The final aligned encryption forbids P_i = C_i at every position",
+        "This restriction is not inferred for internal stages of a compound cipher"
+      ],
+      "status": "rejected",
+      "witness": {
+        "kind": "fixed_point",
+        "position": {
+          "index_zero_based": 32,
+          "position_one_based": 33,
+          "plaintext": "S",
+          "ciphertext": "S",
+          "vigenere_key_value": 0
+        }
+      }
+    }
+  ],
+  "vigenere": {
+    "equation": "c_i = p_i + k_(i mod t) (mod 26)",
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "periods": [
+      {
+        "period": 1,
+        "status": "rejected",
+        "constrained_slots": 1,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 0,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 22,
+            "position_one_based": 23,
+            "plaintext": "A",
+            "ciphertext": "L",
+            "vigenere_key_value": 11
+          }
+        }
+      },
+      {
+        "period": 2,
+        "status": "rejected",
+        "constrained_slots": 2,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 1,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 23,
+            "position_one_based": 24,
+            "plaintext": "S",
+            "ciphertext": "R",
+            "vigenere_key_value": 25
+          }
+        }
+      },
+      {
+        "period": 3,
+        "status": "rejected",
+        "constrained_slots": 3,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 0,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 24,
+            "position_one_based": 25,
+            "plaintext": "T",
+            "ciphertext": "V",
+            "vigenere_key_value": 2
+          }
+        }
+      },
+      {
+        "period": 4,
+        "status": "rejected",
+        "constrained_slots": 4,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 1,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 25,
+            "position_one_based": 26,
+            "plaintext": "N",
+            "ciphertext": "Q",
+            "vigenere_key_value": 3
+          }
+        }
+      },
+      {
+        "period": 5,
+        "status": "rejected",
+        "constrained_slots": 5,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 1,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 26,
+            "position_one_based": 27,
+            "plaintext": "O",
+            "ciphertext": "Q",
+            "vigenere_key_value": 2
+          }
+        }
+      },
+      {
+        "period": 6,
+        "status": "rejected",
+        "constrained_slots": 6,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 3,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 27,
+            "position_one_based": 28,
+            "plaintext": "R",
+            "ciphertext": "P",
+            "vigenere_key_value": 24
+          }
+        }
+      },
+      {
+        "period": 7,
+        "status": "rejected",
+        "constrained_slots": 7,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 0,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 28,
+            "position_one_based": 29,
+            "plaintext": "T",
+            "ciphertext": "R",
+            "vigenere_key_value": 24
+          }
+        }
+      },
+      {
+        "period": 8,
+        "status": "rejected",
+        "constrained_slots": 8,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 5,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 29,
+            "position_one_based": 30,
+            "plaintext": "H",
+            "ciphertext": "N",
+            "vigenere_key_value": 6
+          }
+        }
+      },
+      {
+        "period": 9,
+        "status": "rejected",
+        "constrained_slots": 9,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 3,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 30,
+            "position_one_based": 31,
+            "plaintext": "E",
+            "ciphertext": "G",
+            "vigenere_key_value": 2
+          }
+        }
+      },
+      {
+        "period": 10,
+        "status": "rejected",
+        "constrained_slots": 10,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 1,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 31,
+            "position_one_based": 32,
+            "plaintext": "A",
+            "ciphertext": "K",
+            "vigenere_key_value": 10
+          }
+        }
+      },
+      {
+        "period": 11,
+        "status": "rejected",
+        "constrained_slots": 11,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 10,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 32,
+            "position_one_based": 33,
+            "plaintext": "S",
+            "ciphertext": "S",
+            "vigenere_key_value": 0
+          }
+        }
+      },
+      {
+        "period": 12,
+        "status": "rejected",
+        "constrained_slots": 12,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 9,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 33,
+            "position_one_based": 34,
+            "plaintext": "T",
+            "ciphertext": "S",
+            "vigenere_key_value": 25
+          }
+        }
+      },
+      {
+        "period": 13,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 11,
+          "first": {
+            "index_zero_based": 24,
+            "position_one_based": 25,
+            "plaintext": "T",
+            "ciphertext": "V",
+            "vigenere_key_value": 2
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 14,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 1,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 7,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 15,
+        "status": "rejected",
+        "constrained_slots": 15,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 3,
+          "first": {
+            "index_zero_based": 33,
+            "position_one_based": 34,
+            "plaintext": "T",
+            "ciphertext": "S",
+            "vigenere_key_value": 25
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 16,
+        "status": "rejected",
+        "constrained_slots": 16,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 15,
+          "first": {
+            "index_zero_based": 31,
+            "position_one_based": 32,
+            "plaintext": "A",
+            "ciphertext": "K",
+            "vigenere_key_value": 10
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 17,
+        "status": "rejected",
+        "constrained_slots": 17,
+        "unconstrained_slots": 0,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 12,
+          "first": {
+            "index_zero_based": 29,
+            "position_one_based": 30,
+            "plaintext": "H",
+            "ciphertext": "N",
+            "vigenere_key_value": 6
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 18,
+        "status": "rejected",
+        "constrained_slots": 17,
+        "unconstrained_slots": 1,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 9,
+          "first": {
+            "index_zero_based": 27,
+            "position_one_based": 28,
+            "plaintext": "R",
+            "ciphertext": "P",
+            "vigenere_key_value": 24
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 19,
+        "status": "rejected",
+        "constrained_slots": 15,
+        "unconstrained_slots": 4,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 6,
+          "first": {
+            "index_zero_based": 25,
+            "position_one_based": 26,
+            "plaintext": "N",
+            "ciphertext": "Q",
+            "vigenere_key_value": 3
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 20,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 7,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 3,
+          "first": {
+            "index_zero_based": 23,
+            "position_one_based": 24,
+            "plaintext": "S",
+            "ciphertext": "R",
+            "vigenere_key_value": 25
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 21,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 8,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 0,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 22,
+        "status": "rejected",
+        "constrained_slots": 15,
+        "unconstrained_slots": 7,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 65,
+            "position_one_based": 66,
+            "plaintext": "R",
+            "ciphertext": "P",
+            "vigenere_key_value": 24
+          }
+        }
+      },
+      {
+        "period": 23,
+        "status": "rejected",
+        "constrained_slots": 17,
+        "unconstrained_slots": 6,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 67,
+            "position_one_based": 68,
+            "plaintext": "I",
+            "ciphertext": "T",
+            "vigenere_key_value": 11
+          }
+        }
+      },
+      {
+        "period": 24,
+        "status": "rejected",
+        "constrained_slots": 19,
+        "unconstrained_slots": 5,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 69,
+            "position_one_based": 70,
+            "plaintext": "C",
+            "ciphertext": "M",
+            "vigenere_key_value": 10
+          }
+        }
+      },
+      {
+        "period": 25,
+        "status": "rejected",
+        "constrained_slots": 21,
+        "unconstrained_slots": 4,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 71,
+            "position_one_based": 72,
+            "plaintext": "O",
+            "ciphertext": "F",
+            "vigenere_key_value": 17
+          }
+        }
+      },
+      {
+        "period": 26,
+        "status": "rejected",
+        "constrained_slots": 23,
+        "unconstrained_slots": 3,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 73,
+            "position_one_based": 74,
+            "plaintext": "K",
+            "ciphertext": "K",
+            "vigenere_key_value": 0
+          }
+        }
+      },
+      {
+        "period": 27,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 3,
+        "witness": null
+      },
+      {
+        "period": 28,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 4,
+        "witness": null
+      },
+      {
+        "period": 29,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 5,
+        "witness": null
+      },
+      {
+        "period": 30,
+        "status": "rejected",
+        "constrained_slots": 23,
+        "unconstrained_slots": 7,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 3,
+          "first": {
+            "index_zero_based": 33,
+            "position_one_based": 34,
+            "plaintext": "T",
+            "ciphertext": "S",
+            "vigenere_key_value": 25
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 31,
+        "status": "rejected",
+        "constrained_slots": 22,
+        "unconstrained_slots": 9,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 1,
+          "first": {
+            "index_zero_based": 32,
+            "position_one_based": 33,
+            "plaintext": "S",
+            "ciphertext": "S",
+            "vigenere_key_value": 0
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 32,
+        "status": "rejected",
+        "constrained_slots": 21,
+        "unconstrained_slots": 11,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 31,
+          "first": {
+            "index_zero_based": 31,
+            "position_one_based": 32,
+            "plaintext": "A",
+            "ciphertext": "K",
+            "vigenere_key_value": 10
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 33,
+        "status": "rejected",
+        "constrained_slots": 20,
+        "unconstrained_slots": 13,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 30,
+          "first": {
+            "index_zero_based": 30,
+            "position_one_based": 31,
+            "plaintext": "E",
+            "ciphertext": "G",
+            "vigenere_key_value": 2
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 34,
+        "status": "rejected",
+        "constrained_slots": 19,
+        "unconstrained_slots": 15,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 29,
+          "first": {
+            "index_zero_based": 29,
+            "position_one_based": 30,
+            "plaintext": "H",
+            "ciphertext": "N",
+            "vigenere_key_value": 6
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 35,
+        "status": "rejected",
+        "constrained_slots": 18,
+        "unconstrained_slots": 17,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 28,
+          "first": {
+            "index_zero_based": 28,
+            "position_one_based": 29,
+            "plaintext": "T",
+            "ciphertext": "R",
+            "vigenere_key_value": 24
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 36,
+        "status": "rejected",
+        "constrained_slots": 17,
+        "unconstrained_slots": 19,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 27,
+          "first": {
+            "index_zero_based": 27,
+            "position_one_based": 28,
+            "plaintext": "R",
+            "ciphertext": "P",
+            "vigenere_key_value": 24
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 37,
+        "status": "rejected",
+        "constrained_slots": 16,
+        "unconstrained_slots": 21,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 26,
+          "first": {
+            "index_zero_based": 26,
+            "position_one_based": 27,
+            "plaintext": "O",
+            "ciphertext": "Q",
+            "vigenere_key_value": 2
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 38,
+        "status": "rejected",
+        "constrained_slots": 15,
+        "unconstrained_slots": 23,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 25,
+          "first": {
+            "index_zero_based": 25,
+            "position_one_based": 26,
+            "plaintext": "N",
+            "ciphertext": "Q",
+            "vigenere_key_value": 3
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 39,
+        "status": "rejected",
+        "constrained_slots": 14,
+        "unconstrained_slots": 25,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 24,
+          "first": {
+            "index_zero_based": 24,
+            "position_one_based": 25,
+            "plaintext": "T",
+            "ciphertext": "V",
+            "vigenere_key_value": 2
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 40,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 27,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 23,
+          "first": {
+            "index_zero_based": 23,
+            "position_one_based": 24,
+            "plaintext": "S",
+            "ciphertext": "R",
+            "vigenere_key_value": 25
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 41,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 28,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 22,
+          "first": {
+            "index_zero_based": 22,
+            "position_one_based": 23,
+            "plaintext": "A",
+            "ciphertext": "L",
+            "vigenere_key_value": 11
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 42,
+        "status": "rejected",
+        "constrained_slots": 13,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 63,
+            "position_one_based": 64,
+            "plaintext": "B",
+            "ciphertext": "N",
+            "vigenere_key_value": 12
+          }
+        }
+      },
+      {
+        "period": 43,
+        "status": "rejected",
+        "constrained_slots": 14,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 64,
+            "position_one_based": 65,
+            "plaintext": "E",
+            "ciphertext": "Y",
+            "vigenere_key_value": 20
+          }
+        }
+      },
+      {
+        "period": 44,
+        "status": "rejected",
+        "constrained_slots": 15,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 65,
+            "position_one_based": 66,
+            "plaintext": "R",
+            "ciphertext": "P",
+            "vigenere_key_value": 24
+          }
+        }
+      },
+      {
+        "period": 45,
+        "status": "rejected",
+        "constrained_slots": 16,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 66,
+            "position_one_based": 67,
+            "plaintext": "L",
+            "ciphertext": "V",
+            "vigenere_key_value": 10
+          }
+        }
+      },
+      {
+        "period": 46,
+        "status": "rejected",
+        "constrained_slots": 17,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 67,
+            "position_one_based": 68,
+            "plaintext": "I",
+            "ciphertext": "T",
+            "vigenere_key_value": 11
+          }
+        }
+      },
+      {
+        "period": 47,
+        "status": "rejected",
+        "constrained_slots": 18,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 68,
+            "position_one_based": 69,
+            "plaintext": "N",
+            "ciphertext": "T",
+            "vigenere_key_value": 6
+          }
+        }
+      },
+      {
+        "period": 48,
+        "status": "rejected",
+        "constrained_slots": 19,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 69,
+            "position_one_based": 70,
+            "plaintext": "C",
+            "ciphertext": "M",
+            "vigenere_key_value": 10
+          }
+        }
+      },
+      {
+        "period": 49,
+        "status": "rejected",
+        "constrained_slots": 20,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 70,
+            "position_one_based": 71,
+            "plaintext": "L",
+            "ciphertext": "Z",
+            "vigenere_key_value": 14
+          }
+        }
+      },
+      {
+        "period": 50,
+        "status": "rejected",
+        "constrained_slots": 21,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 71,
+            "position_one_based": 72,
+            "plaintext": "O",
+            "ciphertext": "F",
+            "vigenere_key_value": 17
+          }
+        }
+      },
+      {
+        "period": 51,
+        "status": "rejected",
+        "constrained_slots": 22,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 72,
+            "position_one_based": 73,
+            "plaintext": "C",
+            "ciphertext": "P",
+            "vigenere_key_value": 13
+          }
+        }
+      },
+      {
+        "period": 52,
+        "status": "rejected",
+        "constrained_slots": 23,
+        "unconstrained_slots": 29,
+        "witness": {
+          "kind": "period_conflict",
+          "residue": 21,
+          "first": {
+            "index_zero_based": 21,
+            "position_one_based": 22,
+            "plaintext": "E",
+            "ciphertext": "F",
+            "vigenere_key_value": 1
+          },
+          "second": {
+            "index_zero_based": 73,
+            "position_one_based": 74,
+            "plaintext": "K",
+            "ciphertext": "K",
+            "vigenere_key_value": 0
+          }
+        }
+      },
+      {
+        "period": 53,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 29,
+        "witness": null
+      },
+      {
+        "period": 54,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 30,
+        "witness": null
+      },
+      {
+        "period": 55,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 31,
+        "witness": null
+      },
+      {
+        "period": 56,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 32,
+        "witness": null
+      },
+      {
+        "period": 57,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 33,
+        "witness": null
+      },
+      {
+        "period": 58,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 34,
+        "witness": null
+      },
+      {
+        "period": 59,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 35,
+        "witness": null
+      },
+      {
+        "period": 60,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 36,
+        "witness": null
+      },
+      {
+        "period": 61,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 37,
+        "witness": null
+      },
+      {
+        "period": 62,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 38,
+        "witness": null
+      },
+      {
+        "period": 63,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 39,
+        "witness": null
+      },
+      {
+        "period": 64,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 40,
+        "witness": null
+      },
+      {
+        "period": 65,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 41,
+        "witness": null
+      },
+      {
+        "period": 66,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 42,
+        "witness": null
+      },
+      {
+        "period": 67,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 43,
+        "witness": null
+      },
+      {
+        "period": 68,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 44,
+        "witness": null
+      },
+      {
+        "period": 69,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 45,
+        "witness": null
+      },
+      {
+        "period": 70,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 46,
+        "witness": null
+      },
+      {
+        "period": 71,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 47,
+        "witness": null
+      },
+      {
+        "period": 72,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 48,
+        "witness": null
+      },
+      {
+        "period": 73,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 49,
+        "witness": null
+      },
+      {
+        "period": 74,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 50,
+        "witness": null
+      },
+      {
+        "period": 75,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 51,
+        "witness": null
+      },
+      {
+        "period": 76,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 52,
+        "witness": null
+      },
+      {
+        "period": 77,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 53,
+        "witness": null
+      },
+      {
+        "period": 78,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 54,
+        "witness": null
+      },
+      {
+        "period": 79,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 55,
+        "witness": null
+      },
+      {
+        "period": 80,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 56,
+        "witness": null
+      },
+      {
+        "period": 81,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 57,
+        "witness": null
+      },
+      {
+        "period": 82,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 58,
+        "witness": null
+      },
+      {
+        "period": 83,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 59,
+        "witness": null
+      },
+      {
+        "period": 84,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 60,
+        "witness": null
+      },
+      {
+        "period": 85,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 61,
+        "witness": null
+      },
+      {
+        "period": 86,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 62,
+        "witness": null
+      },
+      {
+        "period": 87,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 63,
+        "witness": null
+      },
+      {
+        "period": 88,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 64,
+        "witness": null
+      },
+      {
+        "period": 89,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 65,
+        "witness": null
+      },
+      {
+        "period": 90,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 66,
+        "witness": null
+      },
+      {
+        "period": 91,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 67,
+        "witness": null
+      },
+      {
+        "period": 92,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 68,
+        "witness": null
+      },
+      {
+        "period": 93,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 69,
+        "witness": null
+      },
+      {
+        "period": 94,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 70,
+        "witness": null
+      },
+      {
+        "period": 95,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 71,
+        "witness": null
+      },
+      {
+        "period": 96,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 72,
+        "witness": null
+      },
+      {
+        "period": 97,
+        "status": "necessary_condition_passed",
+        "constrained_slots": 24,
+        "unconstrained_slots": 73,
+        "witness": null
+      }
+    ],
+    "surviving_periods": [
+      27,
+      28,
+      29,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+    ]
+  }
+}

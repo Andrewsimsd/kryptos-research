@@ -1,0 +1,58 @@
+[
+  {
+    "command": ["cargo", "fmt", "--all", "--", "--check"],
+    "exit_status": 0,
+    "summary": "all Rust sources formatted"
+  },
+  {
+    "command": ["cargo", "clippy", "--all-targets", "--all-features", "--offline", "--", "-D", "warnings", "-W", "clippy::pedantic"],
+    "exit_status": 0,
+    "summary": "no warnings"
+  },
+  {
+    "command": ["cargo", "test", "--all-features", "--offline"],
+    "exit_status": 0,
+    "summary": "141 unit and integration tests plus 9 doctests passed"
+  },
+  {
+    "command": ["cargo", "test", "--doc", "--offline"],
+    "exit_status": 0,
+    "summary": "9 doctests passed"
+  },
+  {
+    "command": ["cargo", "doc", "--all-features", "--no-deps", "--offline"],
+    "environment": {"RUSTDOCFLAGS": "-D warnings"},
+    "exit_status": 0,
+    "summary": "documentation generated without warnings"
+  },
+  {
+    "command": ["cargo", "+1.85.0", "check", "--all-features", "--offline"],
+    "exit_status": 0,
+    "summary": "declared minimum Rust version accepted all features"
+  },
+  {
+    "command": ["python3", "-m", "unittest", "discover", "-s", "verification", "-v"],
+    "exit_status": 0,
+    "summary": "119 Python verifier, runner, integrity, semantic-artifact, and tamper tests passed"
+  },
+  {
+    "command": ["python3", "experiments/run_keyword_alphabets_v3.py", "results/KEYWORD-ALPHABETS-0003/run-002"],
+    "exit_status": 0,
+    "summary": "run-002 passed tightened pre- and post-search semantic gates; 146016 models and 3504384 K4 equations checked; zero survivors; best score 7/24 for 7 models; primary Rust operation total 10596960; combined Rust and Python keyword workload 21193920"
+  },
+  {
+    "command": ["python3", "verification/audit_repository.py"],
+    "exit_status": 0,
+    "summary": "17 completion records, 234 artifact hashes, 279 registered input hashes, 8 checksum entries, and 17 registry completion events verified"
+  },
+  {
+    "command": ["git", "diff", "--check"],
+    "exit_status": 0,
+    "summary": "no whitespace errors"
+  },
+  {
+    "check": "final architecture and regression review",
+    "status": "passed",
+    "summary": "Reviewer found no remaining actionable findings and cleared KEYWORD-ALPHABETS-0003/run-002 after the accounting, semantic-gate, type-validation, artifact-test, and documentation corrections."
+  }
+]

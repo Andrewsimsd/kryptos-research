@@ -242,6 +242,17 @@ def strict_calibration_types(report):
         integer(report.get(field), f"calibration {field}", 0)
     if type(report.get("passed")) is not bool or not isinstance(report.get("cases"), list):
         raise ValueError("invalid calibration boolean or cases")
+    operations = report.get("operation_counts")
+    expected_operation_keys = {
+        "signature_equation_evaluations",
+        "planted_encryption_positions",
+        "planted_decryption_positions",
+        "planted_reencryption_positions",
+    }
+    if not isinstance(operations, dict) or set(operations) != expected_operation_keys:
+        raise ValueError("invalid calibration operation-count schema")
+    for field, value in operations.items():
+        integer(value, f"calibration operation {field}", 0)
     for field, value in report.get("signature_census", {}).items(): integer(value, f"census {field}", 0)
     for case in report["cases"]:
         for field in ("case_index", "true_candidate_index"):

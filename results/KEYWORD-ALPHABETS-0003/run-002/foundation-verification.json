@@ -1,0 +1,46 @@
+{
+  "status": "verified",
+  "fixture_pairs": 5,
+  "fixture_trace_digest": "b249a5ca22437d8743042d84fdd80271985b4ff503ae5cd4d447e554baee85bd",
+  "seed": 1261723442,
+  "rng": "xorshift32(13,17,5); modulo selection; Fisher-Yates; implementation verification only",
+  "synthetic": [
+    {
+      "family": "vigenere",
+      "message_pairs": 100,
+      "requests_sha256": "e32c323bd6eee59b5c035a1f6258bf98e94866a97bec2d411cca20d8d68930c0",
+      "outputs_sha256": "cd4cb2ca48989a0a8f0cb45223e5b1e5bdf9da0a8777bea803110445c1b45124"
+    },
+    {
+      "family": "beaufort",
+      "message_pairs": 100,
+      "requests_sha256": "2852bc0ea05635c2f0bf1ebcd3c7bf0ed64e26641c65000afb71bceba89f007c",
+      "outputs_sha256": "0f8278d753c10feb5ba74a03d608cb91a82b3512591c495565fea07a461206ea"
+    },
+    {
+      "family": "variant_beaufort",
+      "message_pairs": 100,
+      "requests_sha256": "51fcdc3b9873cf510c9f853b7289027406ed4e29441b62a8422a89b70cacf898",
+      "outputs_sha256": "ba007c34f5fe8c93665093d4f9ff3996edbecafd54e341ace356cb7b52322ace"
+    },
+    {
+      "family": "gromark",
+      "message_pairs": 100,
+      "requests_sha256": "844589a5d112fe5cb6a73c23a66db0f389721cd6711a621861b2018ba0f80979",
+      "outputs_sha256": "f5564e5b2b57fc9023476536d5e2a9329049348a97aa44d775f6955c9cb9f7c2"
+    },
+    {
+      "family": "columnar",
+      "message_pairs": 100,
+      "requests_sha256": "d3f63b250578f719356385580ce73a08d6403b193fc7a33102cdb16816df9ed1",
+      "outputs_sha256": "42fcd7ad8e4c9ddc353164d2d41d513140a34ae491b61c79c164d55eada8aedd"
+    },
+    {
+      "family": "compound",
+      "message_pairs": 100,
+      "requests_sha256": "9fd8714f5a20cebf472f6b97cc16cbc553072c3f7ea0f3a932d46c00a93981f9",
+      "outputs_sha256": "140558d4459a11858ba2f924adb2dbd8ecb20e7489284d9e11b5dbe1b9a2aee4"
+    }
+  ],
+  "review_scope": "separate Python implementation by same coordinator; not fresh-context A7"
+}

@@ -1,0 +1,209 @@
+{
+  "run_id": "results/KEYWORD-ALPHABETS-0003/run-002",
+  "status": "completed",
+  "exit_status": 0,
+  "stages": [
+    {
+      "name": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--target-dir",
+        "/home/andrew/Documents/GitHub/kryptos-research/target"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.1140018459991552
+    },
+    {
+      "name": "foundations",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_ciphers.py",
+        "--binary",
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "--fixture-output",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0003/run-002/foundation-fixture-traces.json",
+        "--seed",
+        "1261723442",
+        "--cases-per-family",
+        "100"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.5658443749998696
+    },
+    {
+      "name": "calibrate",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "keyword-calibrate",
+        "fixtures/keyword-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.06434466499194968
+    },
+    {
+      "name": "calibration-verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_keyword_calibration.py",
+        "--calibration",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0003/run-002/calibration.json",
+        "--request",
+        "fixtures/keyword-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.4151899050048087
+    },
+    {
+      "name": "evaluate",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "keyword-alphabets",
+        "fixtures/keyword-alphabets-request.json",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0003/run-002/calibration.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.21412018399860244
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/usr/bin/python3",
+        "verification/verify_keyword_alphabets.py",
+        "--calibration",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0003/run-002/calibration.json",
+        "--report",
+        "/home/andrew/Documents/GitHub/kryptos-research/results/KEYWORD-ALPHABETS-0003/run-002/keyword-alphabets.json",
+        "--request",
+        "fixtures/keyword-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 1.2667089390015462
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "diagnose",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.017229935998329893
+    },
+    {
+      "name": "primers",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "primers",
+        "evidence/k4.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.11483457899885252
+    },
+    {
+      "name": "feasibility",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "feasibility",
+        "fixtures/feasibility-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.03265501599526033
+    },
+    {
+      "name": "structured",
+      "command": [
+        "/home/andrew/Documents/GitHub/kryptos-research/target/release/kryptos-research",
+        "structured-alphabets",
+        "fixtures/structured-alphabets-request.json"
+      ],
+      "exit_status": 0,
+      "elapsed_seconds": 0.21501041601004545
+    }
+  ],
+  "binary_sha256": "523c4c14fd2995de3c8740fd65a4834634aa910779abb8780b2bc45fac6c8d52",
+  "counters": {
+    "candidate_count": 146016,
+    "equations_checked": 3504384,
+    "survivors": 0,
+    "best_match_count": 7,
+    "best_model_count": 7,
+    "calibration_cases": 144,
+    "retained_cases": 144,
+    "plaintext_recovery_cases": 144,
+    "reencryption_cases": 144,
+    "full_message_recovery_cases": 144,
+    "unique_recovery_cases": 98
+  },
+  "execution_operation_counts": {
+    "produced_calibration": 3546288,
+    "evaluation_internal_calibration_regeneration": 3546288,
+    "k4_equation_evaluations": 3504384,
+    "total": 10596960
+  },
+  "workload_accounting": {
+    "primary_rust": {
+      "produced_calibration": 3546288,
+      "evaluation_internal_calibration_regeneration": 3546288,
+      "k4_equation_evaluations": 3504384,
+      "total": 10596960
+    },
+    "python_pre_search_calibration_verification": {
+      "operation_counts": {
+        "signature_equation_evaluations": 3504384,
+        "planted_encryption_positions": 13968,
+        "planted_decryption_positions": 13968,
+        "planted_reencryption_positions": 13968
+      },
+      "total": 3546288
+    },
+    "python_post_search_full_verification": {
+      "operation_counts": {
+        "signature_equation_evaluations": 3504384,
+        "planted_encryption_positions": 13968,
+        "planted_decryption_positions": 13968,
+        "planted_reencryption_positions": 13968,
+        "k4_equation_evaluations": 3504384,
+        "total": 7050672
+      },
+      "total": 7050672
+    },
+    "combined_keyword_equation_and_position_operations": 21193920,
+    "excluded_units": "builds, JSON handling, foundations and regression commands"
+  },
+  "conclusion": "The corrected gates preserve the exact zero-survivor decision for the unchanged family. The 144 round-trips use the known planted model; 98 cases have singleton recovery sets.",
+  "finished_at": "2026-09-18T22:11:47.187552+00:00",
+  "elapsed_seconds": 3.040693814007682,
+  "peak_child_memory": {
+    "value": 60424,
+    "unit": "KiB",
+    "scope": "OS child-process maximum RSS, including build and verification; not simultaneous total memory"
+  },
+  "artifact_sha256": {
+    "baseline.json": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+    "baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build.stderr": "64d0cbd4b7e4c6329fde55978dd3d261407b55f34c21add0feebf7e0575ee531",
+    "build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "calibrate.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "calibration-verification.json": "62fba77f0f87e82ffe1074b2fea06371a35621ecd1694b02de296ccec985727d",
+    "calibration-verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "calibration.json": "44a40b9b4feba3be311daa36719dd0097d88a4c58760a773526509715e5b4580",
+    "evaluate.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+    "feasibility.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "foundation-fixture-traces.json": "5b2c8343d49c50dfc25059fbaf18dbab07904fba13da5b95d387b3f6fe9be800",
+    "foundation-verification.json": "05fae48ff395b80ff4b44f3110932de5fe4e6ff31f0b0f37eec5a79ab29b53b2",
+    "foundations.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "keyword-alphabets.json": "a79d83e3ce787bf6e048244e0aa4f23815f7ea24e7bf4c000a6ce2676a9bcc56",
+    "manifest.json": "fc2dd4a5bf993637b83b6e0d12fffea505b17202c942b74033d7178b10b7648f",
+    "primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "primers.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "structured-alphabets.json": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+    "structured.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification.json": "30417cd120c2262ee3d9c7d77412c97ffcf7dd99ef851dbb96fb36ddd1caa725",
+    "verify.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

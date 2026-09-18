@@ -8,6 +8,7 @@ from verify_keyword_alphabets import (
     deduplicate, encode, keyword_fill, k4_reference, read_json,
     signature, source_identifiers, validate_evidence, validate_request, verify,
 )
+from verify_keyword_calibration import verify_calibration
 
 
 class KeywordConstructionTests(unittest.TestCase):
@@ -75,6 +76,59 @@ class PreservedKeywordAlphabetTests(unittest.TestCase):
         self.assertEqual((result["candidate_count"], result["equations_checked"], result["survivors"]),
                          (146_016, 3_504_384, 0))
         self.assertEqual(result["operation_counts"]["total"], 7_050_672)
+
+    def test_calibration_is_independently_accepted_before_k4(self):
+        result = verify_calibration(
+            self.calibration,
+            self.request,
+            self.evidence,
+            self.primers,
+            self.reference,
+            self.sources,
+        )
+        self.assertEqual(
+            (
+                result["true_model_retained_cases"],
+                result["known_true_model_roundtrip_cases"],
+                result["singleton_recovery_sets"],
+            ),
+            (144, 144, 98),
+        )
+
+    def test_pre_search_calibration_rejects_tampering(self):
+        calibration = deepcopy(self.calibration)
+        calibration["cases"][0]["recovered_candidate_indices"] = []
+        with self.assertRaisesRegex(ValueError, "independent complete regeneration"):
+            verify_calibration(
+                calibration,
+                self.request,
+                self.evidence,
+                self.primers,
+                self.reference,
+                self.sources,
+            )
+
+    def test_pre_search_calibration_rejects_malformed_operation_counts(self):
+        for kind in ("float", "boolean", "missing", "extra"):
+            calibration = deepcopy(self.calibration)
+            operations = calibration["operation_counts"]
+            if kind == "float":
+                operations["signature_equation_evaluations"] = 3_504_384.0
+            elif kind == "boolean":
+                operations["planted_encryption_positions"] = True
+            elif kind == "missing":
+                del operations["planted_decryption_positions"]
+            else:
+                operations["unexpected"] = 0
+            with self.subTest(kind=kind), self.assertRaises(ValueError):
+                verify_calibration(
+                    calibration,
+                    self.request,
+                    self.evidence,
+                    self.primers,
+                    self.reference,
+                    self.sources,
+                )
 
     def test_compact_k4_and_calibration_tampering_are_rejected(self):
         for kind in ("count", "mismatch", "histogram", "encoding", "calibration-set", "calibration-bool"):

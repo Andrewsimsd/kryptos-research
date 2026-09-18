@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "candidate_count": 146016,
+  "signature_census": {
+    "physical_candidates": 146016,
+    "distinct_signatures": 123552,
+    "singleton_buckets": 101088,
+    "doubleton_buckets": 22464,
+    "unique_physical_candidates": 101088,
+    "maximum_bucket_size": 2
+  },
+  "calibration_cases": 144,
+  "true_model_retained_cases": 144,
+  "known_true_model_roundtrip_cases": 144,
+  "singleton_recovery_sets": 98,
+  "operation_counts": {
+    "signature_equation_evaluations": 3504384,
+    "planted_encryption_positions": 13968,
+    "planted_decryption_positions": 13968,
+    "planted_reencryption_positions": 13968
+  },
+  "interpretation": "The known planted candidate is retained and round-trips in every case; only singleton sets are blind model identifications.",
+  "calibration_sha256": "44a40b9b4feba3be311daa36719dd0097d88a4c58760a773526509715e5b4580"
+}

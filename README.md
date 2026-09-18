@@ -5,25 +5,73 @@ experiments for the 97-letter Kryptos K4 ciphertext. The repository implements
 the staged program in the [K4 agent plan](docs/kryptos-k4-agent-plan.md) and
 preserves the inputs and outputs needed to audit each result.
 
-**This project has not solved K4.** It has completed eight engineering and
-reproduction milestones. The newest result exactly rejects all **146,016**
-registered combinations of 39 primers, 12 keyword-derived alphabet orders,
-ordered plaintext/ciphertext pairs, and relative rotations after a complete
-full-message recovery calibration gate. This excludes that finite model family. It does not
-identify the intended alphabets, plaintext, key, or historical procedure.
+**This project has not produced a K4 solution.** It has completed eight
+engineering and reproduction milestones. The newest result rejects all
+**146,016** combinations in one precisely defined family: 39 numeric starting
+keys, 12 keyword-built alphabet orders for each side of the cipher, and 26
+relative rotations. That result says this family cannot produce all 24 known
+K4 letters. It does not identify the intended plaintext, key, alphabets, or
+historical method.
+
+Some terms used below:
+
+- A **crib** is plaintext known at a particular ciphertext position. K4 has 24
+  published letters in two groups: `EASTNORTHEAST` and `BERLINCLOCK`.
+- A **model** is one fully specified choice of cipher rules and parameters.
+- An **exact exclusion** means every model in a stated finite set failed at
+  least one necessary equation. It says nothing about models outside that set.
+- A **primer** is the starting digit sequence for the recurrence studied in
+  milestones 3 and 6–8.
+- **Calibration** uses planted examples with known answers to test whether a
+  search can retain or recover the answer before it is trusted on K4.
+
+## What this project is studying
+
+Kryptos is a sculpture at CIA headquarters containing four encrypted sections.
+The first three sections, K1–K3, have known solutions and are valuable test
+cases. K4 is the remaining 97-letter ciphertext. This repository studies the
+encryption method as well as the plaintext: a sentence that happens to sound
+right is not enough unless a defined key and algorithm reproduce every
+ciphertext letter.
+
+The public clues give four final-plaintext ranges. Positions here are counted
+from 1 for people; the code uses zero-based half-open ranges.
+
+| Human positions | Code range | Ciphertext | Known plaintext |
+| --- | --- | --- | --- |
+| 22–25 | `21..25` | `FLRV` | `EAST` |
+| 26–34 | `25..34` | `QQPRNGKSS` | `NORTHEAST` |
+| 64–69 | `63..69` | `NYPVTT` | `BERLIN` |
+| 70–74 | `69..74` | `MZFPK` | `CLOCK` |
+
+A substitution changes letters; a transposition moves their positions. A
+polyalphabetic cipher changes the substitution as the message advances. The
+recurrence branch studied here starts from a short sequence of digits and
+generates later digits from earlier ones, then uses that digit stream while
+mapping plaintext letters to ciphertext letters. Plaintext and ciphertext
+alphabets may be ordinary A–Z orders, keyword-built orders, or unknown
+permutations, depending on the model.
+
+A survivor only means the known letters have not contradicted a model. A
+feasibility witness is one concrete assignment showing that a flexible model
+can work at the known positions; it is not recovered English. Statistical
+experiments compare K4 with a declared **null** collection of shuffled texts.
+For example, the width result `0.004419956` means 441 of 100,000 registered
+shuffles had a selected maximum at least as extreme as K4 (with the standard
+one-count adjustment). It is not the probability that a cipher theory is true.
 
 ## Current results
 
-| Milestone | Stage | Result | Main record |
+| Milestone | Plain-language question | Finding and why it matters | Record |
 | --- | --- | --- | --- |
-| 1 | Evidence and exact baseline | Froze the 97 letters and 24 crib letters; produced scoped contradiction certificates for pure transposition, fixed substitution, fixed-point bans, and repeating A–Z Vigenère periods | [Report](reports/milestone-1.md) |
-| 2 | Cipher foundations | Reproduced K1, both K2 variants, K3's explicit permutation, and the ACA Gromark example in Rust and an independent Python implementation | [Report](reports/milestone-2.md) |
-| 3 | Decimal-primer filter | Exhaustively reproduced **99,999 → 1,040 → 39** primers with Rust, Python, and pinned upstream C | [Report](reports/milestone-3.md) |
-| 4 | Fixed statistical tests | Reproduced five historical statistics with a 10,000-sample pilot and a fresh 1,000,000-permutation precision run | [Report](reports/milestone-4.md) |
-| 5 | Selection-aware width scan | Repeated the complete width 1–48 selection on every null text; width 21 won, with 441/100,000 global exceedances and adjusted estimate **0.004419956** | [Report](reports/milestone-5.md) |
-| 6 | Global alphabet feasibility | Solved both alphabets' all-different constraints for every one of the 39 primers; **39 feasible, 0 infeasible, 0 unresolved** | [Report](reports/milestone-6.md) |
-| 7 | Structured alphabet exclusion | Evaluated **389,376** equations across 16,224 canonical fixed-order models; **16,224 rejected, 0 survivors** | [Report](reports/milestone-7.md) |
-| 8 | Keyword alphabet exclusion | Recovered and reencrypted 144 planted messages through decoded candidate IDs, then evaluated **3,504,384** K4 equations; **146,016 rejected, 0 survivors** | [Report](reports/milestone-8.md) |
+| 1 | What can the 24 known letters rule out immediately? | Froze the evidence. Pure rearrangement of the 97 letters and simple fixed substitutions conflict with the clues; some repeating-key periods fail, while others remain possible. | [Report](reports/milestone-1.md) |
+| 2 | Can the project implement the relevant ciphers correctly? | Reproduced K1, both K2 versions, K3's permutation, and a published Gromark example in Rust and Python. Later searches therefore rest on known-answer tests. | [Report](reports/milestone-2.md) |
+| 3 | Which five-digit decimal starting keys survive cheap necessary tests? | Exhaustively reduced **99,999 → 1,040 → 39**, with Rust, Python, and pinned upstream C agreement. This makes later searches finite and reviewable. | [Report](reports/milestone-3.md) |
+| 4 | Are five reported K4 patterns unusual under a fixed shuffle test? | Reproduced the measurements with a pilot and one million new shuffles, including uncertainty and multiple-test correction. It checks statistics, not a decryption. | [Report](reports/milestone-4.md) |
+| 5 | Does width 21 remain unusual when the best of widths 1–48 is selected every time? | Yes under this registered null: 441/100,000 shuffled texts were at least as extreme, adjusted to **0.004419956**. This corrects that width selection only. | [Report](reports/milestone-5.md) |
+| 6 | Can each of the 39 digit streams fit the clues if both alphabets may be any permutations? | Yes: **39 feasible, 0 infeasible, 0 unresolved**. The broad model is too flexible to narrow the key list; its witnesses are not plaintexts. | [Report](reports/milestone-6.md) |
+| 7 | Do ordinary A–Z and KRYPTOS-built alphabets make those streams work? | No. All **16,224** registered fixed-order models fail at least one known letter. | [Report](reports/milestone-7.md) |
+| 8 | Do three sourced keywords and two alphabet-building rules make them work? | No. All **146,016** models fail after **3,504,384** K4 equations. The known true model round-tripped in 144 planted tests; only 98 were uniquely identified from the clue signature. | [Report](reports/milestone-8.md) |
 
 The width result is conditional on the registered statistic, width range,
 calibration, and multiset-permutation null. It does not correct every historical
@@ -67,8 +115,9 @@ The longer research plan has the following phases:
    selection rules, and precision decisions before simulation. Preserve raw
    counts and uncertainty rather than reporting an unexplained score.
 5. **Bounded attacks.** Investigate structured key schedules, recurrences,
-   documentary running keys, and compound substitution/transposition models.
-   Milestones 3, 6, 7, and 8 cover one narrow recurrence branch of this phase.
+   documentary running keys, routes, clock-derived schedules, matrices, and
+   carefully limited combinations. Milestones 3, 6, 7, and 8 cover one narrow
+   recurrence branch of this phase.
 6. **Candidate validation.** A serious candidate must explain all 97 letters,
    reencrypt exactly, derive its key independently of the proposed plaintext,
    recover planted examples under the same attack, and survive a fresh
@@ -76,6 +125,62 @@ The longer research plan has the following phases:
 
 Milestones are reviewable work packages within these phases. Completing a
 milestone does not imply that every gate in its surrounding phase is complete.
+The [future milestone roadmap](docs/future-milestones.md) defines planned
+milestones 9–26, their dependencies, budgets, exact-versus-heuristic boundaries,
+outputs, and stop conditions.
+
+## What comes next
+
+The roadmap adds 18 planned milestones. Milestone 9 refreshes primary sources,
+physical geometry, period-correct World Clock data, and unresolved access gaps.
+Milestone 10 builds a blind benchmark in which the search is never told the
+planted answer. Milestones 11–15 cover classical schedules, generalized
+recurrences, unknown alphabets, tableau/keyword families, and documentary
+running keys. Milestones 16–24 cover two-clue state joins, affine and ragged
+routes, clock and direction rules, small stepping machines, anomaly streams,
+matrix/fractionating models, and bounded program synthesis. Milestone 25 adds
+language ranking only after held-out calibration; milestone 26 is an adversarial
+independent dossier for a serious survivor.
+
+Each planned milestone states prerequisites, a pilot budget, a finite domain or
+grammar, validation, outputs, and a stop rule in the
+[full roadmap](docs/future-milestones.md). Counts are family-specific and do not
+mean the project has enumerated every possible cipher.
+
+| Planned milestone | Idea | What it would test |
+| ---: | --- | --- |
+| 9 | Evidence and geometry refresh | Authenticate clue wording, inscription coordinates, 1989 clock data, and source gaps before turning them into parameters. |
+| 10 | Blind recovery benchmark | Measure whether an attack selects a hidden planted model without being told its ID. |
+| 11 | Classical key schedules | Test bounded repeating, progressive, autokey, and interrupted Vigenère/Beaufort families. |
+| 12 | Generalized recurrences | Extend the five-digit decimal branch to declared bases, seed lengths, taps, offsets, and signs. |
+| 13 | Unknown-alphabet constraints | Count or characterize compatible alphabet pairs and find relations forced across every solution. |
+| 14 | Tableau and keyword corpora | Test literal versus idealized sculpture tableaus and a frozen, sourced word list. |
+| 15 | Documentary running keys | Test every legal 97-letter window of identified source editions under declared transforms. |
+| 16 | Two-clue state bridge | Propagate reversible states forward and backward between the two known blocks and join them exactly. |
+| 17 | Affine routes | Combine all 9,312 affine permutations of 97 positions with calibrated substitution families. |
+| 18 | Ragged columnar routes | Exhaust small column orders and explicitly bounded wider or physical route grammars. |
+| 19 | World Clock schedules | Turn 24 sectors and the rotating hour ring into a finite, period-correct schedule family. |
+| 20 | Directions and sculpture geometry | Test complete compass-based routes on authenticated coordinate maps without manual cell skips. |
+| 21 | Small stepping machines | Enumerate reversible 2–4-state counter/rotor grammars using source-supported triggers. |
+| 22 | Anomaly cohort | Extract streams from all authenticated irregularities under rules fixed before K4 evaluation. |
+| 23 | Matrix and fractionation | Test invertible 2×2 affine maps, algebraically bounded larger maps, and 26-symbol coordinates. |
+| 24 | Bounded program synthesis | Compose one or two validated primitives under a frozen grammar and complexity cap. |
+| 25 | Calibrated language scoring | Rank exact survivors only after held-out recovery and full-selection null experiments. |
+| 26 | Adversarial candidate dossier | Require exact reencryption, independent key provenance, competing explanations, and fresh implementation review. |
+
+## Where things live
+
+- `evidence/` contains the frozen ciphertext, clues, provenance, and checksums.
+- `src/` contains reusable Rust cipher, constraint, statistics, and search code.
+- `verification/` contains independent Python calculations, tamper tests, and
+  the repository integrity audit.
+- `experiments/` contains frozen questions, model domains, budgets, and runners.
+- `results/` contains immutable machine-readable runs and logs.
+- `reports/` explains what each run established and what it did not establish.
+- `docs/` contains conventions, the agent plan, and future research roadmap.
+
+This separation lets a reader distinguish evidence, code, a planned experiment,
+raw output, and interpretation. The detailed organization table appears below.
 
 ## Quick start
 
@@ -129,6 +234,7 @@ python3 verification/verify_keyword_alphabets.py \
   --request fixtures/keyword-alphabets-request.json \
   --calibration /tmp/k4-keyword-calibration.json \
   --report /tmp/k4-keywords.json
+python3 verification/audit_repository.py
 ```
 
 Commands write machine-readable results to stdout and errors to stderr. They
@@ -151,7 +257,7 @@ the milestone reports.
 | Width-scan precision | `python3 experiments/run_width_scan.py experiments/WIDTHS-0002.json results/WIDTHS-0002/run-002` | [`run-001`](results/WIDTHS-0002/run-001/completion.json) |
 | Alphabet feasibility | `python3 experiments/run_feasibility.py results/FEASIBILITY-0001/run-002` | [`run-001`](results/FEASIBILITY-0001/run-001/completion.json) |
 | Structured alphabets | `python3 experiments/run_structured_alphabets.py results/STRUCTURED-ALPHABETS-0001/run-003` | [`run-002`](results/STRUCTURED-ALPHABETS-0001/run-002/completion.json) |
-| Keyword alphabets | `python3 experiments/run_keyword_alphabets_v2.py results/KEYWORD-ALPHABETS-0002/run-002` | [`0002/run-001`](results/KEYWORD-ALPHABETS-0002/run-001/completion.json) |
+| Keyword alphabets | `python3 experiments/run_keyword_alphabets_v3.py results/KEYWORD-ALPHABETS-0003/run-003` | [`0003/run-002`](results/KEYWORD-ALPHABETS-0003/run-002/completion.json) |
 
 Check the frozen evidence and fixture sets before reproducing earlier work:
 
@@ -260,26 +366,33 @@ K1/K2 indicators repurposed as explicit K4 hypotheses; that reuse is not a
 historical claim. `ENIGMA` remains a construction known-answer control only.
 
 The resulting 12 distinct rotation classes produce 146,016 physical models.
-Before K4 evaluation, the implementation censuses every 24-letter crib
-signature and runs one deterministic full-message planted case for each of the
-144 ordered base-order pairs. All 144 true models were retained and all 144
-messages were recovered by decoding their retained physical candidate IDs,
-decrypting all 97 positions through a separate inverse path, and reencrypting
-the recovered plaintext; 98 recovery sets were singletons. The gated K4 run
-then rejected every model after checking 3,504,384 equations. Seven models tied
-at the descriptive maximum of 7/24 matches. No score was used to expand or tune
-the frozen domain.
+Before K4 evaluation, the implementation groups every model by the 24 letters
+it predicts and runs one deterministic 97-letter planted case for each of the
+144 ordered base-alphabet pairs. The true planted ID appeared in every returned
+set. The test then deliberately selected that known ID, rebuilt its model,
+decrypted the message through a separate inverse path, and reencrypted it.
+All 144 known-true-model round trips passed. Only 98 returned sets contained a
+single model; the other 46 remained ambiguous and are not blind key recoveries.
+The gated K4 run rejected every model after 3,504,384 equations. Seven models
+tied at the descriptive maximum of 7/24 matches.
 
 The original `KEYWORD-ALPHABETS-0001/run-001` had already observed that K4
 result, but its forward-only reencryption check was tautological and its cap
 omitted inverse and final forward work. It remains an immutable **superseded**
-record. `KEYWORD-ALPHABETS-0002` is an explicitly unblinded amendment with
-correct inverse recovery, exact operation counters, and a current-binary
-foundations regression.
+record. `KEYWORD-ALPHABETS-0002` added the real inverse path, but a later review
+found that its coordinator count omitted the evaluator's second complete
+calibration pass. `KEYWORD-ALPHABETS-0003` is the final unblinded correction: it
+checks the calibration independently before K4 and reports the actual
+**10,596,960** primary Rust comparison/transform operations performed by its
+two calibration passes plus K4. Independent Python verification performs
+another 10,596,960 operations in the same unit, for **21,193,920** combined
+keyword operations. Builds, JSON work, and regression commands are outside that
+unit but inside the wall-time cap. The underlying family and zero-survivor
+result are unchanged; see the [workload clarification](reports/milestone-8-workload-clarification.md).
 
 The scope, deterministic generator, canonical indexing, disclosed structural
 probe, operation cap, and exclusions are frozen in
-[amended keyword alphabet conventions](docs/keyword-alphabet-conventions-v2.md). The
+[final keyword alphabet conventions](docs/keyword-alphabet-conventions-v3.md). The
 independent Python implementation regenerates the full calibration report,
 compact K4 certificate arrays, score histogram, and any survivor traces.
 
@@ -321,7 +434,7 @@ See [statistical conventions](docs/statistics-conventions.md) and
 | `experiments/` | Preregistered specifications, bounded runners, and append-only run registry |
 | `results/` | Immutable per-run manifests, reports, logs, hashes, and completion records |
 | `reports/` | Human-readable milestone findings, limits, validation, prior work, and current status |
-| `docs/` | Full research plan and frozen model/convention documents |
+| `docs/` | Research plan, future milestones, and frozen model/convention documents |
 | `third_party/` | Pinned upstream comparison source, kept separate with its original license |
 
 The Rust design keeps core calculations separate from I/O. `main.rs` delegates
@@ -341,6 +454,7 @@ cargo test --all-features
 cargo test --doc
 RUSTDOCFLAGS="-D warnings" cargo doc --all-features --no-deps
 python3 -m unittest discover -s verification -v
+python3 verification/audit_repository.py
 ```
 
 The suites cover malformed schemas and text, empty and boundary inputs,
@@ -372,11 +486,21 @@ Read [AGENTS.md](AGENTS.md) before changing code. For a new experiment:
 6. Update the relevant convention document, milestone report, research-plan
    implementation record, and this README.
 
-The next useful work should preregister a distinct documented tableau
-construction or structured key schedule, with planted recovery calibration and
-an exact finite domain. Open plan items also include broader registered
-statistical batteries and nulls, unresolved source access, and a fresh-context
-A7 verification dossier.
+The next work is planned rather than implied. Milestone 9 refreshes sources and
+physical geometry; milestone 10 builds a genuinely blind recovery harness.
+Milestones 11 and 12 then begin exact classical-schedule and generalized
+recurrence branches. Later milestones cover unknown alphabets, tableaus,
+documentary running keys, meet-in-the-middle state joins, affine and ragged
+routes, the World Clock, physical directions, small stepping machines, anomaly
+streams, matrix/fractionating ciphers, bounded program synthesis, calibrated
+language scoring, and adversarial independent review. See the
+[numbered roadmap](docs/future-milestones.md) for the finite domains and stop
+rules; it does not claim to enumerate every possible encryption method.
+
+The latest [soundness review](reports/soundness-review.md) records the issues
+found, corrections made, integrity scope, and remaining limitations. The
+[research-source review](reports/research-source-review-2026-09.md) separates
+accessible clue sources from documents that could not be retrieved.
 
 ## License
 

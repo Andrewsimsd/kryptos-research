@@ -1,0 +1,81 @@
+{
+  "schema_version": 3,
+  "experiment_id": "KEYWORD-ALPHABETS-0003",
+  "status": "planned_correction_unblinded",
+  "parent_experiment": "KEYWORD-ALPHABETS-0002",
+  "question": "Does the unchanged zero-survivor result pass independent calibration before K4 when actual duplicate calibration work and ambiguity are reported accurately?",
+  "correction_disclosure": "The K4 answer was observed in 0001. Amendment 0002 repaired its inverse path but counted one logical calibration although the runner executed calibration twice. This unblinded correction preserves the model, moves independent calibration verification before K4, reports 144 known-true-model round trips versus 98 singleton sets, and counts both complete calibration passes.",
+  "evidence_file_hashes": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "docs/keyword-alphabet-conventions-v3.md": "86b8f513e0bccaa425de43c75699d165338241ef9a343e158c0e58e4da8cc00e",
+    "fixtures/keyword-alphabets-request.json": "1856156d5ac26e981c1911496b30366a0eefcc1e09f5e38161809a5a9a0142d6",
+    "fixtures/known-answers.json": "89acd3d2690dcd9aac49f86758ac6ed28d539befec0cb5419eaefee273245613",
+    "results/PRIMERS-0001/run-002/primers.json": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+    "results/FEASIBILITY-0001/run-001/feasibility.json": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+    "results/STRUCTURED-ALPHABETS-0001/run-002/structured-alphabets.json": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+    "experiments/KEYWORD-ALPHABETS-0002.json": "bcc5cde5918ef1c304ebd8c67563c6ec9ea66111df04b3c897524410b6ae863c",
+    "results/KEYWORD-ALPHABETS-0002/run-001/completion.json": "2de78dcb6aeef336a210e97fc31ea8c9fc0a1b9ea1fdf718a3c9dd8389f15405",
+    "results/FOUNDATIONS-0001/run-002/fixture-traces.json": "5b2c8343d49c50dfc25059fbaf18dbab07904fba13da5b95d387b3f6fe9be800",
+    "results/FOUNDATIONS-0001/run-002/verification.json": "05fae48ff395b80ff4b44f3110932de5fe4e6ff31f0b0f37eec5a79ab29b53b2"
+  },
+  "model": "Unchanged 39-primer by 12 plaintext orders by 12 ciphertext orders by 26 relative rotations; 146016 physical models and 3504384 K4 crib equations.",
+  "candidate_model_count": 146016,
+  "k4_equation_count": 3504384,
+  "execution_operation_cap": 10596960,
+  "execution_operation_accounting": {
+    "produced_calibration": 3546288,
+    "evaluation_internal_calibration_regeneration": 3546288,
+    "k4_equation_evaluations": 3504384,
+    "total": 10596960
+  },
+  "calibration_interpretation": {
+    "cases": 144,
+    "required_true_model_retention": 144,
+    "required_known_true_model_roundtrip": 144,
+    "expected_singleton_recovery_sets": 98,
+    "singleton_is_blind_identification": true,
+    "ambiguous_roundtrip_is_blind_identification": false,
+    "independent_verification_must_precede_k4": true
+  },
+  "foundations_regression": {
+    "seed": 1261723442,
+    "cases_per_family": 100,
+    "published_fixture_pairs": 5,
+    "synthetic_message_pairs": 600,
+    "fixture_traces_sha256": "5b2c8343d49c50dfc25059fbaf18dbab07904fba13da5b95d387b3f6fe9be800",
+    "verification_sha256": "05fae48ff395b80ff4b44f3110932de5fe4e6ff31f0b0f37eec5a79ab29b53b2"
+  },
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "dependencies": "Cargo.lock offline; Python standard library; no network, corpus, dictionary or stochastic K4 search",
+  "baseline_output_sha256": "6f1327c040467fb4dd307c447997f6b46d7ecae23f4fc8eacbe012c742744987",
+  "primer_report_sha256": "57a4a68f33cee527e2d1a125d457bef5ae68d7825ad718d979cf5b9ffebb8ed1",
+  "feasibility_report_sha256": "b08b50937dbd77972bdad40c7fda0957df7c49b4d9884421b0e793ac55f211b5",
+  "structured_report_sha256": "301428c028c3e8d44a071b5df9bc5f142f8ce1abb1c40aaa03f0952520109ea0",
+  "falsification_criterion": "A pre-search independent-calibration failure, missing true ID, wrong known-true-model round trip, changed singleton count, malformed or altered operation profile, cap violation, Rust/Python disagreement, foundations drift, regression drift, or K4 survivor falsifies the applicable gate or scoped exclusion.",
+  "limitations": [
+    "This is an unblinded correction of an already-observed K4 result.",
+    "The 144 round trips choose the known planted candidate from each returned set; only 98 singleton sets are blind model identifications.",
+    "Random-letter calibration tests transformations and exact constraints, not a language-scoring attack.",
+    "Only the same finite three-keyword, two-constructor, reversal and rotation family is tested.",
+    "The Python verifier is a same-project independent implementation, not external fresh-context A7 review."
+  ],
+  "outputs": [
+    "manifest.json",
+    "foundation-fixture-traces.json",
+    "foundation-verification.json",
+    "calibration.json",
+    "calibration-verification.json",
+    "keyword-alphabets.json",
+    "verification.json",
+    "baseline.json",
+    "primers.json",
+    "feasibility.json",
+    "structured-alphabets.json",
+    "completion.json"
+  ]
+}

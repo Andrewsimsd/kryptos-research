@@ -43,14 +43,26 @@ rotations, all 16,224 models are exactly rejected. This excludes only that
 finite family and leaves broader keyword and compound constructions open.
 
 [Milestone 8](../reports/milestone-8.md) completes the next registered
-keyword-alphabet restriction. After a 144-case planted calibration gate, all
+keyword-alphabet restriction. After a 144-case planted transform and retention
+gate, all
 146,016 combinations derived from KRYPTOS, PALIMPSEST and ABSCISSA under two
 frozen constructors, reversal and relative rotation are exactly rejected. This
 closes only that finite family; other tableau rules and key schedules remain.
-The final record is the unblinded `KEYWORD-ALPHABETS-0002` amendment: it
-supersedes a tautological forward-only calibration check in `0001`, recovers
-all planted plaintext through reconstructed candidate IDs, and preserves the
-same zero-survivor K4 decision.
+The final record is the unblinded `KEYWORD-ALPHABETS-0003` correction. It
+supersedes a tautological forward-only check in `0001` and corrects `0002`'s
+coordinator accounting. In all 144 planted cases the known true ID was retained
+and round-tripped; 98 returned sets were singletons. The two complete
+calibration passes plus K4 perform 10,596,960 registered primary Rust
+comparison/transform operations. The independent Python pre- and post-search
+verification performs another 10,596,960 in the same unit, for 21,193,920
+combined keyword operations. See the [supplemental workload
+clarification](../reports/milestone-8-workload-clarification.md). The
+zero-survivor K4 decision is unchanged.
+
+The 18 [planned milestones 9–26](future-milestones.md) convert the remaining
+attack tracks into bounded work packages with dependencies, pilot budgets,
+domain counts, validation, outputs, and stop rules. They begin with evidence
+refresh and a blind-recovery harness before further K4 searches.
 
 ## 1. Objective and definition of success
 
@@ -582,6 +594,7 @@ The preparation searched current status, original clues, archival developments, 
 | [Lasry's metaheuristic methodology](https://kobra.uni-kassel.de/items/74307bf4-bf8c-4db7-8c18-4997db1c5465) | Bibliographic record located; full text blocked | Priority methodology reading; proposed search settings here are not quoted from the thesis |
 | [Sanborn's August 2025 letter](https://www.elonka.com/kryptos/OpenLetterAug2025.html) | Read | Primary statement on stewardship, AI claims, and continuing riddle |
 | [November 2025 presentation coverage](https://www.scientificamerican.com/article/cia-kryptos-puzzle-creator-releases-final-clues/) | Read | Firsthand report of newer clues; linked original letter failed to retrieve |
+| [Berlin World Clock city record](https://www.berlin.de/sehenswuerdigkeiten/3561749-3558930-weltzeituhr.html) and [maker description](https://kunsch-metallbau.de/referenzen-/weltzeituhr-berlin-alexanderplatz/) | Read | Support a 24-sector, rotating-hour-ring model; freeze 1989 labels because the modern display changed |
 | [AP archive/auction report](https://apnews.com/article/cb8ee8554ca473910cbd0592f8bdb350) | Search report available | Archive discovery and auction context; corroborate exact provenance in Phase 0 |
 | [June 2026 stewardship report](https://www.wired.com/story/crypto-guys-bought-the-answer-to-the-cias-mysterious-kryptos-sculpture/) | Opened; reporting inspected | Updated verification route; do not infer present availability or fees without rechecking |
 | [Paradigm Project Kryptos](https://www.paradigm.xyz/2026/06/kryptos) | Indexed announcement found; direct retrieval failed | Recheck live primary source before operational use |
@@ -589,6 +602,12 @@ The preparation searched current status, original clues, archival developments, 
 | [Smithsonian Sanborn oral history](https://www.aaa.si.edu/collections/interviews/oral-history-interview-jim-sanborn-15700) | Identified via citations; retrieval failed | Historical statements; do not treat inaccessible content as reviewed |
 
 Do not ingest unauthenticated “solution” websites as ground truth. Archive a claimed method only with its author, timestamp, exact algorithm, and whether the key was fitted after choosing the plaintext.
+
+The focused [September 2026 source review](../reports/research-source-review-2026-09.md)
+records the newer access checks and their limitations. The
+[soundness review](../reports/soundness-review.md) records code, artifact, claim,
+and accounting checks. Neither review substitutes for a fresh-context A7
+cryptanalytic reproduction of a future positive candidate.
 
 ## 16. Coordinator launch prompt
 
