@@ -471,7 +471,8 @@ validated. The pinned upstream comparison requires a GNU-compatible C compiler.
 
 ## Extending the project
 
-Read [AGENTS.md](AGENTS.md) before changing code. For a new experiment:
+Read [AGENTS.md](AGENTS.md) and [STYLE.md](STYLE.md) before changing code.
+For a new experiment:
 
 1. State the exact model, domain, exclusions, success criterion, evaluation cap,
    wall-time cap, and falsification condition.
