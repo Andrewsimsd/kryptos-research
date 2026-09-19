@@ -35,10 +35,14 @@ evidence, 39-primer report, milestone-6 feasibility report, milestone-7 result,
 request and [final model conventions](../docs/keyword-alphabet-conventions-v3.md) by
 SHA-256. The recurrence and equation remain:
 
-```text
-k[i] = (k[i-5] + k[i-4]) mod 10
-c(C_i) - p(P_i) = k[i] mod 26
-```
+$$
+k_i=(k_{i-5}+k_{i-4})\bmod10,\qquad
+c(C_i)-p(P_i)\equiv k_i\pmod{26}.
+$$
+
+Here $i$ is a zero-based position, $k_i$ is a decimal digit (starting with the
+five primer digits), $P_i$ and $C_i$ are aligned letters, and $p$ and $c$ map
+those letters to positions 0–25 in their respective alphabets.
 
 The three candidate words have explicit provenance and roles. `KRYPTOS` is the
 sculpture tableau keyword. `PALIMPSEST` and `ABSCISSA` are K1 and K2 indicator
@@ -50,7 +54,7 @@ and an ACA Gromark transposed alphabet. Both forward and reversed orientations
 produce 12 literal orders that are also distinct up to rotation. Every ordered
 plaintext/ciphertext pair and all 26 relative ciphertext rotations are tested
 for each primer. A proven common-rotation symmetry fixes plaintext rotation to
-zero. Thus 39 × 12 × 12 × 26 = **146,016** physical models are retained, even
+zero. Thus $39\cdot12\cdot12\cdot26=146{,}016$ physical models are retained, even
 when different physical models share a crib signature.
 
 The planner's preregistration probe inspected domain structure but did not

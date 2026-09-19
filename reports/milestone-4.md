@@ -27,9 +27,10 @@ All five measurements share the same permutations, preserving their dependence.
 
 The deterministic SplitMix64 generator and rejection-based bounded draws are
 specified in [frozen conventions](../docs/statistics-conventions.md). Integer
-histograms avoid rounded comparisons. The quoted estimate is `(r+1)/(N+1)`;
-the marginal approximate 95% Wilson interval describes Monte Carlo uncertainty
-for the raw binomial proportion r/N. The interval calculation follows
+histograms avoid rounded comparisons. The quoted estimate is $(r+1)/(N+1)$,
+where $r$ is the inclusive tail count among $N$ permutations. The marginal
+approximate 95% Wilson interval describes Monte Carlo uncertainty for the raw
+binomial proportion $r/N$. The interval calculation follows
 [NIST's Wilson description](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).
 
 ## Precision results

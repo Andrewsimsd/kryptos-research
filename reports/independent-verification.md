@@ -21,8 +21,9 @@ checks both complete alphabet permutations plus all 936 reported equations.
 Rust and Python resolve all 39 primers as feasible. This is still a
 same-coordinator cross-check rather than the plan's fresh-context A7 review.
 
-[Milestone 7](milestone-7.md) independently re-enumerates the exact 39 × 4 × 4
-× 26 structured-alphabet domain in Python, reconstructing all recurrence keys,
+[Milestone 7](milestone-7.md) independently re-enumerates the exact
+$39\cdot4\cdot4\cdot26=16{,}224$ structured-alphabet models in Python,
+reconstructing all recurrence keys,
 index maps, rotations and 389,376 equations. It validates every first-mismatch
 certificate and aggregate histogram. Rust and Python agree that all 16,224
 models are rejected. The same-coordinator limitation continues to apply.

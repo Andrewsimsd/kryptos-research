@@ -301,7 +301,7 @@ The baseline establishes only the following aligned facts:
   33 and 74;
 - 49 of the 97 ordinary A–Z repeating-Vigenère periods fail a necessary key
   consistency test; periods 27–29 and 53–97 survive it;
-- the ciphertext index of coincidence is exactly `336 / 9312`.
+- the ciphertext index of coincidence is exactly $336/9312$.
 
 These results do not exclude transposition inside a compound cipher, other
 alphabets, other sign conventions, or a long unconstrained key.
@@ -321,12 +321,17 @@ The exact conventions live in [cipher-conventions.md](docs/cipher-conventions.md
 
 The primer model is
 
-```text
-k[i] = (k[i-5] + k[i-4]) mod 10
-c(C_i) - p(P_i) = k[i] mod 26
-```
+$$
+k_i = (k_{i-5} + k_{i-4}) \bmod 10,
+\qquad
+c(C_i) - p(P_i) \equiv k_i \pmod{26}.
+$$
 
-where `p` and `c` are independent alphabet permutations. Milestone 3 turns the
+Here $i$ is a zero-based ciphertext position, $k_i$ is the decimal key digit
+(including the five primer digits at positions 0–4), $P_i$ and $C_i$ are the
+known plaintext and ciphertext letters, and $p$ and $c$ are independent
+alphabet permutations mapping letters to indices 0–25. The recurrence applies
+from position 5 onward. Milestone 3 turns the
 24 crib equations into a bipartite letter graph. Pair, cycle, and within-component
 collision constraints reduce the complete nonzero five-digit domain to 39
 primers and preserve a certificate for every rejection.
@@ -400,7 +405,8 @@ compact K4 certificate arrays, score histogram, and any survivor traces.
 
 The fixed experiment measures five declared statistics on random permutations,
 with replacement, of K4's observed letter multiset. It preserves dense
-histograms, exceedance counts, `(r+1)/(N+1)` estimates, Wilson intervals, and a
+histograms, exceedance counts, $(r+1)/(N+1)$ estimates (inclusive tail count
+$r$ among $N$ null draws), Wilson intervals, and a
 five-test Bonferroni correction. The precision run uses a fresh seed and does
 not pool the pilot.
 
@@ -436,6 +442,12 @@ See [statistical conventions](docs/statistics-conventions.md) and
 | `reports/` | Human-readable milestone findings, limits, validation, prior work, and current status |
 | `docs/` | Research plan, future milestones, and frozen model/convention documents |
 | `third_party/` | Pinned upstream comparison source, kept separate with its original license |
+
+The convention files under `docs/` are byte-bound to historical experiment
+registrations. They preserve the notation used when those runs were performed;
+current mathematical explanations are typeset in this README, the research
+plan, and the milestone reports. New experiments should create versioned
+conventions with new hashes rather than rewrite the frozen inputs of past runs.
 
 The Rust design keeps core calculations separate from I/O. `main.rs` delegates
 to the CLI, the CLI parses files, and library modules accept typed values and

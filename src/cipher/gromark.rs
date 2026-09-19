@@ -11,8 +11,11 @@ use super::{
 
 /// Recurrence including its primer, with arithmetic in a declared integer base.
 ///
-/// For primer length r, `key[i+r] = (key[i] + key[i+1]) mod base`.
+/// For zero-based position $i$, primer length $r$, and base $b$, the key digits
+/// satisfy $k_{i+r}=(k_i+k_{i+1})\bmod b$ with $0\le k_i<b$.
 /// This is modular integer arithmetic, not finite-field arithmetic.
+// Clippy reads LaTeX subscripts as prose identifiers; Rustdoc needs the math intact.
+#[allow(clippy::doc_markdown)]
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Recurrence {
     base: u8,

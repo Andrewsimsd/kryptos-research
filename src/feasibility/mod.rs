@@ -66,9 +66,12 @@ pub struct FeasibilityReport {
     pub decision: Decision,
 }
 
-/// Solve `c(C_i) - p(P_i) = key[i] (mod 26)` with independently bijective p and c.
+/// Solve $c(C_i)-p(P_i)\equiv k_i\pmod{26}$ with independently bijective
+/// plaintext and ciphertext alphabet maps $p$ and $c$ onto indices 0–25.
 ///
-/// All crib-connected coordinates are derived first. A common rotation of both
+/// Here $i$ is a zero-based crib position, $P_i$ and $C_i$ are aligned letters,
+/// and $k_i$ is the supplied key digit at that position. All crib-connected
+/// coordinates are derived first. A common rotation of both
 /// alphabets preserves the equations, so the first component's offset is fixed
 /// to zero without excluding solutions. Remaining offsets range over 0–25.
 /// Unconstrained letters impose no additional constraints and fill free slots.
@@ -85,6 +88,8 @@ pub struct FeasibilityReport {
 /// assert!(matches!(report.decision, Decision::Feasible { .. }));
 /// # Ok::<(), kryptos_research::cipher::CipherError>(())
 /// ```
+// Clippy reads LaTeX subscripts as prose identifiers; Rustdoc needs the math intact.
+#[allow(clippy::doc_markdown)]
 pub fn solve(
     ciphertext: &str,
     cribs: &[Crib],

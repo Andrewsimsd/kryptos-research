@@ -28,9 +28,15 @@ solution or proof of historical use.
 [PRIMERS-0001](../experiments/PRIMERS-0001.json) was written before enumeration.
 It declares all `00001`–`99999` primers, including leading zeros, and excludes
 `00000` to match upstream. The included-primer recurrence is
-`k[i] = (k[i-5] + k[i-4]) mod 10`, with offset zero. Letter arithmetic is modulo
-26: `c(C_i) - p(P_i) = k[i]`, using independently unknown plaintext and
-ciphertext alphabet permutations and all 24 aligned frozen cribs.
+$$
+k_i=(k_{i-5}+k_{i-4})\bmod10,\qquad
+c(C_i)-p(P_i)\equiv k_i\pmod{26}.
+$$
+
+Here $i$ is a zero-based position, $k_i$ is a decimal digit (the five primer
+digits start the stream), $P_i$ and $C_i$ are aligned letters, and $p$ and $c$
+are independently unknown plaintext/ciphertext alphabet indices 0–25. The
+key offset is zero, and all 24 frozen cribs are used.
 
 The original program prints 98 digits but counts distinct digits in the first
 97. Both conventions are reproduced exactly; the last printed digit is not an
@@ -60,8 +66,10 @@ and the forest chooses a different set of longer expressions. There is no
 hard-coded K4 inequality list in the Rust implementation. The complete primer
 classifications agree despite the different derivation.
 
-For example, R maps to P at both positions 27 and 65, requiring `k27 = k65`.
-The S/T-to-R/S cycle requires `k23 - k28 - k32 + k33 = 0 (mod 26)`.
+For example, R maps to P at both positions 27 and 65, requiring
+$k_{27}=k_{65}$. The S/T-to-R/S cycle requires
+$k_{23}-k_{28}-k_{32}+k_{33}\equiv0\pmod{26}$; these subscripts are the
+report's zero-based positions.
 The saved report partitions **all 99,960 rejected primers** by their first
 violated signed relation. Summing the corresponding signed crib equations
 proves each relation; substituting the rejected primer proves its contradiction.

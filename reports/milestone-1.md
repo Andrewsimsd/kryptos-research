@@ -35,10 +35,14 @@ was not locally preserved; the evidence-file hashes do not claim otherwise.
    Q also decrypts to distinct anchored plaintext letters. These are direct,
    aligned single-letter maps, not changing or compound mechanisms.
 3. **Ordinary A–Z repeating additive Vigenère:** all 97 periods were evaluated
-   for `C_i = P_i + K_(i mod t) mod 26`. Periods 1–26 and 30–52 fail: **49 exact
+   for $C_i\equiv P_i+K_{i\bmod t}\pmod{26}$, where $i$ is a zero-based
+   position, $t$ the period, and letters and key symbols are standard A–Z
+   indices. Periods 1–26 and 30–52 fail: **49 exact
    rejections**. Periods 27–29 and 53–97 survive: **48 necessary-condition
    survivors**, not recovered keys. Reports include unconstrained slot counts.
-4. **IC reproduced:** `336 / 9312 = 0.03608247422680412`. No p-value or cipher
+4. **IC reproduced:** $336/9312\approx0.03608247422680412$, from the 97-letter
+   ciphertext's repeated-letter count over its ordered distinct-position
+   count. No p-value or cipher
    classification is inferred from this descriptive statistic.
 5. **Direct no-self-encryption rejected:** human positions **33 and 74** are
    `S → S` and `K → K`. The plan mentions 74; the harness additionally records

@@ -27,18 +27,20 @@ was added after observing the result.
 
 For each primer, the recurrence is
 
-```text
-k[i] = (k[i-5] + k[i-4]) mod 10
-```
+$$
+k_i = (k_{i-5}+k_{i-4})\bmod 10.
+$$
 
-including the five primer digits at positions 0–4 and producing 97 digits. At
+It includes the five primer digits at positions 0–4 and produces 97 digits. At
 each of the 24 frozen crib positions, the solver requires
 
-```text
-c(C_i) - p(P_i) = k[i] mod 26
-```
+$$
+c(C_i)-p(P_i)\equiv k_i\pmod{26}.
+$$
 
-where `p` and `c` independently map A–Z bijectively onto 0–25. They are not
+Here $i$ is a zero-based position, $k_i$ is a decimal digit (with the primer
+occupying positions 0–4), $P_i$ and $C_i$ are the aligned letters, and $p$ and
+$c$ independently map A–Z bijectively onto 0–25. They are not
 restricted to A–Z order, the KRYPTOS alphabet, ACA keyword construction, a word
 list, or matching orders. The complete scope and canonical choices are frozen
 in [the feasibility conventions](../docs/feasibility-conventions.md).

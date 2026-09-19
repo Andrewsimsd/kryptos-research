@@ -86,13 +86,22 @@ historical model.
 Beaufort schedules that were not covered by milestone 1?
 
 **Exact families.** For unrestricted repeating keys, phase only renames key
-coordinates. Register 3 equations × 32 periods = **96 raw structural tuples**,
+coordinates. Register $3\cdot32=96$ raw equation/period tuples,
 then prove and apply further sign/equation equivalences; these are parameter
 tuples, not necessarily 96 distinct constraint sets. Derive required residues
-rather than enumerate all `26^period` words. Register progressive keys as
-`k_i = q_(i mod t) + floor(i/t)d + s (mod 26)`, where the `t` seed residues
-`q` remain unknown and are constrained by the cribs. The raw
-`3 × 32 × 26 × 26 = 64,896` equation/period/origin/increment tuples include a
+rather than enumerate all $26^t$ words for period $t$. Register progressive
+keys as
+
+$$
+k_i \equiv q_{i\bmod t} + \left\lfloor\frac{i}{t}\right\rfloor d + s
+\pmod{26},
+$$
+
+where $i$ is a nonnegative zero-based position and $t$ is a positive integer
+period. The unknown seed values $q_0,\ldots,q_{t-1}$, increment $d$, origin
+$s$, and resulting key value $k_i$ are residues modulo 26. The seed values
+are constrained by the cribs. The raw
+$3\cdot32\cdot26\cdot26=64{,}896$ equation/period/origin/increment tuples include a
 redundant origin that canonicalization should remove. Also register plaintext-
 and ciphertext-autokey seeds of lengths 1–32,
 and interrupted keys with at most two reset points selected from a declared
@@ -112,7 +121,9 @@ nearby modular recurrence?
 **Exact domain.** Enumerate every seed, including all-zero seeds, for bases
 3–12 and seed lengths 2–6: **7,433,973** seeds. Treat base 26, lengths 2–4, as
 a separate **475,228**-seed branch. Those counts use the default recurrence
-`t[i+L] = t[i] + t[i+1] (mod base)` and include seeds only. Register alternative
+$t_{i+L} = (t_i+t_{i+1})\bmod b$, where $i$ is a zero-based position, $L$ is
+the seed length, $b$ is the base, and $t_i$ is a digit in $0,\ldots,b-1$;
+include seeds only. Register alternative
 recurrence taps, output offset
 0–96, additive/subtractive sign, and whether the emitted sequence begins with
 the seed as explicit multipliers. Prove phase or sign reductions before using
@@ -161,7 +172,8 @@ authenticated K1–K3 terms, clue terms, place names, and period documents. Reco
 normalization and deduplication before K4 evaluation.
 
 **Validation and stop.** Reproduce known tableau examples and plant every
-constructor. Report corpus size × constructor × orientation × phase before and
+constructor. Report corpus size $\times$ constructor count $\times$
+orientation count $\times$ phase count before and
 after canonical deduplication. No per-letter exception or keyword added after
 seeing a near match is part of the original run.
 
@@ -175,8 +187,8 @@ related excavation text, creator statements, Berlin/clock material, and any
 newly authenticated document. Guessed K4 prose belongs in a separate hypothesis
 corpus, never the evidence corpus.
 
-**Exact domain.** For each normalized source of length `L`, test all
-`max(L-96, 0)` contiguous 97-letter windows, forward and reversed, under each
+**Exact domain.** For each normalized source of length $L$, test all
+$\max(L-96,0)$ contiguous 97-letter windows, forward and reversed, under each
 registered alphabet/equation/route. Add skip patterns or page transitions only
 as separately counted, source-motivated variants. Keep corrected and
 as-inscribed K2 versions distinct.
@@ -208,9 +220,10 @@ this is constraint reduction, not a blinded prediction claim.
 **Question.** Does a simple permutation of positions explain why aligned models
 fail?
 
-Because 97 is prime, every map `i -> a*i+b (mod 97)` with `a=1..96` and
-`b=0..96` is a permutation: **9,312 routes**. Reversal is already the case
-`a=-1`; composing two affine maps stays affine and adds no new route.
+Because 97 is prime, every map $i\mapsto ai+b\pmod{97}$ with zero-based
+position $i$, $1\le a\le96$, and $0\le b\le96$ is a permutation:
+**9,312 routes**. Reversal is already the case
+$a=-1$; composing two affine maps stays affine and adds no new route.
 
 **Method.** Recheck the full route family as a small regression control; the
 milestone-1 letter-multiplicity certificate already excludes every pure
@@ -219,7 +232,9 @@ substitution families that have passed milestone-10
 calibration. Transport both plaintext and ciphertext crib coordinates in the
 declared direction; save the inverse mapping and a full reencryption trace.
 
-**Stop.** Count `9,312 × substitution models` after symmetry deduplication.
+**Stop.** Count $9{,}312\times N_{\mathrm{substitution}}$ after symmetry
+deduplication, where $N_{\mathrm{substitution}}$ is the registered number of
+substitution models.
 Reject only that product, not arbitrary transpositions.
 
 ## Planned milestone 18 — ragged columnar and route transpositions
@@ -293,7 +308,7 @@ reversible transducer?
 counters, source-supported transition triggers (position, line boundary,
 known-direction event), and affine letter output. Require invertibility and
 canonicalize renamed states. A separate rotor branch may use a small frozen set
-of tableau-derived wirings, steps, and turnover positions; arbitrary `26!`
+of tableau-derived wirings, steps, and turnover positions; arbitrary $26!$
 wirings are outside scope.
 
 **Validation and stop.** Generate machines from a grammar whose branching
@@ -324,13 +339,14 @@ path; suggestive words alone do not pass.
 **Question.** Do small linear blocks or a 26-symbol fractionation explain the
 known letters?
 
-**Exact 2×2 branch.** Enumerate all 456,976 matrices over `Z/26Z`; exactly
+**Exact $2\times2$ branch.** Enumerate all 456,976 matrices over
+$\mathbb{Z}/26\mathbb{Z}$; exactly
 **157,248** are invertible. With every two-letter affine offset, the full affine
 family has **106,299,648** models before phase and route factors. Shard by matrix
 and verify invertibility independently modulo 2 and modulo 13.
 
-**Larger branch.** Solve 3×3 constraints algebraically modulo 2 and 13 and join
-with the Chinese Remainder Theorem. Do not describe `26^9` matrices as fully
+**Larger branch.** Solve $3\times3$ constraints algebraically modulo 2 and 13 and join
+with the Chinese Remainder Theorem. Do not describe $26^9$ matrices as fully
 brute-forced if solver pruning or a cap is used.
 
 **Fractionation.** Preserve all 26 ciphertext symbols with a declared 2×13
@@ -414,3 +430,32 @@ key/substitution branches; 16 consumes their reversible state models. Milestones
 17–20 add routes and clue-derived schedules. Milestones 21–24 combine only
 validated primitives. Milestone 25 ranks survivors, and milestone 26 is reserved
 for a candidate that already passes every earlier applicable gate.
+
+The diagram highlights selected gates. Solid arrows are prerequisites; dashed
+arrows show optional sources of a serious survivor, not prerequisites for
+milestone 25. The table above gives each milestone's full readiness rule.
+
+```mermaid
+flowchart LR
+    E["9 Evidence refresh"] --> B["10 Blind benchmark"]
+    B --> K["11 Classical schedules"]
+    B --> T["12–13 Other key and alphabet models"]
+    E --> C["14–15 Clue-bound models"]
+    B --> C
+    B --> R["17–18 Routes"]
+    K --> R
+    B --> O["19–23 Other bounded branches"]
+    K -.-> J["16 Dual-clue bridge<br/>with a ready 11–15 model"]
+    T -.-> J
+    C -.-> J
+    K -.-> S["Serious survivor<br/>from any bounded branch"]
+    T -.-> S
+    C -.-> S
+    R -.-> S
+    O -.-> S
+    J -.-> S
+    B --> L["25 Language ranking"]
+    S --> L
+    S --> V["26 Candidate dossier<br/>and independent review"]
+    L -.-> V
+```

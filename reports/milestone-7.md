@@ -23,17 +23,21 @@ binds the exact primer report, preceding feasibility report, request, evidence,
 and [model conventions](../docs/structured-alphabet-conventions.md) by SHA-256.
 For each primer, the same offset-zero decimal recurrence is used:
 
-```text
-k[i] = (k[i-5] + k[i-4]) mod 10
-c(C_i) - p(P_i) = k[i] mod 26
-```
+$$
+k_i=(k_{i-5}+k_{i-4})\bmod10,\qquad
+c(C_i)-p(P_i)\equiv k_i\pmod{26}.
+$$
+
+Here $i$ is a zero-based position, $k_i$ is a decimal digit (starting with the
+five primer digits), $P_i$ and $C_i$ are aligned letters, and $p$ and $c$ map
+those letters to positions 0–25 in their respective alphabets.
 
 The four registered orders are standard A-Z, reversed A-Z, the deduplicated
 `KRYPTOSABCDEFGHIJLMNQUVWXZ` order, and its reversal. The evaluator covers all
 16 ordered plaintext/ciphertext pairs and all 26 left rotations of the
 ciphertext alphabet. Plaintext rotation is fixed at zero because rotating both
 alphabets by the same amount preserves every index difference. The resulting
-domain has 39 × 4 × 4 × 26 = 16,224 distinct models.
+domain has $39\cdot4\cdot4\cdot26=16{,}224$ distinct models.
 
 Every model evaluates all 24 equations, even after a mismatch. This produces
 exactly **389,376** equation evaluations and the complete score histogram:

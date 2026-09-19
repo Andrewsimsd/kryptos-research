@@ -1,9 +1,15 @@
 //! Necessary constraints for aligned additive ciphers with two unknown alphabets.
 //!
-//! The model is `c(ciphertext[i]) - p(plaintext[i]) = key[i] (mod 26)`.
+//! At each zero-based crib position $i$, the model is
+//! $c(C_i)-p(P_i)\equiv k_i\pmod{26}$, where $P_i$ and $C_i$ are aligned
+//! letters, $k_i$ is the key digit, and $p$ and $c$ map letters to positions
+//! 0–25 in independently unknown alphabets.
 //! [`PrimerConstraints`] eliminates unknown alphabet coordinates within graph
 //! components. Passing these checks does not establish that component offsets
 //! can be chosen to complete two permutations, or recover any unknown plaintext.
+
+// Clippy reads LaTeX subscripts in module documentation as prose identifiers.
+#![allow(clippy::doc_markdown)]
 
 use std::collections::{BTreeMap, BTreeSet, VecDeque};
 

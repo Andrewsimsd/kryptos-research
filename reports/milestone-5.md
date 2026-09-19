@@ -24,12 +24,14 @@ To account for the differing opportunities and spreads, a separate 10,000-text
 calibration estimates a mean and population standard deviation at each width.
 For a raw count x, with calibration sample size N, sum S and squared sum Q:
 
-```text
-V = N*Q - S*S
-Z = (N*x - S) / sqrt(V)
-```
+$$
+V = NQ-S^2, \qquad Z = \frac{Nx-S}{\sqrt{V}}.
+$$
 
-The score is undefined when V=0; the implementation returns an explicit error.
+Here $x$ is the raw count at one width, $N$ is its calibration sample size,
+$S$ is the sum of calibration counts, and $Q$ is their sum of squares.
+
+The score is undefined when $V=0$; the implementation returns an explicit error.
 No normal-distribution approximation supplies tail probabilities. Instead,
 select the maximum Z over all 48 widths, with exact ties assigned to the
 smallest width. Use the same frozen calibration and full selection procedure
@@ -46,7 +48,7 @@ control under arbitrary partial alternatives.
 All comparisons use signed integer arithmetic. Equal signs are compared using
 cross-multiplied squared numerators and positive variance denominators; negative
 scores reverse the ordering. Floating-point values appear only in the human
-summary. Rust's bounded domain keeps intermediate products below 6×10³⁰,
+summary. Rust's bounded domain keeps intermediate products below $6\times10^{30}$,
 within i128. Python uses arbitrary-precision integers to form an equivalent
 rank table. This avoids near-tie disagreements from square roots.
 
@@ -83,7 +85,8 @@ an additional selection procedure.
 | 7 | 90 | 9 | 4.8775 / 1.909579 | 2.158852 | 0.0358896 | 0.6834132 |
 | 14 | 83 | 7 | 4.1469 / 1.801699 | 1.583561 | 0.0997890 | 0.9606204 |
 
-Every estimate is `(r+1)/(B+1)`. Width 21's local count is only 12 of 100,000;
+Every estimate is $(r+1)/(B+1)$, where $r$ is the inclusive tail count and $B$
+is the evaluation sample size. Width 21's local count is only 12 of 100,000;
 its local estimate has much more Monte Carlo uncertainty than the earlier
 million-sample fixed-width experiment. The precision decision here targets the
 **global** tail. No extra simulation was added to make a local estimate agree

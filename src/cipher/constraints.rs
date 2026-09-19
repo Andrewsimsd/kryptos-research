@@ -88,11 +88,15 @@ pub fn validate_constraints(
 
 /// Transport output-position constraints to input positions through a pull map.
 ///
-/// For `out[j] = in[map[j]]`, an output crib at j becomes an input crib at
-/// `map[j]`. Transport in the other direction using [`Permutation::inverse`].
+/// For a pull map $y_j=x_{\pi(j)}$, an output crib at zero-based position
+/// $j$ becomes an input crib at $\pi(j)$. Here $x$ is the input, $y$ the
+/// output, and $\pi$ the source-index map. Transport in the other direction
+/// using [`Permutation::inverse`].
 ///
 /// # Errors
 /// Rejects invalid or contradictory output cribs.
+// Clippy reads LaTeX subscripts as prose identifiers; Rustdoc needs the math intact.
+#[allow(clippy::doc_markdown)]
 pub fn transport_to_input(cribs: &[Crib], map: &Permutation) -> Result<Vec<Crib>, CipherError> {
     let mut transported: Vec<_> = validated(cribs, map.indices().len())?
         .into_iter()

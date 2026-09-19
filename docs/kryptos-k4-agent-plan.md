@@ -128,6 +128,21 @@ K1–K3 data must retain their irregular spellings. Maintain separate “as insc
 
 Use eight logical roles. They need not all run concurrently. A coordinator may assign several successive roles to one process, but the final verifier must use a fresh context and independent implementation.
 
+The workflow below shows the dependency gates. A0 coordinates the queue; A7
+checks both exclusions and positive candidates independently of the searchers.
+
+```mermaid
+flowchart LR
+    A1["A1 Evidence<br/>freeze sources and cribs"] --> A2["A2 Foundations<br/>test primitives and fixtures"]
+    A2 --> A3["A3 Diagnosis<br/>scope exact exclusions"]
+    A2 --> A4["A4 Algebra and keys<br/>register bounded models"]
+    A2 --> A5["A5 Structure and context<br/>register routes and sources"]
+    A4 --> A6["A6 Search and scoring<br/>benchmark before K4"]
+    A5 --> A6
+    A3 --> A7["A7 Independent verification<br/>review exclusions and candidates"]
+    A6 --> A7
+```
+
 | Agent | Owns | Required output | Cannot do |
 |---|---|---|---|
 | A0 Coordinator | Task queue, budgets, registry, dependency gates | Prioritized experiment queue; daily report | Declare success by consensus |
@@ -230,13 +245,23 @@ The following baseline calculations were executed while preparing this plan. Rep
 
 **B. A fixed monoalphabetic substitution is incompatible with the anchors.** The plaintext E appears at positions 22, 31, and 65 and corresponds to F, G, and Y. A fixed function cannot map one input letter to three different outputs. Conversely, ciphertext Q at positions 26 and 27 corresponds to different plaintext letters, ruling out a fixed single-letter decryption map there.
 
-**C. Ordinary A–Z repeating Vigenère has strong period exclusions.** For `C_i = P_i + K_(i mod t) mod 26`, derive every known key value. Reject any period t when two known positions sharing a residue class demand different values. All periods 1–26 fail. Among periods 1–52, only 27, 28, and 29 survive this necessary test. Periods 53–97 also survive it. Survival is not a solution or a complete key recovery.
+**C. Ordinary A–Z repeating Vigenère has strong period exclusions.** For
+$C_i \equiv P_i + K_{i \bmod t} \pmod{26}$, let $i$ be a zero-based position,
+$t$ the key period, and $P_i$, $C_i$, and $K_j$ standard A–Z indices. Derive
+every known key value. Reject any period $t$ when two known positions sharing a
+residue class demand different values. All periods 1–26 fail. Among periods
+1–52, only 27, 28, and 29 survive this necessary test. Periods 53–97 also
+survive it. Survival is not a solution or a complete key recovery.
 
 **D. Index of coincidence is low.** Computed from the normalized ciphertext:
 
-```text
-sum(f * (f - 1)) / (97 * 96) = 336 / 9312 = 0.03608247422680412
-```
+$$
+\operatorname{IC} = \frac{\sum_{\ell \in \mathcal A} f_\ell(f_\ell-1)}{97\cdot96}
+= \frac{336}{9312} \approx 0.03608247422680412.
+$$
+
+Here $\mathcal A$ is the standard A–Z alphabet and $f_\ell$ is the count of
+letter $\ell$ in the 97-letter ciphertext.
 
 This is descriptive evidence; low IC does not establish a one-time pad or identify a particular cipher.
 
@@ -262,7 +287,12 @@ Use three null ensembles:
 
 For each proposed statistic, record the choice of null and why it answers the question. For adaptive searches, run the complete selection procedure on null data: all widths, alphabet choices, offsets, score tuning, and best-candidate selection. Comparing the selected K4 maximum to a single unselected null statistic is invalid.
 
-Begin with 10,000 null samples. Increase only when the estimate needs finer resolution. Report Monte Carlo counts and uncertainty; `(r+1)/(N+1)` is a useful finite-sample estimate, and zero exceedances must not be reported as probability zero. For a fixed preregistered family use a maximum-statistic procedure or an explicit multiple-testing correction.
+Begin with 10,000 null samples. Increase only when the estimate needs finer
+resolution. Report Monte Carlo counts and uncertainty; $(r+1)/(N+1)$, where
+$r$ is the inclusive tail count among $N$ null draws, is a useful finite-sample
+estimate, and zero exceedances must not be reported as probability zero. For a
+fixed preregistered family use a maximum-statistic procedure or an explicit
+multiple-testing correction.
 
 If using a cipher classifier, train and evaluate at length 97 with unfamiliar keys, held-out source texts, compound ciphers, and an “unknown” outcome. Its score is a ranking aid, not a verdict. [Nuhn and Knight's original classifier paper](https://aclanthology.org/D14-1185/); [Leierzopf and colleagues' later classification study](https://ecp.ep.liu.se/index.php/histocrypt/article/view/164).
 
@@ -295,11 +325,16 @@ survivors. Its amended final run discloses that K4 was already observed before
 the inverse-recovery gate was corrected. Dictionary searches and additional
 documented tableau conventions remain untested.
 
-For a general additive model, let `a` and `b` map letters to positions in plaintext and ciphertext alphabets:
+For a general additive model, let $a$ and $b$ map letters to positions in
+plaintext and ciphertext alphabets:
 
-```text
-b(C_i) = a(P_i) + k_i (mod 26)
-```
+$$
+b(C_i) \equiv a(P_i) + k_i \pmod{26}.
+$$
+
+Here $i$ is a zero-based message position, $P_i$ and $C_i$ are the aligned
+letters, $a$ and $b$ map letters to positions 0–25 in their respective
+alphabets, and $k_i$ is the key shift at $i$.
 
 For each crib position, derive constraints. If two positions share a key state, their alphabet relationships must be consistent. With fixed alphabets, calculate key residues directly. With unknown alphabets, constrain each map to be a permutation of 0–25.
 
@@ -322,16 +357,21 @@ Use alphabet-rotation or other symmetry breaking only when equivalence has been 
 
 The standard five-digit Gromark recurrence is an appropriate starting fixture. For an explicitly declared generalization of primer length r and base b:
 
-```text
-k_(i+r) = (k_i + k_(i+1)) mod b
-```
+$$
+k_{i+r} = (k_i + k_{i+1}) \bmod b.
+$$
+
+Here $i$ starts at zero, $r$ is the primer length, $b$ is the integer base,
+and every $k_i$ is a digit from 0 through $b-1$.
 
 Keep recurrence arithmetic modulo b separate from letter arithmetic modulo 26. State how generated symbols become shifts. Standard Gromark definitions and mixed-alphabet construction are given by the [ACA](https://www.cryptogram.org/downloads/aca.info/ciphers/Gromark.pdf).
 
 Steps:
 
 1. Reproduce the published implementation and survivor counts at a pinned commit.
-2. Enumerate primer domains only after estimating `b^r`. Initially consider bases 3–12 and r=2–6; give every pair its own budget and coverage record. Add base 26 with short primers in a separate queue.
+2. Enumerate primer domains only after estimating $b^r$. Initially consider
+   bases 3–12 and $2\le r\le6$; give every pair its own budget and coverage
+   record. Add base 26 with short primers in a separate queue.
 3. Filter primers by exact crib constraints before solving alphabet permutations.
 4. For each survivor, use modular constraints and all-different conditions to solve or restrict alphabets. Rank by a fixed language model only after satisfying constraints.
 5. If justified, extend to a bounded recurrence grammar: two fixed taps, modular addition/subtraction, and a fixed output mapping. Enumerate tap choices and penalize added complexity.
@@ -435,9 +475,19 @@ Among passing candidates, record separately:
 - Best-of-search score relative to the identical search procedure on null inputs.
 - Stability across random restarts, independent implementations, and scoring corpora.
 
-A possible research ranking is `log P_language(P) - lambda * description_bits(model,key,exceptions)`. Lambda and the coding scheme must be set before K4 comparison. This is an operational ranking, not a posterior probability or proof. Large external dictionaries and candidate-source selection also contribute search freedom.
+A possible research ranking is
+$\log P_{\mathrm{language}}(P)-\lambda\,\mathrm{description\_bits}(M,K,E)$,
+where $P$ is a proposed plaintext, $M$ the model, $K$ its key, $E$ any
+exceptions, and $\lambda$ a declared penalty weight. Set $\lambda$ and the
+coding scheme before K4 comparison. This is an operational ranking, not a
+posterior probability or proof. Large external dictionaries and
+candidate-source selection also contribute search freedom.
 
-The key circularity test is simple. Under Vigenère, any proposed P implies `K = C - P mod 26`; encrypting P with that K will exactly recover C. This proves compatibility only. Demand a reason the key should exist independently of that chosen P.
+The key circularity test is simple. Under Vigenère, any proposed plaintext
+$P_i$ implies $K_i \equiv C_i-P_i \pmod{26}$ at each zero-based position $i$,
+with letters represented by standard A–Z indices. Encrypting $P$ with that
+$K$ will exactly recover $C$. This proves compatibility only. Demand a reason
+the key should exist independently of that chosen $P$.
 
 Crib holdouts are useful but limited. Train an experiment on EASTNORTHEAST and evaluate BERLINCLOCK, and vice versa, with the hidden block excluded from objective functions and tuning. Since agents may already know all the clues, call this an ablation unless genuine isolation is maintained. Use fresh synthetic messages for genuinely blind validation.
 
