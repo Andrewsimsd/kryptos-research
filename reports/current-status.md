@@ -1,7 +1,45 @@
 # K4 current status and statement provenance
 
-Audit date: 17 September 2026 UTC (16 September in America/New_York).
-This is a bounded initial audit for milestone 1, not a declaration that every
+## Blind benchmark, 20 September 2026
+
+The [milestone 10 reference benchmark](milestone-10.md), specifically the
+fresh-seed BLIND-0004 run, passed its registered synthetic gate: 160/160 planted models ranked first, and 0/140 out-of-family
+or tampered cases had a survivor. It tested a small exact family of period-one
+and period-two standard-alphabet ciphers under identity or reverse order. It
+did not search K4, calibrate language scoring, or close the physical and
+period-clock gaps below. The earlier BLIND-0001 pilot published its seed, and
+BLIND-0002's completed run replayed cases already exposed during a failed run.
+BLIND-0003 had an incomplete implementation-path and final wall-cap gate.
+Those runs remain auditable but do not count as the accepted calibration.
+Future attack families need separate
+representative corpora and blind tests.
+
+## Evidence refresh, 20 September 2026
+
+The [milestone 9 source audit](milestone-9.md) supplements this original
+17 September status note without changing its frozen evidence ledger. The CIA's
+published ciphertext and tableau rows agree exactly with the earlier text
+transcriptions, and its front/back description clarifies orientation. This is
+textual corroboration. Selected 1999 image pixels visibly corroborate the
+`?OBKR` boundary, opposite-facing tableau, and a Morse segment. Dunin's
+first-person NDY/AHR rubbings and account also corroborate irregular letter
+alignment without supplying a measured offset. A full glyph/mark collation
+and physical coordinates remain unverified. Berlin confirms 24 World Clock
+panels but says labels and time-zone assignments changed; the original
+80-name count cannot be taken as the 1989 count, and an ordered 1989 label
+dataset is still missing. Oxford's catalog separates Carter journals and
+diaries, Mace journals, and Burton's diary, and supplies journal IDs and
+page-numbering rules; no running-key edition has been frozen. The Smithsonian
+2009 oral-history transcript is now search-indexed, although direct full-page
+access failed; this qualifies the older access statement below. The original
+November 2025 letter and Paradigm's public K4 and CTF terms were read directly;
+the checker was not exercised. No complete K4 method or authenticated
+plaintext was obtained from the newly reviewed material.
+
+Original audit date: 17 September 2026 UTC (16 September in America/New_York).
+The text below records the bounded initial audit for milestone 1 and retains
+its historical access observations; the 20 September addendum above supersedes
+them where source access changed. This is not a declaration that every
 Phase 0 research task is complete. Source IDs resolve in `evidence/sources.jsonl`;
 claim IDs resolve in `evidence/statements.jsonl`.
 
@@ -109,11 +147,11 @@ independent evidence (S119; C118).
 
 ## Follow-up queue and audit limits
 
-1. Re-read the live Paradigm announcement, checker instructions, and authenticated
-   announcements before any operational use. Keep its separate CTF out of K4
-   inference.
-2. Obtain a readable copy of the November letter and trace the 2020 clue releases
-   to original interviews or published correspondence.
+1. Recheck Paradigm's current checker instructions before any operational use.
+   Its public announcement and separate CTF rules were read on 20 September;
+   do not treat CTF puzzles as K4 clues.
+2. The original November letter was read on 20 September. Trace the 2020 clue
+   releases to original interviews or published correspondence.
 3. Resolve the extent of archive restrictions from an authoritative current
    catalog statement. The finding aid alone does not disclose the secret.
 4. Inspect the oral-history transcript and cataloged material if publicly

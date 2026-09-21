@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BLIND-0003",
+  "status": "planned",
+  "supersedes": "BLIND-0001 published-seed pilot and BLIND-0002 attacked-case replay",
+  "question": "Can a crib-only exact attack retain and rank a planted canonical model with a fresh hidden seed and frozen-manifest verification?",
+  "evidence_file_hashes": {
+    "docs/blind-benchmark-conventions.md": "3707982cce52456ba6c92920c81d8f3fe39e0e2c5f9b3bddf2f77e1984763771",
+    "docs/blind-benchmark-conventions-v2.md": "51b4fd1d2bfdaebe5e9d05e4b9df9211d01f13645a033cd9ba30d602c7870190",
+    "docs/blind-benchmark-conventions-v3.md": "9eed6d45b74307f6f2513ce1441c372d4bdaa0f825840ef70a7142fced844a6a",
+    "fixtures/blind-heldout-prose.txt": "5fb08ad4ae1b43cf713055ee7987c52cf7af922bfe9cc4e63e54444af3c7bd12",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/BLIND-0002.json": "3d693431b2db197e4b8fc5bd1a2e1f208968be2e09e136e5029ab139dca3917e"
+  },
+  "seed_commitment_sha256": "e871e1958c2cbcb55b426e35c8a499d9002a6fc6919ac3b6b60516dbf6061e68",
+  "rng": "SHA-256(seed32 || counter_u64_be); successive big-endian u32 words; modulo selection; Fisher-Yates shuffle",
+  "positive_random": 120,
+  "positive_prose": 40,
+  "negative_period_three": 120,
+  "negative_tampered": 20,
+  "message_length": 97,
+  "model_checks_per_case": 8,
+  "operation_cap": 2400,
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "targets": {
+    "class_retention_minimum": 1.0,
+    "top_one_minimum": 0.90,
+    "top_five_minimum": 0.99,
+    "negative_survivor_maximum": 0.01,
+    "unclassified_overrun_maximum": 0
+  },
+  "ranking": "identity, reverse; add, reflect; period 1, 2; lexicographic key; no truth or language score",
+  "outputs": ["manifest.json", "public-cases.jsonl", "controller-private.jsonl", "seed-reveal.json", "attacker-output.jsonl", "verification.json", "completion.json"],
+  "limitations": ["Synthetic reference family only; no K4 evaluation", "Prose cases do not calibrate a language ranker"]
+}

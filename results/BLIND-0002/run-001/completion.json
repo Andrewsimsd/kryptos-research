@@ -1,0 +1,14 @@
+{
+  "run_id": "results/BLIND-0002/run-001",
+  "status": "failed",
+  "exit_status": 1,
+  "error": "[Errno 18] Invalid cross-device link: '/tmp/blind-private-30n21h6u.jsonl' -> '/home/andrew/Documents/GitHub/kryptos-research/results/BLIND-0002/run-001/controller-private.jsonl'",
+  "finished_at": "2026-09-21T00:03:36.514231+00:00",
+  "elapsed_seconds": 0.08323386200004279,
+  "artifact_sha256": {
+    "attacker-output.jsonl": "d867ffeb3b0e5a00555c92877b58b7f4de856c3b532483589844af77639b656c",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "f47f988dfd6a6878f3d5248c304de6258aec1c3eafffbba1e1c6b3ecf56908d4",
+    "public-cases.jsonl": "8f52340825c1bcfb18abe11895f142d7a38564de5996f61e28bafea42e480af2"
+  }
+}

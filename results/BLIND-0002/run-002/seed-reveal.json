@@ -1,0 +1,5 @@
+{
+  "seed_hex": "732da33980c6a2074a3ff6b59484e96bd99b423675e77219da2a9370298301fb",
+  "commitment_sha256": "2bb8328f2add16718087441604f5a0878712124c3062e87234f03009953cdfb8",
+  "revealed_after_attacker_exit": true
+}

@@ -32,3 +32,13 @@
 {"experiment_id": "KEYWORD-ALPHABETS-0003", "run_id": "results/KEYWORD-ALPHABETS-0003/run-001", "status": "completed", "at": "2026-09-18T21:59:47.027034+00:00", "completion_sha256": "fa745710bcfe49049d071376f5ac28c795aeaf865d5cc20275ed8423faba3f7c"}
 {"experiment_id": "KEYWORD-ALPHABETS-0003", "run_id": "results/KEYWORD-ALPHABETS-0003/run-002", "status": "started", "at": "2026-09-18T22:11:44.146516+00:00"}
 {"experiment_id": "KEYWORD-ALPHABETS-0003", "run_id": "results/KEYWORD-ALPHABETS-0003/run-002", "status": "completed", "at": "2026-09-18T22:11:47.187552+00:00", "completion_sha256": "d4598cff39203868db7f6c86a4a577a16a300542519117ea3cc8250557c43517"}
+{"experiment_id": "BLIND-0001", "run_id": "results/BLIND-0001/run-001", "status": "started", "at": "2026-09-21T00:00:02.586867+00:00"}
+{"experiment_id": "BLIND-0001", "run_id": "results/BLIND-0001/run-001", "status": "completed", "at": "2026-09-21T00:00:02.695860+00:00", "completion_sha256": "6f65a83a198ea8cb9ea8651b3dc4cc6d4aa9a72299f7e7b790f7b7e50f84d29b"}
+{"experiment_id": "BLIND-0002", "run_id": "results/BLIND-0002/run-001", "status": "started", "at": "2026-09-21T00:03:36.428561+00:00"}
+{"experiment_id": "BLIND-0002", "run_id": "results/BLIND-0002/run-001", "status": "failed", "at": "2026-09-21T00:03:36.514231+00:00", "completion_sha256": "25424be1a26e86e5cc0eca2b7da320389370f0a6a4f6fcc1634dd5131aac7fca"}
+{"experiment_id": "BLIND-0002", "run_id": "results/BLIND-0002/run-002", "status": "started", "at": "2026-09-21T00:03:47.545686+00:00"}
+{"experiment_id": "BLIND-0002", "run_id": "results/BLIND-0002/run-002", "status": "completed", "at": "2026-09-21T00:03:47.687892+00:00", "completion_sha256": "24e262a4d3ceecdfeb0b7794b8cef8af9f614b3d1bd086746d26aeb5ab86c650"}
+{"experiment_id": "BLIND-0003", "run_id": "results/BLIND-0003/run-001", "status": "started", "at": "2026-09-21T00:13:58.442535+00:00"}
+{"experiment_id": "BLIND-0003", "run_id": "results/BLIND-0003/run-001", "status": "completed", "at": "2026-09-21T00:13:58.586021+00:00", "completion_sha256": "1f002d1faa4359d1b35a2303567518cba3aee6809513b65e10284d6e1ab63729"}
+{"experiment_id": "BLIND-0004", "run_id": "results/BLIND-0004/run-001", "status": "started", "at": "2026-09-21T00:19:18.833660+00:00"}
+{"experiment_id": "BLIND-0004", "run_id": "results/BLIND-0004/run-001", "status": "completed", "at": "2026-09-21T00:19:18.976978+00:00", "completion_sha256": "10a87ef9798c1f22b221c2a79f2b636ace75793208b65a6c1c532f0d7b247b38"}

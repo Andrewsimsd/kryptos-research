@@ -44,6 +44,12 @@ operation cap, shard count, and wall-time cap before K4 is evaluated.
 | 25 Language ranking | 10 and survivors | 10 core-hour heuristic pilot | Held-out recovery and family-wise null |
 | 26 Candidate dossier | Serious survivor | Review; zero external spend | Reproduction bundle, adversarial findings |
 
+Implementation status: [milestone 10's blind reference benchmark](../reports/milestone-10.md)
+is complete as a reusable protocol with one demonstrated reference family. The
+milestone 9 evidence refresh remains partial; each future attack family still
+requires its own representative corpora and blind calibration before K4
+evaluation.
+
 ## Planned milestone 9 — refresh evidence and physical geometry
 
 **Question.** Which clue texts, inscription readings, period-correct World Clock

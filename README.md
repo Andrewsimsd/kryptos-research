@@ -6,7 +6,9 @@ the staged program in the [K4 agent plan](docs/kryptos-k4-agent-plan.md) and
 preserves the inputs and outputs needed to audit each result.
 
 **This project has not produced a K4 solution.** It has completed eight
-engineering and reproduction milestones. The newest result rejects all
+engineering and reproduction milestones, a partial ninth evidence refresh, and
+a completed tenth blind reference benchmark.
+The newest exact-search result rejects all
 **146,016** combinations in one precisely defined family: 39 numeric starting
 keys, 12 keyword-built alphabet orders for each side of the cipher, and 26
 relative rotations. That result says this family cannot produce all 24 known
@@ -72,6 +74,8 @@ one-count adjustment). It is not the probability that a cipher theory is true.
 | 6 | Can each of the 39 digit streams fit the clues if both alphabets may be any permutations? | Yes: **39 feasible, 0 infeasible, 0 unresolved**. The broad model is too flexible to narrow the key list; its witnesses are not plaintexts. | [Report](reports/milestone-6.md) |
 | 7 | Do ordinary A–Z and KRYPTOS-built alphabets make those streams work? | No. All **16,224** registered fixed-order models fail at least one known letter. | [Report](reports/milestone-7.md) |
 | 8 | Do three sourced keywords and two alphabet-building rules make them work? | No. All **146,016** models fail after **3,504,384** K4 equations. The known true model round-tripped in 144 planted tests; only 98 were uniquely identified from the clue signature. | [Report](reports/milestone-8.md) |
+| 9 (partial) | Which source details are trustworthy enough for later clue-based searches? | CIA text rows, selected 1999 photos, and Dunin's 2002 rubbings corroborate parts of the inscription; the original Sanborn letter and Paradigm's public terms were read. Oxford separates Carter's journals and diaries from Mace's journals and Burton's diary. Full photographic collation, measured geometry, and the 1989 Clock labels remain open. No K4 search was run. | [Report](reports/milestone-9.md), [source ledger](evidence/milestone-9.json) |
+| 10 | Can an attack recover a planted model without being told the answer? | With a fresh committed hidden seed and independently regenerated cases, a separate attacker ranked the true model first on all 160 planted cases in a narrow cipher family; none of 140 out-of-family or tampered cases survived. The protocol is reusable, but each later family needs its own calibration. | [Report](reports/milestone-10.md), [run](results/BLIND-0004/run-001/completion.json) |
 
 The width result is conditional on the registered statistic, width range,
 calibration, and multiset-permutation null. It does not correct every historical
@@ -131,10 +135,20 @@ outputs, and stop conditions.
 
 ## What comes next
 
-The roadmap adds 18 planned milestones. Milestone 9 refreshes primary sources,
-physical geometry, period-correct World Clock data, and unresolved access gaps.
-Milestone 10 builds a blind benchmark in which the search is never told the
-planted answer. Milestones 11–15 cover classical schedules, generalized
+The roadmap adds 18 milestones after the first eight. Milestone 9 has a
+[partial evidence audit](reports/milestone-9.md): it found stronger textual and
+catalog sources, inspected the original Sanborn letter and the steward's public
+terms, and checked selected sculpture photographs and first-person rubbings.
+The archive distinguishes Carter's excavation journals from diaries and other
+authors' notebooks; no running-key text is frozen. The Clock's 80 **original**
+city names cannot be assumed to match 1989 after intervening changes. Full
+photographic collation, measured geometry, and period-correct clock labels
+remain unresolved.
+Those details cannot become search parameters until their evidence gates close.
+Milestone 10's [blind reference benchmark](reports/milestone-10.md) now keeps
+planted answers outside the attack process and checks recovery against a
+separate verifier. Its small exact family passed all registered targets; each
+larger future family still needs its own blind calibration. Milestones 11–15 cover classical schedules, generalized
 recurrences, unknown alphabets, tableau/keyword families, and documentary
 running keys. Milestones 16–24 cover two-clue state joins, affine and ragged
 routes, clock and direction rules, small stepping machines, anomaly streams,
@@ -258,6 +272,13 @@ the milestone reports.
 | Alphabet feasibility | `python3 experiments/run_feasibility.py results/FEASIBILITY-0001/run-002` | [`run-001`](results/FEASIBILITY-0001/run-001/completion.json) |
 | Structured alphabets | `python3 experiments/run_structured_alphabets.py results/STRUCTURED-ALPHABETS-0001/run-003` | [`run-002`](results/STRUCTURED-ALPHABETS-0001/run-002/completion.json) |
 | Keyword alphabets | `python3 experiments/run_keyword_alphabets_v3.py results/KEYWORD-ALPHABETS-0003/run-003` | [`0003/run-002`](results/KEYWORD-ALPHABETS-0003/run-002/completion.json) |
+| Blind reference benchmark | `python3 experiments/run_blind_v4.py SEED_FILE results/BLIND-0004/run-002` | [`run-001`](results/BLIND-0004/run-001/completion.json) |
+
+For the blind benchmark reproduction, `SEED_FILE` contains the hexadecimal
+`seed_hex` value in [run 001's revealed seed](results/BLIND-0004/run-001/seed-reveal.json)
+and lives outside the repository. A new hidden-seed benchmark requires a new
+registration and commitment before its cases are generated; replaying this
+revealed seed reproduces the run but is not another blind trial.
 
 Check the frozen evidence and fixture sets before reproducing earlier work:
 
@@ -499,9 +520,10 @@ For a new experiment:
 6. Update the relevant convention document, milestone report, research-plan
    implementation record, and this README.
 
-The next work is planned rather than implied. Milestone 9 refreshes sources and
-physical geometry; milestone 10 builds a genuinely blind recovery harness.
-Milestones 11 and 12 then begin exact classical-schedule and generalized
+The next work is planned rather than implied. Milestone 9's evidence audit
+remains partial until full physical and period-clock records can be obtained;
+milestone 10's blind reference harness is complete, with separate calibration
+still required for future attack families. Milestones 11 and 12 then begin exact classical-schedule and generalized
 recurrence branches. Later milestones cover unknown alphabets, tableaus,
 documentary running keys, meet-in-the-middle state joins, affine and ragged
 routes, the World Clock, physical directions, small stepping machines, anomaly

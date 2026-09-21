@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BLIND-0002",
+  "status": "running",
+  "supersedes": "BLIND-0001 (published-seed pilot, invalid as blind calibration)",
+  "question": "Can a crib-only exact attack retain and rank a planted canonical model without access to truth or seed?",
+  "evidence_file_hashes": {
+    "docs/blind-benchmark-conventions.md": "3707982cce52456ba6c92920c81d8f3fe39e0e2c5f9b3bddf2f77e1984763771",
+    "docs/blind-benchmark-conventions-v2.md": "51b4fd1d2bfdaebe5e9d05e4b9df9211d01f13645a033cd9ba30d602c7870190",
+    "fixtures/blind-heldout-prose.txt": "5fb08ad4ae1b43cf713055ee7987c52cf7af922bfe9cc4e63e54444af3c7bd12",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/BLIND-0001.json": "a1d6f51d0f78a6945dd7b2829e62f672416a23bfa4e4568292ad9bdfb48b8f94"
+  },
+  "seed_commitment_sha256": "2bb8328f2add16718087441604f5a0878712124c3062e87234f03009953cdfb8",
+  "rng": "SHA-256(seed32 || counter_u64_be); successive big-endian u32 words; modulo selection; Fisher-Yates shuffle",
+  "positive_random": 120,
+  "positive_prose": 40,
+  "negative_period_three": 120,
+  "negative_tampered": 20,
+  "message_length": 97,
+  "model_checks_per_case": 8,
+  "operation_cap": 2400,
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "targets": {
+    "class_retention_minimum": 1.0,
+    "top_one_minimum": 0.9,
+    "top_five_minimum": 0.99,
+    "negative_survivor_maximum": 0.01,
+    "unclassified_overrun_maximum": 0
+  },
+  "ranking": "identity, reverse; add, reflect; period 1, 2; lexicographic key; no truth or language score",
+  "outputs": [
+    "manifest.json",
+    "public-cases.jsonl",
+    "controller-private.jsonl",
+    "seed-reveal.json",
+    "attacker-output.jsonl",
+    "verification.json",
+    "completion.json"
+  ],
+  "limitations": [
+    "Synthetic reference family only; no K4 evaluation",
+    "Prose cases do not calibrate a language ranker"
+  ],
+  "run_id": "results/BLIND-0002/run-002",
+  "started_at": "2026-09-21T00:03:47.545686+00:00",
+  "environment": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
+  },
+  "implementation_sha256": {
+    "experiments/BLIND-0002.json": "3d693431b2db197e4b8fc5bd1a2e1f208968be2e09e136e5029ab139dca3917e",
+    "experiments/run_blind.py": "c99505eeebbfe9b453617fae1f19273719b565a7b4890bd93b517397625a5838",
+    "experiments/run_blind_v2.py": "2f04fbda720ed9dff815c2990dd50162d92fb835e1914bd7bbe8c89946148722",
+    "experiments/blind_attack.py": "0c84937974e17fad9d877951a96c6afed158ac07949a0d21ee96692bc0b69063",
+    "verification/verify_blind.py": "fb49e340090bfd68baf80d8a4e618410658e205dba73a4a682c8339f7ad36c97"
+  }
+}

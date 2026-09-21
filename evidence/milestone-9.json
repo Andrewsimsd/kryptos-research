@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-20",
+  "purpose": "Versioned source refresh for milestone 9; no K4 search inputs or solution claims",
+  "baseline_sha256": {
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "evidence/reference-material.json": "8332aa38f15aa4133da7a2449eca1a6a1f05a7af10328fb91559f195275ecb64",
+    "evidence/sources.jsonl": "e382a0aa7e58756b4b47026b48cf4d5a4ebd053dabcd0840d0c44e47a4918125",
+    "evidence/statements.jsonl": "21b663271b16ab23715394653ade962cf5fc8da5e22eb43a127c307aa416de45",
+    "evidence/SHA256SUMS": "29b200043c5ea4ac255dac7cc8d7abf18f0c71623ccb932518956122f3c131ed"
+  },
+  "confidence_classes": {
+    "direct_text": "Readable body or catalog entry at the named institution; proves the published text, not the physical object.",
+    "direct_image_partial": "Image pixels examined directly; only explicitly named visible features are confirmed, not obscured cells or metric dimensions.",
+    "direct_scan": "Original scanned pages inspected visually; named legible passages are paraphrased, with OCR errors excluded.",
+    "attributed_text": "Firsthand participant or reporter statement; its attribution is retained.",
+    "search_index_excerpt": "Search-indexed extract from an identified publication; the publication body was not examined, so wording and context remain provisional.",
+    "metadata_only": "Title, index, or search result only; no document-body claim.",
+    "unavailable": "Original body or image pixels could not be read; no transcription inferred."
+  },
+  "records": [
+    {
+      "id": "M9-CIA-INSCRIPTION",
+      "url": "https://www.cia.gov/legacy/headquarters/kryptos-sculpture",
+      "retrieved_at": "2026-09-19",
+      "access": "direct_text",
+      "locator": "Contents > Encoded Text and Cipher, text versions; Mystery paragraphs on viewing direction",
+      "finding": "A mechanical row-by-row comparison of CIA's 28 encoded-text rows and 28 tableau rows with evidence/reference-material.json found exact string matches, including four question marks and the long N-prefixed tableau row. CIA describes the front as petrified tree left, encoded text left, and the intentionally reversed tableau on the right, readable from the back.",
+      "confidence": "high_for_published_text_and_CIA_orientation_description;unverified_for_pixels",
+      "alternatives": [
+        "The two textual transcriptions could share an upstream source or transcription error.",
+        "Viewing from the back reverses visual handedness; no coordinate transform is inferred from these descriptions."
+      ],
+      "search_input_status": "existing_text_baseline_unchanged"
+    },
+    {
+      "id": "M9-GILLOGLY-GALLERY",
+      "url": "https://www.voynich.net/Kryptos/",
+      "retrieved_at": "2026-09-19",
+      "access": "direct_text",
+      "locator": "1999 gallery captions: opening sculpture description, OBKR, tableau side, compass/Morse",
+      "finding": "Gillogly labels OBKR on the cipher side, describes the tableau as cut through from the other side, and identifies a separate copper Morse layer near the compass. Captions are image leads, not a photo-level audit.",
+      "confidence": "medium_attributed_observer_text",
+      "alternatives": [
+        "Gallery captions do not establish exact front/back coordinates or raw Morse dots and dashes."
+      ],
+      "search_input_status": "context_only"
+    },
+    {
+      "id": "M9-GILLOGLY-PHOTOS",
+      "url": "https://www.voynich.net/Kryptos/",
+      "related_urls": [
+        "https://www.voynich.net/Kryptos/full/obkr.jpg",
+        "https://www.voynich.net/Kryptos/full/cipherlowerleft.jpg",
+        "https://www.voynich.net/Kryptos/full/cipherlowermiddle.jpg",
+        "https://www.voynich.net/Kryptos/full/cipherlowerright.jpg",
+        "https://www.voynich.net/Kryptos/full/centeredtableau.jpg",
+        "https://www.voynich.net/Kryptos/full/morse1.jpg"
+      ],
+      "retrieved_at": "2026-09-20",
+      "access": "direct_image_partial",
+      "locator": "1999 gallery full-resolution images; SHA-256: obkr 9170130b4aa139577d8562cdc0df75fc11481277fd852253704715ad92165e1e, cipherlowermiddle 5e0881f5a4a741c8c4feb1f6d80720d454861811a77d0a18b90322e4c7054e30, cipherlowerright e437cfaa33ebc62b5c666f258f32b584ba5924656053aeb44793b9b560b9a23d, centeredtableau a08140eafe0e27c8aad06d93287b7c03bf7c12b42ee6de878c3f2dbf0aa0c397, morse1 f10538f0943bd72d2200120fb48eb116a14d20905b33bbc25cd2f65721145249",
+      "finding": "Image pixels visibly confirm the '?OBKR' boundary at the bottom of the cipher screen, perforated letters in the three subsequent K4 rows, reversed lettering on the adjacent back of the tableau, and two parallel dot/dash tracks on an entrance copper plate. These are partial visual checks only: curvature, oblique angles, shadow, and frame cropping prevent independent verification of every K4 cell, all 28 tableau rows, or a complete raw Morse sequence. No letter-alignment deviation or measured coordinate is extracted.",
+      "confidence": "high_for_named_visible_features;unverified_for_full_transcription_and_geometry",
+      "alternatives": [
+        "The published textual rows remain the canonical text baseline, not a claim that every glyph was individually confirmed in these images.",
+        "A perspective photograph cannot establish exact offsets or a front-to-back grid transform."
+      ],
+      "search_input_status": "partial_visual_corroboration_only"
+    },
+    {
+      "id": "M9-DUNIN-RUBBINGS",
+      "url": "https://www.elonka.com/kryptos/rubbings/images1.html",
+      "related_urls": [
+        "https://www.elonka.com/kryptos/",
+        "https://www.elonka.com/kryptos/rubbings/images/ndy.jpg",
+        "https://www.elonka.com/kryptos/rubbings/images/ahr.jpg",
+        "https://www.elonka.com/kryptos/rubbings/images/ahrCloseup1.jpg",
+        "https://www.elonka.com/kryptos/rubbings/images/ahrCloseup4.jpg"
+      ],
+      "retrieved_at": "2026-09-20",
+      "access": "direct_image_partial",
+      "locator": "Dunin's account of 18 October 2002 visit; NDY and AHR rubbing images and AHR close-up photographs. SHA-256: ndy 28e1e79a8861f1d33647749e8101f427239800f17e6bc319b32a90287f5679c6, ahr 8115b0347c55bdccc272c01f1f18534581d146b110ca4e132ad8ab61daf0c842, ahrCloseup1 aa4908af1997ec30345cacecb52312d15e20de67fa27a4769fc5f33f9254d317, ahrCloseup4 0b7783a96632c842a68b65c61ce24024b64c2aaab788814e4fcb1e9fcacb06ca",
+      "finding": "Dunin says she made the rubbings in 2002 on letter-size paper, identifies the line beginning ENDYAHROHN, and describes Y, A, and R in its NDY/AHR portions as out of alignment by a couple of centimeters. The examined images visibly contain the named fragments and an uneven letter baseline, but their smudges, cropping, paper handling, and perspective prevent an independent numeric offset or complete row collation. The centimeter claim remains Dunin's observation, not a measurement derived by this audit.",
+      "confidence": "high_for_image_identity_and_visible_fragments;attributed_for_displaced_letters_and_size;none_for_measured_offsets",
+      "alternatives": [
+        "Rubbing distortion could affect apparent baseline displacement; calibrated photographs or an in-situ measurement are required.",
+        "No function of these irregularities in the K4 cipher is established."
+      ],
+      "search_input_status": "partial_visual_corroboration_only"
+    },
+    {
+      "id": "M9-LOC-PHOTO-LEAD",
+      "url": "https://www.loc.gov/pictures/item/2011631531/",
+      "retrieved_at": "2026-09-20",
+      "access": "metadata_only",
+      "locator": "Library of Congress Highsmith image record, item 2011631531",
+      "finding": "The Library of Congress catalogs a large-format Kryptos photograph from Carol M. Highsmith's archive. It is a source-acquisition lead for further image collation, not yet a verified complete glyph map or period-specific survey.",
+      "confidence": "high_for_catalog_identity;none_for_full_inscription_or_geometry",
+      "alternatives": [
+        "A single oblique view can omit letters even at high resolution; a complete image set and orientation record are needed."
+      ],
+      "search_input_status": "acquisition_lead_only"
+    },
+    {
+      "id": "M9-SANBORN-ORAL-HISTORY",
+      "url": "https://www.aaa.si.edu/collections/interviews/oral-history-interview-jim-sanborn-15700",
+      "retrieved_at": "2026-09-19",
+      "access": "metadata_only",
+      "locator": "Search-indexed transcript heading and sampled Kryptos passages; direct page request returned HTTP 500",
+      "finding": "The Archives of American Art now indexes a transcript of Sanborn's 14-16 July 2009 interview. The search excerpt includes Kryptos discussion, but the full page could not be fetched in this audit. No coordinate, Morse, or K4-method fixture is imported from it.",
+      "confidence": "high_for_transcript_listing;low_for_passage_context;not_a_coordinate_fixture",
+      "alternatives": [
+        "Search excerpts may omit relevant context; a passage must be read in full before it becomes a clue-derived input."
+      ],
+      "search_input_status": "context_only"
+    },
+    {
+      "id": "M9-CIA-PHYSICAL",
+      "url": "https://www.cia.gov/legacy/headquarters/kryptos-sculpture",
+      "related_urls": [
+        "https://www.cia.gov/legacy/museum/artifact/kryptos/"
+      ],
+      "retrieved_at": "2026-09-19",
+      "access": "direct_text",
+      "locator": "Headquarters page, Mystery paragraphs on entrance and courtyard components; museum artifact overview",
+      "finding": "The CIA headquarters page distinguishes entrance granite and copperplate elements with a compass rose and lodestone from the courtyard screen, pool and petrified wood. The museum artifact page also describes the screen and sculpture components. Neither page supplies survey-quality metric coordinates.",
+      "confidence": "high_for_institutional_description;unverified_for_measurement",
+      "alternatives": [
+        "Photographic perspective cannot be promoted to a metric map without camera calibration or survey data."
+      ],
+      "search_input_status": "context_only"
+    },
+    {
+      "id": "M9-NOVEMBER-LETTER",
+      "url": "https://www.documentcloud.org/documents/26229389-adobe-scan-nov-12-2025/",
+      "related_urls": [
+        "https://s3.documentcloud.org/documents/26229389/adobe-scan-nov-12-2025.pdf?t=1763155112693"
+      ],
+      "retrieved_at": "2026-09-20",
+      "access": "direct_scan",
+      "locator": "Two-page scanned open letter dated 12 November 2025, pages 1-2; PDF SHA-256 76a5358f793fbcc4532a5f6ce72145b401a4d43cadf7aacd82e94e08fe798113",
+      "finding": "Both original pages were inspected visually. Page 1 explicitly distinguishes finding scrambled K4 plaintext from discovering the decryption method and says K4 has not been decrypted; it identifies the Berlin Clock as the World Clock, places an Egypt trip in late 1986, cites the fall of the Berlin Wall, and says codes from entrance Morse through K5 concern delivering a message. Page 2 describes K5 as 97 characters with BERLINCLOCK in the same position as K4 and a similar coding system. OCR of the scan contains errors, so these are paraphrases of visually checked passages, not a machine transcription or added K4 letters.",
+      "confidence": "high_for_legible_named_passages;none_for_untranscribed_wording",
+      "alternatives": [
+        "The letter's narrative chronology and later reporting are separate source assertions; do not infer a cipher date or mechanism from them.",
+        "K5 is a separate unpublished puzzle; its alleged structural similarity does not supply K4 search parameters."
+      ],
+      "search_input_status": "context_only"
+    },
+    {
+      "id": "M9-PARADIGM",
+      "url": "https://www.paradigm.xyz/kryptos/k4",
+      "related_urls": [
+        "https://www.paradigm.xyz/kryptos",
+        "https://www.paradigm.xyz/writing/kryptos",
+        "https://www.paradigm.xyz/kryptos-ctf/rules"
+      ],
+      "retrieved_at": "2026-09-20",
+      "access": "direct_text",
+      "locator": "K4 page rendered public text; Project Kryptos 12 June 2026 announcement and Q&A; Kryptos CTF Rules, Challenges and Prizes. HTML SHA-256: K4 4fb3f8dd4950cb30f9d961025fcec8a02a85397888e457ccf69106c7294ff264, writing 2feb83a8354e2fb54e9175b2e6b792eebf1ffe89dcf8146a26d8620a55e49bf2, rules 9a270e73d9873af4c8fd7d6d66315ae01322093660dd8d682687dc25b48a0cb4",
+      "finding": "Paradigm's public K4 page displays the 97-letter ciphertext and marks K4 unsolved with a Decrypt K4 control. Its announcement says it is steward, Sanborn supplied the solution for an automated verifier, a $1 submission fee is used, and it plans to release K5 later. The Q&A describes local SHA-256 hashing, a Google Cloud KMS HMAC on the hash, and erasure of the entry laptop. The separate CTF rules define ten independent $1,000 prize puzzles, say those CTF entries have no fee, and state no K4 prize unless announced otherwise. No submission or payment was made; the control's actual response semantics and service uptime were not tested.",
+      "confidence": "high_for_published_terms;unverified_for_runtime_service",
+      "alternatives": [
+        "The public K4 control may require client-side interaction or payment; a rendered control alone does not prove successful submission.",
+        "CTF puzzles and prizes are distinct from K4 and supply no K4 plaintext clue."
+      ],
+      "search_input_status": "context_only"
+    },
+    {
+      "id": "M9-WORLD-CLOCK",
+      "url": "https://www.berlin.de/sehenswuerdigkeiten/3561749-3558930-weltzeituhr.html",
+      "related_urls": [
+        "https://www.berlin.de/aktuell/ausgaben/2019/dezember/aktuell-104-webversion.pdf",
+        "https://taz.de/Berliner-Namenswechsel/!1379169/",
+        "https://denkmaldatenbank.berlin.de/daobj.php?obj_dok_nr=09020854"
+      ],
+      "retrieved_at": "2026-09-20",
+      "access": "direct_text",
+      "locator": "Berlin city page: Trabantgetriebe treibt Weltzeituhr; Restaurierung nach der Wende. Berlin Senate PDF page 50 (magazine page 47): 80 names and 24 panels. 1997 taz article body; monument-register object 09020854.",
+      "finding": "Berlin's official page describes 24 etched city-name/time-zone panels and a rotating hour ring. It explicitly says that after reunification some cities assigned to wrong zones were corrected and additional cities were added. A 2019 Berlin Senate PDF says the original sculpture had 80 city names on 24 aluminum panels and that Athens was excluded during SED approval; downloaded PDF SHA-256 aac7dc2d75f75c67e038ee430b71a9b0a3d23fc705de35eb9848179cd2122c3f. Neither supplies an ordered 1989 panel/label transcription. Berlin's monument register gives object ID 09020854. A contemporary 1997 article names Moskau, Leningrad, Alma Ater (its exact spelling), Swerdlowsk, Managua and Havanna but does not map them to sectors.",
+      "confidence": "high_for_24_panels_and_later_changes;none_for_1989_ordered_labels",
+      "alternatives": [
+        "Current panel labels differ from 1989 labels and cannot substitute for them.",
+        "The Berlin Senate's 80-name count is not an ordered list or a spelling/sector map.",
+        "A contemporary 1997 taz article names several pre-restoration cities but gives no complete order or sector mapping; its exact spelling 'Alma Ater' is retained as a reporting variant."
+      ],
+      "search_input_status": "24_sector_count_only;1989_city_dataset_blocked"
+    },
+    {
+      "id": "M9-WORLD-CLOCK-CONSERVATION-LEAD",
+      "url": "https://bc.pollub.pl/Content/634/PDF/zabytki.pdf",
+      "retrieved_at": "2026-09-20",
+      "access": "search_index_excerpt",
+      "locator": "Search-indexed excerpt of Robert Burgaß, conservation account of the Urania World Clock, including footnote 10; PDF body could not be fetched",
+      "finding": "Indexed snippets suggest city names were added or changed after 1969 and say that no city-name panel was changed between the 1985 reconstruction and 1997 modernization. The publication body and footnote context were not read, so neither proposition is authenticated here. If confirmed, the 1969 original 80-name count cannot be substituted for a 1989 count or list.",
+      "confidence": "low_for_extracted_claims;none_for_1989_inventory",
+      "alternatives": [
+        "The snippet may omit qualifications, and retrospective accounts disagree about label totals; no 1989 total is adopted.",
+        "A dated full-circumference 1985-1996 photograph series or pre-1997 panel inventory is still required."
+      ],
+      "search_input_status": "acquisition_lead_only;1989_city_dataset_blocked"
+    },
+    {
+      "id": "M9-CARTER-CATALOG",
+      "url": "https://tutankhamun.griffith.ox.ac.uk/journals-and-diaries",
+      "retrieved_at": "2026-09-19",
+      "access": "direct_text",
+      "locator": "Archaeological journal season list and Notes on numbering",
+      "finding": "Oxford's Tutankhamun Spatial Archive distinguishes Carter and Mace archaeological journals (seasons 1-9), Carter diaries (seasons 1-3), and Minnie Burton's separate 1922-1926 personal diary. The journal index identifies Carter season 1 as TAA i.2.1.25-53, Carter season 2 as TAA i.2.1.77-115, Mace season 1 as TAA iv.2, and Mace season 2 as TAA i.2.2, with later journal IDs listed. These journal identifiers must not be attributed to Carter's diary. Journal entries are on odd-numbered right pages; optional even-numbered facing notes can be omitted when blank. The archive's homepage says all Carter/Mace archaeological journals are now published.",
+      "confidence": "high_for_catalog_identifiers_and_pagination_rule;not_a_frozen_text_edition",
+      "alternatives": [
+        "Carter's archaeological journal, his diary, Mace's journals, Burton's diary, and later printed editions are different candidate corpora.",
+        "OCR or HTML transcription and manuscript images may disagree and must be versioned separately."
+      ],
+      "search_input_status": "catalog_lead_only;running_key_corpus_not_frozen"
+    },
+    {
+      "id": "M9-CARTER-PAGE",
+      "url": "https://tutankhamun.griffith.ox.ac.uk/index.php/journals-and-diaries/taa-i2177-115-2nd-season",
+      "retrieved_at": "2026-09-19",
+      "access": "direct_text",
+      "locator": "2nd Season object record, metadata and Notes",
+      "finding": "The object record identifies Carter's archaeological journal for 3 October 1923 to 9 February 1924, TAA archive pages 77-115, with a full transcription offered and original scans paired with transcript pages. Its page inventory is a precise candidate source, but no text normalization or page-image collation was frozen.",
+      "confidence": "high_for_object_metadata;none_for_full_transcription_verification",
+      "alternatives": [
+        "This is one season within a broader archive and cannot stand for all Carter notebooks."
+      ],
+      "search_input_status": "catalog_lead_only"
+    },
+    {
+      "id": "M9-BURTON-DIARY-CATALOG",
+      "url": "https://tutankhamun.griffith.ox.ac.uk/journals-and-diaries/burton-m-mss",
+      "retrieved_at": "2026-09-20",
+      "access": "direct_text",
+      "locator": "Burton, M. MSS object record and page inventory",
+      "finding": "Oxford catalogs Minnie Burton's personal diary as Burton, M. MSS, dated 4 May 1922 to 20 October 1926, with approximately 400 pages and a full transcription. This is a distinct author's diary, not a Carter notebook or a substitute for Carter's excavation journal.",
+      "confidence": "high_for_catalog_metadata;none_for_page_text_collation",
+      "alternatives": [
+        "The archive's season grouping does not imply that every diary page falls within an excavation season."
+      ],
+      "search_input_status": "catalog_lead_only"
+    }
+  ],
+  "gates": [
+    {
+      "id": "photographic-inscription",
+      "status": "partial",
+      "requires": "Independently collate every cipher and tableau glyph from complete, legible images or rubbings. The 1999 gallery confirms selected features, not a complete row-by-row audit."
+    },
+    {
+      "id": "morse-and-letter-alignment",
+      "status": "partial",
+      "requires": "A continuous, legible image or measured rubbing for each Morse run, and a calibrated letter-alignment record. Gillogly shows a dot/dash segment; Dunin's NDY/AHR rubbings and first-person displacement description add partial corroboration, not a measured offset. Conflicting Morse readings remain separate."
+    },
+    {
+      "id": "metric-geometry",
+      "status": "open",
+      "requires": "Survey or calibrated photographs with explicit coordinate frame, bearings, uncertainty, and front/back transform."
+    },
+    {
+      "id": "1989-clock-labels",
+      "status": "open",
+      "requires": "Dated 1985-1996 full-circumference photographs, a 1985 panel inventory, or 1997 pre-change conservation documentation from Bezirksamt Mitte or Landesdenkmalamt, with every city name, ordering, spelling, and timezone sector. Verify the indexed Burgaß account in full; do not equate the original 1969 count with 1989."
+    },
+    {
+      "id": "carter-running-key-corpus",
+      "status": "deferred_to_milestone_15",
+      "requires": "Oxford identifies Carter journal seasons 1-2, Mace journal seasons 1-2, distinct Carter diaries, Burton, M. MSS, and the journal pagination rule. Freeze the selected exact manuscript/edition, page extract, and normalization in milestone 15 before running-key search."
+    },
+    {
+      "id": "live-steward-and-letter",
+      "status": "closed_for_published_sources",
+      "requires": "The original two-page letter, public Paradigm K4 page, announcement and separate CTF rules were read on 20 September 2026. Runtime checker behavior remains untested and is not a clue input."
+    }
+  ]
+}

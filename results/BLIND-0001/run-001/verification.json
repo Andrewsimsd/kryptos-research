@@ -1,0 +1,53 @@
+{
+  "status": "verified",
+  "experiment_id": "BLIND-0001",
+  "case_counts": {
+    "random": {
+      "cases": 120,
+      "retained": 120,
+      "top_one": 120,
+      "top_five": 120,
+      "survivor_cases": 120,
+      "ambiguity_sum": 120,
+      "max_ambiguity": 1
+    },
+    "prose": {
+      "cases": 40,
+      "retained": 40,
+      "top_one": 40,
+      "top_five": 40,
+      "survivor_cases": 40,
+      "ambiguity_sum": 40,
+      "max_ambiguity": 1
+    },
+    "period_three": {
+      "cases": 120,
+      "retained": 0,
+      "top_one": 0,
+      "top_five": 0,
+      "survivor_cases": 0,
+      "ambiguity_sum": 0,
+      "max_ambiguity": 0
+    },
+    "tamper": {
+      "cases": 20,
+      "retained": 0,
+      "top_one": 0,
+      "top_five": 0,
+      "survivor_cases": 0,
+      "ambiguity_sum": 0,
+      "max_ambiguity": 0
+    }
+  },
+  "metrics": {
+    "class_retention": 1.0,
+    "top_one": 1.0,
+    "top_five": 1.0,
+    "negative_survivor_rate": 0.0,
+    "unclassified_overrun": 0
+  },
+  "targets_pass": true,
+  "model_checks": 2400,
+  "attacker_reported_seconds_sum": 0.003696501001627439,
+  "scope": "Synthetic exact family only; no K4 search or language-ranker calibration"
+}

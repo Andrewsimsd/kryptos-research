@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BLIND-0003",
+  "status": "running",
+  "supersedes": "BLIND-0001 published-seed pilot and BLIND-0002 attacked-case replay",
+  "question": "Can a crib-only exact attack retain and rank a planted canonical model with a fresh hidden seed and frozen-manifest verification?",
+  "evidence_file_hashes": {
+    "docs/blind-benchmark-conventions.md": "3707982cce52456ba6c92920c81d8f3fe39e0e2c5f9b3bddf2f77e1984763771",
+    "docs/blind-benchmark-conventions-v2.md": "51b4fd1d2bfdaebe5e9d05e4b9df9211d01f13645a033cd9ba30d602c7870190",
+    "docs/blind-benchmark-conventions-v3.md": "9eed6d45b74307f6f2513ce1441c372d4bdaa0f825840ef70a7142fced844a6a",
+    "fixtures/blind-heldout-prose.txt": "5fb08ad4ae1b43cf713055ee7987c52cf7af922bfe9cc4e63e54444af3c7bd12",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/BLIND-0002.json": "3d693431b2db197e4b8fc5bd1a2e1f208968be2e09e136e5029ab139dca3917e"
+  },
+  "seed_commitment_sha256": "e871e1958c2cbcb55b426e35c8a499d9002a6fc6919ac3b6b60516dbf6061e68",
+  "rng": "SHA-256(seed32 || counter_u64_be); successive big-endian u32 words; modulo selection; Fisher-Yates shuffle",
+  "positive_random": 120,
+  "positive_prose": 40,
+  "negative_period_three": 120,
+  "negative_tampered": 20,
+  "message_length": 97,
+  "model_checks_per_case": 8,
+  "operation_cap": 2400,
+  "wall_time_cap_seconds": 600,
+  "external_spend_cap": 0,
+  "targets": {
+    "class_retention_minimum": 1.0,
+    "top_one_minimum": 0.9,
+    "top_five_minimum": 0.99,
+    "negative_survivor_maximum": 0.01,
+    "unclassified_overrun_maximum": 0
+  },
+  "ranking": "identity, reverse; add, reflect; period 1, 2; lexicographic key; no truth or language score",
+  "outputs": [
+    "manifest.json",
+    "public-cases.jsonl",
+    "controller-private.jsonl",
+    "seed-reveal.json",
+    "attacker-output.jsonl",
+    "verification.json",
+    "completion.json"
+  ],
+  "limitations": [
+    "Synthetic reference family only; no K4 evaluation",
+    "Prose cases do not calibrate a language ranker"
+  ],
+  "run_id": "results/BLIND-0003/run-001",
+  "started_at": "2026-09-21T00:13:58.442535+00:00",
+  "environment": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
+  },
+  "implementation_sha256": {
+    "experiments/BLIND-0003.json": "539cb09ee573aab95c2d00c7c5bc77ecb60ef8a9a9e0a639f8dfa14abe66a299",
+    "experiments/run_blind.py": "c99505eeebbfe9b453617fae1f19273719b565a7b4890bd93b517397625a5838",
+    "experiments/run_blind_v2.py": "e88bc35e62c84ceea59f1e069ed4e5b408bcfe410e1fd9c023fc7ded3955db16",
+    "experiments/blind_attack.py": "0c84937974e17fad9d877951a96c6afed158ac07949a0d21ee96692bc0b69063",
+    "verification/verify_blind.py": "21e1d9ba10ae57c71145e02fc8bb558b19f5b231bcdabdc1b58475a2ff81d01a",
+    "experiments/run_blind_v3.py": "f00f00091fa0ffa3de4fed311e05366a5621e1813a9e6f39d42cdf846a26bd19"
+  }
+}

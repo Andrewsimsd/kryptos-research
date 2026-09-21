@@ -1,0 +1,23 @@
+{
+  "run_id": "results/BLIND-0003/run-001",
+  "status": "completed",
+  "exit_status": 0,
+  "targets_pass": true,
+  "counters": {
+    "cases": 300,
+    "model_checks": 2400,
+    "k4_models_checked": 0
+  },
+  "finished_at": "2026-09-21T00:13:58.586021+00:00",
+  "elapsed_seconds": 0.14103644300007545,
+  "artifact_sha256": {
+    "attacker-output.jsonl": "d06de3842abe37f789ebe5293aa1f8fdf0efd66839b080f13034379db9de95fc",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller-private.jsonl": "9253f28545c07098c4f1cb403c9ae78b5d4dddf33c0e71788b2cf9eab6faa7ef",
+    "manifest.json": "a3b325fb8989f6dc9252aa58ed588062d848013ffa5e2792959a98caba51a16e",
+    "public-cases.jsonl": "f915b60e3ed3cc84e5106cbf74f22944698f438d21486a675ec85d4f04f52444",
+    "seed-reveal.json": "5f0c3fefac73ec18371c05d0e6b8046b5e69dd6f669938d61f6ebc541c73373a",
+    "verification.json": "d5557a3232c9208597b511f02af0a4eb3c816b9efbff87ea932a33f499edbbc8",
+    "verification.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
