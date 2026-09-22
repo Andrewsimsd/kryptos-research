@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "K4-aligned-standard-alphabet",
+      "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR",
+      "cribs": [
+        {"position": 21, "plaintext": "E"},
+        {"position": 22, "plaintext": "A"},
+        {"position": 23, "plaintext": "S"},
+        {"position": 24, "plaintext": "T"},
+        {"position": 25, "plaintext": "N"},
+        {"position": 26, "plaintext": "O"},
+        {"position": 27, "plaintext": "R"},
+        {"position": 28, "plaintext": "T"},
+        {"position": 29, "plaintext": "H"},
+        {"position": 30, "plaintext": "E"},
+        {"position": 31, "plaintext": "A"},
+        {"position": 32, "plaintext": "S"},
+        {"position": 33, "plaintext": "T"},
+        {"position": 63, "plaintext": "B"},
+        {"position": 64, "plaintext": "E"},
+        {"position": 65, "plaintext": "R"},
+        {"position": 66, "plaintext": "L"},
+        {"position": 67, "plaintext": "I"},
+        {"position": 68, "plaintext": "N"},
+        {"position": 69, "plaintext": "C"},
+        {"position": 70, "plaintext": "L"},
+        {"position": 71, "plaintext": "O"},
+        {"position": 72, "plaintext": "C"},
+        {"position": 73, "plaintext": "K"}
+      ]
+    }
+  ],
+  "operation_cap": 2192
+}

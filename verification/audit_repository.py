@@ -8,6 +8,18 @@ from pathlib import Path
 import sys
 
 
+# Frozen runs 0004 and K4-0002 were registered against corrected conventions
+# before that document received a versioned name.  The original path has been
+# restored for runs 0001--0003; this exact relocation preserves the later bytes
+# without rewriting either generation's immutable manifest.
+VERSIONED_EVIDENCE_RELOCATIONS = {
+    (
+        "docs/classical-schedule-conventions.md",
+        "14ee57ea8474635ca19f8d361b4c394ff833d8db2bd166e6ba8659d9683e0332",
+    ): "docs/classical-schedule-conventions-v2.md",
+}
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -32,6 +44,18 @@ def require_digest(path, expected, context):
     actual = digest(path)
     if actual != expected:
         raise ValueError(f"{context}: SHA-256 mismatch for {path}: expected {expected}, got {actual}")
+
+
+def require_evidence_digest(root, relative, expected, context):
+    """Check an evidence path, following only declared byte-identical relocations."""
+    path = safe_project_path(root, relative, context)
+    if path.is_file() and digest(path) == expected:
+        return
+    relocated = VERSIONED_EVIDENCE_RELOCATIONS.get((relative, expected))
+    if relocated is not None:
+        require_digest(safe_project_path(root, relocated, context), expected, context)
+        return
+    require_digest(path, expected, context)
 
 
 def audit(root):
@@ -69,8 +93,7 @@ def audit(root):
         if not isinstance(evidence, dict):
             raise ValueError(f"{manifest_path}: evidence_file_hashes must be an object")
         for relative, expected in evidence.items():
-            path = safe_project_path(root, relative, str(manifest_path))
-            require_digest(path, expected, str(manifest_path))
+            require_evidence_digest(root, relative, expected, str(manifest_path))
             evidence_count += 1
 
     specification_count = 0
@@ -80,8 +103,7 @@ def audit(root):
         if not isinstance(evidence, dict):
             raise ValueError(f"{specification_path}: evidence_file_hashes must be an object")
         for relative, expected in evidence.items():
-            path = safe_project_path(root, relative, str(specification_path))
-            require_digest(path, expected, str(specification_path))
+            require_evidence_digest(root, relative, expected, str(specification_path))
             evidence_count += 1
         specification_count += 1
 

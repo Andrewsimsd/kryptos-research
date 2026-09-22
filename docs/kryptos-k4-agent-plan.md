@@ -622,6 +622,14 @@ Daily coordinator report, maximum one page:
 
 A useful campaign can end with no solution and still deliver a verified corpus, reusable solvers, exact exclusions, and defensible coverage. The agents must preserve that outcome rather than invent closure.
 
+### Implemented bounded schedule census
+
+The repository now implements the aligned standard-alphabet schedule branch as
+[milestone 11](../reports/milestone-11.md). It canonicalizes 65,856 raw tuples
+into 2,192 symbolic templates, preserves free seed coordinates, and gates K4 on
+a fresh hidden-seed calibration with independent exact enumeration. The K4 run
+retains 173 compatibility classes; they are not ranked plaintext candidates.
+
 ## 15. Research map and remaining access gaps
 
 The preparation searched current status, original clues, archival developments, historical solutions, cryptanalytic papers, cipher specifications, and reproducible code. Sources were deduplicated conceptually; syndicated reports and repeated search snippets do not count as independent confirmation. The following is a focused reading queue rather than an assertion that every linked item was fully examined.

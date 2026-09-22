@@ -1,0 +1,66 @@
+{
+  "calibration_operation_cap": 45416960,
+  "canonical_coordinate_maps": 200,
+  "canonical_template_checks_calibration": 350720,
+  "canonical_template_checks_per_case": 2192,
+  "canonical_templates": 2192,
+  "conventions": "docs/classical-schedule-conventions.md",
+  "evidence_file_hashes": {
+    "docs/classical-schedule-conventions.md": "7a738ce3e8206093037b48f8fff4c72c0e19dd271bde90a7f3e7a3a078456fbf",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/classical_cli_snapshot.rs": "ebaae6a4c4a3ec71d3e41293d4a20321b5e4acab78edc554e2e25072daca0a47",
+    "experiments/classical_schedules_v3_snapshot.rs": "7f3199dd3dbf2a5ad319baa0ab36fb88dbd23abdcdeb6f9d56b8d029927e5721",
+    "experiments/run_classical_schedules_v2.py": "4a7ef4d506a9eec36a73a3896672dfc950544315a1a945a9e933953801691826",
+    "experiments/run_classical_schedules_v2_snapshot.py": "708c17e0ff0d6ee476d89118b5fd865f7a373b34fdf1d71469ec7b841fdce493",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_schedules.py": "e7a577786ff3325dcfc01eefc4f0d7b8b1213a611b92913052ed0777bfe3fa13"
+  },
+  "experiment_id": "CLASSICAL-SCHEDULES-0002",
+  "external_spend_cap": 0,
+  "gate": {
+    "all_witnesses_reencrypt": true,
+    "boundary_coverage_complete": true,
+    "exact_survivor_sets_and_order": true,
+    "positive_planted_retained": 120,
+    "tamper_planted_excluded": 40,
+    "unknown_cases": 0
+  },
+  "implementation_paths": [
+    "docs/classical-schedule-conventions.md",
+    "evidence/k4.json",
+    "fixtures/classical-schedules-request.json",
+    "experiments/classical_schedules_v3_snapshot.rs",
+    "experiments/classical_cli_snapshot.rs",
+    "src/lib.rs",
+    "experiments/run_classical_schedules_v2_snapshot.py",
+    "experiments/run_classical_schedules_v2.py",
+    "verification/verify_classical_schedules.py"
+  ],
+  "limitations": [
+    "Identity route and standard A-Z only",
+    "Template counts are not counts of every represented concrete key stream",
+    "No top-one claim"
+  ],
+  "operation_cap": 100000000,
+  "outputs": [
+    "manifest.json",
+    "public-cases.json",
+    "controller-private.json",
+    "seed-reveal.json",
+    "attacker-output.json",
+    "verification.json",
+    "completion.json"
+  ],
+  "positive_cases": 120,
+  "question": "Which canonical bounded classical schedules are compatible with 24 aligned known letters after a hidden-seed exact calibration?",
+  "raw_parameter_tuples": 65856,
+  "registered_operations_per_case_cap": 283856,
+  "rng": "SHA-256(seed32 || counter_u64_be), successive big-endian u32 words and modulo selection",
+  "schema_version": 1,
+  "seed_commitment_sha256": "b25fcebeb248cdd66a911e800e54ec498b300d0a83fd46dfdc708ceedcd280a8",
+  "status": "planned",
+  "supersedes": "CLASSICAL-SCHEDULES-0001, whose exact verifier rejected noncanonical variant-Beaufort ID serialization",
+  "tamper_negative_cases": 40,
+  "wall_time_cap_seconds": 3600
+}

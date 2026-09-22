@@ -1,0 +1,55 @@
+{
+  "calibration_template_check_cap": 350720,
+  "canonical_coordinate_maps": 200,
+  "canonical_templates": 2192,
+  "conventions": "docs/classical-schedule-conventions.md",
+  "evidence_file_hashes": {
+    "Cargo.lock": "cb8e6390b64f420cd593218a024c6aab50dcc9d01090a6d081ae6a1afc56fd9b",
+    "Cargo.toml": "5ee7ea5c4fef8886f5b98489a10900130430847e97a2d7f6571a91c128d62365",
+    "docs/classical-schedule-conventions.md": "14ee57ea8474635ca19f8d361b4c394ff833d8db2bd166e6ba8659d9683e0332",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/run_classical_schedules_v4.py": "b50efc910a282a7d966252f6545117fd9534333a8b5499e250ea94d2eccea316",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "src/classical_schedules.rs": "a0239b40c69596f26219f243916f4f5120d77cceafae7f9c245035f049fa1b64",
+    "src/cli.rs": "961bb546fa93c7af172aec10212b34de6b14c287814263264e70790a68e50540",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_schedules_v4.py": "da1494b65e222271547890c1a89ea7925f5a0f97dfd979e618f70dd4783d0fe2"
+  },
+  "expected_binary_sha256": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+  "experiment_id": "CLASSICAL-SCHEDULES-0004",
+  "external_spend_cap": 0,
+  "implementation_paths": [
+    "src/classical_schedules.rs",
+    "src/cli.rs",
+    "src/lib.rs",
+    "experiments/run_classical_schedules_v4.py",
+    "verification/verify_classical_schedules_v4.py"
+  ],
+  "limitations": [
+    "Identity route and standard A-Z only",
+    "No language or top-one ranking",
+    "Template counts are not concrete-stream counts"
+  ],
+  "operation_unit": "canonical_template_check",
+  "positive_cases": 120,
+  "question": "Does the exact canonical schedule census retain actual raw-parameter plants under an independently regenerated hidden-seed calibration?",
+  "raw_parameter_tuples": 65856,
+  "rng": "SHA-256(seed32 || counter_u64_be), successive big-endian u32 words and modulo selection",
+  "schema_version": 2,
+  "seed_commitment_sha256": "dba0c8285c13f9de95e8b2e80716d4d20c54bae4edbbc2b804755f6b1c7ff248",
+  "status": "planned",
+  "supersedes": [
+    "CLASSICAL-SCHEDULES-0001",
+    "CLASSICAL-SCHEDULES-0002",
+    "CLASSICAL-SCHEDULES-0003"
+  ],
+  "tamper_negative_cases": 40,
+  "targets": {
+    "positive_retained": 120,
+    "raw_models_reencrypted_and_canonicalized": 120,
+    "tamper_excluded": 40,
+    "unknown_cases": 0
+  },
+  "template_checks_per_case": 2192,
+  "wall_time_cap_seconds": 3600
+}

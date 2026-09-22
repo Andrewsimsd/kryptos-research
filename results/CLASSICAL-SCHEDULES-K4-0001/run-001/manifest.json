@@ -1,0 +1,19 @@
+{
+  "calibration_status": "passed",
+  "evidence_file_hashes": {
+    "docs/classical-schedule-conventions.md": "7a738ce3e8206093037b48f8fff4c72c0e19dd271bde90a7f3e7a3a078456fbf",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/classical_cli_snapshot.rs": "ebaae6a4c4a3ec71d3e41293d4a20321b5e4acab78edc554e2e25072daca0a47",
+    "experiments/classical_schedules_v3_snapshot.rs": "7f3199dd3dbf2a5ad319baa0ab36fb88dbd23abdcdeb6f9d56b8d029927e5721",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "results/CLASSICAL-SCHEDULES-0003/run-001/completion.json": "c39625536fd3ca26feec395fb018e93a3a1eac3e789e5e55623e82fd64c14ae5",
+    "results/CLASSICAL-SCHEDULES-0003/run-001/verification.json": "beaac7c3f24a909ea409665d1da99d8937051a3e6a2ba809cc09bd8feff4ba73",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_k4.py": "bdd8f315aa0a58f4ec808af745e3077ce5462c37a9ba6717f2be6a8c9890fc84",
+    "verification/verify_classical_schedules.py": "e7a577786ff3325dcfc01eefc4f0d7b8b1213a611b92913052ed0777bfe3fa13"
+  },
+  "experiment_id": "CLASSICAL-SCHEDULES-K4-0001",
+  "operation_cap": 2192,
+  "run_id": "results/CLASSICAL-SCHEDULES-K4-0001/run-001",
+  "schema_version": 1
+}

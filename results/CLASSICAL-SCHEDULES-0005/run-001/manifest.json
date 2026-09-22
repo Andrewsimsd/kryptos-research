@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+  "evidence_file_hashes": {
+    "Cargo.lock": "cb8e6390b64f420cd593218a024c6aab50dcc9d01090a6d081ae6a1afc56fd9b",
+    "Cargo.toml": "5ee7ea5c4fef8886f5b98489a10900130430847e97a2d7f6571a91c128d62365",
+    "docs/classical-schedule-conventions-v2.md": "14ee57ea8474635ca19f8d361b4c394ff833d8db2bd166e6ba8659d9683e0332",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/run_classical_schedules_v5.py": "677fab390523f4b6e87a7e7a982363f5f5be5d99b2589491bbc587a2548189ff",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "src/classical_schedules.rs": "a0239b40c69596f26219f243916f4f5120d77cceafae7f9c245035f049fa1b64",
+    "src/cli.rs": "961bb546fa93c7af172aec10212b34de6b14c287814263264e70790a68e50540",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_schedules_v5.py": "416170c7ffc8ddf309e30fa4eea4da54818260161f73d8d7bcb9f5787168c26e"
+  },
+  "experiment_id": "CLASSICAL-SCHEDULES-0005",
+  "implementation_paths": [
+    "src/classical_schedules.rs",
+    "src/cli.rs",
+    "src/lib.rs",
+    "experiments/run_classical_schedules_v5.py",
+    "verification/verify_classical_schedules_v5.py"
+  ],
+  "operation_cap": 350720,
+  "operation_unit": "canonical_template_check",
+  "public_case_count": 160,
+  "run_id": "results/CLASSICAL-SCHEDULES-0005/run-001",
+  "schema_version": 1,
+  "seed_commitment_sha256": "1341d5d1c70db684a958748b5673642bc04bda1b822868bf1f2f97e9fdea83c3",
+  "spec_sha256": "3ee47b9e091d584d6bc5589b484f0f5fdd5d181032c992e48bb640c55b7c9666",
+  "wall_time_cap_seconds": 3600
+}

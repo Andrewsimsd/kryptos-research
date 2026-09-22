@@ -1,0 +1,19 @@
+{
+  "artifact_sha256": {
+    "attacker-output.json": "90ceeda3ca3d5d43f75b071704a91c40ce71364f649271f43f4f788e3fa83bac",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller-private.json": "72a28b72bcbce6bf7ac63a78ab25d6bd9483227522d268edb809a19edfb75b1e",
+    "manifest.json": "e7d6e16162ebac3eda926c1bae1817e0d92cd8a54eaed27c23e774c5410d618a",
+    "public-cases.json": "281661adcd5f9a5fd90a7783d03e9fd942fea70dfe604dd466722929fa6f439c",
+    "seed-reveal.json": "e58cb28304e29d3abb1ede91fc8b628b3fda4861ae7b62c130e2fb09d2d177f1",
+    "verification.json": "beaac7c3f24a909ea409665d1da99d8937051a3e6a2ba809cc09bd8feff4ba73",
+    "verification.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "calibration_passed": true,
+  "experiment_id": "CLASSICAL-SCHEDULES-0003",
+  "k4_models_evaluated": 0,
+  "run_id": "results/CLASSICAL-SCHEDULES-0003/run-001",
+  "schema_version": 1,
+  "status": "completed",
+  "wall_seconds": 2.5742967790001785
+}

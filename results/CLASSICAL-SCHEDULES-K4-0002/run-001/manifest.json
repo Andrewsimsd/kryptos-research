@@ -1,0 +1,29 @@
+{
+  "binary_sha256": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+  "calibration_completion": "results/CLASSICAL-SCHEDULES-0004/run-001/completion.json",
+  "calibration_completion_sha256": "f5738f08bd08b75a0a3a959c0f62c8faf3db8be48b1c99e75dea1d5bab0ffe76",
+  "calibration_verification": "results/CLASSICAL-SCHEDULES-0004/run-001/verification.json",
+  "calibration_verification_sha256": "205885d3d20627c3826556589dc99f1347ffa666d2833a14c657fb5ac5586a4e",
+  "evidence_file_hashes": {
+    "Cargo.lock": "cb8e6390b64f420cd593218a024c6aab50dcc9d01090a6d081ae6a1afc56fd9b",
+    "Cargo.toml": "5ee7ea5c4fef8886f5b98489a10900130430847e97a2d7f6571a91c128d62365",
+    "docs/classical-schedule-conventions.md": "14ee57ea8474635ca19f8d361b4c394ff833d8db2bd166e6ba8659d9683e0332",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/run_classical_k4_v2.py": "27510da0892b971c78707b87e03ce1035192922c7fac8246e1105c0b72abbe71",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "src/classical_schedules.rs": "a0239b40c69596f26219f243916f4f5120d77cceafae7f9c245035f049fa1b64",
+    "src/cli.rs": "961bb546fa93c7af172aec10212b34de6b14c287814263264e70790a68e50540",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_k4_v2.py": "be6500a6cf6bb6cc5758d5a773be134f008727e0bef9ed20ba4a9356597e93bf",
+    "verification/verify_classical_schedules_v4.py": "da1494b65e222271547890c1a89ea7925f5a0f97dfd979e618f70dd4783d0fe2"
+  },
+  "experiment_id": "CLASSICAL-SCHEDULES-K4-0002",
+  "operation_cap": 2192,
+  "operation_unit": "canonical_template_check",
+  "request_path": "fixtures/classical-schedules-request.json",
+  "request_sha256": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+  "run_id": "results/CLASSICAL-SCHEDULES-K4-0002/run-001",
+  "schema_version": 1,
+  "spec_sha256": "4fa42c047ba9f510eedd3b519e56a193f992633e8c56926a0fc820cebd69bbf4",
+  "wall_time_cap_seconds": 3600
+}

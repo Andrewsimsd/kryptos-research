@@ -1,0 +1,3948 @@
+[
+  {
+    "cohort": "positive",
+    "id": "positive-000",
+    "plaintext": "KPFRGVCZNXZVHANEAKJHRMXRHGPXRDDKFIKYWVOPOTOLQAQIXLEGTCXHUVZYOGNCSOBYYFAKAPOPAGKSCCUJYFDGBXLPJNUDF",
+    "planted_template_id": "coord:01::vigenere_or_variant:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": 0,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-001",
+    "plaintext": "IBDVCXFQHYYWWSBJQSJZNNNNRCKCOIAVWMPQTTEUSCZNFZYWQGZMYZRPCYIXKGOCOVTMNATDFIMIHDEBSSJSZCXZCLNNSUEOY",
+    "planted_template_id": "coord:01::beaufort:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-002",
+    "plaintext": "MHSCSEGZJKBCFRDOEOLXUDNKSCNQQZFZPBAYTWFMYPLWNNCFDZHYVKFDYPUHEIZTAKALNHBDXSJJRBAXPMHYVIAGLSHMJKJKJ",
+    "planted_template_id": "coord:03:4:vigenere_or_variant:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 0,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      15,
+      1,
+      3
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-003",
+    "plaintext": "OEGZLEFZOWIHHOXKJLPWLWBACIHECHSSRXFWMNRLKJNONIHUDOZQLBSTLIQKFPKTTJGUEGAQJILWJRAIOPWETXBAVRXDSLRSF",
+    "planted_template_id": "coord:03:4:beaufort:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 2,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      20,
+      10,
+      5
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-004",
+    "plaintext": "FHNSZIECMVOKENIXLWTMPOBGGPRPIGCTIPBZFLKZNZXYVHZAFABRULWOTPRKAQNHTZOYVUOQKZPZUENSZARCZTKKUFGGCXUOR",
+    "planted_template_id": "coord:02:35:vigenere_or_variant:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 0,
+      "resets": [
+        35
+      ]
+    },
+    "seed": [
+      5,
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-005",
+    "plaintext": "YWJCTSNEYGYRTVOBSMQXPSGMBNMQVYSUHUFKRHCQGDDGIBXWKTDEZMPIDXTPXJXCPSWZLDXXSSEJNCQCULBTBIRVUWGQQDJKS",
+    "planted_template_id": "coord:02:35:beaufort:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 1,
+      "resets": [
+        35
+      ]
+    },
+    "seed": [
+      10,
+      22
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-006",
+    "plaintext": "ELAQPTJIQNOFKXMWQWEWZZBYFXQSNAUEFWYTPCUNKKGGJEFEAOPXMBDRRLERSORYTEMGIKJBRRKXCJQRUTNOIGUNTLYZOMTYS",
+    "planted_template_id": "coord:04:66:vigenere_or_variant:0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 4,
+      "phase": 0,
+      "resets": [
+        66
+      ]
+    },
+    "seed": [
+      7,
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-007",
+    "plaintext": "MOJZDIJLJGSRFIDTDYWRPMPGGTSQBJASZVILARXDMPHBHZXPOPSSEUNZYACOVKYZYLYVSZESSISEHXMAUYQRXSQOEFDIBGOCM",
+    "planted_template_id": "coord:04:66:beaufort:0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 4,
+      "phase": 3,
+      "resets": [
+        66
+      ]
+    },
+    "seed": [
+      16,
+      20,
+      22,
+      24
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-008",
+    "plaintext": "RELTRMSDJUQXJLDXQBDBXYPFGVCNSZEVIKNGBIBTHFAELGHKKUCAKEVNFYMJHMVGIJMVYYZIOFBQFAJOAWUQOTFPEWRVSMRQO",
+    "planted_template_id": "coord:03:4-35:vigenere_or_variant:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 0,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      19,
+      16,
+      8
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-009",
+    "plaintext": "PCGXYEIYBVUXEMDPFDNQHSQYBYBBJBEEMSLOKVSPZHAGJYHUIOAMFXXJUQHYXLUSTSSSHKUKVTNHMCTOQYMWHSACATACOGVZY",
+    "planted_template_id": "coord:03:4-35:beaufort:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 2,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-010",
+    "plaintext": "MUPBCZHPISIFHMZEEGDHXIFKKXZSPRIALWFDYYSHOPVBILMABILPYUAAWBVMTYNYAXPASPMKHGUWWDDQKKCCSUBIGFFLVIBLB",
+    "planted_template_id": "coord:03:4-66:vigenere_or_variant:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 0,
+      "resets": [
+        4,
+        66
+      ]
+    },
+    "seed": [
+      20,
+      11,
+      22
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-011",
+    "plaintext": "EKPQXHGNJWEQGCFHOGEMPYHGKSOSRNFBBKXHFMAGOLLGSVCWGMZOOEHUCEYQACRUFEHDPSYHGBZBNKNRHUUICXZPBWEHBDMPQ",
+    "planted_template_id": "coord:03:4-66:beaufort:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 2,
+      "resets": [
+        4,
+        66
+      ]
+    },
+    "seed": [
+      23,
+      2,
+      15
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-012",
+    "plaintext": "GQFOHSYVHQCAPDISKMTBYATLFONSLGLCGKJGNHTVAGXGGMHUXJNIUEIDVLKNNCKFIDOIGLONCGLMFDIAABIIGIZFFOYTKYRRL",
+    "planted_template_id": "coord:02:35-66:vigenere_or_variant:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 0,
+      "resets": [
+        35,
+        66
+      ]
+    },
+    "seed": [
+      24,
+      23
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-013",
+    "plaintext": "HPYEHSJEXGERWRXHJGDMPVPQHJWEQCLAKXCALEFIGDOVDAHKCJWUEXFTKQXFIKFEMLISZSWJYXIJYDXAOZLKPOWRYOQJXZLXN",
+    "planted_template_id": "coord:02:35-66:beaufort:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 1,
+      "resets": [
+        35,
+        66
+      ]
+    },
+    "seed": [
+      17,
+      24
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-014",
+    "plaintext": "GXSRSWZPGQWMXEQJYQKSYLBKESKMEUAHMUGTAXEDMJMIADTGBWRHXAYHXLHXYNHPKUOWGIFTPNDRGDKTMFBJCSSIQVWTXNUAF",
+    "planted_template_id": "progressive:01:01:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": 1,
+      "origin": 0,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      16
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-015",
+    "plaintext": "OORHRWOIBQGVBJZPWNXRPNOVKJBXGTOUJYHHLHLLPXXNBWZJWBPVEPTONPYBKATVAQBWHYYVBRCMETQNJEHQQGXMUXQMRIVXJ",
+    "planted_template_id": "progressive:01:01:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 1,
+      "origin": 25,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-016",
+    "plaintext": "EZXAVINVZBYAIRMBLJEWGEULKFUWEFQIMWWEJPIZGXIFQAGBMTMGSNQKITYYGFBIERSQNCRPQPSJIBPULRERPHPBLRZWQRQCY",
+    "planted_template_id": "progressive:01:25:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": 25,
+      "origin": 0,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-017",
+    "plaintext": "WUTEZREDWCQVUACUOLBFKLBPCGUVRXGPRNVOBLHMXLBWGZELPAZYERAEGZOHOJROMKGASOKSWTWIRDITZOTBZZVGFQUBXDZJP",
+    "planted_template_id": "progressive:01:25:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 25,
+      "origin": 25,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-018",
+    "plaintext": "KGPIURLSTOZPOGYHKFSYGQKVJYRORAYZEXYLNVEYYRYYCKWYELMYNZFMRUKDUOHILNORLHPWJIJYTXXHDGRDKCFQITCLUOGNA",
+    "planted_template_id": "progressive:32:01:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": 1,
+      "origin": 0,
+      "period": 32,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17,
+      24,
+      3,
+      19,
+      13,
+      14,
+      19,
+      12,
+      2,
+      23,
+      23,
+      2,
+      18,
+      25,
+      15,
+      8,
+      4,
+      4,
+      22,
+      25,
+      2,
+      17,
+      18,
+      6,
+      10,
+      15,
+      25,
+      18,
+      14,
+      21,
+      16,
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-019",
+    "plaintext": "FJUTDXVFHYCAITMZYTAEQYOUGVSPMLUDHBCUMNVAPKYLIPJZQCGJRUVLALHJEZMSNVTFOQPDIJOUFXDCTENQGNEFGCFZPXAIR",
+    "planted_template_id": "progressive:32:01:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 1,
+      "origin": 25,
+      "period": 32,
+      "phase": 31,
+      "resets": []
+    },
+    "seed": [
+      20,
+      4,
+      12,
+      13,
+      21,
+      22,
+      17,
+      17,
+      11,
+      16,
+      5,
+      24,
+      3,
+      17,
+      11,
+      3,
+      22,
+      19,
+      21,
+      2,
+      1,
+      25,
+      19,
+      10,
+      15,
+      12,
+      9,
+      10,
+      14,
+      11,
+      11,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-020",
+    "plaintext": "PDZEWKMYKTAWUOZGPJPSFVKYBZISFEEESBCTFTZTHGWOLUFKYGXAAXUVGGBOTFPPUDWMBIQVCGXYQRDUMQZCEYVVSQEQDOYGH",
+    "planted_template_id": "progressive:32:25:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "vigenere_or_variant",
+      "increment": 25,
+      "origin": 0,
+      "period": 32,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      18,
+      7,
+      25,
+      5,
+      12,
+      18,
+      0,
+      1,
+      2,
+      14,
+      10,
+      2,
+      8,
+      9,
+      5,
+      1,
+      24,
+      9,
+      13,
+      9,
+      13,
+      6,
+      16,
+      9,
+      0,
+      18,
+      16,
+      24,
+      18,
+      6,
+      22,
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-021",
+    "plaintext": "EQBXVOSDELPAKGDLSDLMIYRLOYWIDBAPAOTNIOFQAVCUZKMHHNNGNIYAZJDPFFQPZYHCVCRPWXBEBNHZMNPUNSHKGGVGREBVV",
+    "planted_template_id": "progressive:32:25:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 25,
+      "origin": 25,
+      "period": 32,
+      "phase": 31,
+      "resets": []
+    },
+    "seed": [
+      6,
+      22,
+      3,
+      3,
+      17,
+      13,
+      1,
+      2,
+      18,
+      15,
+      17,
+      7,
+      6,
+      7,
+      10,
+      8,
+      19,
+      16,
+      18,
+      10,
+      13,
+      12,
+      23,
+      16,
+      21,
+      24,
+      18,
+      4,
+      2,
+      15,
+      9,
+      23
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-022",
+    "plaintext": "JZSVPRZRHSKORPMEROZUTXMOWVUECBRKBGZOKWSIDZOICATPXRIGCLZGJTBOZQAMRYNCBJFMVGUFIZHACWKADWZYERMUCPDAI",
+    "planted_template_id": "autokey:01:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-023",
+    "plaintext": "POXXRVCLIVUEBFAMHEPYCZRGZDYJZQFMGZNEYFFFTRGTPBDEVSXRDFSEMIEMOGBTGGSXXZUNWTOYLVXEVVBQJTIHCWOYVTCEX",
+    "planted_template_id": "autokey:01:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-024",
+    "plaintext": "VBTAPTWWJACLJESESDCJJREFLRKBGKUDZNILZNJFKKLIDCYKRXUZHHOFVLJGYLEVSZUGBQNUUFAFCWFXPVGITCSOVJQNPSMEC",
+    "planted_template_id": "autokey:01:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-025",
+    "plaintext": "TLVQTOLTJBDQKFGXTNLOQSFOGPIJDEASGLLPZGNOEHWNMVQMCHINISJGKKQACUAHBQPKBCNDSXCXNLKWHEKJVPKZYEKRCVEKS",
+    "planted_template_id": "autokey:01:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      8
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-026",
+    "plaintext": "HOGACVEBEDRKELUNQPMXQCTHZJVAYXKVBUHCIJHOPPDPBTPZORPBCGUMYGBHDRFELXKWNFCHOTAQWVNMXUVERWPJBSKXKIZRM",
+    "planted_template_id": "autokey:01:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-027",
+    "plaintext": "HAOQYEFSYJHIVDHIBJUZPTGOJNITHSIVBREKOLAFTVZXJLQKQOJEWYRXONGZQHBKNINVLYUOULXJBUNCWKAPEOTAVMOKILBYT",
+    "planted_template_id": "autokey:01:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      1
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-028",
+    "plaintext": "PQKRIIQEPEPSSNOONADAYDBONGQYZRAYIKJRXKFENKFYYMIGBNAHBMQKJDREBVSHPMMLYFXMJSXUPLUICPXDCNGRIIQXZTIAJ",
+    "planted_template_id": "autokey:32:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      19,
+      23,
+      4,
+      0,
+      21,
+      19,
+      25,
+      11,
+      6,
+      5,
+      17,
+      10,
+      22,
+      25,
+      24,
+      2,
+      15,
+      3,
+      3,
+      20,
+      12,
+      2,
+      16,
+      9,
+      23,
+      2,
+      2,
+      19,
+      15,
+      10,
+      13,
+      9
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-029",
+    "plaintext": "FMYZWLEALSPIUZKEBJFVLKNMCEVQIVNSNFZUBHAZXNJEOMJKCGGBLQIFSUJCRKANOPXBGXZOGEZWRSQMZCYFTDKADAXMVIQQI",
+    "planted_template_id": "autokey:32:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 31,
+      "resets": []
+    },
+    "seed": [
+      18,
+      16,
+      12,
+      5,
+      16,
+      8,
+      20,
+      9,
+      22,
+      9,
+      7,
+      7,
+      4,
+      5,
+      1,
+      14,
+      3,
+      21,
+      15,
+      18,
+      10,
+      25,
+      11,
+      10,
+      6,
+      4,
+      15,
+      9,
+      1,
+      4,
+      20,
+      23
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-030",
+    "plaintext": "OIODKACSQMHVDSCTSEMIEXGPWRRZHKBHTEKAMMCFVEUECBSMVFGMRCBUBTKVJKVIEBGBCFGBJGAWBSQQBEXXBSEYOXOTXRBUR",
+    "planted_template_id": "autokey:32:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      22,
+      12,
+      12,
+      23,
+      21,
+      1,
+      23,
+      12,
+      21,
+      17,
+      13,
+      22,
+      0,
+      10,
+      15,
+      12,
+      8,
+      20,
+      13,
+      25,
+      2,
+      13,
+      13,
+      1,
+      11,
+      14,
+      13,
+      16,
+      1,
+      25,
+      10,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-031",
+    "plaintext": "MBYWKIFVVYRPVOQCKSYESDQGJEWJVIMBRIWDNCRPMOHYNHJLDETCMWSYGRLHUJNGBMPAFDIXSFWQUANGGZBSTGNBVJPMZRVOB",
+    "planted_template_id": "autokey:32:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 31,
+      "resets": []
+    },
+    "seed": [
+      24,
+      22,
+      13,
+      25,
+      11,
+      4,
+      0,
+      15,
+      21,
+      17,
+      8,
+      10,
+      5,
+      3,
+      19,
+      13,
+      18,
+      0,
+      10,
+      10,
+      2,
+      18,
+      7,
+      12,
+      1,
+      5,
+      6,
+      3,
+      25,
+      10,
+      19,
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-032",
+    "plaintext": "DCSPBWBHTMWAJELDSXMCWQRIGTRHAAWLHTQKMNJICMFLIMPHTCYVURXIYHWZORGSKNZDFLBQTTSAPQCLHKXGKPTPQDSMWFJXI",
+    "planted_template_id": "autokey:32:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      15,
+      18,
+      18,
+      23,
+      15,
+      22,
+      6,
+      11,
+      22,
+      8,
+      2,
+      21,
+      8,
+      22,
+      12,
+      7,
+      23,
+      17,
+      17,
+      7,
+      17,
+      4,
+      24,
+      23,
+      1,
+      20,
+      21,
+      0,
+      9,
+      15,
+      15,
+      8
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-033",
+    "plaintext": "JNMGACGSEXXVPJMGPXGMUQFHPNHQFKZTVOHUFRDUGWNKWCFIMUVKMVJZUSSHUSWPLHVKFGAEIBHGILKIUYILSBCOHNDVZISIP",
+    "planted_template_id": "autokey:32:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 32,
+      "phase": 31,
+      "resets": []
+    },
+    "seed": [
+      18,
+      4,
+      10,
+      7,
+      7,
+      0,
+      6,
+      24,
+      19,
+      2,
+      22,
+      0,
+      4,
+      16,
+      15,
+      21,
+      16,
+      22,
+      19,
+      8,
+      18,
+      15,
+      3,
+      5,
+      5,
+      15,
+      17,
+      14,
+      17,
+      25,
+      20,
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-034",
+    "plaintext": "KFPFXYBZIABDIZWFVGQMCBOSQAXXTYWTLIUBAHUJKMGVDSGQQSXKEVYPCVZKJLUSSTAKVHKPNDEPHTFOQPTUBQDSSTZYNJDEK",
+    "planted_template_id": "coord:06:4-66:beaufort:0,1,2,3,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 6,
+      "phase": 0,
+      "resets": [
+        4,
+        66
+      ]
+    },
+    "seed": [
+      15,
+      19,
+      5,
+      21,
+      9,
+      20
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-035",
+    "plaintext": "VXDKSPRRSCIIUSKGPMPMOBKBRINCCITKKRJBKIEILNNEZCBXXJVKKZGTBEJKYDEBDYRAFVMNYYYQLERUDYMVTTOTBMECZGSXJ",
+    "planted_template_id": "coord:12:4:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 12,
+      "phase": 11,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      8,
+      22,
+      21,
+      8,
+      13,
+      3,
+      9,
+      6,
+      12,
+      1,
+      18,
+      10
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-036",
+    "plaintext": "IEBROCOSGVHQKVVSIWPPWTUHQUEMRIEYJAEIKSLGKULMLIMLTHNEIRKYRDVDZWNEOSGVZDIHYFRQYPISMUCBHAISIQQJMKEGC",
+    "planted_template_id": "coord:18:4:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 18,
+      "phase": 0,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      2,
+      23,
+      20,
+      15,
+      2,
+      8,
+      24,
+      22,
+      16,
+      6,
+      13,
+      2,
+      17,
+      19,
+      11,
+      8,
+      9,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-037",
+    "plaintext": "ILDZZFAZQTTUYJTIOJOBKHCLXLXBDVFNTZAITNUBEUVFIZITAXWYIEYONTBFOVCIPXNZJLQCAHUZBJOEKTUYLKQEFCBJXPUNI",
+    "planted_template_id": "coord:25:4-35:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,6,7,8,9,10,11",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 25,
+      "phase": 24,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      25,
+      17,
+      5,
+      19,
+      9,
+      21,
+      8,
+      19,
+      4,
+      13,
+      21,
+      5,
+      7,
+      11,
+      24,
+      21,
+      25,
+      13,
+      23,
+      14,
+      19,
+      9,
+      9,
+      15,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-038",
+    "plaintext": "RFMONJXJLIPHYTEEPZTNVUZWWBDBHPOSCTVSJKLFXJAEJQXDPEBOCULRVJDBYZLAQSQVCFFPHIAPKDMQDXNKTZGPZCVDFKZQH",
+    "planted_template_id": "coord:31:4:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 31,
+      "phase": 0,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      22,
+      8,
+      2,
+      18,
+      18,
+      21,
+      24,
+      3,
+      15,
+      6,
+      13,
+      23,
+      4,
+      24,
+      8,
+      2,
+      23,
+      4,
+      15,
+      1,
+      7,
+      22,
+      1,
+      24,
+      16,
+      1,
+      11,
+      7,
+      21,
+      13,
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-039",
+    "plaintext": "QWQEAMIMDNMYSGCUGTBJFTHKCOFPXZOXSFYMARIVEATGMGETLROIHSCFUEGRXYCIBJITWVIDSJQQMSYSGUBABLHQZESWHVFVO",
+    "planted_template_id": "coord:10:35-66:vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 10,
+      "phase": 9,
+      "resets": [
+        35,
+        66
+      ]
+    },
+    "seed": [
+      23,
+      11,
+      17,
+      17,
+      15,
+      15,
+      18,
+      19,
+      2,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-040",
+    "plaintext": "JZTQSOQWLGOBEPQJDQATFZZWIOMAQAEYWNOWXXBTHNARTTOBSSGWFOJSHIYMRHAEYBZTIOBQWEDRIESWZEBGQSPBMBAIVEKDE",
+    "planted_template_id": "coord:14::beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12,13,0,1,2,3,4,5,6,7,8,9,10,11,12",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 14,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      23,
+      17,
+      19,
+      7,
+      1,
+      2,
+      4,
+      19,
+      7,
+      25,
+      25,
+      2,
+      0,
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-041",
+    "plaintext": "NFUKVRQQDTPOXNKNPMYPNTJCGERKHMSHNMESMUNAUWUSZNTLBYJSPBVJYOZHZNROBHASQWXJAMNQMNRHPDWOWBDNQKXYJFKWA",
+    "planted_template_id": "coord:19:66:vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,0,1,2,3,4,5,6,7,8,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,0,1,2,3,4,5,6,7,8,9,10,11",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 19,
+      "phase": 18,
+      "resets": [
+        66
+      ]
+    },
+    "seed": [
+      10,
+      3,
+      17,
+      0,
+      22,
+      3,
+      24,
+      21,
+      11,
+      21,
+      14,
+      5,
+      23,
+      13,
+      25,
+      21,
+      14,
+      23,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-042",
+    "plaintext": "GNGGQXLNURXSUTCNWHGPMDPTXTNIUFCDKXPFZTHPRLWZENFRBKMAKQVEOUOQTGTGFMZBWXIBRESAVWZEHQZXRCBJYKNHCAMHZ",
+    "planted_template_id": "coord:24:35:beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 24,
+      "phase": 0,
+      "resets": [
+        35
+      ]
+    },
+    "seed": [
+      22,
+      8,
+      3,
+      16,
+      19,
+      6,
+      6,
+      18,
+      23,
+      22,
+      22,
+      6,
+      13,
+      7,
+      8,
+      14,
+      7,
+      1,
+      14,
+      22,
+      8,
+      18,
+      17,
+      15
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-043",
+    "plaintext": "GAWWGDIPJMJYCZHEDRAVTWBBZUOEYPCZMWYQQBJKFUEZYAKLXYSWMVXBVDJOKIJAXKQEOQXEMYQMHNMDQHFNJHMRUCJAIFNXD",
+    "planted_template_id": "coord:29:35-66:vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 29,
+      "phase": 28,
+      "resets": [
+        35,
+        66
+      ]
+    },
+    "seed": [
+      5,
+      0,
+      17,
+      11,
+      24,
+      12,
+      2,
+      23,
+      5,
+      9,
+      2,
+      3,
+      25,
+      3,
+      12,
+      18,
+      3,
+      4,
+      5,
+      4,
+      12,
+      4,
+      0,
+      22,
+      4,
+      18,
+      0,
+      15,
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-044",
+    "plaintext": "UNQQXNOMBJKRTPQYNOKYRCEJBUMWMDTYHIVPNTKPIVUUIQWJZCUULSYJGGKSSURPAINZTTZHBUYNTOLURZHRZXFIIUEEQAJYN",
+    "planted_template_id": "coord:02::beaufort:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      25,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-045",
+    "plaintext": "NSZBPTOEDGUKYNCPEWRFBVPWMRXMPSMHWPGNOSQNXESHPLCVSKBRVUWRUKLBVSAQGQERYRNQCLTUEOPZSHDXFEZUCZHTTXFQK",
+    "planted_template_id": "coord:07:4:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 7,
+      "phase": 6,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      19,
+      22,
+      7,
+      21,
+      17,
+      5,
+      20
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-046",
+    "plaintext": "TYRYPTNFXZBECKLLAZACXXMPAFGBFNNYLVZZFYKGSHHNXSJYNYPZIJGQERWPHXCTOLODTLWGIBAPTKTXLJIMOSMFLNTAFFZZN",
+    "planted_template_id": "coord:13:4:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1,2,3,4,5,6,7,8,9,10,11,12,0,1",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 13,
+      "phase": 0,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      25,
+      4,
+      9,
+      14,
+      11,
+      14,
+      19,
+      6,
+      14,
+      21,
+      23,
+      7,
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-047",
+    "plaintext": "FHRGGBSYZCNOIQLFTTJSMOXFIROCIUQXJPSEYXIEKIJKHMKZOHMIFHUWMVZLSNXJOVYUZZKEHAYHFHJWJTWGNKCCJBHBGPKPE",
+    "planted_template_id": "coord:20:4-35:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 20,
+      "phase": 19,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      17,
+      19,
+      24,
+      23,
+      6,
+      1,
+      21,
+      7,
+      13,
+      5,
+      1,
+      19,
+      0,
+      20,
+      13,
+      25,
+      21,
+      22,
+      17,
+      9
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-048",
+    "plaintext": "ZOGNRYNGKTKPOZZFTRFBPWEWMTIPLQMQUWYUBGUNEXMSURMQIGBRMDHBQWLBQVVMOBHLUJXYKKCOMGUSIPKEEZCYHLDHHMTGU",
+    "planted_template_id": "coord:26:4-35:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,5,6,7,8,9",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 26,
+      "phase": 0,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      8,
+      24,
+      13,
+      3,
+      23,
+      2,
+      1,
+      0,
+      1,
+      12,
+      12,
+      12,
+      3,
+      7,
+      22,
+      5,
+      20,
+      2,
+      19,
+      25,
+      19,
+      15,
+      7,
+      21,
+      15,
+      3
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-049",
+    "plaintext": "LVFIIKEUOYVTVHTOQZFUGZGLFTHPQFJDPAIWBWXENWJDGXCGBBKPGZEWQAJFFNJNLOIMEAXYSNABWIIAGXVLDKPNPGMPJIHPQ",
+    "planted_template_id": "coord:05:66:vigenere_or_variant:0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,0",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 5,
+      "phase": 4,
+      "resets": [
+        66
+      ]
+    },
+    "seed": [
+      14,
+      13,
+      3,
+      8,
+      23
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-050",
+    "plaintext": "LRYCJUOVISKCTEIXHBUJSCISRJANKFDKKIJMVNDGSVKEWULRIJXYUITONAAJKOQGCYPTUZJRXUFRLYLCYARXBXXCLSIWETRNP",
+    "planted_template_id": "coord:10::beaufort:0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 10,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      24,
+      24,
+      16,
+      9,
+      12,
+      11,
+      17,
+      0,
+      16,
+      25
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-051",
+    "plaintext": "QFVYRGNYWQQJGCJPQPRWRWPLDFJPRTYQBKQEZWEPNQGXIMSBNLWLCFJSSUZRNSXOCZATOYIHLXTZJJWTPSLGWRYBXYRVUMKTK",
+    "planted_template_id": "coord:15::vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 15,
+      "phase": 14,
+      "resets": []
+    },
+    "seed": [
+      4,
+      18,
+      4,
+      5,
+      2,
+      6,
+      2,
+      8,
+      21,
+      15,
+      15,
+      22,
+      14,
+      25,
+      10
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-052",
+    "plaintext": "TBGEQEFXYDZAMCTWAEQZPFTYTEOBEFEFNOCZLSTMJSHKYHVRECAVZESAIRXHMJEUXREGHCJUCPCJKRTPZOJGLBQTFWDJQDWDN",
+    "planted_template_id": "coord:20:35:beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0,1",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 20,
+      "phase": 0,
+      "resets": [
+        35
+      ]
+    },
+    "seed": [
+      8,
+      12,
+      14,
+      19,
+      25,
+      4,
+      11,
+      20,
+      8,
+      15,
+      25,
+      14,
+      16,
+      10,
+      22,
+      18,
+      0,
+      23,
+      13,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-053",
+    "plaintext": "LNFHDMCILETDXTNWNOTURUKKMIQQDYJWQZZHNEFUXWHHUPMKRDRYEVJODFEYAZUPFDEDHCLPDBDDKGPDESVKSCDVWQPVVDDRK",
+    "planted_template_id": "coord:25:35:vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,0,1,2,3,4,5,6,7,8,9,10,11",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 25,
+      "phase": 24,
+      "resets": [
+        35
+      ]
+    },
+    "seed": [
+      17,
+      8,
+      9,
+      11,
+      8,
+      25,
+      2,
+      11,
+      0,
+      9,
+      1,
+      15,
+      2,
+      10,
+      11,
+      17,
+      17,
+      13,
+      17,
+      16,
+      11,
+      0,
+      0,
+      11,
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-054",
+    "plaintext": "TVGFVBBGMWFTHETEQOOYDZCKTHSVSYVVVDDVWDHQJSTHMBZUOZCMJLFLLNJIZWMVCWSBJXJTHCTVWUELHSHWHEQCRWUWWIXRF",
+    "planted_template_id": "coord:29::beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 29,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      12,
+      25,
+      5,
+      12,
+      21,
+      13,
+      11,
+      3,
+      20,
+      0,
+      22,
+      20,
+      3,
+      0,
+      2,
+      10,
+      17,
+      12,
+      25,
+      3,
+      22,
+      10,
+      0,
+      10,
+      17,
+      16,
+      19,
+      20,
+      24
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-055",
+    "plaintext": "ZTIUQYNDTHJVGZKYNLNFCQJABBRXCOJAWNEFDVOIEXQLZZQLVMGPZFJJXZKUZDQRWCNJQHMIIMNCSMQYKTGPHQVBDLAGKEUPZ",
+    "planted_template_id": "coord:03:35-66:vigenere_or_variant:0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 2,
+      "resets": [
+        35,
+        66
+      ]
+    },
+    "seed": [
+      5,
+      0,
+      14
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-056",
+    "plaintext": "CJLMZRKFEJOKWXMRRPTIBIXGECSFTYFHXEFRBTKJMITGCSBHWBMNARUZAIDPUWZKXUXZMWSZZDVPLMMUZSQPVRABAKWHUITFD",
+    "planted_template_id": "coord:08:4:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 8,
+      "phase": 0,
+      "resets": [
+        4
+      ]
+    },
+    "seed": [
+      5,
+      17,
+      3,
+      2,
+      8,
+      20,
+      22,
+      24
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-057",
+    "plaintext": "HYIJDBJFYFIVVULQAWGCVVYZIODFAXBJMYNFDOMLTMNYRGEDMIFROVUVEGNMWWPOOWQICSLZJGRFLGIVFKEFNQRPUOSIXEWFW",
+    "planted_template_id": "coord:15:4-35:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 15,
+      "phase": 14,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      16,
+      2,
+      21,
+      23,
+      9,
+      5,
+      5,
+      25,
+      17,
+      25,
+      5,
+      20,
+      17,
+      7,
+      20
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-058",
+    "plaintext": "WPGWVBAQGRAJHUCVSBUSQCGVHMAQFONOWDIZDGSTHZBQFNOWGYUBSUZKJCCEXMVMSOMDKJYISHNGLYKAFRXRYVVKHZCKKIGUZ",
+    "planted_template_id": "coord:21:4-35:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 21,
+      "phase": 0,
+      "resets": [
+        4,
+        35
+      ]
+    },
+    "seed": [
+      3,
+      22,
+      6,
+      17,
+      19,
+      19,
+      24,
+      19,
+      10,
+      10,
+      10,
+      22,
+      2,
+      19,
+      3,
+      21,
+      4,
+      24,
+      2,
+      12,
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-059",
+    "plaintext": "EFMIKNGQBZPHHBFQHHPQVYKDJKRZSGHRCWLOATYNZRMEWVGUAWFQRUCQSAONNFRMVBPLZOLPAYUQZVVJGWTCFVCVNYESZISYA",
+    "planted_template_id": "coord:27:4-66:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0,1,2,3",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 27,
+      "phase": 26,
+      "resets": [
+        4,
+        66
+      ]
+    },
+    "seed": [
+      12,
+      11,
+      21,
+      17,
+      24,
+      1,
+      13,
+      24,
+      25,
+      14,
+      12,
+      24,
+      11,
+      23,
+      22,
+      21,
+      4,
+      12,
+      3,
+      18,
+      21,
+      24,
+      6,
+      10,
+      12,
+      4,
+      18
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-060",
+    "plaintext": "QMELIYAASNIWDIJKWBTWFOAOXECZELUEHRCSJPQHIOJPTXVQHMLLITVUALRBBPZXVPLLGKDAZONTWDILVPRKNHADHJDVQRAVS",
+    "planted_template_id": "progressive:01:19:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 19,
+      "origin": 0,
+      "period": 1,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-061",
+    "plaintext": "XZSOPWSKJXVHUTXNGQWHUCXENKTQQXXIIAJUDUGYWSOHPIQQTPOYFQCEAMJNPGODTNIOMOHCEYJKDXTOUOEGCXWFJCOFPEURN",
+    "planted_template_id": "progressive:02:13:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 13,
+      "origin": 25,
+      "period": 2,
+      "phase": 1,
+      "resets": []
+    },
+    "seed": [
+      22,
+      1
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-062",
+    "plaintext": "ETJDACVDZVUONKRTELLDJGBKVJZEWYEISKZPZKOLMXUOPLNKUVXFBODRPVACPWTKZEOXIFUBKBFROQVZDNUMZSWGFLFSFUJAO",
+    "planted_template_id": "progressive:03:06:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 6,
+      "origin": 0,
+      "period": 3,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      18,
+      11,
+      15
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-063",
+    "plaintext": "XBFQCIBMJHAPECHLNHAIIJIZLGBOPMRATMSIGQAFKJYSUDQPKMXOUXBIQYVKQCDWDAVSFSUYIEQMSEQRLHUUVUPJHYKYFNVEM",
+    "planted_template_id": "progressive:03:25:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 25,
+      "origin": 25,
+      "period": 3,
+      "phase": 2,
+      "resets": []
+    },
+    "seed": [
+      16,
+      4,
+      14
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-064",
+    "plaintext": "DSQZNCRMAWIMNVLVVDVIZNHOMEXMHKXEDOUTXIRFFZNOYFHPWNNVUQXXWPGULNIDPVRZIUSKATMZCLQMJHOMXHJTWPIPOLHGQ",
+    "planted_template_id": "progressive:04:18:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 18,
+      "origin": 0,
+      "period": 4,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17,
+      17,
+      1,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-065",
+    "plaintext": "KXLNXBAVRFTYXFTJDUNOMZCMDZORCOUWPSYFEIAJNJVPQCNYMCLUKWAZUDBCHJJFWCSDMCVMZYECTDQGAYQXRPHVIHHSDLFBK",
+    "planted_template_id": "progressive:05:12:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 12,
+      "origin": 25,
+      "period": 5,
+      "phase": 4,
+      "resets": []
+    },
+    "seed": [
+      8,
+      5,
+      23,
+      5,
+      8
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-066",
+    "plaintext": "DOEEGGUSOJILYBOVTAMGEVLOVFMUBBZDZYPXOFJKGHWDJBCMQTOALBGECUOGDELEILWVNSOISHKBQWYYLOKYUINMEGLZQTUDH",
+    "planted_template_id": "progressive:06:05:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 5,
+      "origin": 0,
+      "period": 6,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      6,
+      17,
+      5,
+      21,
+      21,
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-067",
+    "plaintext": "GHSELGWBOZJXJLTOWARBCBICJKAIGHPOZHNWIAEJPEWZYJUSVZZYOBIUFMMJNPLEMKLIRRSSGPWUDRHJLQHLJQOKTMQZXDGPN",
+    "planted_template_id": "progressive:06:24:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 24,
+      "origin": 25,
+      "period": 6,
+      "phase": 5,
+      "resets": []
+    },
+    "seed": [
+      17,
+      5,
+      19,
+      4,
+      23,
+      3
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-068",
+    "plaintext": "PQIVMBFAOYFGPIOTDTBJFSJWZKMZDIQUGVIGBZMFVYPTILNCCNUOMIGQSAYCTYFIGRHUTUIAJYWIYHWARNYUTJAYZSCHGPODX",
+    "planted_template_id": "progressive:07:17:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 17,
+      "origin": 0,
+      "period": 7,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      2,
+      20,
+      5,
+      14,
+      8,
+      17,
+      6
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-069",
+    "plaintext": "BSOUSIVULGEKKIVHQQABRYKKVHGXKUWSLVOPVVBKHJDWCCFZYEILORYKHVVCCUBEABEDFLPPRBUUOUQTTMHUQDTVMXXRMIHQZ",
+    "planted_template_id": "progressive:08:11:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 11,
+      "origin": 25,
+      "period": 8,
+      "phase": 7,
+      "resets": []
+    },
+    "seed": [
+      0,
+      2,
+      15,
+      2,
+      19,
+      24,
+      3,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-070",
+    "plaintext": "UXXZVBAJTKPFJKELWXIUSOOXXQVBAUEXAMNVKYEYSNLKZIIKVSIXTQZTXIFTUUCHIRFFXIAKTONCLLLLVBMADPQAQPOPNOMCY",
+    "planted_template_id": "progressive:09:04:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 4,
+      "origin": 0,
+      "period": 9,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17,
+      14,
+      17,
+      9,
+      4,
+      18,
+      23,
+      4,
+      5
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-071",
+    "plaintext": "HINNHNREBYXTRGYSDLYKGYMJDNGIVHHKOOOWGYLZXKREEKXZZSTJFHQAHPIVUDSECCXWSNUIGJKSLQZYCYOHJMVJMRUYRKBJM",
+    "planted_template_id": "progressive:09:23:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 23,
+      "origin": 25,
+      "period": 9,
+      "phase": 8,
+      "resets": []
+    },
+    "seed": [
+      17,
+      22,
+      16,
+      8,
+      6,
+      2,
+      19,
+      22,
+      25
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-072",
+    "plaintext": "ODXLCWRCIUQMGESAWFEPPUTCWYGTQIQBFXOGMIKBGFZEMNIWJZEPBWMFIOOUZWLQASUKUDFJKJWXOFQEWWZCJDJXPAZSDJHDB",
+    "planted_template_id": "progressive:10:16:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 16,
+      "origin": 0,
+      "period": 10,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      7,
+      1,
+      14,
+      1,
+      16,
+      24,
+      11,
+      0,
+      24,
+      0
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-073",
+    "plaintext": "YDBMIRGEPDTZNIGEKCDPFUBWPTLHIVKCWCDWLCQZNMZEOXAKNAVHDWWMYRPVZMUWRGCZBKWSZSUOIILRXWTLEMWOSNIQFKQUY",
+    "planted_template_id": "progressive:11:10:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 10,
+      "origin": 25,
+      "period": 11,
+      "phase": 10,
+      "resets": []
+    },
+    "seed": [
+      4,
+      2,
+      14,
+      0,
+      2,
+      19,
+      3,
+      3,
+      2,
+      18,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-074",
+    "plaintext": "KQJJQCANBRPGEFSDRGQUMXHTTEZQNQBACDAQFXREVWHWLDHCBMNFZLBWNCMNXFOSVUDWHLVCAMXSVFQPFKGXLBFTUBBVCLINQ",
+    "planted_template_id": "progressive:12:03:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 3,
+      "origin": 0,
+      "period": 12,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      22,
+      9,
+      13,
+      17,
+      22,
+      18,
+      13,
+      25,
+      13,
+      22,
+      22,
+      22
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-075",
+    "plaintext": "LOBJTYORPGAMLEANRVFNOPKSEITGGOWNUYMFOYDBLEWJCHGAOKLFFGDIMUERHJVZKYCRQHSTKHROEBAZUDLGTEHPXYCOZANIB",
+    "planted_template_id": "progressive:12:22:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 22,
+      "origin": 25,
+      "period": 12,
+      "phase": 11,
+      "resets": []
+    },
+    "seed": [
+      17,
+      17,
+      8,
+      24,
+      16,
+      22,
+      2,
+      5,
+      24,
+      2,
+      24,
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-076",
+    "plaintext": "QHGPYJADGRKKTFBSHTXEYSGAKYVLQSWXVAFDRQNXBHBEZYJGJXFLEBPDGBZIWZBVQQDIFWIUVZCIZCSODUYGQWFGFPAVSNTBV",
+    "planted_template_id": "progressive:13:15:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 15,
+      "origin": 0,
+      "period": 13,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      6,
+      23,
+      12,
+      14,
+      23,
+      23,
+      9,
+      14,
+      4,
+      10,
+      19,
+      9,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-077",
+    "plaintext": "GJMDIWFYVBXVBYXZWOLOHXPAVGUHKGOOPULOQJBFIZOCMFSVXFALERLIDEOFCQQXCMOPFJOTERALEVDWGYMUIBMCGFNVQMMNG",
+    "planted_template_id": "progressive:14:09:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 9,
+      "origin": 25,
+      "period": 14,
+      "phase": 13,
+      "resets": []
+    },
+    "seed": [
+      3,
+      6,
+      23,
+      14,
+      17,
+      6,
+      14,
+      18,
+      12,
+      13,
+      10,
+      13,
+      8,
+      18
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-078",
+    "plaintext": "NJPNBSAKBQIAAVCMIJGMHHRUMATTQHPOALMNPXMFVZCEFCHBMBCKQSAPIISADHRBYTDHNDVHUVZHWKBZPGJPAHSBQEKREGERE",
+    "planted_template_id": "progressive:15:02:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 2,
+      "origin": 0,
+      "period": 15,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      10,
+      10,
+      22,
+      4,
+      24,
+      3,
+      9,
+      7,
+      22,
+      14,
+      6,
+      21,
+      20,
+      2,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-079",
+    "plaintext": "QVSLMUXVHHDDTCZCIESEBADPKZVMFKLRFZBNMNUAYYHVIGLZBZLQZXMSXUXHBIYVOTDYKDIJUTBKSBIQEUYQEKMEQCKDDYDBG",
+    "planted_template_id": "progressive:15:21:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 21,
+      "origin": 25,
+      "period": 15,
+      "phase": 14,
+      "resets": []
+    },
+    "seed": [
+      21,
+      4,
+      3,
+      5,
+      13,
+      15,
+      12,
+      11,
+      16,
+      4,
+      4,
+      18,
+      22,
+      16,
+      14
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-080",
+    "plaintext": "QPYWELIKXPJDISRVEGJBBKIADMUIXGNONJRLFJTWBHPZNRTFBFCRONUMJPHXYKHERFRMEHJTRKZOTFFFIRZXCWEOKOHQAZMLY",
+    "planted_template_id": "progressive:16:14:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 14,
+      "origin": 0,
+      "period": 16,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      1,
+      21,
+      0,
+      5,
+      1,
+      25,
+      18,
+      10,
+      1,
+      1,
+      11,
+      8,
+      5,
+      15,
+      19,
+      24
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-081",
+    "plaintext": "OOFFWPHBXQNICQLCEGBHNRZRELTHDKCNRXMQUIDOPSZQYWVLEVGBVGRSBWZOBNFEAPWUFXGLRBEINRIDKBODDVFCWAMMVDPEN",
+    "planted_template_id": "progressive:17:08:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 8,
+      "origin": 25,
+      "period": 17,
+      "phase": 16,
+      "resets": []
+    },
+    "seed": [
+      24,
+      18,
+      6,
+      2,
+      15,
+      25,
+      23,
+      19,
+      17,
+      9,
+      3,
+      19,
+      7,
+      14,
+      1,
+      23,
+      16
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-082",
+    "plaintext": "MOPPHBNTWSVADTSVNMTOEJRELQMSTXLQCSDSQULBAHADZGICKRCMDQJWFWUOUMKXBLSZHOBWHUWKBODPRAYDJGPRGNNFBCBEY",
+    "planted_template_id": "progressive:18:01:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 1,
+      "origin": 0,
+      "period": 18,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      9,
+      15,
+      24,
+      0,
+      14,
+      6,
+      14,
+      22,
+      8,
+      8,
+      5,
+      17,
+      12,
+      21,
+      18,
+      13,
+      6,
+      3
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-083",
+    "plaintext": "DUTKFXEGPHYLGREJUNCLOVNYXSNTOXLFMEGEJTMZZYWWHNMHDPELFJQEPVMTZKIIQPIUEOFMFBUXMJTPKJUVZAFZYBHZZAHUL",
+    "planted_template_id": "progressive:18:20:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 20,
+      "origin": 25,
+      "period": 18,
+      "phase": 17,
+      "resets": []
+    },
+    "seed": [
+      22,
+      13,
+      13,
+      17,
+      4,
+      24,
+      6,
+      22,
+      12,
+      14,
+      25,
+      20,
+      3,
+      14,
+      17,
+      2,
+      7,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-084",
+    "plaintext": "WBDNSUTMWGMZVYUBGOARAUNERJSTNYDLJZFRQCEJDSXKFWTARTZOVDIZXQLIJEQPRYBDCWKXAJKGNZONAQJKGFKIKJHXTSUUY",
+    "planted_template_id": "progressive:19:13:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 13,
+      "origin": 0,
+      "period": 19,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      18,
+      5,
+      6,
+      22,
+      1,
+      5,
+      3,
+      7,
+      14,
+      24,
+      7,
+      17,
+      23,
+      17,
+      18,
+      11,
+      21,
+      5,
+      17
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-085",
+    "plaintext": "GYLQYRBNBDDXDOEXOXSPRXKMPONTYHLNILKRVFOHKFPPDKMAMJNYYJNCSHBAZXQRTQUOCJDCZAPNKNSQZHBFARPCEDTQDBPNQ",
+    "planted_template_id": "progressive:20:07:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 7,
+      "origin": 25,
+      "period": 20,
+      "phase": 19,
+      "resets": []
+    },
+    "seed": [
+      8,
+      1,
+      11,
+      3,
+      10,
+      23,
+      13,
+      20,
+      4,
+      21,
+      18,
+      21,
+      10,
+      19,
+      18,
+      13,
+      13,
+      25,
+      0,
+      15
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-086",
+    "plaintext": "BDPSIYUCSCIMJUYDJSVYONLMESTTFFWMDUCNEWXWULVHNCBAJJURCBGKMRIWIVNFOJSRNTCOPYBVYHBVSIOJYDSJCQGZZBJHX",
+    "planted_template_id": "progressive:20:25:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 25,
+      "origin": 0,
+      "period": 20,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      14,
+      18,
+      18,
+      20,
+      18,
+      21,
+      15,
+      12,
+      2,
+      9,
+      7,
+      4,
+      16,
+      13,
+      4,
+      5,
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-087",
+    "plaintext": "CJHBIOGQDKAMXHIIXPIXVNHACCCFRZPWYEJGYQDMTRHFTVASJNLXJCZSXVVWIEQRBQXUZCZJESAKPBACXWLPZCRKYEPJBJCOM",
+    "planted_template_id": "progressive:21:19:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 19,
+      "origin": 25,
+      "period": 21,
+      "phase": 20,
+      "resets": []
+    },
+    "seed": [
+      7,
+      9,
+      17,
+      24,
+      15,
+      16,
+      9,
+      17,
+      21,
+      10,
+      13,
+      20,
+      2,
+      7,
+      16,
+      18,
+      18,
+      8,
+      14,
+      24,
+      20
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-088",
+    "plaintext": "ROXRNXIRQJGFDUCVQTLCPNKQYGEOYGGMQEJTSCEXXPIHFCDDJBCFOAYZLUPUHOPVEYLNXNJHXVVEDXQBKNYQQCEULGMPUBSDE",
+    "planted_template_id": "progressive:22:12:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 12,
+      "origin": 0,
+      "period": 22,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17,
+      18,
+      3,
+      11,
+      13,
+      20,
+      15,
+      7,
+      4,
+      24,
+      5,
+      21,
+      25,
+      11,
+      14,
+      23,
+      12,
+      6,
+      7,
+      10,
+      4,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-089",
+    "plaintext": "WCTUASCWIWASDSOPTNROBRZQFKNPRIOWRCLIDXWTGLCNASFFOQVVRDUSXTEUXADCZSTTLKNRWCTCSPKEWGUYKVKSUDIWGJTXY",
+    "planted_template_id": "progressive:23:06:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 6,
+      "origin": 25,
+      "period": 23,
+      "phase": 22,
+      "resets": []
+    },
+    "seed": [
+      19,
+      25,
+      17,
+      6,
+      1,
+      10,
+      25,
+      3,
+      1,
+      2,
+      25,
+      19,
+      7,
+      11,
+      5,
+      12,
+      3,
+      25,
+      18,
+      7,
+      24,
+      2,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-090",
+    "plaintext": "AUHQTSOYAZGRUSONDOXBYGTDSBHHWIPBETPVZGOAEYZGLZUMWFFBGORZFXVMZBYHWVDAGNPJDONSEWVHIVLPRDRSULSYXTZBC",
+    "planted_template_id": "progressive:23:24:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": 24,
+      "origin": 0,
+      "period": 23,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      9,
+      21,
+      8,
+      1,
+      22,
+      24,
+      6,
+      22,
+      2,
+      3,
+      18,
+      15,
+      0,
+      3,
+      15,
+      16,
+      20,
+      5,
+      8,
+      0,
+      23,
+      7,
+      14
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-091",
+    "plaintext": "FFPOKREVCREXTQJAKHTZTGZOMTUPZBRKBNUXAOKMJPIKIKBTFGUSIPFRMXPATTHEEKEXEZMTLSMCQAJZPTOWENCHJTEYVFHFX",
+    "planted_template_id": "progressive:24:18:vigenere_or_variant",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": 18,
+      "origin": 25,
+      "period": 24,
+      "phase": 23,
+      "resets": []
+    },
+    "seed": [
+      13,
+      22,
+      1,
+      16,
+      9,
+      9,
+      4,
+      3,
+      1,
+      15,
+      14,
+      12,
+      6,
+      1,
+      5,
+      11,
+      1,
+      20,
+      6,
+      20,
+      18,
+      4,
+      3,
+      7
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-092",
+    "plaintext": "RRYWYIFSAMMQGHROPNOELDVIZDAKWDHOHFLBPHCFYGQWWQTVXICYMBLDNKYBDHZNARXXTKWYRPCZQTOCMRJHVRJOCHZHHCRWF",
+    "planted_template_id": "autokey:07:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 7,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      4,
+      20,
+      4,
+      0,
+      2,
+      10,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-093",
+    "plaintext": "QRJZQWKUTPKPMAXSPTHWSCPKDEQIJZCPXWLJEDIKDQYHCOBQAHKAUJQLFSSLRQWCXYKDSQAIKNJUXDZLWEQSBDRBTUJAZVBZW",
+    "planted_template_id": "autokey:13:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 13,
+      "phase": 12,
+      "resets": []
+    },
+    "seed": [
+      20,
+      2,
+      2,
+      13,
+      15,
+      19,
+      12,
+      1,
+      9,
+      18,
+      19,
+      2,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-094",
+    "plaintext": "QXPJJGIHGJIEPWGTYJUIALVAHOLAZUWVBBFVXVMQILYWRFQCNVUTTSXKUOYDSHYIIBPFFTSOMFOCGIPZSOUGZBHDCQYZVPHXC",
+    "planted_template_id": "autokey:19:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 19,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      15,
+      3,
+      7,
+      17,
+      4,
+      21,
+      18,
+      21,
+      0,
+      9,
+      25,
+      16,
+      12,
+      7,
+      7,
+      8,
+      14,
+      21,
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-095",
+    "plaintext": "FXQDVPTQZPZJSDVECWGJGHGKWOIDTPNYDPKXSDIRDUXXQPZHFQADCSRUSKYMUWMGSKYODPSJSYDTTQKJBPWJWQFSNZZUAFYAG",
+    "planted_template_id": "autokey:25:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 25,
+      "phase": 24,
+      "resets": []
+    },
+    "seed": [
+      1,
+      12,
+      9,
+      2,
+      18,
+      6,
+      19,
+      13,
+      3,
+      25,
+      17,
+      13,
+      0,
+      10,
+      0,
+      3,
+      23,
+      17,
+      14,
+      14,
+      9,
+      24,
+      4,
+      24,
+      8
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-096",
+    "plaintext": "LFWTRHEZDHJHZOZMUKTBPBONSQIRFCFUPCPXISSURGXYCKJRKLKOTDHAOFFOVWTXZKIQBCSWXHWCOTHQHLGDRVLQYLITVNEDM",
+    "planted_template_id": "autokey:31:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 31,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      0,
+      13,
+      12,
+      7,
+      1,
+      20,
+      14,
+      11,
+      23,
+      4,
+      25,
+      23,
+      18,
+      20,
+      19,
+      10,
+      12,
+      14,
+      11,
+      13,
+      25,
+      21,
+      22,
+      0,
+      18,
+      19,
+      11,
+      11,
+      18,
+      13,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-097",
+    "plaintext": "DKGDKGYSAFAYMUTAXXUTUZCXBBQLIIDJJPAVSZQJRFPYTZMKVABOAYPLKNLHULKBWTXBOAPAQICENJNNSGKHOCKYFWFEWQPAD",
+    "planted_template_id": "autokey:06:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 6,
+      "phase": 5,
+      "resets": []
+    },
+    "seed": [
+      2,
+      22,
+      0,
+      21,
+      7,
+      9
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-098",
+    "plaintext": "VPEYUJJRMORHHCFBJCWNGQOEPZEBXZTYJDXIJLTXQDUHDPBXITWYVGVRHYXLPHKNPFWOGRWXGCTVEWHFBKCJYEGMQJRWMNNNW",
+    "planted_template_id": "autokey:12:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 12,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      17,
+      20,
+      9,
+      15,
+      21,
+      16,
+      9,
+      5,
+      0,
+      2,
+      25,
+      25
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-099",
+    "plaintext": "BQDLMHLYUPGTTEKTRZRWDBYWWQOTDZAHEXGLTAVZHQTSXSAAJPVGWWVANMEIRYVFNSGGBWFGRAINMPBQPVKZWZRRFGBVRIMAL",
+    "planted_template_id": "autokey:18:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 18,
+      "phase": 17,
+      "resets": []
+    },
+    "seed": [
+      23,
+      23,
+      6,
+      6,
+      24,
+      19,
+      4,
+      20,
+      7,
+      2,
+      0,
+      21,
+      13,
+      25,
+      17,
+      17,
+      24,
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-100",
+    "plaintext": "TQMLXLVTGREMNBWSXIDTLXVRULCJPSFARQORKYCDCINBVHWZQHCOVKSCTHNQLXSCHVCSQYOCDTLBHAUIMRIQMSHLTFQXMPZWN",
+    "planted_template_id": "autokey:24:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 24,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      8,
+      11,
+      6,
+      15,
+      17,
+      13,
+      3,
+      24,
+      12,
+      16,
+      12,
+      2,
+      0,
+      9,
+      4,
+      17,
+      4,
+      6,
+      17,
+      25,
+      17,
+      11,
+      2,
+      11
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-101",
+    "plaintext": "VHTAHJIPUPACOAXQCRWVZNJAMVDSAYWXKHKSBIDCCXCREFWLIJZRAGKSGAUJXKIEAYRGNMTRRDORMGTKQIBFTRAHDOEABNCVU",
+    "planted_template_id": "autokey:30:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 30,
+      "phase": 29,
+      "resets": []
+    },
+    "seed": [
+      15,
+      8,
+      24,
+      8,
+      18,
+      17,
+      22,
+      2,
+      7,
+      22,
+      24,
+      20,
+      5,
+      19,
+      3,
+      12,
+      9,
+      6,
+      16,
+      9,
+      23,
+      12,
+      23,
+      22,
+      11,
+      5,
+      13,
+      12,
+      18,
+      16
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-102",
+    "plaintext": "VVEPBCFXETJXBERLPQTZCRNFFLBZNSQQVKZIYCXVNGJRZWJZZGNGLGYRGKSTAZZHDVHEGUAEXPMHBKADUBICGKTSOAWYCBHOQ",
+    "planted_template_id": "autokey:04:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 4,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      24,
+      9,
+      3,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-103",
+    "plaintext": "AKBUVTGJDRIHUZZRIUZGQKVPINBGKJPTFYLKWIKYTLXTMWFUNADMQDHKSYZEEFHPTFIEZAIDPRKHLAXGKXCLLHPTYSASRBMDH",
+    "planted_template_id": "autokey:11:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 11,
+      "phase": 10,
+      "resets": []
+    },
+    "seed": [
+      14,
+      17,
+      7,
+      4,
+      8,
+      20,
+      15,
+      7,
+      1,
+      7,
+      2
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-104",
+    "plaintext": "KKCLQQIKNWZCMUNORUADSRDMJXTBWXPHYHCLRPLWQFORSGTYXKZXFOYEXHCYHZOCZZKUGTOTOJYMOBBJNIGMWDBINAXZTACBL",
+    "planted_template_id": "autokey:17:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 17,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      22,
+      11,
+      19,
+      23,
+      12,
+      13,
+      5,
+      4,
+      24,
+      17,
+      5,
+      19,
+      2,
+      12,
+      10,
+      10,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-105",
+    "plaintext": "PVYPYNXAFKFELGZNQSYCDMTNOAUZODEQAVZJAXXMXDKHWCOAKWZVOAMJCKNTJPFCCEJDYQJYVUZXXEVQVXUECYFZEUKDMIAUO",
+    "planted_template_id": "autokey:23:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 23,
+      "phase": 22,
+      "resets": []
+    },
+    "seed": [
+      8,
+      21,
+      22,
+      25,
+      10,
+      6,
+      25,
+      23,
+      13,
+      17,
+      7,
+      5,
+      10,
+      5,
+      0,
+      3,
+      20,
+      13,
+      21,
+      16,
+      20,
+      13,
+      1
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-106",
+    "plaintext": "UMRPZBBOAHCYGCQQDSPAWMQXTMXWFZUGZAWTZPOOVPWNFUEXLMMHXRICPTAJCAVTFRUCDIOYBWHELSUOMOAEUNFVUMZDVFEJD",
+    "planted_template_id": "autokey:29:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 29,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      4,
+      16,
+      11,
+      0,
+      8,
+      2,
+      23,
+      17,
+      7,
+      11,
+      10,
+      9,
+      0,
+      7,
+      5,
+      6,
+      21,
+      4,
+      13,
+      24,
+      1,
+      25,
+      0,
+      12,
+      3,
+      23,
+      12,
+      25,
+      6
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-107",
+    "plaintext": "QBVMPNNENKAZDUVNHHPTKCEPCORGGHMVTJFWIBFSEERIENCFXHSXVCRFOFVZYMNRJREWZKBWRTPHIYLWQITRKDIQXWSWITAGR",
+    "planted_template_id": "autokey:03:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 3,
+      "phase": 2,
+      "resets": []
+    },
+    "seed": [
+      23,
+      24,
+      1
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-108",
+    "plaintext": "MSZGGDJYLPIITHRJWKCKKRLWHCOFKJUERGMEOKEDPBOWIBMMWLDKNYFQIGSRPGIBRRSBEYDXCOPEJYSSFDLZITNFIWUVBVFJC",
+    "planted_template_id": "autokey:09:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 9,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      18,
+      14,
+      16,
+      6,
+      23,
+      10,
+      16,
+      16,
+      23
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-109",
+    "plaintext": "CGIFYJDOYGHGUFMMIXOWQHIRCHOHJIGJKHWOESILELWINOYDGEBHVJSRAOOWLACLZCOZSVUXIZVTEYGXVBHSHFHVBXCRWMRFX",
+    "planted_template_id": "autokey:16:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 16,
+      "phase": 15,
+      "resets": []
+    },
+    "seed": [
+      8,
+      10,
+      2,
+      20,
+      22,
+      12,
+      10,
+      9,
+      2,
+      4,
+      4,
+      6,
+      8,
+      2,
+      12,
+      12
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-110",
+    "plaintext": "BEVTWTUUXVYRDYMTPZJBEURNYOGIMYDNNJRICDYEPQVATHOHDKQRELXQIYXPVYSZPTWYZRJVOOEFPTOMBABZSXVKJXGJYXIWQ",
+    "planted_template_id": "autokey:22:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 22,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      23,
+      21,
+      25,
+      24,
+      21,
+      14,
+      23,
+      7,
+      8,
+      5,
+      20,
+      1,
+      19,
+      3,
+      22,
+      4,
+      9,
+      14,
+      11,
+      16,
+      0,
+      6
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-111",
+    "plaintext": "KFRZDUSGQBBTZGONQKFBTMPAGUAUQEZNAMUYONZAQVJZPHMKDUQTHHMXMMOEBUMPXBNUACKWGMVHSECEAGFSTKCMDTJJYQTOS",
+    "planted_template_id": "autokey:28:plaintext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 28,
+      "phase": 27,
+      "resets": []
+    },
+    "seed": [
+      2,
+      12,
+      21,
+      8,
+      22,
+      17,
+      1,
+      6,
+      12,
+      11,
+      22,
+      14,
+      3,
+      24,
+      20,
+      25,
+      3,
+      23,
+      2,
+      18,
+      25,
+      16,
+      9,
+      23,
+      24,
+      10,
+      11,
+      13
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-112",
+    "plaintext": "DUAOFKGJVQWOUQVFVSLISTPTJHODRJTWDZDPWHTAFMAUZSPNINTLCMPTKNXDRGCCVHZYHUUNUQXGWQENIUBTFECAZMDINOHXC",
+    "planted_template_id": "autokey:02:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 2,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      16,
+      25
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-113",
+    "plaintext": "FCMMLDSBCGTMWXGTMPEREHUUQBEKMSYMPWQLJIZUAXMWUYJXDBPHFJFOCRISGHALUZMEKQWYFGIQDCOOKNPDKEDFWUWCTQCTW",
+    "planted_template_id": "autokey:08:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 8,
+      "phase": 7,
+      "resets": []
+    },
+    "seed": [
+      22,
+      15,
+      4,
+      22,
+      14,
+      4,
+      22,
+      9
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-114",
+    "plaintext": "UCQBIDJYKQUVNLBJZIGASVJCHMGWDVRQQUATAUHRXINKJKTDNKEJXXKMWJCKRMNPLDCNVXUUUHLWBILOLCSGPFSSPBVLIGXDS",
+    "planted_template_id": "autokey:14:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 14,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      18,
+      5,
+      5,
+      20,
+      12,
+      11,
+      20,
+      8,
+      20,
+      6,
+      23,
+      11,
+      15,
+      21
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-115",
+    "plaintext": "ZVYMEODFKYECONKGWOVKYOFXJIPRKJJWTNENOEVJPEMQRPHGRPLBGBQDTHXQAOKPOVNQRSTPOAXWILUQWVFRDIKRBDEEEKJUJ",
+    "planted_template_id": "autokey:21:plaintext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 21,
+      "phase": 20,
+      "resets": []
+    },
+    "seed": [
+      23,
+      4,
+      7,
+      24,
+      16,
+      8,
+      11,
+      8,
+      24,
+      18,
+      5,
+      23,
+      2,
+      4,
+      4,
+      24,
+      24,
+      22,
+      16,
+      5,
+      10
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-116",
+    "plaintext": "OUWNQYWWXRGOJWUQVSRDPDZYBEIOZWPTLTRRUIFVEWJXXFWKOOWQOAWWIUGDUJRVZACWPLAOLYTLHJNYAHVWYTQUIPAWMEHMP",
+    "planted_template_id": "autokey:27:plaintext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 27,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      22,
+      0,
+      16,
+      18,
+      4,
+      11,
+      13,
+      21,
+      9,
+      4,
+      11,
+      9,
+      14,
+      22,
+      18,
+      20,
+      14,
+      12,
+      17,
+      1,
+      18,
+      15,
+      4,
+      5,
+      22,
+      8,
+      19
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-117",
+    "plaintext": "CCRYCZBYXVIPSSUKRQSQYIYSJSGAXDHSUAKZQXAEPQUJREFWMECJBGVKZWAFLZSEOJZHKAFEUUMEXJVMOGZJKAJUJMKRGYFMS",
+    "planted_template_id": "autokey:07:ciphertext:vigenere",
+    "raw_alias": {
+      "equation": "vigenere",
+      "increment": null,
+      "origin": null,
+      "period": 7,
+      "phase": 6,
+      "resets": []
+    },
+    "seed": [
+      11,
+      4,
+      23,
+      13,
+      19,
+      17,
+      6
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-118",
+    "plaintext": "CVPDPWSWQCFWGRNZMOFWXTFOYEBYVJZHQYUJHPNRLTESWROKFIKXXVSOXMZCZOFSAEHBFSOBLAQNGPKLWWXWFHIVJJRTQIEUU",
+    "planted_template_id": "autokey:13:ciphertext:beaufort",
+    "raw_alias": {
+      "equation": "beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 13,
+      "phase": 0,
+      "resets": []
+    },
+    "seed": [
+      4,
+      1,
+      15,
+      21,
+      13,
+      23,
+      14,
+      11,
+      21,
+      7,
+      13,
+      24,
+      16
+    ]
+  },
+  {
+    "cohort": "positive",
+    "id": "positive-119",
+    "plaintext": "CWNCZEJPIWUALSEYIDJJNHIJXWTQDEPXXVCWSFISPIRCRRIEJCHYHCKBXLAUFEDONOXZXOSRVROWOXFNSKZFLJOLQXHIUBDVP",
+    "planted_template_id": "autokey:19:ciphertext:variant_beaufort",
+    "raw_alias": {
+      "equation": "variant_beaufort",
+      "increment": null,
+      "origin": null,
+      "period": 19,
+      "phase": 18,
+      "resets": []
+    },
+    "seed": [
+      15,
+      18,
+      15,
+      13,
+      17,
+      4,
+      6,
+      20,
+      12,
+      22,
+      22,
+      14,
+      5,
+      7,
+      5,
+      23,
+      15,
+      11,
+      4
+    ]
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-000",
+    "planted_template_id": "coord:01::vigenere_or_variant:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+    "source_id": "positive-000",
+    "tamper_position": 29
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-001",
+    "planted_template_id": "coord:03:4:beaufort:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2",
+    "source_id": "positive-003",
+    "tamper_position": 69
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-002",
+    "planted_template_id": "coord:04:66:vigenere_or_variant:0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2",
+    "source_id": "positive-006",
+    "tamper_position": 28
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-003",
+    "planted_template_id": "coord:03:4-35:beaufort:0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1",
+    "source_id": "positive-009",
+    "tamper_position": 65
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-004",
+    "planted_template_id": "coord:02:35-66:vigenere_or_variant:0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0",
+    "source_id": "positive-012",
+    "tamper_position": 70
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-005",
+    "planted_template_id": "progressive:01:01:beaufort",
+    "source_id": "positive-015",
+    "tamper_position": 27
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-006",
+    "planted_template_id": "progressive:32:01:vigenere_or_variant",
+    "source_id": "positive-018",
+    "tamper_position": 30
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-007",
+    "planted_template_id": "progressive:32:25:beaufort",
+    "source_id": "positive-021",
+    "tamper_position": 66
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-008",
+    "planted_template_id": "autokey:01:plaintext:variant_beaufort",
+    "source_id": "positive-024",
+    "tamper_position": 32
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-009",
+    "planted_template_id": "autokey:01:ciphertext:variant_beaufort",
+    "source_id": "positive-027",
+    "tamper_position": 32
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-010",
+    "planted_template_id": "autokey:32:plaintext:variant_beaufort",
+    "source_id": "positive-030",
+    "tamper_position": 32
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-011",
+    "planted_template_id": "autokey:32:ciphertext:variant_beaufort",
+    "source_id": "positive-033",
+    "tamper_position": 68
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-012",
+    "planted_template_id": "coord:18:4:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,1,2",
+    "source_id": "positive-036",
+    "tamper_position": 28
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-013",
+    "planted_template_id": "coord:10:35-66:vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0",
+    "source_id": "positive-039",
+    "tamper_position": 32
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-014",
+    "planted_template_id": "coord:24:35:beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13",
+    "source_id": "positive-042",
+    "tamper_position": 67
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-015",
+    "planted_template_id": "coord:07:4:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1,2,3,4,5,6,0,1",
+    "source_id": "positive-045",
+    "tamper_position": 23
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-016",
+    "planted_template_id": "coord:26:4-35:beaufort:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,0,1,2,3,4,5,6,7,8,9",
+    "source_id": "positive-048",
+    "tamper_position": 30
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-017",
+    "planted_template_id": "coord:15::vigenere_or_variant:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6",
+    "source_id": "positive-051",
+    "tamper_position": 64
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-018",
+    "planted_template_id": "coord:29::beaufort:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,0,1,2,3,4,5,6,7,8,9",
+    "source_id": "positive-054",
+    "tamper_position": 72
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-019",
+    "planted_template_id": "coord:15:4-35:vigenere_or_variant:0,1,2,3,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,1",
+    "source_id": "positive-057",
+    "tamper_position": 29
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-020",
+    "planted_template_id": "progressive:01:19:beaufort",
+    "source_id": "positive-060",
+    "tamper_position": 30
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-021",
+    "planted_template_id": "progressive:03:25:vigenere_or_variant",
+    "source_id": "positive-063",
+    "tamper_position": 65
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-022",
+    "planted_template_id": "progressive:06:05:beaufort",
+    "source_id": "positive-066",
+    "tamper_position": 64
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-023",
+    "planted_template_id": "progressive:08:11:vigenere_or_variant",
+    "source_id": "positive-069",
+    "tamper_position": 63
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-024",
+    "planted_template_id": "progressive:10:16:beaufort",
+    "source_id": "positive-072",
+    "tamper_position": 27
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-025",
+    "planted_template_id": "progressive:12:22:vigenere_or_variant",
+    "source_id": "positive-075",
+    "tamper_position": 33
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-026",
+    "planted_template_id": "progressive:15:02:beaufort",
+    "source_id": "positive-078",
+    "tamper_position": 73
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-027",
+    "planted_template_id": "progressive:17:08:vigenere_or_variant",
+    "source_id": "positive-081",
+    "tamper_position": 65
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-028",
+    "planted_template_id": "progressive:19:13:beaufort",
+    "source_id": "positive-084",
+    "tamper_position": 26
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-029",
+    "planted_template_id": "progressive:21:19:vigenere_or_variant",
+    "source_id": "positive-087",
+    "tamper_position": 22
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-030",
+    "planted_template_id": "progressive:23:24:beaufort",
+    "source_id": "positive-090",
+    "tamper_position": 26
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-031",
+    "planted_template_id": "autokey:13:plaintext:variant_beaufort",
+    "source_id": "positive-093",
+    "tamper_position": 26
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-032",
+    "planted_template_id": "autokey:31:ciphertext:variant_beaufort",
+    "source_id": "positive-096",
+    "tamper_position": 27
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-033",
+    "planted_template_id": "autokey:18:plaintext:variant_beaufort",
+    "source_id": "positive-099",
+    "tamper_position": 63
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-034",
+    "planted_template_id": "autokey:04:ciphertext:variant_beaufort",
+    "source_id": "positive-102",
+    "tamper_position": 32
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-035",
+    "planted_template_id": "autokey:23:plaintext:variant_beaufort",
+    "source_id": "positive-105",
+    "tamper_position": 28
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-036",
+    "planted_template_id": "autokey:09:ciphertext:variant_beaufort",
+    "source_id": "positive-108",
+    "tamper_position": 27
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-037",
+    "planted_template_id": "autokey:28:plaintext:variant_beaufort",
+    "source_id": "positive-111",
+    "tamper_position": 67
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-038",
+    "planted_template_id": "autokey:14:ciphertext:variant_beaufort",
+    "source_id": "positive-114",
+    "tamper_position": 26
+  },
+  {
+    "cohort": "tamper",
+    "id": "tamper-039",
+    "planted_template_id": "autokey:07:ciphertext:vigenere",
+    "source_id": "positive-117",
+    "tamper_position": 24
+  }
+]

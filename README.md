@@ -62,20 +62,40 @@ For example, the width result `0.004419956` means 441 of 100,000 registered
 shuffles had a selected maximum at least as extreme as K4 (with the standard
 one-count adjustment). It is not the probability that a cipher theory is true.
 
-## Current results
+## Milestone roadmap and results
 
-| Milestone | Plain-language question | Finding and why it matters | Record |
-| --- | --- | --- | --- |
-| 1 | What can the 24 known letters rule out immediately? | Froze the evidence. Pure rearrangement of the 97 letters and simple fixed substitutions conflict with the clues; some repeating-key periods fail, while others remain possible. | [Report](reports/milestone-1.md) |
-| 2 | Can the project implement the relevant ciphers correctly? | Reproduced K1, both K2 versions, K3's permutation, and a published Gromark example in Rust and Python. Later searches therefore rest on known-answer tests. | [Report](reports/milestone-2.md) |
-| 3 | Which five-digit decimal starting keys survive cheap necessary tests? | Exhaustively reduced **99,999 → 1,040 → 39**, with Rust, Python, and pinned upstream C agreement. This makes later searches finite and reviewable. | [Report](reports/milestone-3.md) |
-| 4 | Are five reported K4 patterns unusual under a fixed shuffle test? | Reproduced the measurements with a pilot and one million new shuffles, including uncertainty and multiple-test correction. It checks statistics, not a decryption. | [Report](reports/milestone-4.md) |
-| 5 | Does width 21 remain unusual when the best of widths 1–48 is selected every time? | Yes under this registered null: 441/100,000 shuffled texts were at least as extreme, adjusted to **0.004419956**. This corrects that width selection only. | [Report](reports/milestone-5.md) |
-| 6 | Can each of the 39 digit streams fit the clues if both alphabets may be any permutations? | Yes: **39 feasible, 0 infeasible, 0 unresolved**. The broad model is too flexible to narrow the key list; its witnesses are not plaintexts. | [Report](reports/milestone-6.md) |
-| 7 | Do ordinary A–Z and KRYPTOS-built alphabets make those streams work? | No. All **16,224** registered fixed-order models fail at least one known letter. | [Report](reports/milestone-7.md) |
-| 8 | Do three sourced keywords and two alphabet-building rules make them work? | No. All **146,016** models fail after **3,504,384** K4 equations. The known true model round-tripped in 144 planted tests; only 98 were uniquely identified from the clue signature. | [Report](reports/milestone-8.md) |
-| 9 (partial) | Which source details are trustworthy enough for later clue-based searches? | CIA text rows, selected 1999 photos, and Dunin's 2002 rubbings corroborate parts of the inscription; the original Sanborn letter and Paradigm's public terms were read. Oxford separates Carter's journals and diaries from Mace's journals and Burton's diary. Full photographic collation, measured geometry, and the 1989 Clock labels remain open. No K4 search was run. | [Report](reports/milestone-9.md), [source ledger](evidence/milestone-9.json) |
-| 10 | Can an attack recover a planted model without being told the answer? | With a fresh committed hidden seed and independently regenerated cases, a separate attacker ranked the true model first on all 160 planted cases in a narrow cipher family; none of 140 out-of-family or tampered cases survived. The protocol is reusable, but each later family needs its own calibration. | [Report](reports/milestone-10.md), [run](results/BLIND-0004/run-001/completion.json) |
+This is the single status table for completed, partial, and planned work. A
+completed milestone establishes only the result stated in its row. Every future
+attack family must pass its own blind calibration before it can be tested on K4.
+
+| Milestone | Status | Plain-language question | Result or planned test | Record |
+| ---: | --- | --- | --- | --- |
+| 1 | Complete | What can the 24 known letters rule out immediately? | Froze the evidence. Pure rearrangement of the 97 letters and simple fixed substitutions conflict with the clues; some repeating-key periods fail, while others remain possible. | [Report](reports/milestone-1.md) |
+| 2 | Complete | Can the project implement the relevant ciphers correctly? | Reproduced K1, both K2 versions, K3's permutation, and a published Gromark example in Rust and Python. Later searches therefore rest on known-answer tests. | [Report](reports/milestone-2.md) |
+| 3 | Complete | Which five-digit decimal starting keys survive cheap necessary tests? | Exhaustively reduced **99,999 → 1,040 → 39**, with Rust, Python, and pinned upstream C agreement. This makes later searches finite and reviewable. | [Report](reports/milestone-3.md) |
+| 4 | Complete | Are five reported K4 patterns unusual under a fixed shuffle test? | Reproduced the measurements with a pilot and one million new shuffles, including uncertainty and multiple-test correction. It checks statistics, not a decryption. | [Report](reports/milestone-4.md) |
+| 5 | Complete | Does width 21 remain unusual when the best of widths 1–48 is selected every time? | Yes under this registered null: 441/100,000 shuffled texts were at least as extreme, adjusted to **0.004419956**. This corrects that width selection only. | [Report](reports/milestone-5.md) |
+| 6 | Complete | Can each of the 39 digit streams fit the clues if both alphabets may be any permutations? | Yes: **39 feasible, 0 infeasible, 0 unresolved**. The broad model is too flexible to narrow the key list; its witnesses are not plaintexts. | [Report](reports/milestone-6.md) |
+| 7 | Complete | Do ordinary A–Z and KRYPTOS-built alphabets make those streams work? | No. All **16,224** registered fixed-order models fail at least one known letter. | [Report](reports/milestone-7.md) |
+| 8 | Complete | Do three sourced keywords and two alphabet-building rules make them work? | No. All **146,016** models fail after **3,504,384** K4 equations. The known true model round-tripped in 144 planted tests; only 98 were uniquely identified from the clue signature. | [Report](reports/milestone-8.md) |
+| 9 | Partial; evidence-gated | Which source details are trustworthy enough for later clue-based searches? | Text and selected images corroborate part of the record. Full photographic collation, measured geometry, and ordered 1989 World Clock labels remain unavailable. No K4 search was run. | [Report](reports/milestone-9.md), [source ledger](evidence/milestone-9.json) |
+| 10 | Complete for the reference family | Can an attack recover a planted model without being told the answer? | A separate attack ranked the true model first in all 160 planted cases; none of 140 negative cases survived. The reusable protocol is complete, but every later family needs separate calibration. | [Report](reports/milestone-10.md), [run](results/BLIND-0004/run-001/completion.json) |
+| 11 | Complete | Do bounded classical key schedules fit all 24 known letters? | **173 of 2,192** canonical aligned A–Z templates survive: 12 repeating/interrupted, 152 progressive, and 9 autokey. Their free seed letters make them compatibility classes, not plaintext claims. | [Report](reports/milestone-11.md), [accepted calibration](results/CLASSICAL-SCHEDULES-0005/run-001/verification.json), [accepted K4 run](results/CLASSICAL-SCHEDULES-K4-0003/run-001/completion.json) |
+| 12 | Planned | Do broader generated-key recurrences fit the known letters? | Extend the decimal five-digit branch across registered bases, seed lengths, taps, offsets, and signs. | [Roadmap](docs/future-milestones.md#planned-milestone-12--generalized-recurrence-census) |
+| 13 | Planned | What do the clues force when both alphabets are unknown? | Count or characterize compatible alphabet pairs, ambiguity, and relations shared by every solution. | [Roadmap](docs/future-milestones.md#planned-milestone-13--unknown-alphabet-constraint-proofs) |
+| 14 | Planned; source-gated | Do sourced keywords or literal sculpture-tableau variants fit? | Compare authenticated tableau readings and a frozen word corpus under declared construction rules. | [Roadmap](docs/future-milestones.md#planned-milestone-14--tableau-and-finite-keyword-corpora) |
+| 15 | Planned; source-gated | Does an identified historical text contain a working running key? | Test every legal 97-letter window from exact, frozen editions under declared transforms. | [Roadmap](docs/future-milestones.md#planned-milestone-15--documentary-running-keys) |
+| 16 | Planned | Can the two known plaintext blocks be joined through one reversible state? | Propagate bounded states from both clue regions and join exact matches. | [Roadmap](docs/future-milestones.md#planned-milestone-16--dual-clue-meet-in-the-middle-bridge) |
+| 17 | Planned | Do affine permutations work with a calibrated substitution family? | Test all registered affine routes of the 97 positions with exact inverse traces. | [Roadmap](docs/future-milestones.md#planned-milestone-17--affine-routes-on-the-97-positions) |
+| 18 | Planned | Do bounded ragged columnar routes fit the clues? | Exhaust small column orders and explicitly bounded wider or physical route grammars. | [Roadmap](docs/future-milestones.md#planned-milestone-18--ragged-columnar-and-route-transpositions) |
+| 19 | Planned; evidence-gated | Can the 1989 World Clock define a finite key schedule? | Turn authenticated period-correct sectors, labels, and hour-ring behavior into registered schedules. | [Roadmap](docs/future-milestones.md#planned-milestone-19--world-clock-schedules) |
+| 20 | Planned; evidence-gated | Does the sculpture's physical geometry define a reproducible route? | Test complete direction and coordinate rules only after an authenticated map is available. | [Roadmap](docs/future-milestones.md#planned-milestone-20--directional-and-sculpture-geometry-routes) |
+| 21 | Planned | Can a small reversible stepping machine explain the known letters? | Enumerate bounded two-to-four-state counter and rotor grammars using sourced triggers. | [Roadmap](docs/future-milestones.md#planned-milestone-21--bounded-stepping-machines) |
+| 22 | Planned; evidence-gated | Do authenticated physical irregularities encode a useful stream? | Extract every allowed anomaly stream under rules fixed before K4 evaluation and run ablations. | [Roadmap](docs/future-milestones.md#planned-milestone-22--anomalies-as-a-cohort) |
+| 23 | Planned | Do bounded matrix or fractionation systems fit K4's clues? | Test invertible 2×2 affine maps, algebraically bounded larger maps, and 26-symbol coordinates. | [Roadmap](docs/future-milestones.md#planned-milestone-23--matrix-and-fractionating-models) |
+| 24 | Planned | Can a short composition of validated primitives recover planted models? | Search a frozen one-or-two-stage program grammar under a strict complexity cap. | [Roadmap](docs/future-milestones.md#planned-milestone-24--bounded-program-synthesis) |
+| 25 | Planned | Can language scoring rank survivors without learning the test answers? | Calibrate on held-out text and evaluate the complete selection process against family-wise nulls. | [Roadmap](docs/future-milestones.md#planned-milestone-25--language-scoring-and-heuristic-attacks) |
+| 26 | Planned | Does a serious survivor withstand independent adversarial review? | Require exact reencryption, independent key provenance, competing explanations, and a fresh implementation. | [Roadmap](docs/future-milestones.md#planned-milestone-26--adversarial-candidate-dossier-and-external-review) |
 
 The width result is conditional on the registered statistic, width range,
 calibration, and multiset-permutation null. It does not correct every historical
@@ -129,58 +149,9 @@ The longer research plan has the following phases:
 
 Milestones are reviewable work packages within these phases. Completing a
 milestone does not imply that every gate in its surrounding phase is complete.
-The [future milestone roadmap](docs/future-milestones.md) defines planned
+The [future milestone roadmap](docs/future-milestones.md) defines
 milestones 9–26, their dependencies, budgets, exact-versus-heuristic boundaries,
 outputs, and stop conditions.
-
-## What comes next
-
-The roadmap adds 18 milestones after the first eight. Milestone 9 has a
-[partial evidence audit](reports/milestone-9.md): it found stronger textual and
-catalog sources, inspected the original Sanborn letter and the steward's public
-terms, and checked selected sculpture photographs and first-person rubbings.
-The archive distinguishes Carter's excavation journals from diaries and other
-authors' notebooks; no running-key text is frozen. The Clock's 80 **original**
-city names cannot be assumed to match 1989 after intervening changes. Full
-photographic collation, measured geometry, and period-correct clock labels
-remain unresolved.
-Those details cannot become search parameters until their evidence gates close.
-Milestone 10's [blind reference benchmark](reports/milestone-10.md) now keeps
-planted answers outside the attack process and checks recovery against a
-separate verifier. Its small exact family passed all registered targets; each
-larger future family still needs its own blind calibration. Milestones 11–15 cover classical schedules, generalized
-recurrences, unknown alphabets, tableau/keyword families, and documentary
-running keys. Milestones 16–24 cover two-clue state joins, affine and ragged
-routes, clock and direction rules, small stepping machines, anomaly streams,
-matrix/fractionating models, and bounded program synthesis. Milestone 25 adds
-language ranking only after held-out calibration; milestone 26 is an adversarial
-independent dossier for a serious survivor.
-
-Each planned milestone states prerequisites, a pilot budget, a finite domain or
-grammar, validation, outputs, and a stop rule in the
-[full roadmap](docs/future-milestones.md). Counts are family-specific and do not
-mean the project has enumerated every possible cipher.
-
-| Planned milestone | Idea | What it would test |
-| ---: | --- | --- |
-| 9 | Evidence and geometry refresh | Authenticate clue wording, inscription coordinates, 1989 clock data, and source gaps before turning them into parameters. |
-| 10 | Blind recovery benchmark | Measure whether an attack selects a hidden planted model without being told its ID. |
-| 11 | Classical key schedules | Test bounded repeating, progressive, autokey, and interrupted Vigenère/Beaufort families. |
-| 12 | Generalized recurrences | Extend the five-digit decimal branch to declared bases, seed lengths, taps, offsets, and signs. |
-| 13 | Unknown-alphabet constraints | Count or characterize compatible alphabet pairs and find relations forced across every solution. |
-| 14 | Tableau and keyword corpora | Test literal versus idealized sculpture tableaus and a frozen, sourced word list. |
-| 15 | Documentary running keys | Test every legal 97-letter window of identified source editions under declared transforms. |
-| 16 | Two-clue state bridge | Propagate reversible states forward and backward between the two known blocks and join them exactly. |
-| 17 | Affine routes | Combine all 9,312 affine permutations of 97 positions with calibrated substitution families. |
-| 18 | Ragged columnar routes | Exhaust small column orders and explicitly bounded wider or physical route grammars. |
-| 19 | World Clock schedules | Turn 24 sectors and the rotating hour ring into a finite, period-correct schedule family. |
-| 20 | Directions and sculpture geometry | Test complete compass-based routes on authenticated coordinate maps without manual cell skips. |
-| 21 | Small stepping machines | Enumerate reversible 2–4-state counter/rotor grammars using source-supported triggers. |
-| 22 | Anomaly cohort | Extract streams from all authenticated irregularities under rules fixed before K4 evaluation. |
-| 23 | Matrix and fractionation | Test invertible 2×2 affine maps, algebraically bounded larger maps, and 26-symbol coordinates. |
-| 24 | Bounded program synthesis | Compose one or two validated primitives under a frozen grammar and complexity cap. |
-| 25 | Calibrated language scoring | Rank exact survivors only after held-out recovery and full-selection null experiments. |
-| 26 | Adversarial candidate dossier | Require exact reencryption, independent key provenance, competing explanations, and fresh implementation review. |
 
 ## Where things live
 

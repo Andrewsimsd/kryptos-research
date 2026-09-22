@@ -1,0 +1,24 @@
+{
+  "artifact_sha256": {
+    "attacker-binary": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+    "attacker-output.json": "cbf8f8f5372cd14d9e3d90cfcefadc1781361508d0855cb93cbd86c7b28b34a0",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller-private.json": "a79660b07cc70873f7ac3f3e6a5d5e3a44da82fc2348a14cb8d64d156a5b5bfa",
+    "manifest.json": "b87c6aa04605d1e3a0d0a896f81b5381b414bca352e797e848c5647ed5c600ab",
+    "public-cases.json": "a96785356ebe2aa6741a20ade7c8ea65719bda0aef0253fcebed13123f19acaf",
+    "seed-reveal.json": "e771fbd0e1f2ca8573526182b365cc8f376d358d223bdfdb5432857b12cd1998",
+    "verification.json": "70ff1848293cd1e5b0a294983b644745d67bdb020ec6d7c7c8dec4e41ffe8636",
+    "verification.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "binary_sha256": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+  "calibration_passed": true,
+  "experiment_id": "CLASSICAL-SCHEDULES-0005",
+  "k4_models_evaluated": 0,
+  "operation_cap": 350720,
+  "operation_unit": "canonical_template_check",
+  "operations": 350720,
+  "run_id": "results/CLASSICAL-SCHEDULES-0005/run-001",
+  "schema_version": 1,
+  "status": "completed",
+  "wall_seconds": 3.420501474000048
+}

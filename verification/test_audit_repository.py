@@ -121,6 +121,26 @@ class RepositoryAuditTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "escapes repository"):
                 audit(root)
 
+    def test_declared_versioned_relocation_preserves_historical_path(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root, evidence, _ = self.fixture(directory)
+            original = evidence.read_bytes()
+            relocated = root / "evidence/input-v2.json"
+            relocated.write_bytes(original)
+            evidence.write_text("older generation\n", encoding="utf-8")
+            (root / "evidence/SHA256SUMS").write_text(
+                f"{digest(evidence)}  evidence/input.json\n", encoding="utf-8"
+            )
+            from audit_repository import VERSIONED_EVIDENCE_RELOCATIONS
+
+            key = ("evidence/input.json", hashlib.sha256(original).hexdigest())
+            VERSIONED_EVIDENCE_RELOCATIONS[key] = "evidence/input-v2.json"
+            try:
+                report = audit(root)
+                self.assertEqual(report["status"], "verified")
+            finally:
+                del VERSIONED_EVIDENCE_RELOCATIONS[key]
+
 
 if __name__ == "__main__":
     unittest.main()

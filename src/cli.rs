@@ -2,6 +2,7 @@
 
 use std::{error::Error, ffi::OsString, fs, io::Write, path::PathBuf};
 
+use kryptos_research::classical_schedules;
 use kryptos_research::feasibility::batch;
 use kryptos_research::keyword_alphabets::{self, CalibrationReport};
 use kryptos_research::primers::filter_decimal_primers;
@@ -19,6 +20,7 @@ const HELP: &str = "Usage: kryptos-research <validate|diagnose> [EVIDENCE.json]\
     \x20      kryptos-research structured-alphabets REQUEST.json\n\
     \x20      kryptos-research keyword-calibrate REQUEST.json\n\
     \x20      kryptos-research keyword-alphabets REQUEST.json CALIBRATION.json\n\
+    \x20      kryptos-research classical-schedules REQUEST.json\n\
     \n\
     validate  Check the 97-letter manifest, line layout, sources, and anchors.\n\
     diagnose  Emit JSON necessary-condition checks and contradiction witnesses.\n\
@@ -30,6 +32,7 @@ const HELP: &str = "Usage: kryptos-research <validate|diagnose> [EVIDENCE.json]\
     structured-alphabets Exhaust a finite family of named alphabet orders and rotations.\n\
     keyword-calibrate Census keyword signatures and run planted recovery cases.\n\
     keyword-alphabets Evaluate K4 only after an exact passing calibration report.\n\
+    classical-schedules Symbolically test 2,192 bounded classical schedule templates.\n\
     \n\
     EVIDENCE.json defaults to evidence/k4.json relative to the current directory.\n\
     Inputs are strict uppercase ASCII; no implicit normalization is performed.\n\
@@ -48,6 +51,7 @@ enum Command {
     StructuredAlphabets(PathBuf),
     KeywordCalibrate(PathBuf),
     KeywordAlphabets(PathBuf, PathBuf),
+    ClassicalSchedules(PathBuf),
 }
 
 fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'static str> {
@@ -65,9 +69,10 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
         Some("structured-alphabets") => "structured-alphabets",
         Some("keyword-calibrate") => "keyword-calibrate",
         Some("keyword-alphabets") => "keyword-alphabets",
+        Some("classical-schedules") => "classical-schedules",
         _ => {
             return Err(
-                "expected validate, diagnose, transform, primers, statistics, width-scan, feasibility, structured-alphabets, keyword-calibrate or keyword-alphabets; use --help for usage",
+                "expected validate, diagnose, transform, primers, statistics, width-scan, feasibility, structured-alphabets, keyword-calibrate, keyword-alphabets or classical-schedules; use --help for usage",
             );
         }
     };
@@ -103,6 +108,7 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
             | "feasibility"
             | "structured-alphabets"
             | "keyword-calibrate"
+            | "classical-schedules"
     ) && supplied_path.is_none()
     {
         return Err("command requires a JSON request file; use --help for usage");
@@ -127,6 +133,8 @@ fn parse(arguments: impl IntoIterator<Item = OsString>) -> Result<Command, &'sta
         Command::StructuredAlphabets(path)
     } else if command == "keyword-calibrate" {
         Command::KeywordCalibrate(path)
+    } else if command == "classical-schedules" {
+        Command::ClassicalSchedules(path)
     } else {
         Command::Transform(path)
     })
@@ -150,6 +158,7 @@ pub(crate) fn run(
         | Command::Feasibility(path)
         | Command::StructuredAlphabets(path)
         | Command::KeywordCalibrate(path)
+        | Command::ClassicalSchedules(path)
         | Command::Primers(path) => path,
         Command::KeywordAlphabets(_, _) => unreachable!("handled above"),
     };
@@ -198,6 +207,12 @@ pub(crate) fn run(
         writeln!(output)?;
         return Ok(());
     }
+    if matches!(command, Command::ClassicalSchedules(_)) {
+        let request: classical_schedules::Request = serde_json::from_str(&text)?;
+        serde_json::to_writer_pretty(&mut *output, &classical_schedules::evaluate(&request)?)?;
+        writeln!(output)?;
+        return Ok(());
+    }
     let evidence = Evidence::from_json(&text)?;
     match command {
         Command::Validate(_) => writeln!(
@@ -222,7 +237,8 @@ pub(crate) fn run(
         | Command::Feasibility(_)
         | Command::StructuredAlphabets(_)
         | Command::KeywordCalibrate(_)
-        | Command::KeywordAlphabets(_, _) => {}
+        | Command::KeywordAlphabets(_, _)
+        | Command::ClassicalSchedules(_) => {}
     }
     Ok(())
 }

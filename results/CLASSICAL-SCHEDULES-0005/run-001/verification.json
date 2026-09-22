@@ -1,0 +1,94 @@
+{
+  "coverage": {
+    "autokey_equations": [
+      "beaufort",
+      "variant_beaufort",
+      "vigenere"
+    ],
+    "families": [
+      "autokey",
+      "progressive",
+      "repeating_interrupted"
+    ],
+    "feedback": [
+      "ciphertext",
+      "plaintext"
+    ],
+    "period_boundaries": [
+      1,
+      32
+    ],
+    "progressive_increment_boundaries": [
+      1,
+      25
+    ],
+    "reset_counts": [
+      0,
+      1,
+      2
+    ]
+  },
+  "k4_models_evaluated": 0,
+  "operation_cap": 350720,
+  "operation_unit": "canonical_template_check",
+  "operations": 350720,
+  "positive_retained": 120,
+  "positive_total": 120,
+  "raw_model_coverage": {
+    "equations": [
+      "beaufort",
+      "variant_beaufort",
+      "vigenere"
+    ],
+    "increments_including_alias": [
+      0,
+      1,
+      25
+    ],
+    "origins": [
+      0,
+      25
+    ],
+    "phase_endpoint_roles_by_family": {
+      "progressive": [
+        "period_minus_one",
+        "zero"
+      ],
+      "repeating_interrupted": [
+        "period_minus_one",
+        "zero"
+      ]
+    },
+    "reset_subsets": [
+      [],
+      [
+        4
+      ],
+      [
+        4,
+        35
+      ],
+      [
+        4,
+        66
+      ],
+      [
+        35
+      ],
+      [
+        35,
+        66
+      ],
+      [
+        66
+      ]
+    ]
+  },
+  "raw_models_reencrypted_and_canonicalized": 120,
+  "schema_version": 1,
+  "status": "passed",
+  "tamper_excluded": 40,
+  "tamper_total": 40,
+  "unknown_cases": 0,
+  "witnesses_reencrypted": 29490
+}

@@ -1,0 +1,16 @@
+{
+  "calibration_gate_verified": true,
+  "operation_cap": 2192,
+  "operation_unit": "canonical_template_check",
+  "operations": 2192,
+  "schema_version": 1,
+  "status": "verified",
+  "survivors": 173,
+  "survivors_by_family": {
+    "autokey": 9,
+    "progressive": 152,
+    "repeating_interrupted": 12
+  },
+  "unknowns": 0,
+  "witnesses_reencrypted": 173
+}

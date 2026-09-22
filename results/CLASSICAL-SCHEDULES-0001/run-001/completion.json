@@ -1,0 +1,18 @@
+{
+  "artifact_sha256": {
+    "attacker-output.json": "4ece28ea2ac442d43c7c0996f40583594406c768fe03b9f378d6322459e0e16d",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller-private.json": "f3a63bf02d7646a8305478260d22f47bb247b6407838cb343d5f905018006332",
+    "manifest.json": "a370457035ddfb69d5607be3bb7f9deecc693e88f9c49feee5c50781a0ffc60e",
+    "public-cases.json": "f1722d590f2662dcf4924c848fdca69343276091a2b1d4e258d6c4aac7c0fe9d",
+    "seed-reveal.json": "6585c660992dd0e918b4a514aa8db75c20681b4f84dbc4778b5adb253dc0890f",
+    "verification.stderr": "0d5837d4f07e390fd251511bb0cf04738bc657a0bb36641dfd03a1a7cfc0ca0e"
+  },
+  "calibration_passed": false,
+  "experiment_id": "CLASSICAL-SCHEDULES-0001",
+  "k4_models_evaluated": 0,
+  "reason": "independent verifier rejected noncanonical variant-Beaufort template ID serialization",
+  "run_id": "results/CLASSICAL-SCHEDULES-0001/run-001",
+  "schema_version": 1,
+  "status": "failed"
+}

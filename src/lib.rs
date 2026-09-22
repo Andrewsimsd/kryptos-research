@@ -17,6 +17,7 @@
 //! finite domain with complete compact certificates.
 
 pub mod cipher;
+pub mod classical_schedules;
 pub mod diagnosis;
 pub mod evidence;
 pub mod feasibility;

@@ -74,6 +74,45 @@ fn transform_requires_an_explicit_request_file() {
 }
 
 #[test]
+fn classical_schedules_emits_the_complete_canonical_census() {
+    let output = run(&[
+        "classical-schedules",
+        "fixtures/classical-schedules-request.json",
+    ]);
+    assert!(
+        output.status.success(),
+        "{}",
+        String::from_utf8_lossy(&output.stderr)
+    );
+    let report: serde_json::Value = serde_json::from_slice(&output.stdout).unwrap();
+    assert_eq!(report["raw_parameter_tuples"], 65_856);
+    assert_eq!(report["canonical_coordinate_maps"], 200);
+    assert_eq!(report["canonical_templates"], 2_192);
+    assert_eq!(report["operations"], 2_192);
+}
+
+#[test]
+fn classical_schedules_requires_a_valid_explicit_request() {
+    for args in [
+        &["classical-schedules"][..],
+        &["classical-schedules", "Cargo.toml"][..],
+    ] {
+        let output = run(args);
+        assert!(!output.status.success() && output.stdout.is_empty());
+    }
+    for length in [96, 98] {
+        let path = format!("fixtures/classical-schedules-invalid-{length}.json");
+        let output = run(&["classical-schedules", &path]);
+        assert!(!output.status.success() && output.stdout.is_empty());
+        assert!(
+            String::from_utf8(output.stderr)
+                .unwrap()
+                .contains("exactly 97")
+        );
+    }
+}
+
+#[test]
 fn transform_example_emits_plaintext_and_complete_trace() {
     let output = run(&["transform", "fixtures/example-request.json"]);
     let report: serde_json::Value = serde_json::from_slice(&output.stdout).unwrap();

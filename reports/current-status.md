@@ -1,5 +1,14 @@
 # K4 current status and statement provenance
 
+## Classical schedules, 21 September 2026
+
+The [milestone 11 census](milestone-11.md) passed a fresh hidden-seed
+calibration: 120/120 planted templates survived, 40/40 designed tamper cases
+excluded their planted template, and an independent enumeration agreed exactly.
+The gated K4 run checked 2,192 aligned standard-A–Z templates and retained 173:
+12 repeating/interrupted, 152 progressive, and 9 autokey. These are
+underdetermined compatibility classes; none is ranked as plaintext.
+
 ## Blind benchmark, 20 September 2026
 
 The [milestone 10 reference benchmark](milestone-10.md), specifically the

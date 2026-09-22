@@ -1,0 +1,21 @@
+{
+  "artifact_sha256": {
+    "attacker-binary": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "f18db285d2effb46a30b769023be0dba4aee1aafeb895f258a5a7cf0a6b0c990",
+    "result.json": "09f3e7aba692dc2b2ba942d7c9d7efbe17c5642a0e633bbe4116a6bbc70e9822",
+    "verification.json": "d6829e9bb7aa2606726ea67b33c34298edd2d79a2c73726e1c0eae1bb984c5cc",
+    "verification.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "binary_sha256": "cc0874a9d9d9d24e33da8998fb16d627f7ca99d284d7971f1daabcf887890d37",
+  "calibration_gate_passed": true,
+  "experiment_id": "CLASSICAL-SCHEDULES-K4-0003",
+  "operation_cap": 2192,
+  "operation_unit": "canonical_template_check",
+  "operations": 2192,
+  "run_id": "results/CLASSICAL-SCHEDULES-K4-0003/run-001",
+  "schema_version": 1,
+  "status": "completed",
+  "unknowns": 0,
+  "wall_seconds": 0.0575256619999891
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_sha256": {
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "manifest.json": "535fef4e751828923b29d1cb1a47a7faea78db105cf13497a9ac598c41ec28a1",
+    "result.json": "09f3e7aba692dc2b2ba942d7c9d7efbe17c5642a0e633bbe4116a6bbc70e9822",
+    "verification.json": "bd535f44a396adcb294d3dceed7411538d73e62b49770bce12c244726daa11c0",
+    "verification.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "calibration_gate_passed": true,
+  "canonical_templates_evaluated": 2192,
+  "experiment_id": "CLASSICAL-SCHEDULES-K4-0001",
+  "run_id": "results/CLASSICAL-SCHEDULES-K4-0001/run-001",
+  "schema_version": 1,
+  "status": "completed",
+  "unknowns": 0,
+  "wall_seconds": 0.07180530000005092
+}

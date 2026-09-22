@@ -45,7 +45,8 @@ operation cap, shard count, and wall-time cap before K4 is evaluated.
 | 26 Candidate dossier | Serious survivor | Review; zero external spend | Reproduction bundle, adversarial findings |
 
 Implementation status: [milestone 10's blind reference benchmark](../reports/milestone-10.md)
-is complete as a reusable protocol with one demonstrated reference family. The
+and [milestone 11's classical schedule census](../reports/milestone-11.md) are
+complete. Milestone 11 retained 173 of 2,192 calibrated canonical templates. The
 milestone 9 evidence refresh remains partial; each future attack family still
 requires its own representative corpora and blind calibration before K4
 evaluation.
@@ -87,6 +88,16 @@ target passes. Failure narrows the tool's competence; it does not exclude the
 historical model.
 
 ## Planned milestone 11 — classical polyalphabetic schedules
+
+**Status.** Complete. See the [report](../reports/milestone-11.md), accepted
+[calibration](../results/CLASSICAL-SCHEDULES-0005/run-001/verification.json), and
+independently verified [K4 census](../results/CLASSICAL-SCHEDULES-K4-0003/run-001/verification.json).
+CLASSICAL-SCHEDULES-0003 and CLASSICAL-SCHEDULES-K4-0001 are preserved but
+superseded: their calibration did not prove raw-to-canonical reencryption, their
+declared operation cap did not match the implemented scientific unit, and the
+K4 provenance check was incomplete. Runs 0004 and K4-0002 corrected those
+issues but were superseded after an inapplicable autokey `phase` field and
+incomplete K4 metadata validation were found.
 
 **Question.** Do the 24 known letters fit bounded Vigenère, Beaufort, or variant
 Beaufort schedules that were not covered by milestone 1?

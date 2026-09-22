@@ -42,3 +42,19 @@
 {"experiment_id": "BLIND-0003", "run_id": "results/BLIND-0003/run-001", "status": "completed", "at": "2026-09-21T00:13:58.586021+00:00", "completion_sha256": "1f002d1faa4359d1b35a2303567518cba3aee6809513b65e10284d6e1ab63729"}
 {"experiment_id": "BLIND-0004", "run_id": "results/BLIND-0004/run-001", "status": "started", "at": "2026-09-21T00:19:18.833660+00:00"}
 {"experiment_id": "BLIND-0004", "run_id": "results/BLIND-0004/run-001", "status": "completed", "at": "2026-09-21T00:19:18.976978+00:00", "completion_sha256": "10a87ef9798c1f22b221c2a79f2b636ace75793208b65a6c1c532f0d7b247b38"}
+{"at": "2026-09-21T17:19:20.357301+00:00", "experiment_id": "CLASSICAL-SCHEDULES-0001", "run_id": "results/CLASSICAL-SCHEDULES-0001/run-001", "status": "started"}
+{"at": "2026-09-21T17:20:25.560326+00:00", "completion_sha256": "eb36dc9b7e97d6da7915bbd4cf169c2760e6d4aa5049cc67a60b0e67719ac696", "experiment_id": "CLASSICAL-SCHEDULES-0001", "run_id": "results/CLASSICAL-SCHEDULES-0001/run-001", "status": "failed"}
+{"at": "2026-09-21T17:21:49.835033+00:00", "experiment_id": "CLASSICAL-SCHEDULES-0002", "run_id": "results/CLASSICAL-SCHEDULES-0002/run-001", "status": "started"}
+{"at": "2026-09-21T17:22:37.896168+00:00", "completion_sha256": "e460d5d5b7c9e897d86ddc767f7fef0db5331e1302ab6932de044c0d7d503e40", "experiment_id": "CLASSICAL-SCHEDULES-0002", "run_id": "results/CLASSICAL-SCHEDULES-0002/run-001", "status": "failed"}
+{"at": "2026-09-21T17:23:55.489821+00:00", "experiment_id": "CLASSICAL-SCHEDULES-0003", "run_id": "results/CLASSICAL-SCHEDULES-0003/run-001", "status": "started"}
+{"at": "2026-09-21T17:23:58.086848+00:00", "completion_sha256": "c39625536fd3ca26feec395fb018e93a3a1eac3e789e5e55623e82fd64c14ae5", "experiment_id": "CLASSICAL-SCHEDULES-0003", "run_id": "results/CLASSICAL-SCHEDULES-0003/run-001", "status": "completed"}
+{"at": "2026-09-21T17:25:08.929601+00:00", "experiment_id": "CLASSICAL-SCHEDULES-K4-0001", "run_id": "results/CLASSICAL-SCHEDULES-K4-0001/run-001", "status": "started"}
+{"at": "2026-09-21T17:25:09.001528+00:00", "completion_sha256": "523551791b6f2bfa93494b5afdcf6b7f9bdf9300cc7450e4d4914356f54b379b", "experiment_id": "CLASSICAL-SCHEDULES-K4-0001", "run_id": "results/CLASSICAL-SCHEDULES-K4-0001/run-001", "status": "completed"}
+{"at": "2026-09-21T17:57:41.501555+00:00", "experiment_id": "CLASSICAL-SCHEDULES-0004", "run_id": "results/CLASSICAL-SCHEDULES-0004/run-001", "status": "started"}
+{"at": "2026-09-21T17:57:44.870225+00:00", "completion_sha256": "f5738f08bd08b75a0a3a959c0f62c8faf3db8be48b1c99e75dea1d5bab0ffe76", "experiment_id": "CLASSICAL-SCHEDULES-0004", "run_id": "results/CLASSICAL-SCHEDULES-0004/run-001", "status": "completed"}
+{"at": "2026-09-21T17:58:31.648013+00:00", "experiment_id": "CLASSICAL-SCHEDULES-K4-0002", "run_id": "results/CLASSICAL-SCHEDULES-K4-0002/run-001", "status": "started"}
+{"at": "2026-09-21T17:58:31.707417+00:00", "completion_sha256": "abe225c1023cab91355f6b6a183a1ea1b169da32ac681f9951c710c683e4ace7", "experiment_id": "CLASSICAL-SCHEDULES-K4-0002", "run_id": "results/CLASSICAL-SCHEDULES-K4-0002/run-001", "status": "completed"}
+{"at": "2026-09-22T18:50:12.483451+00:00", "experiment_id": "CLASSICAL-SCHEDULES-0005", "run_id": "results/CLASSICAL-SCHEDULES-0005/run-001", "status": "started"}
+{"at": "2026-09-22T18:50:15.927472+00:00", "completion_sha256": "bd223954a709be943d4fcaa8d2b73fcf3eafccd10f1a85ebde8e5b9a448f3989", "experiment_id": "CLASSICAL-SCHEDULES-0005", "run_id": "results/CLASSICAL-SCHEDULES-0005/run-001", "status": "completed"}
+{"at": "2026-09-22T18:50:49.025090+00:00", "experiment_id": "CLASSICAL-SCHEDULES-K4-0003", "run_id": "results/CLASSICAL-SCHEDULES-K4-0003/run-001", "status": "started"}
+{"at": "2026-09-22T18:50:49.082792+00:00", "completion_sha256": "eb31ad393b9b8cbc5f1191e6343cebd9a24191747515240a4c3921c0aadc4435", "experiment_id": "CLASSICAL-SCHEDULES-K4-0003", "run_id": "results/CLASSICAL-SCHEDULES-K4-0003/run-001", "status": "completed"}

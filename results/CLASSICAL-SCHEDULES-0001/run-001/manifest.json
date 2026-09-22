@@ -1,0 +1,29 @@
+{
+  "evidence_file_hashes": {
+    "docs/classical-schedule-conventions.md": "7a738ce3e8206093037b48f8fff4c72c0e19dd271bde90a7f3e7a3a078456fbf",
+    "evidence/k4.json": "d43c5020ce4f11dd58ae406346860267dbdc16f06c9203103ae0a18c40eb79bf",
+    "experiments/classical_cli_snapshot.rs": "ebaae6a4c4a3ec71d3e41293d4a20321b5e4acab78edc554e2e25072daca0a47",
+    "experiments/classical_schedules_v1_snapshot.rs": "e0142bdea09036133c837a3e752112ef1f3e3e377fe2ea34cf1288018f664de9",
+    "experiments/run_classical_schedules_v2_snapshot.py": "708c17e0ff0d6ee476d89118b5fd865f7a373b34fdf1d71469ec7b841fdce493",
+    "fixtures/classical-schedules-request.json": "f6298a18138659e45d99614b7a105a084c3affa0591edc3a03b6d51712a401b1",
+    "src/lib.rs": "5c80dc52f5d0e20bfc54aa5481b9172c9c442f4a809278b92aec1d9e4ba0b0df",
+    "verification/verify_classical_schedules_v1_snapshot.py": "98b31f2d25db27eba35ccbdb61c5a95ba9c917d4a7c6cffe9b7924a5c6e6b597"
+  },
+  "experiment_id": "CLASSICAL-SCHEDULES-0001",
+  "implementation_paths": [
+    "docs/classical-schedule-conventions.md",
+    "evidence/k4.json",
+    "fixtures/classical-schedules-request.json",
+    "experiments/classical_schedules_v1_snapshot.rs",
+    "experiments/classical_cli_snapshot.rs",
+    "src/lib.rs",
+    "experiments/run_classical_schedules_v2_snapshot.py",
+    "verification/verify_classical_schedules_v1_snapshot.py"
+  ],
+  "operation_cap": 100000000,
+  "public_case_count": 160,
+  "run_id": "results/CLASSICAL-SCHEDULES-0001/run-001",
+  "schema_version": 1,
+  "seed_commitment_sha256": "b46abe25f9a9bbe5d150b4b64e3112637b9cc21f238c61e563269967d266bcb2",
+  "wall_time_cap_seconds": 3600
+}

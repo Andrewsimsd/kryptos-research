@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "bad-96",
+      "ciphertext": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "cribs": []
+    }
+  ],
+  "operation_cap": 2192
+}

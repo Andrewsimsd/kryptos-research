@@ -1,0 +1,14 @@
+{
+  "canonical_templates": 2192,
+  "interpretation": "Compatibility with 24 known letters only; no survivor is ranked or claimed as plaintext.",
+  "schema_version": 1,
+  "status": "verified",
+  "survivors": 173,
+  "survivors_by_family": {
+    "autokey": 9,
+    "progressive": 152,
+    "repeating_interrupted": 12
+  },
+  "unknowns": 0,
+  "witnesses_reencrypted": 173
+}

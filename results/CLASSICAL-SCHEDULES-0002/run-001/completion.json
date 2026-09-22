@@ -1,0 +1,18 @@
+{
+  "artifact_sha256": {
+    "attacker-output.json": "493a49175211946d1f72e4d71c8fcca415b9f9ac17e1eccd00f5ac1153fe01fb",
+    "attacker.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller-private.json": "92d614755a33c500bc831861e7abae3c07636dd13854de848090495d43edcc4d",
+    "manifest.json": "c1b24aafea0688454ea1e3c0946060fa770b929c92b938de1543f35207a944b2",
+    "public-cases.json": "02e8f8d77ad99763397452aee3b53d9b5cb3aa7ee440b146d6bea9c9d290a6b4",
+    "seed-reveal.json": "7761f12f888ca294358955f629586baf5bbb4d95da0d5de5d8cde7e954850bb9",
+    "verification.stderr": "f9aa389cb638c3b3478f46d8f241fe8e861e2c363f41046a4b02962d384f9ae9"
+  },
+  "calibration_passed": false,
+  "experiment_id": "CLASSICAL-SCHEDULES-0002",
+  "k4_models_evaluated": 0,
+  "reason": "tamper negative did not exclude planted underdetermined template class",
+  "run_id": "results/CLASSICAL-SCHEDULES-0002/run-001",
+  "schema_version": 1,
+  "status": "failed"
+}
